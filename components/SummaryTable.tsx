@@ -1,9 +1,12 @@
+'use client';
+
 import Link from 'next/link';
-import { parsePrice } from '@/lib/content';
+import { useId, useState } from 'react';
 import type { SummaryRow } from '@/lib/summary';
-import { getBadge } from '@/lib/pricing';
+import { costAt, getBadge, parseMoney } from '@/lib/pricing';
 import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
+import CrewControl from './CrewControl';
 import PriceStrip from './PriceStrip';
 import VendorLogo from './VendorLogo';
 
@@ -13,17 +16,23 @@ type Props = {
 };
 
 function priceClass(value: string): string {
-  const parsed = parsePrice(value);
+  const parsed = parseMoney(value);
   if (parsed === null) return 'cell-price is-text';
   if (parsed === 0) return 'cell-price is-free';
   return 'cell-price';
 }
 
 // Cross trade summary on the homepage. Every figure is read from the guide
-// named in the last column, never authored here.
+// named in the Trade column, never authored here. It carries the same crew
+// size control as the guide tables.
 export default function SummaryTable({ rows, pricesChecked }: Props) {
+  const [crew, setCrew] = useState(3);
+  const id = useId();
+
   return (
     <div className="cost-table-frame">
+      <CrewControl id={id} crew={crew} onChange={setCrew} />
+
       <div className="cost-table-scroll">
         <table className="cost-table">
           <thead>
@@ -39,12 +48,18 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
               <th scope="col" className="num-head">
                 Crew of 10
               </th>
+              <th scope="col" className="num-head calc-head">
+                At {crew}
+              </th>
               <th scope="col">Watch out for</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((entry) => {
               const vendor = getVendor(entry.tool);
+              const computed = costAt(entry.row, crew);
+              const numeric = parseMoney(computed.text) !== null;
+
               return (
                 <tr key={entry.tool}>
                   <th scope="row" className="cell-tool">
@@ -71,6 +86,13 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                   </td>
                   <td className={priceClass(entry.row.crew10)} data-label="Crew of 10">
                     {entry.row.crew10}
+                  </td>
+                  <td
+                    className={`cell-calc${numeric ? '' : ' is-text'}`}
+                    data-label={`At ${crew}`}
+                  >
+                    {computed.text}
+                    {numeric && !computed.exact && <span className="calc-band">published band</span>}
                   </td>
                   <td className="cell-watch" data-label="Watch out for">
                     <span className="watch-flag" aria-hidden="true">

@@ -5,6 +5,7 @@ import type { Tool } from '@/lib/content';
 import { costAt, getBadge, parseMoney } from '@/lib/pricing';
 import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
+import CrewControl from './CrewControl';
 import PriceStrip from './PriceStrip';
 import VendorLogo from './VendorLogo';
 
@@ -36,28 +37,7 @@ export default function CostTable({ tools, pricesChecked, basis }: Props) {
 
   return (
     <div className="cost-table-frame">
-      <div className="crew-calc">
-        <label className="crew-calc-label" htmlFor={id}>
-          Your crew size
-        </label>
-        <input
-          id={id}
-          className="crew-calc-range"
-          type="range"
-          min={1}
-          max={20}
-          step={1}
-          value={crew}
-          onChange={(event) => setCrew(Number(event.target.value))}
-        />
-        <output className="crew-calc-value" htmlFor={id}>
-          {crew} {crew === 1 ? 'person' : 'people'}
-        </output>
-        <span className="crew-calc-note">
-          Calculated from each vendor published base and per seat rate. Banded and per schedule
-          pricing shows the published band, never a number between two of them.
-        </span>
-      </div>
+      <CrewControl id={id} crew={crew} onChange={setCrew} />
 
       <div className="cost-table-scroll">
         <table className="cost-table">

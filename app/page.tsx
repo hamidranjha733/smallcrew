@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CrewIcon, { type CrewIconName } from '@/components/CrewIcon';
+import HeroTools from '@/components/HeroTools';
 import Spread from '@/components/Spread';
 import StatsBand from '@/components/StatsBand';
 import SummaryTable from '@/components/SummaryTable';
@@ -107,6 +108,7 @@ export default async function HomePage() {
             $400 a month once you have ten cleaners, depending almost entirely on whether the vendor
             charges per seat.
           </p>
+          <HeroTools tools={summary.map((entry) => entry.row)} />
         </div>
 
         <div className="docket">
