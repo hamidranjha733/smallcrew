@@ -46,6 +46,8 @@ Design tokens, fixed
 --surface:      #f4f6f5   neutral light. Alternating rows, panels, alternating sections
 --signal:       #00857a   teal. The primary accent
 --signal-2:     #00655d   teal hover
+--signal-deep:  #00655c   deep teal for large surfaces. Hero bands, filled badges, the crew calculator
+--signal-light: #eef4f3   light teal band. The stats band and price strips
 --signal-tint:  #e4f1ef   pale teal wash
 --signal-pale:  #5ed3c6   teal readable on a charcoal background
 --flag:         #c2410c   burnt orange. Warnings and the Watch out for column only
@@ -58,7 +60,13 @@ Design tokens, fixed
 
 There is no cream, no warm paper and no oxblood anywhere in this system, including the background texture. `--surface` must read neutral, never warm. If warmth reappears, that is drift, remove it.
 
-Teal is the primary accent and must appear on every screen. It carries badges, links, active states, section rules, buttons and the Best for cell. Burnt orange appears only in the Watch out for column, pull quotes on guides and warning callouts.
+**The accent must be used on large surfaces, not only on small text.** A page where teal appears only on 12px labels and a few numbers reads black and white. The hero on the homepage and all three category pages is a full width `--signal-deep` surface, guides get a shorter one, and badges are filled rather than outlined. If the accent retreats to hairlines and labels again, that is drift, put it back on a surface.
+
+White on `--signal-deep` measures 6.96 to 1, which passes AA for body text and AAA for large text. Any new teal surface must be checked the same way before it ships.
+
+Teal carries badges, links, active states, section rules, buttons and the Best for cell. Burnt orange appears only in the Watch out for column, the Quote only badge, pull quotes on guides and warning callouts.
+
+The page runs teal, light, white. Masthead, status strip and footer stay charcoal. Never put `--signal-deep` directly against `--ink`, because two dark surfaces against each other read as a mistake.
 
 * Display type: Archivo, weights 500 / 700 / 800, tight tracking
 * Body type: Newsreader, weights 400 / 500
@@ -75,7 +83,11 @@ Teal is the primary accent and must appear on every screen. It carries badges, l
 Recurring elements
 
 * **Status strip.** Ink bar directly under the masthead with a 3px teal underline, mono, carrying the prices checked date as a live readout. On every page
-* **Stats band.** Dark charcoal band directly below the hero on the homepage and every category page, four cells in mono: tools priced, guides, price range from cheapest to dearest, prices checked. It exists to break the page out of one flat wash and to put the numbers above the fold
+* **Stats band.** Light `--signal-light` band directly below the teal hero on the homepage and every category page, four cells in mono: tools priced, guides, price range from cheapest to dearest, prices checked. It was charcoal once, which put two dark surfaces together. Keep it light
+* **Price strip.** Wherever a tool is named outside the cost table, a small mono strip beneath the name gives its cost at one, three and ten. No competitor shows cost by crew size and it is the whole premise, so it belongs everywhere the reader looks
+* **Crew size calculator.** A control above every cost table setting crew size from one to twenty, adding one calculated column beside the six published ones. Client side only, no storage. It derives base and per seat rate from the three stored figures, holds flat pricing flat, shows the published band for banded or per schedule models rather than interpolating, and keeps Quote only and Could not confirm as labels. It must never display a number no vendor has quoted
+* **Priced on stamp.** Rotated teal outline block on every guide carrying the method and the checked month. It is the visual anchor of the page
+* **Disclosure badges.** Every tool carries one of three verdicts beside its name and in the table: Published in teal, Quote only in orange, Not published in grey. Each category page ends with a section counting which vendors in that trade publish a price and which do not
 * **Hero panel.** Right hand panel beside the headline on category and guide pages, listing the tools covered with their logo and their price at a crew of three. This is what puts vendor logos above the fold. Category pages fold their counts and checked date into its meta row rather than using separate badge boxes
 * **Closing band.** Dark charcoal band above the footer, teal top rule, carrying the check the date message and links to the three categories
 * **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--signal`, prices in large mono at 1.28rem right aligned, Watch out for in `--flag` on a `--flag-tint` wash. Do not change its structure, only its colour

@@ -93,6 +93,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <div className="hero-band">
       <section className="wrapper hero">
         <div>
           <span className="eyebrow eyebrow-signal">
@@ -141,6 +142,7 @@ export default async function HomePage() {
           </dl>
         </div>
       </section>
+      </div>
 
       <StatsBand
         stats={[

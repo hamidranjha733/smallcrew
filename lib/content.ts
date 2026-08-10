@@ -222,6 +222,8 @@ export type Extreme = {
   bestFor: string;
   watch: string;
   url: string;
+  /** The full frontmatter row, so the price strip can be shown alongside. */
+  row: Tool;
 };
 
 export type Extremes = {
@@ -250,6 +252,7 @@ export function getExtremes(pages: Page[]): Extremes | null {
         bestFor: tool.bestFor,
         watch: tool.watch,
         url: tool.url,
+        row: tool,
       });
     }
   }

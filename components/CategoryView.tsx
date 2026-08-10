@@ -3,7 +3,8 @@ import GuideCard from './GuideCard';
 import HeroPanel from './HeroPanel';
 import JsonLd from './JsonLd';
 import StatsBand from './StatsBand';
-import { getAllPages, getExtremes, getTrade } from '@/lib/content';
+import { getAllPages, getExtremes, getTrade, type Tool } from '@/lib/content';
+import { badgeSummary } from '@/lib/pricing';
 import { getCategorySeo } from '@/lib/seo';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo, TRADES } from '@/lib/trades';
@@ -28,16 +29,16 @@ export default async function CategoryView({ trade }: Props) {
   const seo = getCategorySeo(trade);
   const url = `${SITE_URL}${info.href}`;
 
-  // One row per distinct vendor in this trade, priced at a crew of three from
-  // the first guide that covers it.
-  const panelTools: { tool: string; price: string }[] = [];
+  // One row per distinct vendor in this trade, taken from the first guide that
+  // covers it so the figures stay identical to that page.
+  const distinct: Tool[] = [];
   for (const page of tradePages) {
     for (const tool of page.tools) {
-      if (!panelTools.some((entry) => entry.tool === tool.tool)) {
-        panelTools.push({ tool: tool.tool, price: tool.crew3 });
-      }
+      if (!distinct.some((entry) => entry.tool === tool.tool)) distinct.push(tool);
     }
   }
+
+  const verdict = badgeSummary(distinct);
 
   return (
     <>
@@ -73,28 +74,30 @@ export default async function CategoryView({ trade }: Props) {
         ]}
       />
 
-      <div className="wrapper page-head">
-        <div>
-          <nav className="breadcrumb" aria-label="Breadcrumb">
-            <Link href="/">Small Crew</Link>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">{info.label}</span>
-          </nav>
-          <h1>{info.h1}</h1>
-          <p className="page-standfirst">{info.standfirst}</p>
-        </div>
+      <div className="hero-band">
+        <div className="wrapper page-head">
+          <div>
+            <nav className="breadcrumb" aria-label="Breadcrumb">
+              <Link href="/">Small Crew</Link>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">{info.label}</span>
+            </nav>
+            <h1>{info.h1}</h1>
+            <p className="page-standfirst">{info.standfirst}</p>
+          </div>
 
-        <HeroPanel
-          title={`${info.label} tools priced`}
-          badge={checked}
-          meta={[
-            { label: 'Guides', value: String(tradePages.length) },
-            { label: 'Tool entries', value: String(toolEntries) },
-            { label: 'Checked', value: checked, teal: true },
-          ]}
-          tools={panelTools}
-          foot="Monthly cost at a crew of three, lowest tier with online booking"
-        />
+          <HeroPanel
+            title={`${info.label} tools priced`}
+            badge={checked}
+            meta={[
+              { label: 'Guides', value: String(tradePages.length) },
+              { label: 'Tool entries', value: String(toolEntries) },
+              { label: 'Checked', value: checked, teal: true },
+            ]}
+            tools={distinct}
+            foot="Monthly cost at one, three and ten users, lowest tier with online booking"
+          />
+        </div>
       </div>
 
       <StatsBand
@@ -139,6 +142,53 @@ export default async function CategoryView({ trade }: Props) {
       </div>
 
       <div className="band band-white">
+        <section className="wrapper section" aria-labelledby="transparency-heading">
+          <div className="section-head">
+            <span className="eyebrow">Pricing transparency</span>
+            <h2 id="transparency-heading">Who publishes a price and who does not</h2>
+            <p>
+              Of the {distinct.length} vendors compared across {info.label.toLowerCase()},{' '}
+              {verdict.published.length} publish a figure you can budget from. The rest need a sales
+              conversation before you learn what they cost, which is a real cost in evaluation time.
+            </p>
+          </div>
+          <div className="verdict-grid">
+            <div className="verdict verdict-published">
+              <span className="verdict-count">{verdict.published.length}</span>
+              <span className="verdict-label">Publish a price</span>
+              <ul>
+                {verdict.published.map((tool) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="verdict verdict-quote">
+              <span className="verdict-count">{verdict.quote.length}</span>
+              <span className="verdict-label">Quote only</span>
+              <ul>
+                {verdict.quote.length > 0 ? (
+                  verdict.quote.map((tool) => <li key={tool}>{tool}</li>)
+                ) : (
+                  <li className="verdict-none">None in this trade</li>
+                )}
+              </ul>
+            </div>
+            <div className="verdict verdict-unpublished">
+              <span className="verdict-count">{verdict.unpublished.length}</span>
+              <span className="verdict-label">No price reachable</span>
+              <ul>
+                {verdict.unpublished.length > 0 ? (
+                  verdict.unpublished.map((tool) => <li key={tool}>{tool}</li>)
+                ) : (
+                  <li className="verdict-none">None in this trade</li>
+                )}
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="band band-surface">
         <section className="wrapper section" aria-labelledby="other-trades">
           <div className="section-head">
             <span className="eyebrow">Other trades</span>

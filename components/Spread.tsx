@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Extremes } from '@/lib/content';
+import PriceStrip from './PriceStrip';
 import VendorLogo from './VendorLogo';
 
 type Props = {
@@ -23,6 +24,7 @@ export default function Spread({ extremes }: Props) {
           <VendorLogo tool={cheapest.tool} size="lg" />
           {cheapest.tool}
         </span>
+        <PriceStrip tool={cheapest.row} />
         <p className="spread-note">
           {cheapest.bestFor}. Compared on{' '}
           <Link href={`/${cheapest.slug}/`}>{cheapest.title.toLowerCase()}</Link>.
@@ -39,6 +41,7 @@ export default function Spread({ extremes }: Props) {
           <VendorLogo tool={dearest.tool} size="lg" />
           {dearest.tool}
         </span>
+        <PriceStrip tool={dearest.row} />
         <p className="spread-note">
           {dearest.bestFor}. Compared on{' '}
           <Link href={`/${dearest.slug}/`}>{dearest.title.toLowerCase()}</Link>.

@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { parsePrice } from '@/lib/content';
 import type { SummaryRow } from '@/lib/summary';
+import { getBadge } from '@/lib/pricing';
 import { getVendor } from '@/lib/vendors';
+import Badge from './Badge';
+import PriceStrip from './PriceStrip';
 import VendorLogo from './VendorLogo';
 
 type Props = {
@@ -47,13 +50,15 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                   <th scope="row" className="cell-tool">
                     <span className="tool-id">
                       <VendorLogo tool={entry.tool} />
-                      <span>
+                      <span className="tool-id-text">
                         <a href={entry.row.url} rel="nofollow sponsored noopener" target="_blank">
                           {entry.tool}
                         </a>
                         {vendor && <span className="tool-domain">{vendor.domain}</span>}
                       </span>
                     </span>
+                    <PriceStrip tool={entry.row} compact />
+                    <Badge kind={getBadge(entry.row)} />
                   </th>
                   <td className="cell-trade" data-label="Trade">
                     <Link href={`/${entry.slug}/`}>{entry.trade}</Link>

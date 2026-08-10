@@ -7,6 +7,7 @@ import Disclosure from '@/components/Disclosure';
 import GuideCard from '@/components/GuideCard';
 import HeroPanel from '@/components/HeroPanel';
 import JsonLd from '@/components/JsonLd';
+import PricedStamp from '@/components/PricedStamp';
 import PullQuote from '@/components/PullQuote';
 import TearLine from '@/components/TearLine';
 import Toc from '@/components/Toc';
@@ -130,35 +131,45 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
         ]}
       />
 
-      <div className="wrapper page-head">
-        <div>
-          <nav className="breadcrumb" aria-label="Breadcrumb">
-            <Link href="/">Small Crew</Link>
-            <span aria-hidden="true">/</span>
-            <Link href={info.href}>{info.label}</Link>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">{page.keyword}</span>
-          </nav>
-          <CostStrip
-            keyword={page.keyword}
-            volume={page.volume}
-            toolsCompared={page.toolsCompared}
-            pricesChecked={page.pricesChecked}
-          />
-          <h1>{page.title}</h1>
-          <p className="page-standfirst">{page.standfirst}</p>
-        </div>
+      <div className="hero-band hero-band-short">
+        <div className="wrapper page-head">
+          <div>
+            <nav className="breadcrumb" aria-label="Breadcrumb">
+              <Link href="/">Small Crew</Link>
+              <span aria-hidden="true">/</span>
+              <Link href={info.href}>{info.label}</Link>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">{page.keyword}</span>
+            </nav>
+            <CostStrip
+              keyword={page.keyword}
+              volume={page.volume}
+              toolsCompared={page.toolsCompared}
+              pricesChecked={page.pricesChecked}
+            />
+            <h1>{page.title}</h1>
+            <p className="page-standfirst">{page.standfirst}</p>
+          </div>
 
-        <HeroPanel
-          title="Priced in this guide"
-          badge={`${page.toolsCompared} tools`}
-          meta={[{ label: 'Checked', value: page.pricesChecked, teal: true }]}
-          tools={page.tools.map((tool) => ({ tool: tool.tool, price: tool.crew3 }))}
-          foot="Monthly cost at a crew of three, lowest tier with online booking"
-        />
+          <HeroPanel
+            title="Priced in this guide"
+            badge={`${page.toolsCompared} tools`}
+            meta={[{ label: 'Checked', value: page.pricesChecked, teal: true }]}
+            tools={page.tools}
+            foot="Monthly cost at one, three and ten users, lowest tier with online booking"
+          />
+        </div>
       </div>
 
       <div className="wrapper">
+        <PricedStamp
+          checked={page.pricesChecked}
+          basis={
+            LEDGER_PAGES.has(slug)
+              ? 'the lowest tier with recurring invoicing and card payments'
+              : undefined
+          }
+        />
         <Disclosure />
         <CostTable
           tools={page.tools}

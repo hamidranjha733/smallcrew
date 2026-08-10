@@ -15,6 +15,9 @@
   --surface: #f4f6f5;
   --signal: #00857a;
   --signal-2: #00655d;
+  /* Large surface accent. White on this passes AA at 6.96 to 1. */
+  --signal-deep: #00655c;
+  --signal-light: #eef4f3;
   --signal-tint: #e4f1ef;
   --signal-pale: #5ed3c6;
   --flag: #c2410c;
@@ -318,13 +321,92 @@ strong {
   margin-left: auto;
 }
 
-/* ---------- Dark stats band ---------- */
+/* ---------- Teal hero surface ---------- */
+
+/* The accent has to live on a large surface, not only on 12px labels. */
+.hero-band {
+  background: var(--signal-deep);
+  background-image: none;
+  color: var(--paper);
+}
+
+.hero-band h1 {
+  color: var(--paper);
+}
+
+.hero-band .eyebrow,
+.hero-band .eyebrow-signal {
+  color: var(--signal-light);
+  opacity: 0.92;
+}
+
+.hero-band .hero-sub,
+.hero-band .page-standfirst {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-band .breadcrumb {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.hero-band .breadcrumb a {
+  color: var(--signal-light);
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-band .breadcrumb a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--paper);
+}
+
+.hero-band .breadcrumb span[aria-current] {
+  color: var(--paper);
+}
+
+.hero-band .cost-strip li {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.26);
+}
+
+.hero-band .cost-strip-key {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.hero-band .cost-strip-value {
+  color: var(--paper);
+}
+
+.hero-band .cost-strip-checked {
+  color: var(--signal-light);
+}
+
+.hero-band-short .page-head {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+/* The white cards sitting on the teal must not inherit its white text. */
+.hero-band .docket,
+.hero-band .hero-panel {
+  color: var(--ink);
+}
+
+.hero-band .docket .docket-head,
+.hero-band .hero-panel .hero-panel-head {
+  color: var(--paper);
+}
+
+.hero-band .docket-row dd.big,
+.hero-band .hero-panel-meta dd.teal {
+  color: var(--signal-deep);
+}
+
+/* ---------- Light stats band ---------- */
 
 .stats-band {
-  background: var(--ink);
-  color: var(--paper);
-  border-top: 3px solid var(--signal);
-  border-bottom: 1px solid var(--ink);
+  background: var(--signal-light);
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
 }
 
 .stats-inner {
@@ -347,7 +429,7 @@ strong {
   top: 1.1rem;
   bottom: 1.1rem;
   width: 1px;
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--rule-2);
 }
 
 .stat dt {
@@ -356,7 +438,7 @@ strong {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--mute);
   margin-bottom: 0.4rem;
 }
 
@@ -368,11 +450,11 @@ strong {
   letter-spacing: -0.035em;
   font-variant-numeric: tabular-nums;
   line-height: 1;
-  color: var(--paper);
+  color: var(--ink);
 }
 
 .stat dd.teal {
-  color: var(--signal-pale);
+  color: var(--signal-deep);
 }
 
 .stat-note {
@@ -380,7 +462,7 @@ strong {
   font-family: var(--data);
   font-size: 0.65rem;
   letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--mute);
   margin-top: 0.45rem;
   text-transform: uppercase;
 }
@@ -1094,7 +1176,7 @@ strong {
 
 table.cost-table {
   width: 100%;
-  min-width: 62rem;
+  min-width: 70rem;
   border-collapse: collapse;
   background: var(--paper);
   font-size: 0.92rem;
@@ -1186,6 +1268,7 @@ td.cell-best {
   width: 12.5rem;
 }
 
+/* Filled, not outlined. The accent should carry weight here. */
 .stamp {
   display: inline-block;
   font-family: var(--data);
@@ -1194,11 +1277,11 @@ td.cell-best {
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--signal);
-  border: 1.5px solid var(--signal);
-  padding: 0.28rem 0.45rem;
+  color: var(--paper);
+  background: var(--signal-deep);
+  border: 1.5px solid var(--signal-deep);
+  padding: 0.3rem 0.5rem;
   transform: rotate(-1.1deg);
-  background: rgba(255, 255, 255, 0.8);
 }
 
 td.cell-trade {
@@ -1685,6 +1768,335 @@ table.cost-table tbody tr:hover td.cell-watch {
   font-size: 0.75rem;
 }
 
+/* ---------- Price strip ---------- */
+
+.price-strip {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  font-family: var(--data);
+  font-size: 0.66rem;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.35rem;
+}
+
+.price-strip-cell {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.22rem;
+  background: var(--signal-light);
+  border: 1px solid var(--rule);
+  padding: 0.08rem 0.3rem;
+  color: var(--ink);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.price-strip-key {
+  color: var(--signal-deep);
+  font-weight: 700;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+}
+
+.price-strip-compact {
+  font-size: 0.62rem;
+}
+
+.hero-band .price-strip-cell {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: var(--paper);
+}
+
+.hero-band .price-strip-key {
+  color: var(--signal-light);
+}
+
+/* ---------- Disclosure badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-family: var(--data);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.14rem 0.36rem;
+  margin-top: 0.35rem;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
+.badge-published {
+  color: var(--signal-deep);
+  background: var(--signal-light);
+}
+
+.badge-quote {
+  color: var(--flag);
+  background: var(--flag-tint);
+}
+
+.badge-unpublished {
+  color: var(--mute);
+  background: var(--surface);
+}
+
+/* ---------- Priced on stamp ---------- */
+
+.priced-stamp {
+  display: inline-block;
+  border: 2px solid var(--signal-deep);
+  color: var(--signal-deep);
+  padding: 0.55rem 0.9rem 0.6rem;
+  transform: rotate(-1.4deg);
+  margin: 1.4rem 0 0.5rem;
+  max-width: 26rem;
+  background: var(--paper);
+}
+
+.priced-stamp-rule {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.priced-stamp strong {
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0.2rem 0 0.25rem;
+  text-transform: uppercase;
+}
+
+.priced-stamp-date {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-top: 1px solid var(--signal-deep);
+  padding-top: 0.25rem;
+}
+
+/* ---------- Crew size calculator ---------- */
+
+.crew-calc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  background: var(--signal-light);
+  border: 2px solid var(--signal-deep);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.crew-calc-label {
+  font-family: var(--data);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--signal-deep);
+  flex: none;
+}
+
+.crew-calc-range {
+  flex: 1 1 12rem;
+  min-width: 8rem;
+  accent-color: var(--signal-deep);
+  height: 1.5rem;
+}
+
+.crew-calc-value {
+  font-family: var(--data);
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--paper);
+  background: var(--signal-deep);
+  padding: 0.2rem 0.55rem;
+  flex: none;
+  min-width: 6.5rem;
+  text-align: center;
+}
+
+.crew-calc-note {
+  font-family: var(--data);
+  font-size: 0.62rem;
+  line-height: 1.5;
+  color: var(--mute);
+  flex: 1 1 100%;
+}
+
+td.cell-calc {
+  font-family: var(--data);
+  font-weight: 700;
+  font-size: 1.28rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  width: 8rem;
+  text-align: right;
+  color: var(--signal-deep);
+  background: var(--signal-light);
+}
+
+td.cell-calc.is-text {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mute);
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.calc-band {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-top: 0.15rem;
+}
+
+th.calc-head {
+  background: var(--signal-deep);
+}
+
+table.cost-table tbody tr:hover td.cell-calc {
+  background: #dfeceb;
+}
+
+/* ---------- Tool cell and hero panel rows ---------- */
+
+.tool-id-text {
+  display: block;
+  min-width: 0;
+}
+
+.hero-panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.hero-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.hero-panel-top .badge {
+  margin-top: 0;
+}
+
+.hero-panel li {
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* ---------- Pricing transparency verdict ---------- */
+
+.verdict-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.verdict {
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  padding: 1rem 1.05rem 1.1rem;
+  box-shadow: var(--lift);
+}
+
+.verdict-published {
+  border-left: 6px solid var(--signal-deep);
+}
+
+.verdict-quote {
+  border-left: 6px solid var(--flag);
+}
+
+.verdict-unpublished {
+  border-left: 6px solid var(--mute);
+}
+
+.verdict-count {
+  display: block;
+  font-family: var(--data);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.verdict-published .verdict-count {
+  color: var(--signal-deep);
+}
+
+.verdict-quote .verdict-count {
+  color: var(--flag);
+}
+
+.verdict-unpublished .verdict-count {
+  color: var(--mute);
+}
+
+.verdict-label {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin: 0.4rem 0 0.6rem;
+}
+
+.verdict ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.verdict li {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: -0.02em;
+  padding: 0.3rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.verdict li:first-child {
+  border-top: 0;
+}
+
+.verdict-none {
+  font-family: var(--body) !important;
+  font-weight: 400 !important;
+  color: var(--mute);
+  font-size: 0.9rem !important;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 68rem) {
@@ -1709,7 +2121,8 @@ table.cost-table tbody tr:hover td.cell-watch {
   }
 
   .crew-grid,
-  .trade-grid {
+  .trade-grid,
+  .verdict-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1736,8 +2149,24 @@ table.cost-table tbody tr:hover td.cell-watch {
 
   .crew-grid,
   .trade-grid,
-  .trade-links {
+  .trade-links,
+  .verdict-grid {
     grid-template-columns: 1fr;
+  }
+
+  .crew-calc-value {
+    min-width: 5.5rem;
+  }
+
+  .priced-stamp {
+    max-width: 100%;
+  }
+
+  td.cell-calc {
+    text-align: left;
+    background: var(--signal-light);
+    border-left: 3px solid var(--signal-deep);
+    padding-left: 0.6rem !important;
   }
 
   .footer-grid {

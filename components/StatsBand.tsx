@@ -9,8 +9,9 @@ type Props = {
   stats: Stat[];
 };
 
-// Dark charcoal band directly under the hero. It exists to break the page out
-// of one flat wash and to put the numbers that matter above the fold.
+// Light band directly under the teal hero. It used to be charcoal, which put
+// two dark surfaces against each other. Light keeps the page alternating teal,
+// light, white.
 export default function StatsBand({ stats }: Props) {
   return (
     <div className="stats-band">
