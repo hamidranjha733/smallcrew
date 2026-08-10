@@ -1,4 +1,6 @@
-import type { Tool } from '@/lib/content';
+import { parsePrice, type Tool } from '@/lib/content';
+import { getVendor } from '@/lib/vendors';
+import VendorLogo from './VendorLogo';
 
 type Props = {
   tools: Tool[];
@@ -12,6 +14,13 @@ type Props = {
 const DEFAULT_BASIS =
   'Prices are for the lowest tier that includes online booking, not the cheapest tier on the vendor pricing page.';
 
+function priceClass(value: string): string {
+  const parsed = parsePrice(value);
+  if (parsed === null) return 'cell-price is-text';
+  if (parsed === 0) return 'cell-price is-free';
+  return 'cell-price';
+}
+
 // The signature element of the site. Six columns, one row per tool. Prices are
 // the monthly cost on the lowest tier that includes online booking, at one,
 // three and ten users. Never the cheapest tier on the vendor page.
@@ -24,37 +33,55 @@ export default function CostTable({ tools, pricesChecked, basis }: Props) {
             <tr>
               <th scope="col">Tool</th>
               <th scope="col">Best for</th>
-              <th scope="col">Solo</th>
-              <th scope="col">Crew of 3</th>
-              <th scope="col">Crew of 10</th>
+              <th scope="col" className="num-head">
+                Solo
+              </th>
+              <th scope="col" className="num-head">
+                Crew of 3
+              </th>
+              <th scope="col" className="num-head">
+                Crew of 10
+              </th>
               <th scope="col">Watch out for</th>
             </tr>
           </thead>
           <tbody>
-            {tools.map((row) => (
-              <tr key={row.tool}>
-                <th scope="row" className="cell-tool">
-                  <a href={row.url} rel="nofollow sponsored noopener" target="_blank">
-                    {row.tool}
-                  </a>
-                </th>
-                <td className="cell-best" data-label="Best for">
-                  {row.bestFor}
-                </td>
-                <td className="cell-price" data-label="Solo">
-                  {row.solo}
-                </td>
-                <td className="cell-price" data-label="Crew of 3">
-                  {row.crew3}
-                </td>
-                <td className="cell-price" data-label="Crew of 10">
-                  {row.crew10}
-                </td>
-                <td className="cell-watch" data-label="Watch out for">
-                  {row.watch}
-                </td>
-              </tr>
-            ))}
+            {tools.map((row) => {
+              const vendor = getVendor(row.tool);
+              return (
+                <tr key={row.tool}>
+                  <th scope="row" className="cell-tool">
+                    <span className="tool-id">
+                      <VendorLogo tool={row.tool} />
+                      <span>
+                        <a href={row.url} rel="nofollow sponsored noopener" target="_blank">
+                          {row.tool}
+                        </a>
+                        {vendor && <span className="tool-domain">{vendor.domain}</span>}
+                      </span>
+                    </span>
+                  </th>
+                  <td className="cell-best" data-label="Best for">
+                    <span className="stamp">{row.bestFor}</span>
+                  </td>
+                  <td className={priceClass(row.solo)} data-label="Solo">
+                    {row.solo}
+                  </td>
+                  <td className={priceClass(row.crew3)} data-label="Crew of 3">
+                    {row.crew3}
+                  </td>
+                  <td className={priceClass(row.crew10)} data-label="Crew of 10">
+                    {row.crew10}
+                  </td>
+                  <td className="cell-watch" data-label="Watch out for">
+                    <span className="watch-flag" aria-hidden="true">
+                      !
+                    </span>
+                    {row.watch}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

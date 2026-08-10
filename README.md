@@ -129,25 +129,21 @@ Never claim hands on testing, benchmarking or trials. This site has not used the
 
 ## Design
 
-The palette, the typefaces and the layout rules are fixed. Do not substitute values.
+The site is a working dispatch board: warm job sheet paper with a faint ruled grid, ledger green for anything verified, amber for anything the reader should worry about. Dense rather than airy. It should never look like a generic SaaS blog.
 
-```
---ink:    #14181b   near black, all body text and rules
---paper:  #f4f4f0   page background
---card:   #ffffff   raised surfaces, table rows, callouts
---ledger: #0f5132   deep accounting green, the single accent
---flag:   #a33116   deep brick red, warnings and the watch out column only
---rule:   #d7d9d1   hairlines
---mute:   #6a716c   secondary text
-```
+**The full token list and the rules for the recurring elements live in `CLAUDE.md`.** That is the single source of truth. The values below are the summary.
 
-Archivo at 500, 700 and 800 for the wordmark, headings and table tool names, with tight tracking at large sizes. Newsreader at 400 and 500 for reading text. IBM Plex Mono at 400, 500 and 600 for every number, label, eyebrow, table header and nav item.
+Ink `#1c1714` for text, warm paper `#f2e9da` for the page, card `#fffdf7` for raised surfaces, ledger green `#0f5132` as the primary accent and amber `#a85a11` for warnings. All tokens are declared once at the top of `app/globals.css`.
 
-Content wrapper is 76rem, reading column is 40rem. Heavy 2px rules under the masthead and above section headings, 1px hairlines between list items. No border radius, no shadows, no gradients, and no animation beyond a background colour change on hover.
+Archivo at 500, 700 and 800 for the wordmark and headings. Newsreader at 400 and 500 for reading text. IBM Plex Mono at 400 to 700 for every number, label, eyebrow, table header, status readout and nav item.
 
-The site must work down to 360px, keyboard focus rings are `--ledger`, and `prefers-reduced-motion` is respected.
+Content wrapper is 78rem, reading column is 40rem. Border radius stays 0 everywhere and depth comes from hard offset shadows in warm ink, never blurred glows. Gradients are used only for the paper texture, the perforated tear lines and dashed dividers.
 
-`--flag` appears only in the Watch out for column and in warning callouts. If it starts appearing elsewhere, that is drift. Remove it.
+The site must work down to 360px, keyboard focus rings are `--ledger`, and `prefers-reduced-motion` disables the hover transforms.
+
+`--amber` appears only in the Watch out for column, pull quotes, the dear side of the spread panel and warning callouts. If it starts appearing as decoration, that is drift. Remove it.
+
+Vendor logos are stored in `/public/logos` and mapped in `lib/vendors.ts`. Never hot link a vendor logo, so the static export makes no third party request when a reader opens a page.
 
 ## Definition of done
 

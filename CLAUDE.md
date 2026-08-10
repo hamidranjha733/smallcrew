@@ -33,28 +33,49 @@ Writing standard
 * 1,200 to 1,800 words per page
 * If a fact cannot be verified, write `Not published` rather than guessing
 
+Design, fixed
+
+The site is a working dispatch board. Warm job sheet paper, a faint ruled grid, ledger green for anything verified and amber for anything the reader should worry about. Dense with useful information rather than airy. It should never look like a generic SaaS blog.
+
 Design tokens, fixed
 
 ```
---ink:    #14181b
---paper:  #f4f4f0
---card:   #ffffff
---ledger: #0f5132
---flag:   #a33116
---rule:   #d7d9d1
---mute:   #6a716c
+--ink:         #1c1714   deep warm ink, all body text
+--ink-soft:    #3b3128   secondary prose
+--paper:       #f2e9da   warm job sheet background
+--paper-2:     #e8dbc5   masthead, footer, logo tiles
+--card:        #fffdf7   raised surfaces, table rows, panels
+--ledger:      #0f5132   deep accounting green, primary accent
+--ledger-2:    #17714a   green hover
+--ledger-tint: #e2ece4   green wash for hover and the cheap side of the spread
+--amber:       #a85a11   warm amber, warnings and the Watch out for column
+--amber-tint:  #f8e8cf   amber wash for pull quotes and the dear side of the spread
+--rule:        #d5c7ad   hairlines
+--rule-2:      #c0ae8e   heavier hairlines and tile borders
+--mute:        #6d6152   labels and secondary mono
 
 ```
 
-* Display type: Archivo, weights 500 / 700 / 800, tight tracking on large sizes
+* Display type: Archivo, weights 500 / 700 / 800, tight tracking
 * Body type: Newsreader, weights 400 / 500
-* Data type: IBM Plex Mono for every number, label, eyebrow, table header and nav
-* Wrapper 76rem, reading column 40rem
-* 2px rules under the masthead and above section headings, 1px hairlines between list items
-* No border radius, no shadows, no gradients, no animation beyond a background colour change on hover
-* Must work down to 360px wide, keyboard focus rings in `--ledger`, and `prefers-reduced-motion` respected
+* Data type: IBM Plex Mono, weights 400 / 500 / 600 / 700, for every number, label, eyebrow, table header, status readout and nav
+* Wrapper 78rem, reading column 40rem
+* The page background carries a ruled grid at 28px, horizontal at 4.2% ink and vertical at 2.2%. It must stay faint enough to read over
+* Border radius stays 0 everywhere. Depth comes from hard offset shadows in warm ink, never blurred glows
+* Gradients are allowed only for paper texture, perforated tear lines and dashed dividers. Never for decoration on a surface
+* Animation is limited to a 0.12s transform or background colour change on hover. `prefers-reduced-motion` disables the transforms
+* Must work down to 360px wide, keyboard focus rings in `--ledger`
 
-`--flag` appears only in the Watch out for column and in warning callouts. If it starts appearing elsewhere, that is drift, remove it.
+Recurring elements
+
+* **Status strip.** Ink bar directly under the masthead, mono, carrying the prices checked date as a live readout with a green dot. On every page
+* **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--ledger`, prices in large mono at 1.28rem right aligned, Watch out for in `--amber` on an amber wash
+* **Tear line.** Perforated divider between homepage sections, drawn with a radial gradient. Not a plain rule
+* **Docket panel.** Bordered panel beside the homepage headline carrying counts and the cheapest and dearest figures, so the fold shows data rather than whitespace
+* **Vendor logos.** Every tool name in a cost table, pick section or guide card carries its mark from `/public/logos`. Never hot link a logo, always store it locally
+* **Footer.** Styled as the foot of an invoice, with the method statement and a ruled total block carrying the counts and the checked date
+
+`--amber` appears only in the Watch out for column, pull quotes, the dear side of the spread and warning callouts. `--ledger` should appear on every screen. If amber starts appearing as decoration, that is drift, remove it.
 Content system
 One markdown file per page in `/content`. Filename becomes the URL. Frontmatter:
 

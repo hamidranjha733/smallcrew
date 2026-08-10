@@ -6,6 +6,7 @@ export default function Masthead() {
     <header className="masthead">
       <div className="wrapper masthead-inner">
         <Link href="/" className="wordmark">
+          <span className="wordmark-mark" aria-hidden="true" />
           {SITE_NAME}
         </Link>
         <p className="masthead-tagline">{SITE_TAGLINE}</p>

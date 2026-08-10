@@ -4,6 +4,10 @@ import { notFound } from 'next/navigation';
 import CostStrip from '@/components/CostStrip';
 import CostTable from '@/components/CostTable';
 import Disclosure from '@/components/Disclosure';
+import PullQuote from '@/components/PullQuote';
+import TearLine from '@/components/TearLine';
+import Toc from '@/components/Toc';
+import VendorLogo from '@/components/VendorLogo';
 import { getAllPages, getPage, getSlugs, getTrade, TRADE_LABELS } from '@/lib/content';
 
 type Params = { slug: string };
@@ -60,7 +64,11 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
   const page = await getPage(slug);
   const all = await getAllPages();
   const trade = getTrade(slug);
-  const related = all.filter((item) => item.slug !== slug && getTrade(item.slug) === trade).slice(0, 4);
+  const related = all
+    .filter((item) => item.slug !== slug && getTrade(item.slug) === trade)
+    .slice(0, 4);
+
+  const topPick = page.tools[0];
 
   return (
     <article>
@@ -82,7 +90,25 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
           pricesChecked={page.pricesChecked}
           basis={LEDGER_PAGES.has(slug) ? LEDGER_BASIS : undefined}
         />
-        <div className="article-body" dangerouslySetInnerHTML={{ __html: page.html }} />
+      </div>
+
+      <TearLine />
+
+      <div className="wrapper">
+        <div className="guide-layout">
+          <Toc headings={page.headings} />
+
+          <div>
+            {topPick && <PullQuote quote={topPick.watch} tool={topPick.tool} />}
+            <div className="article-body" dangerouslySetInnerHTML={{ __html: page.html }} />
+
+            <p className="updated-note">
+              Prices on this page were read from vendor pricing pages in {page.pricesChecked}.
+              Vendor pricing changes several times a year. Confirm the current figure with the
+              vendor before you buy.
+            </p>
+          </div>
+        </div>
 
         {related.length > 0 && (
           <section className="more-guides">
@@ -93,18 +119,17 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
                   <Link className="guide-link" href={`/${item.slug}/`}>
                     <h3>{item.title}</h3>
                     <p>{item.standfirst}</p>
+                    <span className="guide-logos">
+                      {item.tools.slice(0, 6).map((tool) => (
+                        <VendorLogo key={tool.tool} tool={tool.tool} />
+                      ))}
+                    </span>
                   </Link>
                 </li>
               ))}
             </ul>
           </section>
         )}
-
-        <p className="updated-note">
-          Prices on this page were read from vendor pricing pages in {page.pricesChecked}. Vendor
-          pricing changes several times a year. Confirm the current figure with the vendor before
-          you buy.
-        </p>
       </div>
     </article>
   );
