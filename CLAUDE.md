@@ -35,47 +35,56 @@ Writing standard
 
 Design, fixed
 
-The site is a working dispatch board. Warm job sheet paper, a faint ruled grid, ledger green for anything verified and amber for anything the reader should worry about. Dense with useful information rather than airy. It should never look like a generic SaaS blog.
+The site is a trade journal, not a software company blog. Editorial, printed, opinionated. Warm paper, warm ruled lines, heavy ink furniture and a single oxblood signal colour. Dense with useful information rather than airy. The site argues against the vendors, so it must never look like one of them.
 
 Design tokens, fixed
 
 ```
---ink:         #1c1714   deep warm ink, all body text
---ink-soft:    #3b3128   secondary prose
---paper:       #f2e9da   warm job sheet background
---paper-2:     #e8dbc5   masthead, footer, logo tiles
---card:        #fffdf7   raised surfaces, table rows, panels
---ledger:      #0f5132   deep accounting green, primary accent
---ledger-2:    #17714a   green hover
---ledger-tint: #e2ece4   green wash for hover and the cheap side of the spread
---amber:       #a85a11   warm amber, warnings and the Watch out for column
---amber-tint:  #f8e8cf   amber wash for pull quotes and the dear side of the spread
---rule:        #d5c7ad   hairlines
---rule-2:      #c0ae8e   heavier hairlines and tile borders
---mute:        #6d6152   labels and secondary mono
+--ink:          #1c1a19   warm near black. Masthead, footer, status strip, table headers, all body text
+--ink-soft:     #423c38   secondary prose
+--paper:        #f7f4ef   warm paper. Page background
+--paper-2:      #efeae2   logo tiles, even table rows, inline code
+--card:         #ffffff   raised surfaces, panels, table
+--signal:       #8c2f39   oxblood. The primary accent
+--signal-2:     #6d222b   oxblood hover
+--signal-tint:  #f6ecec   pale oxblood wash
+--signal-pale:  #e8a0a8   oxblood readable on an ink background
+--rule:         #ddd7cf   hairlines
+--rule-2:       #c9c1b6   heavier hairlines and tile borders
+--mute:         #6e6862   labels and secondary mono
 
 ```
+
+There is no green and no cool grey anywhere in this system, including the background texture. If either reappears, that is drift, remove it.
+
+Oxblood is the only accent and it must appear on every screen. It carries badges, active states, section rules, the Watch out for column, hover states and the left border on every card.
 
 * Display type: Archivo, weights 500 / 700 / 800, tight tracking
 * Body type: Newsreader, weights 400 / 500
 * Data type: IBM Plex Mono, weights 400 / 500 / 600 / 700, for every number, label, eyebrow, table header, status readout and nav
 * Wrapper 78rem, reading column 40rem
-* The page background carries a ruled grid at 28px, horizontal at 4.2% ink and vertical at 2.2%. It must stay faint enough to read over
-* Border radius stays 0 everywhere. Depth comes from hard offset shadows in warm ink, never blurred glows
+* The page background carries warm horizontal ruled lines at 32px, ink at 5.2%. Ruled lines only, never a grid, and never a cool tone
+* Border radius stays 0 everywhere. Depth comes from hard offset shadows in warm ink or oxblood, never blurred glows
 * Gradients are allowed only for paper texture, perforated tear lines and dashed dividers. Never for decoration on a surface
 * Animation is limited to a 0.12s transform or background colour change on hover. `prefers-reduced-motion` disables the transforms
-* Must work down to 360px wide, keyboard focus rings in `--ledger`
+* Must work down to 360px wide, keyboard focus rings in `--signal`
 
 Recurring elements
 
-* **Status strip.** Ink bar directly under the masthead, mono, carrying the prices checked date as a live readout with a green dot. On every page
-* **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--ledger`, prices in large mono at 1.28rem right aligned, Watch out for in `--amber` on an amber wash
-* **Tear line.** Perforated divider between homepage sections, drawn with a radial gradient. Not a plain rule
+* **Status strip.** Ink bar directly under the masthead with a 3px oxblood underline, mono, carrying the prices checked date as a live readout. On every page
+* **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--signal`, prices in large mono at 1.28rem right aligned, Watch out for in `--signal` on a `--signal-tint` wash
+* **Tear line.** Perforated divider between sections, drawn with a radial gradient. Not a plain rule
 * **Docket panel.** Bordered panel beside the homepage headline carrying counts and the cheapest and dearest figures, so the fold shows data rather than whitespace
-* **Vendor logos.** Every tool name in a cost table, pick section or guide card carries its mark from `/public/logos`. Never hot link a logo, always store it locally
-* **Footer.** Styled as the foot of an invoice, with the method statement and a ruled total block carrying the counts and the checked date
+* **Vendor logos.** Every tool name in a cost table, trade card or guide card carries its mark from `/public/logos`. Never hot link a logo, always store it locally
+* **Footer.** Ink block styled as the foot of an invoice, with the method statement and an oxblood ruled total block carrying the counts and the checked date
+* **Breadcrumb.** Mono, uppercase, on every guide and category page, running Small Crew / trade / keyword
 
-`--amber` appears only in the Watch out for column, pull quotes, the dear side of the spread and warning callouts. `--ledger` should appear on every screen. If amber starts appearing as decoration, that is drift, remove it.
+Routes
+
+* `/` homepage. Hero and docket, three trade cards, crew picker, the spread panel, method. It links through to the category pages rather than listing every guide
+* `/cleaning`, `/lawn-care`, `/pest-control` category pages. Each lists only its own guides, with its own H1, intro, metadata, canonical and sitemap entry
+* `/[slug]` one guide per markdown file
+* The masthead and footer link to the category pages, never to homepage anchors
 Content system
 One markdown file per page in `/content`. Filename becomes the URL. Frontmatter:
 

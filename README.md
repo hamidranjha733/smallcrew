@@ -39,24 +39,41 @@ There is no Tailwind, no UI library and no CSS framework. Styling is one hand wr
 
 ```
 app/
-  layout.tsx          masthead, footer, fonts, site metadata
-  page.tsx            homepage: hero, crew picker, comparisons, method
-  globals.css         the entire stylesheet
-  [slug]/page.tsx     one page per markdown file in /content
-  sitemap.ts          generated from the content folder
-  robots.ts           generated from the content folder
+  layout.tsx              masthead, status strip, footer, fonts, site metadata
+  page.tsx                homepage: hero and docket, trade cards, crew picker, spread, method
+  globals.css             the entire stylesheet
+  cleaning/page.tsx       category page, thin wrapper around CategoryView
+  lawn-care/page.tsx      category page
+  pest-control/page.tsx   category page
+  [slug]/page.tsx         one page per markdown file in /content
+  sitemap.ts              homepage, three categories, every guide
+  robots.ts               generated from lib/site.ts
 components/
-  Masthead.tsx
-  Footer.tsx
-  CostStrip.tsx       the mono line above every page heading
-  CostTable.tsx       the signature six column table
-  Disclosure.tsx      affiliate disclosure, sits above every table
+  Masthead.tsx            wordmark and category nav
+  StatusStrip.tsx         ink readout carrying the checked date
+  Footer.tsx              invoice foot with the method statement
+  CostStrip.tsx           the mono chips above every page heading
+  CostTable.tsx           the signature six column table
+  CategoryView.tsx        shared body for the three category pages
+  GuideCard.tsx           one comparison in the card layout
+  Spread.tsx              cheapest against dearest across the whole site
+  Toc.tsx                 sticky table of contents built from the h2 ids
+  PullQuote.tsx           lifts the catch on the top pick
+  Disclosure.tsx          affiliate disclosure, sits above every table
+  VendorLogo.tsx          logo tile with a monogram fallback
+  CrewIcon.tsx            inline SVG icons for the crew picker
+  TearLine.tsx            perforated section divider
 lib/
-  content.ts          frontmatter parsing, validation, markdown rendering
-  site.ts             domain and site level strings
+  content.ts              frontmatter parsing, validation, markdown, price helpers
+  trades.ts               the three categories, their copy and metadata
+  vendors.ts              tool name to stored logo and domain
+  site.ts                 domain and site level strings
+public/logos/             vendor marks, stored locally rather than hot linked
 content/
-  *.md                one file per page, filename becomes the URL
+  *.md                    one file per guide, filename becomes the URL
 ```
+
+Adding a guide to a category needs no wiring. The trade is derived from the slug in `getTrade`, so a slug containing "pest" lands on `/pest-control`, "lawn" on `/lawn-care`, and anything else on `/cleaning`.
 
 ## Changing the domain
 
@@ -129,19 +146,19 @@ Never claim hands on testing, benchmarking or trials. This site has not used the
 
 ## Design
 
-The site is a working dispatch board: warm job sheet paper with a faint ruled grid, ledger green for anything verified, amber for anything the reader should worry about. Dense rather than airy. It should never look like a generic SaaS blog.
+The site is a trade journal, not a software company blog. Editorial, printed, opinionated. Warm paper with warm ruled lines, heavy ink furniture and a single oxblood accent. Dense rather than airy. The site argues against the vendors, so it must never look like one of them.
 
 **The full token list and the rules for the recurring elements live in `CLAUDE.md`.** That is the single source of truth. The values below are the summary.
 
-Ink `#1c1714` for text, warm paper `#f2e9da` for the page, card `#fffdf7` for raised surfaces, ledger green `#0f5132` as the primary accent and amber `#a85a11` for warnings. All tokens are declared once at the top of `app/globals.css`.
+Ink `#1c1a19` for text and for the masthead, status strip, footer and table headers. Warm paper `#f7f4ef` for the page, white `#ffffff` for raised surfaces, and oxblood `#8c2f39` as the single accent, carrying badges, active states, section rules, the Watch out for column, hover states and the left border on every card. Hairlines `#ddd7cf`, secondary text `#6e6862`. There is no green and no cool grey anywhere in the system, including the background texture. All tokens are declared once at the top of `app/globals.css`.
 
 Archivo at 500, 700 and 800 for the wordmark and headings. Newsreader at 400 and 500 for reading text. IBM Plex Mono at 400 to 700 for every number, label, eyebrow, table header, status readout and nav item.
 
-Content wrapper is 78rem, reading column is 40rem. Border radius stays 0 everywhere and depth comes from hard offset shadows in warm ink, never blurred glows. Gradients are used only for the paper texture, the perforated tear lines and dashed dividers.
+Content wrapper is 78rem, reading column is 40rem. Border radius stays 0 everywhere and depth comes from hard offset shadows in warm ink or oxblood, never blurred glows. Gradients are used only for the paper texture, the perforated tear lines and dashed dividers. The background carries warm horizontal ruled lines at 32px, never a grid.
 
-The site must work down to 360px, keyboard focus rings are `--ledger`, and `prefers-reduced-motion` disables the hover transforms.
+The site must work down to 360px, keyboard focus rings are `--signal`, and `prefers-reduced-motion` disables the hover transforms.
 
-`--amber` appears only in the Watch out for column, pull quotes, the dear side of the spread panel and warning callouts. If it starts appearing as decoration, that is drift. Remove it.
+Oxblood must appear on every screen. If it starts appearing as decoration rather than as signal, that is drift. Remove it.
 
 Vendor logos are stored in `/public/logos` and mapped in `lib/vendors.ts`. Never hot link a vendor logo, so the static export makes no third party request when a reader opens a page.
 

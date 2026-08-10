@@ -1,25 +1,25 @@
 /* Small Crew
    One hand written stylesheet. No framework, no reset library.
 
-   The design is a working dispatch board: warm job sheet paper, ruled grid,
-   ledger green for anything verified, amber for anything you should worry
-   about. Dense rather than airy. The cost table is the product, so it is
-   built to be the loudest thing on the page. */
+   The look is a trade journal: warm printed paper, ruled lines, heavy ink
+   furniture and a single oxblood signal colour. The site argues against the
+   vendors, so it should not look like one of them. Dense rather than airy.
+   The cost table is the product and is built to be the loudest thing on the
+   page. */
 
 :root {
-  --ink: #1c1714;
-  --ink-soft: #3b3128;
-  --paper: #f2e9da;
-  --paper-2: #e8dbc5;
-  --card: #fffdf7;
-  --ledger: #0f5132;
-  --ledger-2: #17714a;
-  --ledger-tint: #e2ece4;
-  --amber: #a85a11;
-  --amber-tint: #f8e8cf;
-  --rule: #d5c7ad;
-  --rule-2: #c0ae8e;
-  --mute: #6d6152;
+  --ink: #1c1a19;
+  --ink-soft: #423c38;
+  --paper: #f7f4ef;
+  --paper-2: #efeae2;
+  --card: #ffffff;
+  --signal: #8c2f39;
+  --signal-2: #6d222b;
+  --signal-tint: #f6ecec;
+  --signal-pale: #e8a0a8;
+  --rule: #ddd7cf;
+  --rule-2: #c9c1b6;
+  --mute: #6e6862;
 
   --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --body: 'Newsreader', Georgia, 'Times New Roman', serif;
@@ -29,8 +29,9 @@
   --reading: 40rem;
   --gutter: 1.5rem;
 
-  --lift: 0 1px 0 var(--rule-2), 2px 3px 0 rgba(28, 23, 20, 0.09);
-  --lift-2: 0 1px 0 var(--rule-2), 4px 6px 0 rgba(28, 23, 20, 0.11);
+  --lift: 0 1px 0 var(--rule-2), 2px 3px 0 rgba(28, 26, 25, 0.1);
+  --lift-2: 0 1px 0 var(--rule-2), 4px 6px 0 rgba(28, 26, 25, 0.12);
+  --lift-signal: 0 1px 0 var(--rule-2), 5px 7px 0 rgba(140, 47, 57, 0.22);
 }
 
 *,
@@ -46,7 +47,7 @@ html {
   scroll-padding-top: 1.5rem;
 }
 
-/* Warm job sheet: horizontal rules with a fainter vertical grid over them. */
+/* Warm ruled pad. Horizontal lines only, no grid. */
 body {
   margin: 0;
   color: var(--ink);
@@ -54,17 +55,11 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   background-color: var(--paper);
-  background-image:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 27px,
-      rgba(28, 23, 20, 0.042) 27px 28px
-    ),
-    repeating-linear-gradient(
-      to right,
-      transparent 0 27px,
-      rgba(28, 23, 20, 0.022) 27px 28px
-    );
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 31px,
+    rgba(28, 26, 25, 0.052) 31px 32px
+  );
   -webkit-font-smoothing: antialiased;
 }
 
@@ -100,21 +95,22 @@ p {
 }
 
 a {
-  color: var(--ledger);
+  color: var(--signal);
   text-decoration: underline;
   text-underline-offset: 0.16em;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(15, 81, 50, 0.4);
+  text-decoration-color: rgba(140, 47, 57, 0.4);
   transition: background-color 0.12s linear, color 0.12s linear;
 }
 
 a:hover {
-  background: var(--ledger-tint);
-  text-decoration-color: var(--ledger);
+  background: var(--signal-tint);
+  color: var(--signal-2);
+  text-decoration-color: var(--signal);
 }
 
 :focus-visible {
-  outline: 3px solid var(--ledger);
+  outline: 3px solid var(--signal);
   outline-offset: 2px;
 }
 
@@ -139,7 +135,7 @@ strong {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--ledger);
+  background: var(--signal);
   color: var(--card);
   font-family: var(--data);
   font-size: 0.8125rem;
@@ -165,8 +161,8 @@ strong {
   display: block;
 }
 
-.eyebrow-green {
-  color: var(--ledger);
+.eyebrow-signal {
+  color: var(--signal);
 }
 
 /* ---------- Perforated tear line ---------- */
@@ -178,14 +174,13 @@ strong {
   background-image: radial-gradient(circle at 7px 7px, var(--rule-2) 2.5px, transparent 2.6px);
   background-size: 14px 14px;
   background-repeat: repeat-x;
-  opacity: 0.85;
 }
 
 /* ---------- Masthead ---------- */
 
 .masthead {
-  border-bottom: 2px solid var(--ink);
-  background: var(--paper-2);
+  background: var(--ink);
+  color: var(--paper);
 }
 
 .masthead-inner {
@@ -202,7 +197,7 @@ strong {
   font-weight: 800;
   font-size: 1.35rem;
   letter-spacing: -0.045em;
-  color: var(--ink);
+  color: var(--paper);
   text-decoration: none;
   line-height: 1;
   display: inline-flex;
@@ -212,13 +207,13 @@ strong {
 
 .wordmark:hover {
   background: transparent;
-  color: var(--ledger);
+  color: var(--card);
 }
 
 .wordmark-mark {
   width: 1.15rem;
   height: 1.15rem;
-  background: var(--ledger);
+  background: var(--signal);
   display: inline-block;
   position: relative;
   flex: none;
@@ -228,7 +223,7 @@ strong {
   content: '';
   position: absolute;
   inset: 3px;
-  border: 2px solid var(--paper-2);
+  border: 2px solid var(--ink);
   border-top: 0;
   border-right: 0;
 }
@@ -236,7 +231,7 @@ strong {
 .masthead-tagline {
   font-family: var(--data);
   font-size: 0.7rem;
-  color: var(--mute);
+  color: rgba(247, 244, 239, 0.62);
   margin: 0;
   flex: 1 1 12rem;
 }
@@ -253,16 +248,16 @@ strong {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--paper);
   text-decoration: none;
   padding: 0.2rem 0.3rem;
   border-bottom: 2px solid transparent;
 }
 
 .masthead-nav a:hover {
-  background: var(--card);
-  color: var(--ledger);
-  border-bottom-color: var(--ledger);
+  background: transparent;
+  color: var(--card);
+  border-bottom-color: var(--signal);
 }
 
 /* ---------- Status strip ---------- */
@@ -270,7 +265,8 @@ strong {
 .status-strip {
   background: var(--ink);
   color: var(--paper);
-  border-bottom: 2px solid var(--ink);
+  border-top: 1px solid rgba(247, 244, 239, 0.16);
+  border-bottom: 3px solid var(--signal);
 }
 
 .status-inner {
@@ -294,7 +290,7 @@ strong {
 
 .status-key {
   text-transform: uppercase;
-  color: rgba(242, 233, 218, 0.62);
+  color: rgba(247, 244, 239, 0.55);
 }
 
 .status-val {
@@ -304,19 +300,50 @@ strong {
 }
 
 .status-val-live {
-  color: #7fd4a4;
+  color: var(--signal-pale);
 }
 
 .status-dot {
   width: 6px;
   height: 6px;
-  background: #7fd4a4;
+  background: var(--signal);
   flex: none;
-  box-shadow: 0 0 0 2px rgba(127, 212, 164, 0.25);
+  box-shadow: 0 0 0 2px rgba(232, 160, 168, 0.35);
 }
 
 .status-spacer {
   margin-left: auto;
+}
+
+/* ---------- Breadcrumb ---------- */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--data);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: var(--signal);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(140, 47, 57, 0.35);
+}
+
+.breadcrumb a:hover {
+  background: var(--signal-tint);
+  border-bottom-color: var(--signal);
+}
+
+.breadcrumb span[aria-current] {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 /* ---------- Cost strip ---------- */
@@ -358,7 +385,12 @@ strong {
 }
 
 .cost-strip-checked {
-  color: var(--ledger);
+  color: var(--signal);
+}
+
+.category-strip {
+  margin-top: 1.2rem;
+  margin-bottom: 0;
 }
 
 /* ---------- Sections ---------- */
@@ -374,7 +406,7 @@ strong {
 
 .section-head h2 {
   display: inline-block;
-  border-bottom: 3px solid var(--ledger);
+  border-bottom: 3px solid var(--signal);
   padding-bottom: 0.28rem;
 }
 
@@ -458,7 +490,128 @@ strong {
 
 .docket-row dd.big {
   font-size: 1.05rem;
-  color: var(--ledger);
+  color: var(--signal);
+}
+
+/* ---------- Trade cards ---------- */
+
+.trade-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.trade-card {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-left: 6px solid var(--signal);
+  box-shadow: var(--lift);
+  padding: 1.2rem 1.15rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.trade-card:hover {
+  background: var(--card);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--lift-signal);
+}
+
+.trade-card-count {
+  font-family: var(--data);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--card);
+  background: var(--signal);
+  padding: 0.15rem 0.4rem;
+  align-self: flex-start;
+}
+
+.trade-card h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.trade-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.trade-card-link {
+  font-family: var(--data);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--signal);
+  margin-top: auto;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* Other trades block on category pages */
+.trade-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.trade-link {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--rule-2);
+  border-left: 4px solid var(--signal);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.trade-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--lift-signal);
+}
+
+.trade-link-label {
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.3rem;
+}
+
+.trade-link-note {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Category intro ---------- */
+
+.category-intro {
+  max-width: 46rem;
+  border-left: 4px solid var(--signal);
+  padding-left: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.category-intro p {
+  color: var(--ink-soft);
+  margin-bottom: 0.9rem;
+}
+
+.category-intro p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Crew picker ---------- */
@@ -479,19 +632,19 @@ strong {
   gap: 0.55rem;
   text-decoration: none;
   color: var(--ink);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s linear;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .crew-cell:hover {
   background: var(--card);
   transform: translate(-2px, -2px);
-  box-shadow: 0 1px 0 var(--rule-2), 6px 8px 0 rgba(15, 81, 50, 0.18);
+  box-shadow: var(--lift-signal);
 }
 
 .crew-icon {
   width: 2.1rem;
   height: 2.1rem;
-  color: var(--ledger);
+  color: var(--signal);
   flex: none;
 }
 
@@ -502,7 +655,7 @@ strong {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--card);
-  background: var(--ledger);
+  background: var(--signal);
   padding: 0.15rem 0.4rem;
   align-self: flex-start;
 }
@@ -523,7 +676,7 @@ strong {
   font-family: var(--data);
   font-size: 0.7rem;
   font-weight: 600;
-  color: var(--ledger);
+  color: var(--signal);
   margin-top: auto;
   padding-top: 0.6rem;
   border-top: 1px solid var(--rule);
@@ -547,21 +700,17 @@ strong {
   padding: 1.4rem 1.5rem 1.5rem;
 }
 
-.spread-side.dear {
-  background: var(--amber-tint);
+.spread-side.cheap {
+  background: var(--card);
 }
 
-.spread-side.cheap {
-  background: var(--ledger-tint);
+.spread-side.dear {
+  background: var(--signal-tint);
 }
 
 .spread-divider {
   width: 2px;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    var(--ink) 0 6px,
-    transparent 6px 12px
-  );
+  background-image: repeating-linear-gradient(to bottom, var(--ink) 0 6px, transparent 6px 12px);
 }
 
 .spread-price {
@@ -576,11 +725,11 @@ strong {
 }
 
 .spread-side.cheap .spread-price {
-  color: var(--ledger);
+  color: var(--ink);
 }
 
 .spread-side.dear .spread-price {
-  color: var(--amber);
+  color: var(--signal);
 }
 
 .spread-per {
@@ -643,7 +792,7 @@ strong {
   font-family: var(--data);
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--ledger);
+  color: var(--signal);
 }
 
 .vlogo-lg {
@@ -688,7 +837,7 @@ table.cost-table thead th {
   text-align: left;
   padding: 0.62rem 0.9rem;
   white-space: nowrap;
-  border-right: 1px solid rgba(242, 233, 218, 0.18);
+  border-right: 1px solid rgba(247, 244, 239, 0.18);
 }
 
 table.cost-table thead th:last-child {
@@ -709,11 +858,11 @@ table.cost-table tbody th {
 }
 
 table.cost-table tbody tr:nth-child(even) {
-  background: rgba(232, 219, 197, 0.34);
+  background: var(--paper-2);
 }
 
 table.cost-table tbody tr:hover {
-  background: var(--ledger-tint);
+  background: var(--signal-tint);
 }
 
 table.cost-table tbody tr:last-child td,
@@ -746,9 +895,9 @@ th.cell-tool {
 }
 
 .tool-id a:hover {
-  color: var(--ledger);
+  color: var(--signal);
   background: transparent;
-  border-bottom-color: var(--ledger);
+  border-bottom-color: var(--signal);
 }
 
 .tool-domain {
@@ -772,11 +921,11 @@ td.cell-best {
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--ledger);
-  border: 1.5px solid var(--ledger);
+  color: var(--signal);
+  border: 1.5px solid var(--signal);
   padding: 0.28rem 0.45rem;
   transform: rotate(-1.1deg);
-  background: rgba(255, 253, 247, 0.75);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 td.cell-price {
@@ -792,7 +941,7 @@ td.cell-price {
 }
 
 td.cell-price.is-free {
-  color: var(--ledger);
+  color: var(--signal);
 }
 
 td.cell-price.is-text {
@@ -807,20 +956,20 @@ td.cell-price.is-text {
 
 td.cell-watch {
   width: 17rem;
-  color: var(--amber);
-  background: rgba(248, 232, 207, 0.5);
+  color: var(--signal);
+  background: var(--signal-tint);
   font-size: 0.86rem;
   line-height: 1.45;
 }
 
 table.cost-table tbody tr:hover td.cell-watch {
-  background: rgba(248, 232, 207, 0.8);
+  background: #f1e0e1;
 }
 
 .watch-flag {
   font-family: var(--data);
   font-weight: 700;
-  color: var(--amber);
+  color: var(--signal);
   margin-right: 0.3rem;
 }
 
@@ -844,7 +993,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 
 .disclosure {
   border: 1px solid var(--rule-2);
-  border-left: 4px solid var(--ledger);
+  border-left: 4px solid var(--signal);
   background: var(--card);
   padding: 0.85rem 1rem;
   margin: 1.75rem 0 0;
@@ -860,7 +1009,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 
 .disclosure .label {
   margin-bottom: 0.35rem;
-  color: var(--ledger);
+  color: var(--signal);
 }
 
 /* ---------- Pull quote ---------- */
@@ -868,14 +1017,14 @@ table.cost-table tbody tr:hover td.cell-watch {
 .pullquote {
   margin: 2rem 0;
   padding: 1.1rem 1.25rem;
-  background: var(--amber-tint);
-  border: 1px solid var(--amber);
+  background: var(--signal-tint);
+  border: 1px solid var(--signal);
   border-left-width: 5px;
   box-shadow: var(--lift);
 }
 
 .pullquote .label {
-  color: var(--amber);
+  color: var(--signal);
   margin-bottom: 0.45rem;
 }
 
@@ -897,7 +1046,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   font-style: normal;
   font-family: var(--data);
   font-size: 0.7rem;
-  color: var(--amber);
+  color: var(--signal);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -916,6 +1065,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   position: sticky;
   top: 1.25rem;
   border: 1px solid var(--rule-2);
+  border-top: 3px solid var(--signal);
   background: var(--card);
   padding: 0.9rem 0.95rem 1rem;
   box-shadow: var(--lift);
@@ -923,7 +1073,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 
 .toc .label {
   margin-bottom: 0.55rem;
-  color: var(--ledger);
+  color: var(--signal);
 }
 
 .toc ol {
@@ -955,14 +1105,14 @@ table.cost-table tbody tr:hover td.cell-watch {
 
 .toc a::before {
   content: counter(toc, decimal-leading-zero);
-  color: var(--ledger);
+  color: var(--signal);
   font-weight: 600;
   flex: none;
 }
 
 .toc a:hover {
-  color: var(--ledger);
-  background: var(--ledger-tint);
+  color: var(--signal);
+  background: var(--signal-tint);
 }
 
 /* ---------- Article body ---------- */
@@ -982,7 +1132,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   display: block;
   width: 2.2rem;
   height: 3px;
-  background: var(--ledger);
+  background: var(--signal);
   margin-bottom: 0.7rem;
 }
 
@@ -1008,7 +1158,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 
 /* The "X is wrong" verdicts read as flagged items rather than prose. */
 .article-body p > strong:first-child {
-  color: var(--amber);
+  color: var(--signal);
   font-weight: 600;
 }
 
@@ -1023,7 +1173,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 .article-body blockquote {
   margin: 1.6rem 0;
   padding-left: 1.1rem;
-  border-left: 4px solid var(--ledger);
+  border-left: 4px solid var(--signal);
   color: var(--ink-soft);
 }
 
@@ -1055,7 +1205,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   padding-top: 0.8rem;
 }
 
-/* ---------- Guide list ---------- */
+/* ---------- Guide cards ---------- */
 
 .guide-list {
   list-style: none;
@@ -1072,13 +1222,13 @@ table.cost-table tbody tr:hover td.cell-watch {
   color: var(--ink);
   background: var(--card);
   border: 1px solid var(--rule-2);
-  border-left: 4px solid var(--ledger);
+  border-left: 4px solid var(--signal);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .guide-item a.guide-link:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 4px 5px 0 rgba(15, 81, 50, 0.16);
+  box-shadow: var(--lift-signal);
 }
 
 .guide-item h3 {
@@ -1094,10 +1244,18 @@ table.cost-table tbody tr:hover td.cell-watch {
   color: var(--ink-soft);
 }
 
+.guide-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  flex-wrap: wrap;
+}
+
 .guide-logos {
   display: flex;
   gap: 0.3rem;
-  margin-top: 0.7rem;
   flex-wrap: wrap;
 }
 
@@ -1115,14 +1273,24 @@ table.cost-table tbody tr:hover td.cell-watch {
   font-size: 0.62rem;
 }
 
-/* ---------- Footer, styled as the foot of an invoice ---------- */
+.guide-count {
+  font-family: var(--data);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--mute);
+  white-space: nowrap;
+}
+
+/* ---------- Footer, the foot of an invoice ---------- */
 
 .site-footer {
-  border-top: 2px solid var(--ink);
-  background: var(--paper-2);
+  background: var(--ink);
+  color: var(--paper);
   margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
+  border-top: 3px solid var(--signal);
 }
 
 .footer-grid {
@@ -1132,12 +1300,16 @@ table.cost-table tbody tr:hover td.cell-watch {
   align-items: start;
 }
 
+.site-footer .label {
+  color: var(--signal-pale);
+}
+
 .site-footer p,
 .site-footer li {
   font-family: var(--data);
   font-size: 0.72rem;
   line-height: 1.7;
-  color: var(--ink-soft);
+  color: rgba(247, 244, 239, 0.78);
 }
 
 .site-footer p {
@@ -1151,23 +1323,24 @@ table.cost-table tbody tr:hover td.cell-watch {
 }
 
 .footer-links li {
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(247, 244, 239, 0.16);
   padding: 0.3rem 0;
 }
 
 .footer-links a {
-  color: var(--ink);
+  color: var(--paper);
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: var(--ledger);
+  color: var(--signal-pale);
+  background: transparent;
 }
 
 .invoice-total {
   margin-top: 1.4rem;
-  border-top: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
+  border-top: 2px solid var(--signal);
+  border-bottom: 2px solid var(--signal);
   padding: 0.7rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -1177,7 +1350,7 @@ table.cost-table tbody tr:hover td.cell-watch {
 }
 
 .invoice-total dt {
-  color: var(--mute);
+  color: rgba(247, 244, 239, 0.55);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.64rem;
@@ -1186,18 +1359,18 @@ table.cost-table tbody tr:hover td.cell-watch {
 .invoice-total dd {
   margin: 0.1rem 0 0;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--paper);
 }
 
-.invoice-total dd.green {
-  color: var(--ledger);
+.invoice-total dd.signal {
+  color: var(--signal-pale);
 }
 
 .footer-sign {
   margin-top: 1.2rem;
   font-family: var(--data);
   font-size: 0.68rem;
-  color: var(--mute);
+  color: rgba(247, 244, 239, 0.55);
 }
 
 /* ---------- More guides ---------- */
@@ -1208,8 +1381,10 @@ table.cost-table tbody tr:hover td.cell-watch {
   margin-top: 3rem;
 }
 
-.more-guides h2 {
-  margin-bottom: 1rem;
+.more-guides-link {
+  margin: 1.2rem 0 0;
+  font-family: var(--data);
+  font-size: 0.75rem;
 }
 
 /* ---------- Responsive ---------- */
@@ -1218,10 +1393,6 @@ table.cost-table tbody tr:hover td.cell-watch {
   .hero {
     grid-template-columns: minmax(0, 1fr);
     gap: 1.75rem;
-  }
-
-  .hero h1 {
-    max-width: 22ch;
   }
 
   .guide-layout {
@@ -1238,7 +1409,8 @@ table.cost-table tbody tr:hover td.cell-watch {
     column-gap: 1.5rem;
   }
 
-  .crew-grid {
+  .crew-grid,
+  .trade-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1248,7 +1420,9 @@ table.cost-table tbody tr:hover td.cell-watch {
     --gutter: 1.1rem;
   }
 
-  .crew-grid {
+  .crew-grid,
+  .trade-grid,
+  .trade-links {
     grid-template-columns: 1fr;
   }
 
@@ -1267,11 +1441,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   .spread-divider {
     width: auto;
     height: 2px;
-    background-image: repeating-linear-gradient(
-      to right,
-      var(--ink) 0 6px,
-      transparent 6px 12px
-    );
+    background-image: repeating-linear-gradient(to right, var(--ink) 0 6px, transparent 6px 12px);
   }
 
   /* The cost table becomes one card per tool, each cell keeping its label. */
@@ -1308,6 +1478,7 @@ table.cost-table tbody tr:hover td.cell-watch {
   table.cost-table tr {
     background: var(--card);
     border: 2px solid var(--ink);
+    border-left: 5px solid var(--signal);
     box-shadow: var(--lift);
     margin-bottom: 1rem;
     padding: 0.2rem 0.85rem 0.5rem;
@@ -1355,6 +1526,10 @@ table.cost-table tbody tr:hover td.cell-watch {
     background: var(--card);
   }
 
+  table.cost-table tbody tr:hover td.cell-watch {
+    background: transparent;
+  }
+
   .status-inner {
     font-size: 0.64rem;
     gap: 0.25rem 1rem;
@@ -1397,6 +1572,8 @@ table.cost-table tbody tr:hover td.cell-watch {
   }
 
   .crew-cell:hover,
+  .trade-card:hover,
+  .trade-link:hover,
   .guide-item a.guide-link:hover {
     transform: none;
   }

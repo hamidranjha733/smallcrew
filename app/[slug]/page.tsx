@@ -4,11 +4,12 @@ import { notFound } from 'next/navigation';
 import CostStrip from '@/components/CostStrip';
 import CostTable from '@/components/CostTable';
 import Disclosure from '@/components/Disclosure';
+import GuideCard from '@/components/GuideCard';
 import PullQuote from '@/components/PullQuote';
 import TearLine from '@/components/TearLine';
 import Toc from '@/components/Toc';
-import VendorLogo from '@/components/VendorLogo';
-import { getAllPages, getPage, getSlugs, getTrade, TRADE_LABELS } from '@/lib/content';
+import { getAllPages, getPage, getSlugs, getTrade } from '@/lib/content';
+import { getTradeInfo } from '@/lib/trades';
 
 type Params = { slug: string };
 
@@ -64,15 +65,21 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
   const page = await getPage(slug);
   const all = await getAllPages();
   const trade = getTrade(slug);
-  const related = all
-    .filter((item) => item.slug !== slug && getTrade(item.slug) === trade)
-    .slice(0, 4);
+  const info = getTradeInfo(trade);
+  const related = all.filter((item) => item.slug !== slug && getTrade(item.slug) === trade);
 
   const topPick = page.tools[0];
 
   return (
     <article>
       <div className="wrapper page-head">
+        <nav className="breadcrumb" aria-label="Breadcrumb">
+          <Link href="/">Small Crew</Link>
+          <span aria-hidden="true">/</span>
+          <Link href={info.href}>{info.label}</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{page.keyword}</span>
+        </nav>
         <CostStrip
           keyword={page.keyword}
           volume={page.volume}
@@ -112,22 +119,18 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
 
         {related.length > 0 && (
           <section className="more-guides">
-            <h2>More {TRADE_LABELS[trade].toLowerCase()} comparisons</h2>
+            <div className="section-head">
+              <span className="eyebrow">{info.label}</span>
+              <h2>The other {related.length} {info.label.toLowerCase()} comparisons</h2>
+            </div>
             <ul className="guide-list">
               {related.map((item) => (
-                <li key={item.slug} className="guide-item">
-                  <Link className="guide-link" href={`/${item.slug}/`}>
-                    <h3>{item.title}</h3>
-                    <p>{item.standfirst}</p>
-                    <span className="guide-logos">
-                      {item.tools.slice(0, 6).map((tool) => (
-                        <VendorLogo key={tool.tool} tool={tool.tool} />
-                      ))}
-                    </span>
-                  </Link>
-                </li>
+                <GuideCard key={item.slug} page={item} />
               ))}
             </ul>
+            <p className="more-guides-link">
+              <Link href={info.href}>All {info.label.toLowerCase()} software compared</Link>
+            </p>
           </section>
         )}
       </div>

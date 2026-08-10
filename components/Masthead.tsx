@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE_NAME, SITE_TAGLINE } from '@/lib/site';
+import { TRADES } from '@/lib/trades';
 
 export default function Masthead() {
   return (
@@ -11,9 +12,11 @@ export default function Masthead() {
         </Link>
         <p className="masthead-tagline">{SITE_TAGLINE}</p>
         <nav className="masthead-nav" aria-label="Trades">
-          <Link href="/#cleaning">Cleaning</Link>
-          <Link href="/#lawn-care">Lawn care</Link>
-          <Link href="/#pest-control">Pest control</Link>
+          {TRADES.map((trade) => (
+            <Link key={trade.trade} href={trade.href}>
+              {trade.label}
+            </Link>
+          ))}
           <Link href="/#how-we-compare">Method</Link>
         </nav>
       </div>

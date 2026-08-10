@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE_NAME } from '@/lib/site';
+import { TRADES } from '@/lib/trades';
 
 type Props = {
   checked: string;
@@ -42,7 +43,7 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
               </div>
               <div>
                 <dt>Prices checked</dt>
-                <dd className="green">{checked}</dd>
+                <dd className="signal">{checked}</dd>
               </div>
               <div>
                 <dt>Next review due</dt>
@@ -61,15 +62,11 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
               <li>
                 <Link href="/">Home</Link>
               </li>
-              <li>
-                <Link href="/#cleaning">Cleaning software</Link>
-              </li>
-              <li>
-                <Link href="/#lawn-care">Lawn care software</Link>
-              </li>
-              <li>
-                <Link href="/#pest-control">Pest control software</Link>
-              </li>
+              {TRADES.map((trade) => (
+                <li key={trade.trade}>
+                  <Link href={trade.href}>{trade.label} software</Link>
+                </li>
+              ))}
               <li>
                 <Link href="/#how-we-compare">How we compare</Link>
               </li>

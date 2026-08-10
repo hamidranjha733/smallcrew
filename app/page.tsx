@@ -4,13 +4,8 @@ import CrewIcon, { type CrewIconName } from '@/components/CrewIcon';
 import Spread from '@/components/Spread';
 import TearLine from '@/components/TearLine';
 import VendorLogo from '@/components/VendorLogo';
-import {
-  getAllPages,
-  getExtremes,
-  getTrade,
-  TRADE_LABELS,
-  type Trade,
-} from '@/lib/content';
+import { getAllPages, getExtremes, getTrade } from '@/lib/content';
+import { TRADES } from '@/lib/trades';
 import { SITE_DESCRIPTION } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -64,28 +59,28 @@ const CREW_CELLS: {
   },
 ];
 
-const TRADE_ORDER: Trade[] = ['cleaning', 'lawn-care', 'pest-control'];
-
-const TRADE_BLURBS: Record<Trade, string> = {
-  cleaning:
-    'Residential and commercial cleaning, including carpet. Recurring work, high cancellation rates and crews who rarely sit at a desk.',
-  'lawn-care':
-    'Lawn care and landscape maintenance. Seasonal contracts, route density and the awkward second season of snow removal.',
-  'pest-control':
-    'Pest control operators. Recurring service agreements, state licence records and chemical application logs that general purpose software does not hold.',
-};
-
 export default async function HomePage() {
   const pages = await getAllPages();
   const extremes = getExtremes(pages);
   const toolEntries = pages.reduce((sum, page) => sum + page.tools.length, 0);
   const checked = pages[0]?.pricesChecked ?? 'Not published';
 
+  const trades = TRADES.map((info) => {
+    const tradePages = pages.filter((page) => getTrade(page.slug) === info.trade);
+    const vendors: string[] = [];
+    for (const page of tradePages) {
+      for (const tool of page.tools) {
+        if (!vendors.includes(tool.tool)) vendors.push(tool.tool);
+      }
+    }
+    return { info, count: tradePages.length, vendors };
+  });
+
   return (
     <>
       <section className="wrapper hero">
         <div>
-          <span className="eyebrow eyebrow-green">
+          <span className="eyebrow eyebrow-signal">
             Cleaning, lawn care and pest control. One to twenty staff.
           </span>
           <h1>Most software reviews are written for companies ten times your size.</h1>
@@ -133,11 +128,45 @@ export default async function HomePage() {
 
       <TearLine />
 
+      <section className="wrapper section" aria-labelledby="trades-heading">
+        <div className="section-head">
+          <span className="eyebrow">Browse by trade</span>
+          <h2 id="trades-heading">Three trades, {pages.length} comparisons</h2>
+          <p>
+            Every guide prices the tier that includes online booking, at one, three and ten users,
+            and dates the figure. Pick your trade.
+          </p>
+        </div>
+        <div className="trade-grid">
+          {trades.map(({ info, count, vendors }) => (
+            <Link key={info.trade} href={info.href} className="trade-card">
+              <span className="trade-card-count">{count} comparisons</span>
+              <h3>{info.label}</h3>
+              <p>{info.standfirst}</p>
+              <span className="guide-logos">
+                {vendors.slice(0, 8).map((tool) => (
+                  <VendorLogo key={tool} tool={tool} />
+                ))}
+              </span>
+              <span className="trade-card-link">
+                <span>All {info.label.toLowerCase()} guides</span>
+                <span aria-hidden="true">&rarr;</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <TearLine />
+
       <section className="wrapper section" aria-labelledby="crew-picker">
         <div className="section-head">
           <span className="eyebrow">Start here</span>
           <h2 id="crew-picker">Pick the size you are, not the software you want</h2>
-          <p>The right tool changes at every hire. What breaks at four people is not what breaks at one.</p>
+          <p>
+            The right tool changes at every hire. What breaks at four people is not what breaks at
+            one.
+          </p>
         </div>
         <div className="crew-grid">
           {CREW_CELLS.map((cell) => (
@@ -170,44 +199,6 @@ export default async function HomePage() {
           <Spread extremes={extremes} />
         </section>
       )}
-
-      <TearLine />
-
-      {TRADE_ORDER.map((trade) => {
-        const tradePages = pages.filter((page) => getTrade(page.slug) === trade);
-
-        return (
-          <section
-            key={trade}
-            className="wrapper section"
-            id={trade}
-            aria-labelledby={`${trade}-heading`}
-          >
-            <div className="section-head">
-              <span className="eyebrow">
-                {TRADE_LABELS[trade]}. {tradePages.length} comparisons
-              </span>
-              <h2 id={`${trade}-heading`}>{TRADE_LABELS[trade]} software</h2>
-              <p>{TRADE_BLURBS[trade]}</p>
-            </div>
-            <ul className="guide-list">
-              {tradePages.map((page) => (
-                <li key={page.slug} className="guide-item">
-                  <Link className="guide-link" href={`/${page.slug}/`}>
-                    <h3>{page.title}</h3>
-                    <p>{page.standfirst}</p>
-                    <span className="guide-logos">
-                      {page.tools.map((tool) => (
-                        <VendorLogo key={tool.tool} tool={tool.tool} />
-                      ))}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        );
-      })}
 
       <TearLine />
 

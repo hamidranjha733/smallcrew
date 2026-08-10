@@ -50,7 +50,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:wght@400;500&display=swap"
         />
         <meta name="color-scheme" content="light" />
-        <meta name="theme-color" content="#0f5132" />
+        <meta name="theme-color" content="#8c2f39" />
       </head>
       <body>
         <a className="skip-link" href="#main">
