@@ -14,16 +14,25 @@ export default function VendorLogo({ tool, size = 'sm' }: Props) {
 
   if (!vendor) {
     return (
-      <span className={className} aria-hidden="true">
-        <span className="vlogo-mono">{monogram(tool)}</span>
+      <span className={className} role="img" aria-label={`${tool} logo`}>
+        <span className="vlogo-mono" aria-hidden="true">
+          {monogram(tool)}
+        </span>
       </span>
     );
   }
 
   return (
-    <span className={className} aria-hidden="true">
+    <span className={className}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={vendor.logo} alt="" width={24} height={24} loading="lazy" decoding="async" />
+      <img
+        src={vendor.logo}
+        alt={`${tool} logo`}
+        width={24}
+        height={24}
+        loading="lazy"
+        decoding="async"
+      />
     </span>
   );
 }

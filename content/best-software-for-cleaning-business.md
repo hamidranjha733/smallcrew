@@ -106,15 +106,17 @@ A ten cleaner company pays $468 on ZenMaid, $900 on Launch27, $4,800 on Jobber C
 
 None of this makes Jobber a bad product. It makes the question specific. Jobber has to produce more than $4,000 a year of additional value over ZenMaid at ten cleaners, through won quotes or saved admin, to be the correct purchase. For a company doing quoted deep cleans and move outs, it plausibly does. For a company doing forty recurring houses at a standard rate, it plausibly does not.
 
-## What the top ranking pages leave out
+## What all the different names actually mean
 
-Three things are missing from almost every comparison of cleaning business software.
+Searching this category is confusing because the same products are marketed under half a dozen labels, and it is worth knowing which differences are real.
 
-The first is the tier at which online booking and reminders actually appear, which is the entire subject of this page.
+Cleaning company software, cleaning service software and software for cleaning companies are the same thing. They are generic labels for a field service system with a booking form, a schedule and an invoice. None of them tells you anything about what the product does. Searches for software for house cleaning business owners and for house cleaning software return the same short list.
 
-The second is the pricing model. Flat pricing and per seat pricing diverge violently between one and ten users, and a comparison that only quotes the entry price cannot show that.
+Maid service software is a genuine narrowing. It means a product built around recurring residential rounds with cleaner substitutions, which is ZenMaid on this page. Residential cleaning software means the same thing in different words. If you clean houses on a repeating schedule, that narrowing is worth having, because a generic tool will make you model a weekly round as a series of unrelated appointments.
 
-The third is what the tools refuse to do. Connecteam is free for ten users and cannot take a booking. Swept costs $30 a month and has no customer booking either, because it solves a janitorial problem rather than a residential one. Housecall Pro has the most complete entry tier here and no published seat information. Those are the facts that decide purchases, and they are absent from pages that describe every option as excellent.
+A cleaning management system usually means the marketing copy is aimed at a company large enough to have an office. The product is much the same, but the pricing page tends to assume several seats.
+
+The one label describing something genuinely different is janitorial software, which bills a building rather than a customer. That is Swept, and it is not competing with the other five here.
 
 ## Where each tool is the wrong choice
 
@@ -143,6 +145,9 @@ General field service software handles the job. Cleaning specific tools such as 
 
 **Why do the prices here differ from the vendor homepage?**
 Because the vendor homepage shows the entry tier. Every figure on this page is the lowest tier that includes an online booking form, which is one tier higher for Jobber and two tiers higher than the advertised Starter price for ZenMaid.
+
+**Is maid service software different from general cleaning company software?**
+Yes, in one way that matters. Maid service software models a recurring residential round with substitutions, which is how house cleaning actually runs. Generic software for cleaning companies models independent appointments, and you will feel the difference the first time you reschedule a whole week.
 
 **How often should I recheck these numbers?**
 At least twice a year. These figures were read from the vendor pricing pages in August 2026, and pricing in this category changes several times a year.

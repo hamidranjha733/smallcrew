@@ -117,6 +117,9 @@ ZenMaid Pro at $39 a month, checked in August 2026. It is flat priced, so it is 
 **Does Jobber include online booking on the $49 plan?**
 Yes, Core includes online booking and online payments. It does not include automated client reminders, which begin on Connect at $139 a month. For cleaning work the two features only make sense together.
 
+**Does house cleaning software handle booking differently from commercial tools?**
+Yes, and it is the main reason to buy a narrower product. Maid service software prices a standard clean from bedroom and bathroom counts, so the form can quote and book in one step. Commercial tools treat the form as an enquiry box, because a contract cannot be priced without a walkthrough.
+
 **Will an online booking form actually get used by cleaning customers?**
 It is most effective for standard priced residential work where the customer can see the price without a visit. It is least effective for commercial contracts and heavily variable jobs, where the form cannot quote and simply becomes an enquiry box.
 

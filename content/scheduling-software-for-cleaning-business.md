@@ -105,6 +105,16 @@ At ten cleaners the same list reads nothing, $468, $900 and $4,800. Jobber's Gro
 
 The comparison worth making is not between the monthly prices. It is between the annual difference and what you would otherwise spend it on. At ten cleaners, choosing Jobber Connect over ZenMaid costs $4,332 a year, which is close to a part time office wage. If the software saves more administrative time than that, it is correct. If it does not, the flat priced tool is correct and the decision is arithmetic rather than preference.
 
+## Maid service scheduling software is a narrower product
+
+Cleaning service scheduling software is the broad label, and most of what it returns is general field service software with a calendar. Maid service scheduling software is the narrower version, and for recurring residential work the narrowing is worth paying for.
+
+The difference is the unit the software thinks in. General house cleaning software thinks in appointments. A maid service tool thinks in rounds, which means a customer has a frequency, a preferred cleaner and a position in the week, and moving them is one action rather than editing every future visit.
+
+ZenMaid is the clearest example on this page. It will not do commercial contract billing, and in exchange it handles the operation you actually perform most, which is moving a recurring customer and swapping which cleaner covers them.
+
+If your work is one off deep cleans and move outs rather than a repeating round, the narrowing works against you and a general tool is the better buy.
+
 ## Where each tool is the wrong choice
 
 **Connecteam is wrong** if the thing you actually need is for customers to book themselves. It does not do that at any price.

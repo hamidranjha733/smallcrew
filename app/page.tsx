@@ -2,15 +2,29 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import CrewIcon, { type CrewIconName } from '@/components/CrewIcon';
 import Spread from '@/components/Spread';
+import SummaryTable from '@/components/SummaryTable';
 import TearLine from '@/components/TearLine';
 import VendorLogo from '@/components/VendorLogo';
 import { getAllPages, getExtremes, getTrade } from '@/lib/content';
+import { getSummaryRows } from '@/lib/summary';
 import { TRADES } from '@/lib/trades';
-import { SITE_DESCRIPTION } from '@/lib/site';
+import { HOME_SEO } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  description: SITE_DESCRIPTION,
+  title: { absolute: HOME_SEO.title },
+  description: HOME_SEO.description,
   alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    title: HOME_SEO.title,
+    description: HOME_SEO.description,
+    url: '/',
+  },
+  twitter: {
+    card: 'summary',
+    title: HOME_SEO.title,
+    description: HOME_SEO.description,
+  },
 };
 
 const CREW_CELLS: {
@@ -36,7 +50,7 @@ const CREW_CELLS: {
     icon: 'pair',
     breaks:
       'The schedule stops living in your head. Someone else needs to see today without calling you, and a job moved in a text message is a job that gets missed.',
-    href: '/lawn-care-scheduling-software/',
+    href: '/scheduling-software-for-cleaning-business/',
     linkText: 'Scheduling',
   },
   {
@@ -62,6 +76,7 @@ const CREW_CELLS: {
 export default async function HomePage() {
   const pages = await getAllPages();
   const extremes = getExtremes(pages);
+  const summary = getSummaryRows(pages);
   const toolEntries = pages.reduce((sum, page) => sum + page.tools.length, 0);
   const checked = pages[0]?.pricesChecked ?? 'Not published';
 
@@ -83,12 +98,13 @@ export default async function HomePage() {
           <span className="eyebrow eyebrow-signal">
             Cleaning, lawn care and pest control. One to twenty staff.
           </span>
-          <h1>Most software reviews are written for companies ten times your size.</h1>
+          <h1>Cleaning business software, priced at the tier you would actually buy</h1>
           <p className="hero-sub">
-            Every comparison page quotes the cheapest plan on the vendor pricing page. Almost nobody
-            buys that plan, because online booking, automated reminders and card payments sit a tier
-            higher. Small Crew prices the tier a working crew actually needs, at one, three and ten
-            users, and dates every figure.
+            Cleaning business software is the system that takes the booking, holds the schedule,
+            reminds the customer and collects the money. Expect to pay about $39 a month as a solo
+            cleaner on a plan that genuinely includes online booking, and anywhere between $39 and
+            $400 a month once you have ten cleaners, depending almost entirely on whether the vendor
+            charges per seat.
           </p>
         </div>
 
@@ -128,13 +144,66 @@ export default async function HomePage() {
 
       <TearLine />
 
+      <section className="wrapper section" aria-labelledby="cost-heading">
+        <div className="section-head">
+          <span className="eyebrow">The short answer</span>
+          <h2 id="cost-heading">What does cleaning business software cost?</h2>
+          <p>
+            Every comparison page you will read quotes the cheapest plan on the vendor pricing page.
+            Almost nobody buys that plan, because online booking, automated reminders and card
+            payments sit a tier higher. These are the nine tools we price most often across cleaning,
+            lawn care and pest control, quoted on the tier a working crew actually needs.
+          </p>
+        </div>
+        <SummaryTable rows={summary} pricesChecked={checked} />
+        <div className="reading">
+          <p>
+            Two things decide the bill more than any feature list. The first is which tier hides the
+            booking form, which on Jobber is the difference between $49 and $139 a month. The second
+            is the pricing model. Flat priced cleaning service software such as ZenMaid and Launch27
+            costs the same at one cleaner and at ten, while per seat tools multiply. That is why a
+            ten person cleaning company can pay $39 a month or $400 a month for software doing
+            broadly the same job.
+          </p>
+        </div>
+      </section>
+
+      <TearLine />
+
+      <section className="wrapper section" aria-labelledby="crew-picker">
+        <div className="section-head">
+          <span className="eyebrow">Start here</span>
+          <h2 id="crew-picker">Which tool fits the size you are now?</h2>
+          <p>
+            The right cleaning management system changes at every hire. What breaks at four people
+            is not what breaks at one.
+          </p>
+        </div>
+        <div className="crew-grid">
+          {CREW_CELLS.map((cell) => (
+            <Link key={cell.heading} href={cell.href} className="crew-cell">
+              <CrewIcon name={cell.icon} />
+              <span className="crew-size">{cell.size}</span>
+              <h3>{cell.heading}</h3>
+              <p>{cell.breaks}</p>
+              <span className="crew-link">
+                <span>{cell.linkText}</span>
+                <span aria-hidden="true">&rarr;</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <TearLine />
+
       <section className="wrapper section" aria-labelledby="trades-heading">
         <div className="section-head">
           <span className="eyebrow">Browse by trade</span>
-          <h2 id="trades-heading">Three trades, {pages.length} comparisons</h2>
+          <h2 id="trades-heading">Compare software for your trade</h2>
           <p>
-            Every guide prices the tier that includes online booking, at one, three and ten users,
-            and dates the figure. Pick your trade.
+            Nineteen comparisons across three trades. Every guide prices the tier that includes
+            online booking, at one, three and ten users, and dates the figure.
           </p>
         </div>
         <div className="trade-grid">
@@ -150,33 +219,6 @@ export default async function HomePage() {
               </span>
               <span className="trade-card-link">
                 <span>All {info.label.toLowerCase()} guides</span>
-                <span aria-hidden="true">&rarr;</span>
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <TearLine />
-
-      <section className="wrapper section" aria-labelledby="crew-picker">
-        <div className="section-head">
-          <span className="eyebrow">Start here</span>
-          <h2 id="crew-picker">Pick the size you are, not the software you want</h2>
-          <p>
-            The right tool changes at every hire. What breaks at four people is not what breaks at
-            one.
-          </p>
-        </div>
-        <div className="crew-grid">
-          {CREW_CELLS.map((cell) => (
-            <Link key={cell.heading} href={cell.href} className="crew-cell">
-              <CrewIcon name={cell.icon} />
-              <span className="crew-size">{cell.size}</span>
-              <h3>{cell.heading}</h3>
-              <p>{cell.breaks}</p>
-              <span className="crew-link">
-                <span>{cell.linkText}</span>
                 <span aria-hidden="true">&rarr;</span>
               </span>
             </Link>

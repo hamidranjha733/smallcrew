@@ -123,5 +123,8 @@ Not necessarily. It is necessary if your accountant requires it, which is common
 **What does card processing cost on top of the subscription?**
 Wave publishes 2.9% plus $0.60 per credit card transaction, and 2.9% with no fixed fee on the first ten transactions each month on the Pro plan. Processing fees are separate from subscription cost at every vendor on this page.
 
+**Does cleaning management software include accounting?**
+No, and the marketing rarely says so plainly. Cleaning management software generates invoices and records that they were paid. It holds no chart of accounts, no expense side and no bank reconciliation, which are the three things your accountant needs. Budget for both.
+
 **How should I split the work between two tools?**
 Let the cleaning tool own the schedule, the booking and the invoice that goes to the customer. Let the accounting tool own the bank feed, the expenses and the reporting. Sync them once and do not try to keep two sets of customer records by hand.

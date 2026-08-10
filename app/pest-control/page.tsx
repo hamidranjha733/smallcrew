@@ -1,18 +1,25 @@
 import type { Metadata } from 'next';
 import CategoryView from '@/components/CategoryView';
+import { getCategorySeo } from '@/lib/seo';
 import { getTradeInfo } from '@/lib/trades';
 
 const info = getTradeInfo('pest-control');
+const seo = getCategorySeo('pest-control');
 
 export const metadata: Metadata = {
-  title: info.metaTitle,
-  description: info.metaDescription,
+  title: { absolute: seo.title },
+  description: seo.description,
   alternates: { canonical: info.href },
   openGraph: {
     type: 'website',
-    title: info.metaTitle,
-    description: info.metaDescription,
+    title: seo.title,
+    description: seo.description,
     url: info.href,
+  },
+  twitter: {
+    card: 'summary',
+    title: seo.title,
+    description: seo.description,
   },
 };
 

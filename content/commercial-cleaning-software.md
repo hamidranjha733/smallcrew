@@ -101,6 +101,16 @@ Swept, the only product here designed for the actual shape of janitorial work, i
 
 The cheapest defensible structure for a small janitorial contractor is therefore Connecteam free for the crew and an accounting package for the contract billing, which comes to $228 a year with Wave Pro. Swept at $360 a year replaces the Connecteam half with something built for buildings rather than shifts, and the choice between them is whether site level detail, inspections and supply tracking are worth $360.
 
+## Staffing is the problem residential software never has
+
+The category sometimes sold as cleaning services staffing software is not a separate product, and for janitorial work it is the half of the job that matters most.
+
+Commercial cleaning runs on night shifts, part time staff and high turnover. The operational questions are whether the cleaner arrived at the right building, whether they stayed for the contracted hours, and whether the hours you pay match the hours you billed. Residential cleaning software does not ask any of those, because a residential cleaner is usually the owner or one of two people they see every day.
+
+That is why Connecteam appears at the top of this page despite not being cleaning software at all. Location based clock in, shift claiming and a defensible hours record are the staffing half, and it is free for up to ten users.
+
+The pairing worth considering for a small janitorial contractor is therefore a staffing tool for the crew and an accounting package for the contract billing, rather than one product that does both adequately.
+
 ## Where each tool is the wrong choice
 
 **Connecteam is wrong** as a complete system. It will not invoice a contract, hold a customer record or take a payment. Treat it as the crew half of a two part stack.

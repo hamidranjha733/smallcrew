@@ -928,6 +928,14 @@ td.cell-best {
   background: rgba(255, 255, 255, 0.7);
 }
 
+td.cell-trade {
+  width: 9.5rem;
+  font-family: var(--data);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
 td.cell-price {
   font-family: var(--data);
   font-weight: 600;
@@ -1194,6 +1202,15 @@ table.cost-table tbody tr:hover td.cell-watch {
   max-width: 52ch;
   color: var(--ink-soft);
   margin-bottom: 0;
+}
+
+.related-prose {
+  margin: 2rem 0 0;
+  padding: 0.9rem 1.05rem;
+  background: var(--card);
+  border: 1px solid var(--rule-2);
+  border-left: 4px solid var(--signal);
+  font-size: 0.98rem;
 }
 
 .updated-note {

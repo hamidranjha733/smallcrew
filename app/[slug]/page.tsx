@@ -5,10 +5,13 @@ import CostStrip from '@/components/CostStrip';
 import CostTable from '@/components/CostTable';
 import Disclosure from '@/components/Disclosure';
 import GuideCard from '@/components/GuideCard';
+import JsonLd from '@/components/JsonLd';
 import PullQuote from '@/components/PullQuote';
 import TearLine from '@/components/TearLine';
 import Toc from '@/components/Toc';
 import { getAllPages, getPage, getSlugs, getTrade } from '@/lib/content';
+import { checkedToIso, getGuideSeo } from '@/lib/seo';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo } from '@/lib/trades';
 
 type Params = { slug: string };
@@ -35,22 +38,24 @@ export async function generateMetadata({
   params: Promise<Params>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (!getSlugs().includes(slug)) return {};
 
-  if (!getSlugs().includes(slug)) {
-    return {};
-  }
-
-  const page = await getPage(slug);
+  const seo = getGuideSeo(slug);
 
   return {
-    title: page.title,
-    description: page.standfirst,
+    title: { absolute: seo.title },
+    description: seo.description,
     alternates: { canonical: `/${slug}/` },
     openGraph: {
       type: 'article',
-      title: page.title,
-      description: page.standfirst,
+      title: seo.title,
+      description: seo.description,
       url: `/${slug}/`,
+    },
+    twitter: {
+      card: 'summary',
+      title: seo.title,
+      description: seo.description,
     },
   };
 }
@@ -66,12 +71,64 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
   const all = await getAllPages();
   const trade = getTrade(slug);
   const info = getTradeInfo(trade);
+  const seo = getGuideSeo(slug);
   const related = all.filter((item) => item.slug !== slug && getTrade(item.slug) === trade);
+  const anchors = related.slice(0, 3);
 
   const topPick = page.tools[0];
+  const iso = checkedToIso(page.pricesChecked);
+  const url = `${SITE_URL}/${slug}/`;
 
   return (
     <article>
+      <JsonLd
+        data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            '@id': `${url}#article`,
+            headline: seo.title,
+            description: seo.description,
+            about: page.keyword,
+            inLanguage: 'en-US',
+            datePublished: iso,
+            dateModified: iso,
+            mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+            author: { '@id': `${SITE_URL}/#organization` },
+            publisher: { '@id': `${SITE_URL}/#organization` },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            '@id': `${url}#breadcrumbs`,
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: SITE_NAME, item: `${SITE_URL}/` },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: `${info.label} software`,
+                item: `${SITE_URL}${info.href}`,
+              },
+              { '@type': 'ListItem', position: 3, name: page.keyword, item: url },
+            ],
+          },
+          ...(page.faqs.length > 0
+            ? [
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'FAQPage',
+                  '@id': `${url}#faq`,
+                  mainEntity: page.faqs.map((faq) => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+                  })),
+                },
+              ]
+            : []),
+        ]}
+      />
+
       <div className="wrapper page-head">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Small Crew</Link>
@@ -109,6 +166,28 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
             {topPick && <PullQuote quote={topPick.watch} tool={topPick.tool} />}
             <div className="article-body" dangerouslySetInnerHTML={{ __html: page.html }} />
 
+            {anchors.length > 0 && (
+              <p className="related-prose">
+                Next, compare{' '}
+                {anchors.map((item, index) => (
+                  <span key={item.slug}>
+                    <Link href={`/${item.slug}/`}>{item.keyword}</Link>
+                    {index < anchors.length - 2 ? ', ' : index === anchors.length - 2 ? ' and ' : ''}
+                  </span>
+                ))}
+                . For the whole category see{' '}
+                <Link href={info.href}>{info.label.toLowerCase()} software compared</Link>
+                {trade === 'cleaning' ? (
+                  <>
+                    , or start from what{' '}
+                    <Link href="/">cleaning business software</Link> costs across every trade.
+                  </>
+                ) : (
+                  '.'
+                )}
+              </p>
+            )}
+
             <p className="updated-note">
               Prices on this page were read from vendor pricing pages in {page.pricesChecked}.
               Vendor pricing changes several times a year. Confirm the current figure with the
@@ -121,7 +200,9 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
           <section className="more-guides">
             <div className="section-head">
               <span className="eyebrow">{info.label}</span>
-              <h2>The other {related.length} {info.label.toLowerCase()} comparisons</h2>
+              <h2>
+                The other {related.length} {info.label.toLowerCase()} comparisons
+              </h2>
             </div>
             <ul className="guide-list">
               {related.map((item) => (

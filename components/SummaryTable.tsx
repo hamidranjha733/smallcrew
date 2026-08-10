@@ -1,0 +1,94 @@
+import Link from 'next/link';
+import { parsePrice } from '@/lib/content';
+import type { SummaryRow } from '@/lib/summary';
+import { getVendor } from '@/lib/vendors';
+import VendorLogo from './VendorLogo';
+
+type Props = {
+  rows: SummaryRow[];
+  pricesChecked: string;
+};
+
+function priceClass(value: string): string {
+  const parsed = parsePrice(value);
+  if (parsed === null) return 'cell-price is-text';
+  if (parsed === 0) return 'cell-price is-free';
+  return 'cell-price';
+}
+
+// Cross trade summary on the homepage. Every figure is read from the guide
+// named in the last column, never authored here.
+export default function SummaryTable({ rows, pricesChecked }: Props) {
+  return (
+    <div className="cost-table-frame">
+      <div className="cost-table-scroll">
+        <table className="cost-table">
+          <thead>
+            <tr>
+              <th scope="col">Tool</th>
+              <th scope="col">Trade</th>
+              <th scope="col" className="num-head">
+                Solo
+              </th>
+              <th scope="col" className="num-head">
+                Crew of 3
+              </th>
+              <th scope="col" className="num-head">
+                Crew of 10
+              </th>
+              <th scope="col">Watch out for</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((entry) => {
+              const vendor = getVendor(entry.tool);
+              return (
+                <tr key={entry.tool}>
+                  <th scope="row" className="cell-tool">
+                    <span className="tool-id">
+                      <VendorLogo tool={entry.tool} />
+                      <span>
+                        <a href={entry.row.url} rel="nofollow sponsored noopener" target="_blank">
+                          {entry.tool}
+                        </a>
+                        {vendor && <span className="tool-domain">{vendor.domain}</span>}
+                      </span>
+                    </span>
+                  </th>
+                  <td className="cell-trade" data-label="Trade">
+                    <Link href={`/${entry.slug}/`}>{entry.trade}</Link>
+                  </td>
+                  <td className={priceClass(entry.row.solo)} data-label="Solo">
+                    {entry.row.solo}
+                  </td>
+                  <td className={priceClass(entry.row.crew3)} data-label="Crew of 3">
+                    {entry.row.crew3}
+                  </td>
+                  <td className={priceClass(entry.row.crew10)} data-label="Crew of 10">
+                    {entry.row.crew10}
+                  </td>
+                  <td className="cell-watch" data-label="Watch out for">
+                    <span className="watch-flag" aria-hidden="true">
+                      !
+                    </span>
+                    {entry.row.watch}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p className="cost-table-caption">
+        <strong>
+          Prices are the monthly cost of the lowest tier that includes online booking, not the
+          cheapest tier on the vendor pricing page.
+        </strong>{' '}
+        Figures at one, three and ten users, billed monthly, read from each vendor pricing page in{' '}
+        {pricesChecked}. Crew prices are calculated from a published base rate plus a published per
+        seat or per schedule rate and are not quotes. Each row links to the full comparison it came
+        from. Small Crew has not used this software.
+      </p>
+    </div>
+  );
+}

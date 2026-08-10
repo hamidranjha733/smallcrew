@@ -123,5 +123,8 @@ No. None of the five tools compared here prices a job from room dimensions, fibr
 **Do I need to take a deposit online?**
 It is the single most useful thing a booking form does for carpet cleaning, because it filters out enquiries that were never going to convert. Launch27 takes payment details at booking on the Base plan, but automatic charging of the saved card requires Plus at $299 a month.
 
+**Is there dedicated cleaning quote software worth buying?**
+Not as a separate purchase at this size. What people mean by cleaning quote software is a saved rate card and a quote that converts into a scheduled job, and Jobber and GorillaDesk both do that inside the price above. A standalone quoting product adds a second system to keep in step with your customer list.
+
 **How current are these prices?**
 They were read from vendor pricing pages in August 2026. Pricing in this category changes several times a year, so confirm before committing.

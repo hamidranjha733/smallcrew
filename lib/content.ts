@@ -31,10 +31,16 @@ export type PageMeta = {
   tools: Tool[];
 };
 
+export type Faq = {
+  question: string;
+  answer: string;
+};
+
 export type Page = PageMeta & {
   slug: string;
   html: string;
   headings: Heading[];
+  faqs: Faq[];
 };
 
 function readSlugs(): string[] {
@@ -79,9 +85,46 @@ function addHeadingIds(html: string): { html: string; headings: Heading[] } {
   return { html: out, headings };
 }
 
-async function renderMarkdown(body: string): Promise<{ html: string; headings: Heading[] }> {
+function stripTags(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x26;/g, '&')
+    .replace(/&#x27;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Pulls the Common questions section into structured pairs so the same copy
+// drives both the visible page and the FAQPage block. Nothing is authored
+// twice, so the two can never disagree.
+function extractFaqs(html: string): Faq[] {
+  const start = html.search(/<h2 id="common-questions"[^>]*>/);
+  if (start < 0) return [];
+
+  const section = html.slice(start);
+  const faqs: Faq[] = [];
+
+  for (const match of section.matchAll(/<p><strong>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/g)) {
+    const question = stripTags(match[1]);
+    const answer = stripTags(match[2]);
+    if (question.length > 0 && answer.length > 0) {
+      faqs.push({ question, answer });
+    }
+  }
+
+  return faqs;
+}
+
+async function renderMarkdown(
+  body: string,
+): Promise<{ html: string; headings: Heading[]; faqs: Faq[] }> {
   const processed = await remark().use(remarkHtml, { sanitize: false }).process(body);
-  return addHeadingIds(markExternalLinks(processed.toString()));
+  const { html, headings } = addHeadingIds(markExternalLinks(processed.toString()));
+  return { html, headings, faqs: extractFaqs(html) };
 }
 
 function assertMeta(slug: string, data: Record<string, unknown>): PageMeta {
@@ -151,9 +194,9 @@ export async function getPage(slug: string): Promise<Page> {
   const raw = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(raw);
   const meta = assertMeta(slug, data as Record<string, unknown>);
-  const { html, headings } = await renderMarkdown(content);
+  const { html, headings, faqs } = await renderMarkdown(content);
 
-  return { ...meta, slug, html, headings };
+  return { ...meta, slug, html, headings, faqs };
 }
 
 export async function getAllPages(): Promise<Page[]> {

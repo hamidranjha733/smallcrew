@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Masthead from '@/components/Masthead';
 import StatusStrip from '@/components/StatusStrip';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
 import { getAllPages } from '@/lib/content';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import './globals.css';
@@ -53,6 +54,36 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <meta name="theme-color" content="#8c2f39" />
       </head>
       <body>
+        <JsonLd
+          data={[
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              '@id': `${SITE_URL}/#organization`,
+              name: SITE_NAME,
+              url: `${SITE_URL}/`,
+              description: SITE_DESCRIPTION,
+              slogan: SITE_TAGLINE,
+              areaServed: { '@type': 'Country', name: 'United States' },
+              knowsAbout: [
+                'cleaning business software',
+                'lawn care software',
+                'pest control software',
+                'field service management pricing',
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              '@id': `${SITE_URL}/#website`,
+              name: SITE_NAME,
+              url: `${SITE_URL}/`,
+              description: SITE_DESCRIPTION,
+              inLanguage: 'en-US',
+              publisher: { '@id': `${SITE_URL}/#organization` },
+            },
+          ]}
+        />
         <a className="skip-link" href="#main">
           Skip to content
         </a>

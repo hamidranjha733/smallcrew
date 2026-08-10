@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import GuideCard from './GuideCard';
+import JsonLd from './JsonLd';
 import TearLine from './TearLine';
 import { getAllPages, getTrade } from '@/lib/content';
+import { getCategorySeo } from '@/lib/seo';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo, TRADES } from '@/lib/trades';
 import type { Trade } from '@/lib/content';
 
@@ -20,8 +23,43 @@ export default async function CategoryView({ trade }: Props) {
   const toolEntries = tradePages.reduce((sum, page) => sum + page.tools.length, 0);
   const checked = tradePages[0]?.pricesChecked ?? 'Not published';
 
+  const seo = getCategorySeo(trade);
+  const url = `${SITE_URL}${info.href}`;
+
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': `${url}#collection`,
+            name: seo.title,
+            description: seo.description,
+            about: seo.keyword,
+            inLanguage: 'en-US',
+            url,
+            isPartOf: { '@id': `${SITE_URL}/#website` },
+            publisher: { '@id': `${SITE_URL}/#organization` },
+            hasPart: tradePages.map((page) => ({
+              '@type': 'Article',
+              '@id': `${SITE_URL}/${page.slug}/#article`,
+              headline: page.title,
+              url: `${SITE_URL}/${page.slug}/`,
+            })),
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            '@id': `${url}#breadcrumbs`,
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: SITE_NAME, item: `${SITE_URL}/` },
+              { '@type': 'ListItem', position: 2, name: `${info.label} software`, item: url },
+            ],
+          },
+        ]}
+      />
+
       <div className="wrapper page-head">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Small Crew</Link>
