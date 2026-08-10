@@ -60,7 +60,9 @@ content/
 
 ## Changing the domain
 
-The placeholder domain is `smallcrew.co`. It appears in exactly one place, `SITE_URL` in `lib/site.ts`. Metadata, canonical URLs, the sitemap and robots.txt all read from it.
+The live domain is `https://smallcrew.vercel.app`. It appears in exactly one place, `SITE_URL` in `lib/site.ts`. Metadata, canonical URLs, the sitemap and robots.txt all read from it.
+
+If you move to a custom domain, change that one constant, rebuild and redeploy. Nothing else references the domain.
 
 ## Adding a page
 

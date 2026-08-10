@@ -1,7 +1,7 @@
 // Single source of truth for anything that changes when the domain changes.
 // Update SITE_URL here and metadata, the sitemap and robots.txt all follow.
 
-export const SITE_URL = 'https://smallcrew.co';
+export const SITE_URL = 'https://smallcrew.vercel.app';
 
 export const SITE_NAME = 'Small Crew';
 
