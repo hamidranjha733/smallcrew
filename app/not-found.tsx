@@ -7,7 +7,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Page not found | Small Crew' },
   description:
     'That page is not here. Every Small Crew comparison prices software on the tier that includes online booking, at one, three and ten users, with dated figures.',
-  robots: { index: false, follow: true },
+  // A 404 should stay noindex after launch too, so this override is permanent.
+  // The nofollow half matches the pre launch site wide block in app/layout.tsx.
+  robots: { index: false, follow: false },
 };
 
 export default function NotFound() {

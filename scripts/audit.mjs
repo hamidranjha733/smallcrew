@@ -188,11 +188,26 @@ if (lastmods.length !== locs.length) {
   problems.push(`sitemap has ${lastmods.length} lastmod values for ${locs.length} urls`);
 }
 
+// PRE LAUNCH: the site is deliberately blocked from search engines, so the
+// audit asserts the block is intact rather than asserting it is crawlable.
+// REVERSE THIS BEFORE LAUNCH, alongside app/robots.ts and app/layout.tsx.
 const robots = fs.readFileSync(path.join(OUT, 'robots.txt'), 'utf8');
-if (!/Sitemap:\s*https?:\/\/\S+\/sitemap\.xml/.test(robots)) {
-  problems.push('robots.txt does not point at the sitemap');
+if (!/Disallow:\s*\/\s*$/m.test(robots)) {
+  problems.push('robots.txt no longer disallows crawling (expected while pre launch)');
 }
-if (!/Allow:\s*\//.test(robots)) problems.push('robots.txt does not allow crawling');
+if (/Sitemap:/i.test(robots)) {
+  problems.push('robots.txt still references the sitemap while the site is blocked');
+}
+notes.push('PRE LAUNCH: robots.txt disallows all crawling');
+
+const unblocked = pages.filter(
+  (p) => !/<meta name="robots" content="noindex[^"]*"/.test(p.html),
+);
+if (unblocked.length > 0) {
+  problems.push(`pages missing the noindex tag: ${unblocked.map((p) => p.route).join(', ')}`);
+} else {
+  notes.push(`PRE LAUNCH: noindex, nofollow on all ${pages.length} pages`);
+}
 
 // 404 must link back into the site
 const notFound = pages.find((p) => isNotFound(p.route));
