@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Masthead from '@/components/Masthead';
 import StatusStrip from '@/components/StatusStrip';
 import Footer from '@/components/Footer';
+import ClosingBand from '@/components/ClosingBand';
 import JsonLd from '@/components/JsonLd';
 import { getAllPages } from '@/lib/content';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
@@ -61,7 +62,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:wght@400;500&display=swap"
         />
         <meta name="color-scheme" content="light" />
-        <meta name="theme-color" content="#8c2f39" />
+        <meta name="theme-color" content="#00857a" />
       </head>
       <body>
         <JsonLd
@@ -107,6 +108,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           ]}
         />
         <main id="main">{children}</main>
+        <ClosingBand checked={checked} />
         <Footer checked={checked} guides={pages.length} toolEntries={toolEntries} />
       </body>
     </html>

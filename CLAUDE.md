@@ -35,48 +35,55 @@ Writing standard
 
 Design, fixed
 
-The site is a trade journal, not a software company blog. Editorial, printed, opinionated. Warm paper, warm ruled lines, heavy ink furniture and a single oxblood signal colour. Dense with useful information rather than airy. The site argues against the vendors, so it must never look like one of them.
+The site is a trade journal, not a software company blog. Editorial, printed, opinionated. Plain white page, charcoal furniture, a teal signal and burnt orange reserved for warnings. Dense with useful information rather than airy. The site argues against the vendors, so it must never look like one of them.
 
 Design tokens, fixed
 
 ```
---ink:          #1c1a19   warm near black. Masthead, footer, status strip, table headers, all body text
---ink-soft:     #423c38   secondary prose
---paper:        #f7f4ef   warm paper. Page background
---paper-2:      #efeae2   logo tiles, even table rows, inline code
---card:         #ffffff   raised surfaces, panels, table
---signal:       #8c2f39   oxblood. The primary accent
---signal-2:     #6d222b   oxblood hover
---signal-tint:  #f6ecec   pale oxblood wash
---signal-pale:  #e8a0a8   oxblood readable on an ink background
---rule:         #ddd7cf   hairlines
---rule-2:       #c9c1b6   heavier hairlines and tile borders
---mute:         #6e6862   labels and secondary mono
+--ink:          #1d2124   charcoal. Body text, dark bands, masthead, footer, table headers
+--ink-soft:     #3d4548   secondary prose
+--paper:        #ffffff   plain white page
+--surface:      #f4f6f5   neutral light. Alternating rows, panels, alternating sections
+--signal:       #00857a   teal. The primary accent
+--signal-2:     #00655d   teal hover
+--signal-tint:  #e4f1ef   pale teal wash
+--signal-pale:  #5ed3c6   teal readable on a charcoal background
+--flag:         #c2410c   burnt orange. Warnings and the Watch out for column only
+--flag-tint:    #fbeade   orange wash behind the Watch out for column
+--rule:         #dde1df   hairlines
+--rule-2:       #c3cac7   heavier hairlines and tile borders
+--mute:         #5f6663   labels and secondary mono
 
 ```
 
-There is no green and no cool grey anywhere in this system, including the background texture. If either reappears, that is drift, remove it.
+There is no cream, no warm paper and no oxblood anywhere in this system, including the background texture. `--surface` must read neutral, never warm. If warmth reappears, that is drift, remove it.
 
-Oxblood is the only accent and it must appear on every screen. It carries badges, active states, section rules, the Watch out for column, hover states and the left border on every card.
+Teal is the primary accent and must appear on every screen. It carries badges, links, active states, section rules, buttons and the Best for cell. Burnt orange appears only in the Watch out for column, pull quotes on guides and warning callouts.
 
 * Display type: Archivo, weights 500 / 700 / 800, tight tracking
 * Body type: Newsreader, weights 400 / 500
 * Data type: IBM Plex Mono, weights 400 / 500 / 600 / 700, for every number, label, eyebrow, table header, status readout and nav
-* Wrapper 78rem, reading column 40rem
-* The page background carries warm horizontal ruled lines at 32px, ink at 5.2%. Ruled lines only, never a grid, and never a cool tone
-* Border radius stays 0 everywhere. Depth comes from hard offset shadows in warm ink or oxblood, never blurred glows
+* Wrapper 78rem, centred article column 66rem, reading column 44rem
+* The page background is white carrying a very faint neutral horizontal rule at 32px, ink at 3.4%. Ruled lines only, never a grid, and never a warm tone
+* The page must never read as one flat wash. Bands run dark masthead, dark status strip, hero, dark stats band, then sections alternating `--paper` and `--surface` so no two adjacent sections share a background, closing on a dark band above the dark footer
+* Border radius stays 0 everywhere. Depth comes from hard offset shadows in charcoal or teal, never blurred glows
 * Gradients are allowed only for paper texture, perforated tear lines and dashed dividers. Never for decoration on a surface
 * Animation is limited to a 0.12s transform or background colour change on hover. `prefers-reduced-motion` disables the transforms
 * Must work down to 360px wide, keyboard focus rings in `--signal`
+* Density comes first on the opening screen. The H1 on category and guide pages is deliberately small, around 1.6rem at the top end, because the headline is not the product. Nothing sits in a narrow left column with the right half of a wide viewport empty
 
 Recurring elements
 
-* **Status strip.** Ink bar directly under the masthead with a 3px oxblood underline, mono, carrying the prices checked date as a live readout. On every page
-* **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--signal`, prices in large mono at 1.28rem right aligned, Watch out for in `--signal` on a `--signal-tint` wash
-* **Tear line.** Perforated divider between sections, drawn with a radial gradient. Not a plain rule
+* **Status strip.** Ink bar directly under the masthead with a 3px teal underline, mono, carrying the prices checked date as a live readout. On every page
+* **Stats band.** Dark charcoal band directly below the hero on the homepage and every category page, four cells in mono: tools priced, guides, price range from cheapest to dearest, prices checked. It exists to break the page out of one flat wash and to put the numbers above the fold
+* **Hero panel.** Right hand panel beside the headline on category and guide pages, listing the tools covered with their logo and their price at a crew of three. This is what puts vendor logos above the fold. Category pages fold their counts and checked date into its meta row rather than using separate badge boxes
+* **Closing band.** Dark charcoal band above the footer, teal top rule, carrying the check the date message and links to the three categories
+* **Cost table.** The product, and the visual hero. Ink header row, logo tile beside each tool name, Best for as a stamped badge rotated about one degree in `--signal`, prices in large mono at 1.28rem right aligned, Watch out for in `--flag` on a `--flag-tint` wash. Do not change its structure, only its colour
+* **Tear line.** Perforated divider, used on guide pages between the cost table and the article. Not needed where sections already alternate background
 * **Docket panel.** Bordered panel beside the homepage headline carrying counts and the cheapest and dearest figures, so the fold shows data rather than whitespace
+* **Lifted pull quote.** On category pages, one short sentence set large in teal, breaking out of the reading column with a teal rule above it. The sentence is lifted out of the intro and never printed twice
 * **Vendor logos.** Every tool name in a cost table, trade card or guide card carries its mark from `/public/logos`. Never hot link a logo, always store it locally
-* **Footer.** Ink block styled as the foot of an invoice, with the method statement and an oxblood ruled total block carrying the counts and the checked date
+* **Footer.** Ink block styled as the foot of an invoice, with the method statement and a teal ruled total block carrying the counts and the checked date
 * **Breadcrumb.** Mono, uppercase, on every guide and category page, running Small Crew / trade / keyword
 
 Routes

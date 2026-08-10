@@ -146,19 +146,21 @@ Never claim hands on testing, benchmarking or trials. This site has not used the
 
 ## Design
 
-The site is a trade journal, not a software company blog. Editorial, printed, opinionated. Warm paper with warm ruled lines, heavy ink furniture and a single oxblood accent. Dense rather than airy. The site argues against the vendors, so it must never look like one of them.
+The site is a trade journal, not a software company blog. Editorial, printed, opinionated. White page, charcoal furniture, teal signal, burnt orange only for warnings. Dense rather than airy. The site argues against the vendors, so it must never look like one of them.
 
 **The full token list and the rules for the recurring elements live in `CLAUDE.md`.** That is the single source of truth. The values below are the summary.
 
-Ink `#1c1a19` for text and for the masthead, status strip, footer and table headers. Warm paper `#f7f4ef` for the page, white `#ffffff` for raised surfaces, and oxblood `#8c2f39` as the single accent, carrying badges, active states, section rules, the Watch out for column, hover states and the left border on every card. Hairlines `#ddd7cf`, secondary text `#6e6862`. There is no green and no cool grey anywhere in the system, including the background texture. All tokens are declared once at the top of `app/globals.css`.
+Charcoal `#1d2124` for text and for the masthead, status strip, stats band, closing band, footer and table headers. Plain white `#ffffff` for the page, neutral `#f4f6f5` for alternating rows and sections, teal `#00857a` as the primary accent carrying badges, links, active states, section rules and the Best for cell, and burnt orange `#c2410c` for warnings and the Watch out for column only. Hairlines `#dde1df`, secondary text `#5f6663`. There is no cream, no warm paper and no oxblood anywhere in the system, including the background texture. All tokens are declared once at the top of `app/globals.css`.
+
+The page is banded so it never reads as one flat wash: dark masthead and status strip, hero, dark stats band, then sections alternating white and the neutral surface, closing on a dark band above the dark footer.
 
 Archivo at 500, 700 and 800 for the wordmark and headings. Newsreader at 400 and 500 for reading text. IBM Plex Mono at 400 to 700 for every number, label, eyebrow, table header, status readout and nav item.
 
-Content wrapper is 78rem, reading column is 40rem. Border radius stays 0 everywhere and depth comes from hard offset shadows in warm ink or oxblood, never blurred glows. Gradients are used only for the paper texture, the perforated tear lines and dashed dividers. The background carries warm horizontal ruled lines at 32px, never a grid.
+Content wrapper is 78rem, the centred article column is 66rem and the reading column is 44rem. Border radius stays 0 everywhere and depth comes from hard offset shadows in charcoal or teal, never blurred glows. Gradients are used only for the faint background rule, the perforated tear lines and dashed dividers. The background is white carrying a very faint neutral horizontal rule at 32px, never a grid.
 
 The site must work down to 360px, keyboard focus rings are `--signal`, and `prefers-reduced-motion` disables the hover transforms.
 
-Oxblood must appear on every screen. If it starts appearing as decoration rather than as signal, that is drift. Remove it.
+Teal must appear on every screen. Burnt orange is reserved for warnings and the Watch out for column. If orange starts appearing as decoration rather than as a warning, that is drift. Remove it.
 
 Vendor logos are stored in `/public/logos` and mapped in `lib/vendors.ts`. Never hot link a vendor logo, so the static export makes no third party request when a reader opens a page.
 

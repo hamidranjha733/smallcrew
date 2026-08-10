@@ -5,6 +5,7 @@ import CostStrip from '@/components/CostStrip';
 import CostTable from '@/components/CostTable';
 import Disclosure from '@/components/Disclosure';
 import GuideCard from '@/components/GuideCard';
+import HeroPanel from '@/components/HeroPanel';
 import JsonLd from '@/components/JsonLd';
 import PullQuote from '@/components/PullQuote';
 import TearLine from '@/components/TearLine';
@@ -130,21 +131,31 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
       />
 
       <div className="wrapper page-head">
-        <nav className="breadcrumb" aria-label="Breadcrumb">
-          <Link href="/">Small Crew</Link>
-          <span aria-hidden="true">/</span>
-          <Link href={info.href}>{info.label}</Link>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">{page.keyword}</span>
-        </nav>
-        <CostStrip
-          keyword={page.keyword}
-          volume={page.volume}
-          toolsCompared={page.toolsCompared}
-          pricesChecked={page.pricesChecked}
+        <div>
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Small Crew</Link>
+            <span aria-hidden="true">/</span>
+            <Link href={info.href}>{info.label}</Link>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">{page.keyword}</span>
+          </nav>
+          <CostStrip
+            keyword={page.keyword}
+            volume={page.volume}
+            toolsCompared={page.toolsCompared}
+            pricesChecked={page.pricesChecked}
+          />
+          <h1>{page.title}</h1>
+          <p className="page-standfirst">{page.standfirst}</p>
+        </div>
+
+        <HeroPanel
+          title="Priced in this guide"
+          badge={`${page.toolsCompared} tools`}
+          meta={[{ label: 'Checked', value: page.pricesChecked, teal: true }]}
+          tools={page.tools.map((tool) => ({ tool: tool.tool, price: tool.crew3 }))}
+          foot="Monthly cost at a crew of three, lowest tier with online booking"
         />
-        <h1>{page.title}</h1>
-        <p className="page-standfirst">{page.standfirst}</p>
       </div>
 
       <div className="wrapper">
