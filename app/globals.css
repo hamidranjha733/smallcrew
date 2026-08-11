@@ -1236,6 +1236,10 @@ strong {
   margin: 1.25rem 0 1.75rem;
 }
 
+table.cost-table.has-calc {
+  min-width: 70rem;
+}
+
 .cost-table-scroll {
   overflow-x: auto;
   border: 2px solid var(--ink);
@@ -1245,7 +1249,7 @@ strong {
 
 table.cost-table {
   width: 100%;
-  min-width: 70rem;
+  min-width: 62rem;
   border-collapse: collapse;
   background: var(--paper);
   font-size: 0.92rem;
@@ -2147,12 +2151,20 @@ table.cost-table tbody tr:hover td.cell-calc {
 }
 
 .verdict li {
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.verdict-name {
+  display: block;
   font-family: var(--display);
   font-weight: 700;
   font-size: 0.92rem;
   letter-spacing: -0.02em;
-  padding: 0.3rem 0;
-  border-top: 1px solid var(--rule);
+}
+
+.verdict li .price-strip {
+  margin-top: 0.28rem;
 }
 
 .verdict li:first-child {
@@ -2281,7 +2293,10 @@ table.cost-table tbody tr:hover td.cell-calc {
     box-shadow: none;
   }
 
-  table.cost-table {
+  /* .has-calc carries a higher specificity than the plain selector, so the
+     stacked layout has to reset it explicitly or the card view overflows. */
+  table.cost-table,
+  table.cost-table.has-calc {
     min-width: 0;
     display: block;
     background: transparent;

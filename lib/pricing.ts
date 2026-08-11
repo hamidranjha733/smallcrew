@@ -97,14 +97,14 @@ export function getBadge(tool: Tool): BadgeKind {
 }
 
 export function badgeSummary(tools: Tool[]) {
-  const published: string[] = [];
-  const quote: string[] = [];
-  const unpublished: string[] = [];
+  const published: Tool[] = [];
+  const quote: Tool[] = [];
+  const unpublished: Tool[] = [];
 
   for (const tool of tools) {
     const kind = getBadge(tool);
     const bucket = kind === 'published' ? published : kind === 'quote' ? quote : unpublished;
-    if (!bucket.includes(tool.tool)) bucket.push(tool.tool);
+    if (!bucket.some((entry) => entry.tool === tool.tool)) bucket.push(tool);
   }
 
   return { published, quote, unpublished };

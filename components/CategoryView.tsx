@@ -2,6 +2,7 @@ import Link from 'next/link';
 import GuideCard from './GuideCard';
 import HeroPanel from './HeroPanel';
 import JsonLd from './JsonLd';
+import PriceStrip from './PriceStrip';
 import StatsBand from './StatsBand';
 import { getAllPages, getExtremes, getTrade, type Tool } from '@/lib/content';
 import { badgeSummary } from '@/lib/pricing';
@@ -158,7 +159,10 @@ export default async function CategoryView({ trade }: Props) {
               <span className="verdict-label">Publish a price</span>
               <ul>
                 {verdict.published.map((tool) => (
-                  <li key={tool}>{tool}</li>
+                  <li key={tool.tool}>
+                    <span className="verdict-name">{tool.tool}</span>
+                    <PriceStrip tool={tool} compact />
+                  </li>
                 ))}
               </ul>
             </div>
@@ -167,7 +171,11 @@ export default async function CategoryView({ trade }: Props) {
               <span className="verdict-label">Quote only</span>
               <ul>
                 {verdict.quote.length > 0 ? (
-                  verdict.quote.map((tool) => <li key={tool}>{tool}</li>)
+                  verdict.quote.map((tool) => (
+                    <li key={tool.tool}>
+                      <span className="verdict-name">{tool.tool}</span>
+                    </li>
+                  ))
                 ) : (
                   <li className="verdict-none">None in this trade</li>
                 )}
@@ -178,7 +186,11 @@ export default async function CategoryView({ trade }: Props) {
               <span className="verdict-label">No price reachable</span>
               <ul>
                 {verdict.unpublished.length > 0 ? (
-                  verdict.unpublished.map((tool) => <li key={tool}>{tool}</li>)
+                  verdict.unpublished.map((tool) => (
+                    <li key={tool.tool}>
+                      <span className="verdict-name">{tool.tool}</span>
+                    </li>
+                  ))
                 ) : (
                   <li className="verdict-none">None in this trade</li>
                 )}

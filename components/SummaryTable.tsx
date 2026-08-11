@@ -7,13 +7,15 @@ import { costAt, getBadge, parseMoney } from '@/lib/pricing';
 import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
 import CrewControl from './CrewControl';
-import PriceStrip from './PriceStrip';
 import VendorLogo from './VendorLogo';
 
 type Props = {
   rows: SummaryRow[];
   pricesChecked: string;
 };
+
+// The slider rests on three, which the table already publishes as a column.
+const DEFAULT_CREW = 3;
 
 function priceClass(value: string): string {
   const parsed = parseMoney(value);
@@ -26,15 +28,16 @@ function priceClass(value: string): string {
 // named in the Trade column, never authored here. It carries the same crew
 // size control as the guide tables.
 export default function SummaryTable({ rows, pricesChecked }: Props) {
-  const [crew, setCrew] = useState(3);
+  const [crew, setCrew] = useState(DEFAULT_CREW);
   const id = useId();
+  const showCalc = crew !== DEFAULT_CREW;
 
   return (
     <div className="cost-table-frame">
       <CrewControl id={id} crew={crew} onChange={setCrew} />
 
       <div className="cost-table-scroll">
-        <table className="cost-table">
+        <table className={showCalc ? 'cost-table has-calc' : 'cost-table'}>
           <thead>
             <tr>
               <th scope="col">Tool</th>
@@ -48,9 +51,11 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
               <th scope="col" className="num-head">
                 Crew of 10
               </th>
-              <th scope="col" className="num-head calc-head">
-                At {crew}
-              </th>
+              {showCalc && (
+                <th scope="col" className="num-head calc-head">
+                  At {crew}
+                </th>
+              )}
               <th scope="col">Watch out for</th>
             </tr>
           </thead>
@@ -72,7 +77,6 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                         {vendor && <span className="tool-domain">{vendor.domain}</span>}
                       </span>
                     </span>
-                    <PriceStrip tool={entry.row} compact />
                     <Badge kind={getBadge(entry.row)} />
                   </th>
                   <td className="cell-trade" data-label="Trade">
@@ -87,13 +91,17 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                   <td className={priceClass(entry.row.crew10)} data-label="Crew of 10">
                     {entry.row.crew10}
                   </td>
-                  <td
-                    className={`cell-calc${numeric ? '' : ' is-text'}`}
-                    data-label={`At ${crew}`}
-                  >
-                    {computed.text}
-                    {numeric && !computed.exact && <span className="calc-band">published band</span>}
-                  </td>
+                  {showCalc && (
+                    <td
+                      className={`cell-calc${numeric ? '' : ' is-text'}`}
+                      data-label={`At ${crew}`}
+                    >
+                      {computed.text}
+                      {numeric && !computed.exact && (
+                        <span className="calc-band">published band</span>
+                      )}
+                    </td>
+                  )}
                   <td className="cell-watch" data-label="Watch out for">
                     <span className="watch-flag" aria-hidden="true">
                       !
