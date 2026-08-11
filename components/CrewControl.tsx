@@ -29,8 +29,9 @@ export default function CrewControl({ id, crew, onChange }: Props) {
         {crew} {crew === 1 ? 'person' : 'people'}
       </output>
       <span className="crew-calc-note">
-        Calculated from each vendor published base and per seat rate. Banded and per schedule
-        pricing shows the published band, never a number between two of them.
+        Move it off one, three or ten and the table adds a calculated column, worked out from each
+        vendor published base and per seat rate. Banded and per schedule pricing shows the
+        published band, never a number between two of them.
       </span>
     </div>
   );

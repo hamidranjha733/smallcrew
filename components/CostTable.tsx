@@ -20,10 +20,12 @@ type Props = {
 const DEFAULT_BASIS =
   'Prices are for the lowest tier that includes online booking, not the cheapest tier on the vendor pricing page.';
 
-// The slider rests on three, which the table already publishes as a column.
-// The calculated column only appears once the reader moves it, so nothing is
-// shown twice and it is obvious which number answers to the control.
+// Where the slider rests.
 const DEFAULT_CREW = 3;
+
+// The table already publishes these three sizes, so a calculated column at any
+// of them would just repeat a column that is already on screen.
+const PUBLISHED_SIZES = [1, 3, 10];
 
 function priceClass(value: string): string {
   const parsed = parseMoney(value);
@@ -38,7 +40,7 @@ function priceClass(value: string): string {
 export default function CostTable({ tools, pricesChecked, basis }: Props) {
   const [crew, setCrew] = useState(DEFAULT_CREW);
   const id = useId();
-  const showCalc = crew !== DEFAULT_CREW;
+  const showCalc = !PUBLISHED_SIZES.includes(crew);
 
   return (
     <div className="cost-table-frame">

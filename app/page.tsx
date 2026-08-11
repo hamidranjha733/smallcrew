@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CrewIcon, { type CrewIconName } from '@/components/CrewIcon';
+import Disclosure from '@/components/Disclosure';
 import HeroTools from '@/components/HeroTools';
 import Spread from '@/components/Spread';
 import StatsBand from '@/components/StatsBand';
@@ -173,6 +174,7 @@ export default async function HomePage() {
               needs.
             </p>
           </div>
+          <Disclosure />
           <SummaryTable rows={summary} pricesChecked={checked} />
           <div className="reading">
             <p>
@@ -180,8 +182,9 @@ export default async function HomePage() {
               the booking form, which on Jobber is the difference between $49 and $139 a month. The
               second is the pricing model. Flat priced cleaning service software such as ZenMaid and
               Launch27 costs the same at one cleaner and at ten, while per seat tools multiply. That
-              is why a ten person cleaning company can pay $39 a month or $400 a month for software
-              doing broadly the same job.
+              is why a ten person cleaning company can pay $39 a month on ZenMaid or $400 a month on
+              Jobber, both of which take a booking, hold a schedule and invoice. The accounting
+              tools in the table above are cheaper again and do none of those three things.
             </p>
           </div>
         </section>

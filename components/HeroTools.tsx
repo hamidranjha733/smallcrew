@@ -7,11 +7,7 @@ type Props = {
   label?: string;
 };
 
-function short(value: string): string {
-  if (parseMoney(value) !== null) return value;
-  if (/quote only/i.test(value)) return 'Quote';
-  return 'n/a';
-}
+// Same vocabulary as the tables. Quote only and Not published, never n/a.
 
 // Sits under the headline in the teal hero, filling the space beside the
 // docket. Logos of the tools priced on this page, each with its cost at a crew
@@ -27,7 +23,7 @@ export default function HeroTools({ tools, label = 'Priced on this page' }: Prop
             <span className="hero-tool" key={tool.tool}>
               <VendorLogo tool={tool.tool} />
               <span className={numeric ? 'hero-tool-price' : 'hero-tool-price is-text'}>
-                {short(tool.crew3)}
+                {tool.crew3}
               </span>
             </span>
           );

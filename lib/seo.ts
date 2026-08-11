@@ -22,6 +22,22 @@ export const HOME_SEO: Seo = {
     'Cleaning business software priced on the tier that actually includes online booking, at 1, 3 and 10 users. Every figure read from a vendor page and dated.',
 };
 
+// Standalone pages that are neither the homepage, a category nor a guide.
+export const PAGE_SEO: Record<string, Seo> = {
+  about: {
+    keyword: 'about Small Crew',
+    title: 'About Small Crew and how we price software',
+    description:
+      'Who runs Small Crew, why every price here is the tier that includes online booking rather than the cheapest plan, how figures are dated, and how we earn.',
+  },
+};
+
+export function getPageSeo(key: string): Seo {
+  const seo = PAGE_SEO[key];
+  if (!seo) throw new Error(`No SEO entry for page "${key}". Add one to lib/seo.ts.`);
+  return seo;
+}
+
 export const CATEGORY_SEO: Record<string, Seo> = {
   cleaning: {
     keyword: 'cleaning service software',
@@ -169,6 +185,7 @@ const DESC_MAX = 160;
 function validate(): void {
   const entries: [string, Seo][] = [
     ['/', HOME_SEO],
+    ...Object.entries(PAGE_SEO).map(([k, v]): [string, Seo] => [`/${k}/`, v]),
     ...Object.entries(CATEGORY_SEO).map(([k, v]): [string, Seo] => [`/${k}/`, v]),
     ...Object.entries(GUIDE_SEO).map(([k, v]): [string, Seo] => [`/${k}/`, v]),
   ];

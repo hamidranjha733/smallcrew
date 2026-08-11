@@ -159,16 +159,21 @@ for (const route of routeSet) {
 if (orphans.length) problems.push(`orphan pages: ${orphans.join(', ')}`);
 else notes.push('no orphan pages');
 
-// guides must link to category, 3 siblings and (cleaning only) the homepage
+// Guides are every route that is not the homepage, a category, a standalone
+// page or the 404. Only guides carry the sibling linking requirement.
+const CATEGORY_ROUTES = ['/cleaning/', '/lawn-care/', '/pest-control/'];
+const STANDALONE_ROUTES = ['/about/'];
+
 const guideRoutes = [...routeSet].filter(
   (r) =>
     r !== '/' &&
     !isNotFound(r) &&
-    !['/cleaning/', '/lawn-care/', '/pest-control/'].includes(r),
+    !CATEGORY_ROUTES.includes(r) &&
+    !STANDALONE_ROUTES.includes(r),
 );
 for (const route of guideRoutes) {
   const out = links.get(route) ?? new Set();
-  const cat = [...out].filter((l) => ['/cleaning/', '/lawn-care/', '/pest-control/'].includes(l));
+  const cat = [...out].filter((l) => CATEGORY_ROUTES.includes(l));
   if (cat.length === 0) problems.push(`${route}: does not link to its category page`);
   const siblings = [...out].filter((l) => guideRoutes.includes(l) && l !== route);
   if (siblings.length < 3) {

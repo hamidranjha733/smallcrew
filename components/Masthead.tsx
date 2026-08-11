@@ -18,6 +18,7 @@ export default function Masthead() {
             </Link>
           ))}
           <Link href="/#how-we-compare">Method</Link>
+          <Link href="/about/">About</Link>
         </nav>
       </div>
     </header>

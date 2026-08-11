@@ -700,11 +700,15 @@ strong {
 }
 
 .hero-tool-price.is-text {
-  font-size: 0.55rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 4.6rem;
+  text-align: center;
+  white-space: normal;
 }
 
 .hero-tools-foot {
@@ -1870,6 +1874,22 @@ table.cost-table tbody tr:hover td.cell-watch {
   font-weight: 700;
   font-size: 0.58rem;
   letter-spacing: 0.06em;
+}
+
+/* Quote only and Not published keep the table wording, set small enough to sit
+   in the same strip as a dollar figure. */
+.price-strip-cell.is-text {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mute);
+  background: var(--surface);
+}
+
+.hero-band .price-strip-cell.is-text {
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .price-strip-compact {

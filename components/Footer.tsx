@@ -70,6 +70,9 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
               <li>
                 <Link href="/#how-we-compare">How we compare</Link>
               </li>
+              <li>
+                <Link href="/about/">About and disclosure</Link>
+              </li>
             </ul>
           </div>
         </div>
