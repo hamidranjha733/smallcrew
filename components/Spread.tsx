@@ -49,11 +49,14 @@ export default function Spread({ extremes }: Props) {
       </div>
 
       <p className="spread-foot">
-        That is a {multiple} times spread, or{' '}
-        <strong>${yearly.toLocaleString('en-US')} a year</strong> between the cheapest and dearest
-        way to run a ten person crew. Across {total} tool entries on this site, {priced} carry a
-        published figure at ten users. The rest are quote only or could not be confirmed, which is
-        itself worth knowing before you book a demo.
+        Both of these take a booking, hold a schedule and invoice, which is what makes the
+        comparison worth anything. That is a {multiple} times spread, or{' '}
+        <strong>${yearly.toLocaleString('en-US')} a year</strong>, between the cheapest and dearest
+        way to run a ten person crew on a system that does the whole job. Accounting tools such as
+        Wave and staff tools such as Connecteam cost less and are deliberately excluded here,
+        because neither can take a booking. Of the {total} system entries on this site, {priced}{' '}
+        carry a published figure at ten users, and the rest are quote only or could not be
+        confirmed.
       </p>
     </div>
   );

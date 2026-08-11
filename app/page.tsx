@@ -153,7 +153,7 @@ export default async function HomePage() {
           {
             label: 'Price range',
             value: extremes ? `$${extremes.cheapest.price} to $${extremes.dearest.price}` : 'Varies',
-            note: 'Per month at ten users',
+            note: 'Booking systems at ten users',
             teal: true,
           },
           { label: 'Prices checked', value: checked, note: 'Re verified quarterly' },
@@ -252,8 +252,9 @@ export default async function HomePage() {
               <span className="eyebrow">The whole argument, in two numbers</span>
               <h2 id="spread-heading">Same crew, same job, wildly different bill</h2>
               <p>
-                Across every tool priced on this site, this is the cheapest and the dearest way to
-                run a crew of ten on a plan that includes online booking.
+                The cheapest and the dearest way to run a crew of ten, counting only tools that can
+                take a booking, hold a schedule and invoice. Ledgers and staff apps are cheaper and
+                are left out, because a business cannot run on one.
               </p>
             </div>
             <Spread extremes={extremes} />

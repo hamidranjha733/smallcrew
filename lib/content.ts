@@ -3,6 +3,7 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
+import { isSystem } from './vendors';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
@@ -229,7 +230,9 @@ export type Extreme = {
 export type Extremes = {
   cheapest: Extreme;
   dearest: Extreme;
+  /** System entries carrying a published figure at ten users. */
   priced: number;
+  /** System entries considered, whether priced or not. */
   total: number;
 };
 
@@ -241,6 +244,11 @@ export function getExtremes(pages: Page[]): Extremes | null {
 
   for (const page of pages) {
     for (const tool of page.tools) {
+      // Like for like only. A ledger with no booking form and no schedule is
+      // not competing with a field service platform, so comparing their
+      // prices produces a spread that means nothing.
+      if (!isSystem(tool.tool)) continue;
+
       total++;
       const price = parsePrice(tool.crew10);
       if (price === null) continue;
@@ -259,8 +267,8 @@ export function getExtremes(pages: Page[]): Extremes | null {
 
   if (rows.length === 0) return null;
 
-  // Free tools are real but they make a dishonest headline, because nothing
-  // that costs nothing is competing with the paid tools on capability.
+  // A free tier is real but it makes a dishonest headline, because nothing
+  // that costs nothing is competing on capability at ten users.
   const paid = rows.filter((row) => row.price > 0);
   const pool = paid.length > 0 ? paid : rows;
 

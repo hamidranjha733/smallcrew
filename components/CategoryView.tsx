@@ -108,7 +108,7 @@ export default async function CategoryView({ trade }: Props) {
           {
             label: 'Price range',
             value: extremes ? `$${extremes.cheapest.price} to $${extremes.dearest.price}` : 'Varies',
-            note: 'Per month at ten users',
+            note: 'Booking systems at ten users',
             teal: true,
           },
           { label: 'Prices checked', value: checked, note: 'Re verified quarterly' },
