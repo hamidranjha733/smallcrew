@@ -30,8 +30,10 @@ export default function CrewControl({ id, crew, onChange }: Props) {
       </output>
       <span className="crew-calc-note">
         Move it off one, three or ten and the table adds a calculated column, worked out from each
-        vendor published base and per seat rate. Banded and per schedule pricing shows the
-        published band, never a number between two of them.
+        vendor published base and per seat rate. Where a vendor bands instead, the cell shows the
+        nearest band we hold at or above your crew size and says so. That is an upper bound: a
+        vendor may publish a cheaper band in between, which is why the figure is marked rather than
+        presented as a quote.
       </span>
     </div>
   );

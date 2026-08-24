@@ -18,7 +18,7 @@ tools:
     solo: $39
     crew3: $39
     crew10: $39
-    watch: Starter at $19 caps you at forty appointments a month
+    watch: Starter at $19 has no booking form and caps you at forty appointments a month, so Pro at $39 is the real entry price
     url: https://get.zenmaid.com/pricing
   - tool: Launch27
     bestFor: Filling gaps from a public booking form
@@ -31,15 +31,15 @@ tools:
     bestFor: Mixed recurring work and one off deep cleans
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Housecall Pro
     bestFor: Dispatching from an inbound call
     solo: $79
-    crew3: Not published
-    crew10: Not published
-    watch: No seat count or additional user price appears on the pricing page
+    crew3: $189
+    crew10: $479
+    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
     url: https://www.housecallpro.com/pricing/
 ---
 
@@ -69,7 +69,7 @@ ZenMaid shows the same pattern more cheaply. Starter at $19 a month is capped at
 
 **Two to four cleaners.** ZenMaid at $39 plus Connecteam free if you want time tracking. Two systems sounds worse than one, and at $39 a month against $197 for Jobber at three users it is worth the small friction.
 
-**Five to ten cleaners.** Launch27 at $75 a month for unlimited users, or ZenMaid at $39 if the round is purely recurring. This is the crew size where per seat pricing turns hostile. Jobber at ten users on the Connect plan is $400 a month.
+**Five to ten cleaners.** Launch27 at $75 a month for unlimited users, or ZenMaid at $39 if the round is purely recurring. This is the crew size where per seat pricing turns hostile. Jobber at ten users on the Connect plan is $299 a month.
 
 ## Cleaning business scheduling software compared honestly
 
@@ -81,7 +81,7 @@ Launch27 wins on arithmetic at scale and loses on payment automation. Charging a
 
 Jobber is the most capable scheduler here and the most expensive by a distance once you have staff. Its per seat pricing at $29 a user is the mechanism.
 
-Housecall Pro schedules well from an inbound call. Its pricing page does not publish seat limits or an additional user rate, so a growing crew cannot budget from it.
+Housecall Pro schedules well from an inbound call. Basic covers one user, so a growing crew moves to Essentials at $189 and then finds MAX cheaper than Essentials once past eight people.
 
 ## The cancellation problem nobody prices
 
@@ -101,9 +101,9 @@ The third is backfilling, which means having a waiting list you can offer the sl
 
 Annualised at the tier that includes customer booking, a three cleaner company pays nothing on Connecteam for staff rostering, $468 a year on ZenMaid, $900 on Launch27 and $2,364 on Jobber Connect.
 
-At ten cleaners the same list reads nothing, $468, $900 and $4,800. Jobber's Grow plan brings ten users to $4,128 a year, still roughly nine times the ZenMaid figure.
+At ten cleaners the same list reads nothing, $468, $900 and $3,588. Jobber's own ten user band is the cheapest path at that size, and it is still nearly eight times the ZenMaid figure.
 
-The comparison worth making is not between the monthly prices. It is between the annual difference and what you would otherwise spend it on. At ten cleaners, choosing Jobber Connect over ZenMaid costs $4,332 a year, which is close to a part time office wage. If the software saves more administrative time than that, it is correct. If it does not, the flat priced tool is correct and the decision is arithmetic rather than preference.
+The comparison worth making is not between the monthly prices. It is between the annual difference and what you would otherwise spend it on. At ten cleaners, choosing Jobber Connect over ZenMaid costs $3,120 a year, which is close to a part time office wage. If the software saves more administrative time than that, it is correct. If it does not, the flat priced tool is correct and the decision is arithmetic rather than preference.
 
 ## Maid service scheduling software is a narrower product
 
@@ -123,7 +123,7 @@ If your work is one off deep cleans and move outs rather than a repeating round,
 
 **Launch27 is wrong** if you need automated card charging, unless you are prepared to pay $299.
 
-**Jobber is wrong** for a ten person cleaning crew doing standard recurring work. At $400 a month on Connect you are paying for quoting and reporting depth that recurring residential work does not use. Note that Jobber's Grow plan includes five users at $199, so ten users cost $344 on Grow against $400 on Connect. The higher tier is the cheaper one.
+**Jobber is wrong** for a ten person cleaning crew doing standard recurring work. At $299 a month on Connect you are paying for quoting and reporting depth that recurring residential work does not use. Note that Connect is banded, so ten users cost $299 on the ten user band rather than the $400 that adding nine seats to the one user plan costs. The higher tier is the cheaper one.
 
 **Housecall Pro is wrong** for anyone who has to forecast software cost across a hiring plan.
 

@@ -17,8 +17,8 @@ tools:
     bestFor: Pest work mixed with other trades
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Briostack
     bestFor: Recurring residential pest routes
@@ -78,7 +78,7 @@ Pest control is the trade where that assumption is least safe. Pest technicians 
 
 Jobber publishes Core at $49, Connect at $139, Grow at $199 for five users and Plus at $499 for fifteen, with additional users at $29. Automated client reminders begin on Connect, so $139 is the honest entry price.
 
-At ten users Jobber Connect is $400 and Jobber Grow is $344, because Grow includes five users in its base. The higher tier is the cheaper purchase, which the pricing page does not point out.
+At ten users Jobber Connect is $299 on its ten user band, cheaper than the $344 that Grow costs and cheaper than the $400 that adding nine seats costs. The higher tier is the cheaper purchase, which the pricing page does not point out.
 
 ## Why the other four decline to publish
 
@@ -112,7 +112,7 @@ Annualised at the tier that includes online booking, a solo operator pays $1,188
 
 Three technicians riding as one crew pay $1,188 on GorillaDesk against $2,364 on Jobber Connect. Three technicians in three separate vehicles pay $2,388 on GorillaDesk, which is within a rounding error of Jobber.
 
-Ten people working as four crews pay $2,988 on GorillaDesk against $4,800 on Jobber Connect, with Jobber Grow covering ten users at $4,128. Ten solo technicians pay $6,588 on GorillaDesk, which is the most expensive outcome in this comparison.
+Ten people working as four crews pay $2,988 on GorillaDesk against $3,588 on Jobber Connect. Ten solo technicians pay $6,588 on GorillaDesk, which is the most expensive outcome in this comparison.
 
 So the ranking between these two products is decided by your vehicle count rather than your headcount. Where crews ride together GorillaDesk is substantially cheaper at every size. Where every technician drives alone it becomes the most expensive option at ten. Across that whole range it is the only one of the two that holds a chemical application record, which for most operators settles the question regardless of the arithmetic.
 

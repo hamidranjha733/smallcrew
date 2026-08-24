@@ -17,15 +17,15 @@ tools:
     bestFor: Quoting and winning new work
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Arborgold
     bestFor: Tree and landscape work that consumes materials
-    solo: $129
+    solo: $149
     crew3: Not published
     crew10: Not published
-    watch: Office and mobile licences are quoted separately and never published
+    watch: The $129 headline is the annual rate. Paying monthly is $149, and office and mobile licences are still quoted separately
     url: https://arborgold.com/pricing/
   - tool: Yardbook
     bestFor: Lawn care basics at no cost
@@ -50,7 +50,7 @@ tools:
     url: https://www.youraspire.com/aspire-plans
 ---
 
-For a lawn care business with one to twenty staff, LawnPro is the cheapest credible option at $39 a month for three employees, and Jobber is the strongest at $139 a month for one user rising to $400 at ten. Three of the six most recommended products in this category, Service Autopilot, Aspire and Yardbook, could not be priced for a crew of three from their own published material in August 2026.
+For a lawn care business with one to twenty staff, LawnPro is the cheapest credible option at $39 a month for three employees, and Jobber is the strongest at $139 a month for one user rising to $299 at ten. Three of the six most recommended products in this category, Service Autopilot, Aspire and Yardbook, could not be priced for a crew of three from their own published material in August 2026.
 
 That is the finding that matters. Lawn care software management is a category where roughly half the market declines to tell you what it costs until you speak to someone, and the review sites that rank these products quote starting prices that do not include the features a lawn care business needs.
 
@@ -64,7 +64,7 @@ LawnPro publishes both clearly. Its Solo plan is free for one user and twenty fi
 
 Jobber publishes both clearly as well. Core is $49, Connect is $139, and every user past the first is $29 a month.
 
-Arborgold publishes plan prices of $129, $299 and $499 a month and does not publish what a user licence costs, which means the plan price is not the price.
+Arborgold publishes $129, $299 and $499 a month on annual billing and $149, $343 and $573 paying monthly. This site quotes monthly billing, so the entry price is $149, and licence costs are still not published, which means the plan price is not the price.
 
 ## Where the tier trap sits in lawn care
 
@@ -80,7 +80,7 @@ This is where lawn care companies get hurt, and LawnPro shows it most clearly.
 
 Three employees on LawnPro Startup is $39 a month. Ten employees does not fit Startup, which covers three, or Grow, which covers seven. Ten employees requires Plus at $249 a month.
 
-That is a six fold increase for a business that grew from three staff to ten, which in lawn care can happen inside one season. Jobber over the same growth goes from $197 to $400, roughly double. LawnPro is much cheaper at three and much more expensive per step at ten.
+That is a six fold increase for a business that grew from three staff to ten, which in lawn care can happen inside one season. Jobber over the same growth goes from $197 to $299, about half again. LawnPro is much cheaper at three and much more expensive per step at ten.
 
 The practical reading is that LawnPro is excellent for a small crew and Jobber becomes competitive around the seven employee mark, where LawnPro's tier boundaries start working against you.
 
@@ -92,7 +92,7 @@ Annualised at the tier that includes online booking, a solo operator pays nothin
 
 A three employee company pays $468 a year on LawnPro Startup and $2,364 on Jobber Connect.
 
-A ten employee company pays $2,988 a year on LawnPro Plus and $4,800 on Jobber Connect, with Jobber Grow covering ten users at $4,128.
+A ten employee company pays $2,988 a year on LawnPro Plus and $3,588 on Jobber Connect.
 
 Now spread those against a season. A northern lawn care company earning across seven months pays for twelve. The LawnPro Plus figure of $2,988 is really $2,988 recovered from seven months of invoices, which is $427 a month of season rather than $249.
 
@@ -114,9 +114,9 @@ Ask how annual agreements renew. Lawn care sells a season, and a system that tre
 
 **LawnPro is wrong** if you need automated reminders on a budget, because they require the $129 Grow plan, and wrong if you plan to cross seven employees soon, because the next tier is $249.
 
-**Jobber is wrong** for pure mow and go route work at ten staff. At $400 a month on Connect you are paying for quoting depth that a fixed price recurring round does not use. Note that Grow includes five users at $199, so ten users cost $344 on Grow against $400 on Connect.
+**Jobber is wrong** for pure mow and go route work at ten staff. At $299 a month on Connect you are paying for quoting depth that a fixed price recurring round does not use. Note that Connect is banded, so ten users cost $299 on the ten user band against $400 if you add nine seats to the one user plan.
 
-**Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, and its licence pricing is not published.
+**Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, its entry price paying monthly is $149 rather than the $129 the page leads with, and its licence pricing is still not published.
 
 **Yardbook is wrong** as a purchase you can research properly. It is widely recommended as the free option in lawn care and its pricing page blocked automated access in August 2026, so nothing about its cost is verified here.
 

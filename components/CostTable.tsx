@@ -108,7 +108,7 @@ export default function CostTable({ tools, pricesChecked, basis }: Props) {
                     >
                       {computed.text}
                       {numeric && !computed.exact && (
-                        <span className="calc-band">published band</span>
+                        <span className="calc-band">nearest band up</span>
                       )}
                     </td>
                   )}

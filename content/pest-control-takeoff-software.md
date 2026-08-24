@@ -17,8 +17,8 @@ tools:
     bestFor: Turning a measured figure into a quote
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Briostack
     bestFor: Operators wanting bids and diagramming in one system

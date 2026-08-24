@@ -23,16 +23,16 @@ tools:
   - tool: Housecall Pro
     bestFor: Companies mixing commercial and residential work
     solo: $79
-    crew3: Not published
-    crew10: Not published
-    watch: No seat count or additional user price published on the pricing page
+    crew3: $189
+    crew10: $479
+    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
     url: https://www.housecallpro.com/pricing/
   - tool: Jobber
     bestFor: Quoting and renewing commercial contracts
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Swept
     bestFor: Janitorial contracts billed by building
@@ -43,7 +43,7 @@ tools:
     url: https://sweptworks.com/pricing
 ---
 
-Commercial cleaning software has a different job from residential cleaning software, and the tool built specifically for it is also the cheapest. Swept starts at $30 a month on its Launch plan, banded by number of locations rather than headcount, which is the correct shape for janitorial work. Connecteam is free for up to ten users and handles the site check in problem. Launch27 is $75 a month flat for unlimited users and Jobber is $139 a month rising to $400 at ten users. Figures were read from vendor pricing pages in August 2026.
+Commercial cleaning software has a different job from residential cleaning software, and the tool built specifically for it is also the cheapest. Swept starts at $30 a month on its Launch plan, banded by number of locations rather than headcount, which is the correct shape for janitorial work. Connecteam is free for up to ten users and handles the site check in problem. Launch27 is $75 a month flat for unlimited users and Jobber is $139 a month rising to $299 at ten users. Figures were read from vendor pricing pages in August 2026.
 
 The reason this category is served badly is structural. Almost all field service software assumes a customer, an appointment and an invoice for that appointment. Janitorial work has a building, a schedule that repeats nightly or weekly, and one invoice a month for the contract. Software that models the first shape will fight you constantly.
 
@@ -65,7 +65,7 @@ What it does not do is bill the contract. There is no customer invoice, no contr
 
 ## Where the per person pricing model breaks
 
-Jobber charges $29 for each user beyond the first on the Connect plan. Commercial cleaning is labour heavy by definition, and a contractor with ten cleaners servicing six buildings pays $400 a month on Connect for software whose customer count is six.
+Jobber charges $29 for each user beyond the first on the Connect plan. Commercial cleaning is labour heavy by definition, and a contractor with ten cleaners servicing six buildings pays $299 a month on Connect for software whose customer count is six.
 
 That is the wrong axis. Your cost should track buildings, because buildings are what you bill. Swept is the only tool here that does this, banding by number of locations with an entry band covering up to fifteen. Launch at $30 a month, Optimize at $150 and Scale at $225 are the published starting prices for that first band.
 
@@ -95,7 +95,7 @@ Ask specifically whether the contract scope lives on the customer record or the 
 
 Annualised, a three cleaner janitorial contractor pays nothing on Connecteam for crew management, $900 a year on Launch27 and $2,364 on Jobber Connect.
 
-At ten cleaners the figures are nothing, $900 and $4,800, with Jobber Grow at $4,128.
+At ten cleaners the figures are nothing, $900 and $3,588.
 
 Swept, the only product here designed for the actual shape of janitorial work, is $360 a year on Launch for a contractor with up to fifteen locations. That is less than half the Launch27 figure and a fraction of Jobber, and it buys a different thing, because Swept does not take customer bookings or bill a contract. It manages the crew and the site.
 
@@ -117,9 +117,9 @@ The pairing worth considering for a small janitorial contractor is therefore a s
 
 **Launch27 is wrong** for contract work sold by tender or walkthrough. Its booking form sells a defined package at a defined price, which is a residential shape.
 
-**Housecall Pro is wrong** for a janitorial contractor planning headcount, because its published pricing does not let you model the cost of the crew you are about to hire.
+**Housecall Pro is wrong** for a janitorial contractor at ten cleaners, where $479 a month is the dearest figure on this page and buys residential features a building based business will not use.
 
-**Jobber is wrong** for buildings. It is priced per person and structured around the appointment, and at ten cleaners it costs $400 a month on Connect. Its Grow plan includes five users at $199, so ten users cost $344 on Grow rather than $400 on Connect, which is worth knowing before you buy the cheaper sounding tier.
+**Jobber is wrong** for buildings. It is priced per person and structured around the appointment, and at ten cleaners it costs $299 a month on Connect. Connect is banded, so ten users cost $299 on the ten user band rather than the $400 you pay by adding nine seats, which is worth knowing before you buy the cheaper sounding tier.
 
 **Swept is wrong** for residential cleaning entirely, and wrong as your only system, because it has no customer booking and does not bill a contract. It is also wrong for a contractor whose location count sits just above a band boundary, since the price steps rather than scales.
 

@@ -102,7 +102,7 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                     >
                       {computed.text}
                       {numeric && !computed.exact && (
-                        <span className="calc-band">published band</span>
+                        <span className="calc-band">nearest band up</span>
                       )}
                     </td>
                   )}

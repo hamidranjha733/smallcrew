@@ -24,8 +24,8 @@ tools:
     bestFor: Schedules that change because work is quoted
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Yardbook
     bestFor: Basic scheduling at low cost
@@ -63,9 +63,9 @@ The Solo plan is free, for one user and twenty five customers. Startup at $39 a 
 
 Read those boundaries against a lawn care hiring pattern. A company that takes on a fourth employee in April moves from $39 to $129. A company that takes on an eighth moves from $129 to $249. The price does not rise smoothly, it steps, and each step is roughly triple.
 
-Jobber steps differently. Every user past the first costs $29 a month on Connect, so the cost rises in even increments from $139 to $400 across ten users. It is more expensive at three and more predictable at ten.
+Jobber steps differently. Every user past the first costs $29 a month on Connect, but Connect also bands, so ten users is $299 rather than the $400 that ten single seats would cost. It is more expensive at three and more predictable at ten.
 
-There is a detail in Jobber's structure worth knowing. The Grow plan includes five users at $199 a month, so ten users on Grow is $344 while ten users on Connect is $400. The more expensive tier is the cheaper purchase, which the pricing page does not mention.
+There is a detail in Jobber's structure worth knowing. Connect bands as well as charging per seat, so ten users is $299 on the band, against $344 on Grow and $400 by adding nine seats. The more expensive tier is the cheaper purchase, which the pricing page does not mention.
 
 ## What is behind the door in each product
 
@@ -95,7 +95,7 @@ Ask the same question about a crew being a person short, which happens more ofte
 
 Annualised at the tier that includes customer booking, a three employee lawn care company pays nothing on Connecteam for staff rostering, $468 a year on LawnPro Startup and $2,364 on Jobber Connect.
 
-A ten employee company pays nothing on Connecteam, $2,988 on LawnPro Plus and $4,800 on Jobber Connect, with Jobber Grow at $4,128 for the same ten users.
+A ten employee company pays nothing on Connecteam, $2,988 on LawnPro Plus and $3,588 on Jobber Connect.
 
 The gap between LawnPro and Jobber narrows sharply with size. At three employees Jobber costs five times as much. At ten it costs less than one and a half times as much, and Jobber's ability to shed seats when seasonal staff leave closes the remaining distance for an operation that shrinks in winter.
 
@@ -107,7 +107,7 @@ That crossover, somewhere around seven or eight employees, is the practical deci
 
 **LawnPro is wrong** at eight or more employees, where Plus at $249 makes it more expensive than Jobber Connect at $139 plus seats for a similar crew. It is also wrong if automated reminders matter and you cannot justify the $129 Grow plan.
 
-**Jobber is wrong** for a fixed price mow and go round at ten staff. You are paying $400 a month on Connect for quoting and reporting that a repeating route does not use.
+**Jobber is wrong** for a fixed price mow and go round at ten staff. You are paying $299 a month on Connect for quoting and reporting that a repeating route does not use.
 
 **Yardbook is wrong** as a researched decision. It is the most commonly recommended free option in lawn care, and its pricing page blocked automated access in August 2026, so no figure for it is verified on this site.
 

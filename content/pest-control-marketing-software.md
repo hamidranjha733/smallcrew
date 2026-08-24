@@ -9,9 +9,9 @@ tools:
   - tool: Housecall Pro
     bestFor: Converting an inbound call before it goes cold
     solo: $79
-    crew3: Not published
-    crew10: Not published
-    watch: No seat count or additional user price published on the pricing page
+    crew3: $189
+    crew10: $479
+    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Review requests attached to a completed stop
@@ -24,8 +24,8 @@ tools:
     bestFor: Following up quotes that were never answered
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: FieldRoutes
     bestFor: Operators running paid acquisition at volume
@@ -95,7 +95,7 @@ Only after that is configured, and measured for a season, is paid acquisition wo
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, Housecall Pro Basic is $948 a year for one user, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 and $4,800 with Grow at $4,128 for ten users.
+Annualised at the tier that includes online booking, Housecall Pro Basic is $948 a year for one user, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten.
 
 Set those against acquisition. This search term carries one of the highest costs per click of any keyword on this site, at around seventy five dollars. At a ten per cent conversion from click to customer, which would be a strong result, each new customer acquired through paid search on this term costs several hundred dollars before you have treated anything.
 
@@ -105,11 +105,11 @@ That is the argument of this page in one calculation, and it is why no separate 
 
 ## Where each tool is the wrong choice
 
-**Housecall Pro is wrong** for any operator who needs to plan cost across hires, because the pricing page publishes three prices and no seat counts.
+**Housecall Pro is wrong** for an operator at ten technicians, at $479 a month, and wrong on Basic for anyone with staff, because Basic covers one user.
 
 **GorillaDesk is wrong** at ten separate technician schedules, where per schedule pricing reaches $549 a month.
 
-**Jobber is wrong** for pest control compliance regardless of its marketing features, because it holds no chemical application log. At ten users on Connect it costs $400 a month, where its Grow plan covers ten for $344.
+**Jobber is wrong** for pest control compliance regardless of its marketing features, because it holds no chemical application log. At ten users on Connect it costs $299 a month on the ten user band, which undercuts Grow at $344.
 
 **FieldRoutes is wrong** for a small operator on its pricing model alone. Charging by active customer count means every marketing success raises your software bill.
 

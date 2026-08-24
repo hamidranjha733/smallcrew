@@ -31,8 +31,8 @@ tools:
     bestFor: Invoicing that carries the visit record with it
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: PestPac
     bestFor: Complex billing across many service types
@@ -89,7 +89,7 @@ On GorillaDesk the customer portal begins on the Pro plan at $99. On the Basic p
 
 ## The twelve month number
 
-Annualised, Wave Pro is $228 a year, FreshBooks Plus is $516 for one user and $1,704 for ten, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 and $4,800.
+Annualised, Wave Pro is $228 a year, FreshBooks Plus is $516 for one user and $1,704 for ten, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten.
 
 Now price the labour those figures replace. A route of two hundred customers billed monthly is two thousand four hundred invoices a year. If invoicing from the accounting package rather than the field system adds fifteen seconds per invoice in transcription and checking, that is ten hours a year. If it adds two minutes, which is closer to reality once queries and corrections are counted, it is eighty hours.
 
@@ -105,7 +105,7 @@ Below thirty customers the arithmetic reverses and Wave alone is the right answe
 
 **GorillaDesk is wrong** at ten separate technician schedules on cost, reaching $549 a month, and wrong on the Basic plan if you expected customers to pay through a portal.
 
-**Jobber is wrong** for a pest control operator who needs the chemical application record attached to the invoice, because it does not hold one. At ten users on Connect it is $400 a month, where its Grow plan covers ten users for $344.
+**Jobber is wrong** for a pest control operator who needs the chemical application record attached to the invoice, because it does not hold one. At ten users on Connect it is $299 a month on the ten user band, which undercuts both Grow at $344 and nine added seats at $400.
 
 **PestPac is wrong** for a simple recurring residential route. WorkWave publishes no price for it and routes buyers to a demo, so you cannot weigh it against GorillaDesk without entering a sales process.
 

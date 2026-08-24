@@ -17,15 +17,15 @@ tools:
     bestFor: Quote follow up that happens without you
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Housecall Pro
     bestFor: Capturing the call you could not answer
     solo: $79
-    crew3: Not published
-    crew10: Not published
-    watch: No seat count or additional user price published on the pricing page
+    crew3: $189
+    crew10: $479
+    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
     url: https://www.housecallpro.com/pricing/
   - tool: FieldRoutes
     bestFor: Operators with a dedicated sales function
@@ -73,7 +73,7 @@ GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149. The customer 
 
 Jobber publishes Core at $49 and Connect at $139, with automated client communication beginning on Connect. Quote follow up that happens without you is therefore a $139 feature, not a $49 one.
 
-Housecall Pro publishes Basic at $79 with online booking included, and no seat information at all.
+Housecall Pro publishes Basic at $79 with online booking included, and Basic covers one user, so any crew is on Essentials at $189 or MAX at $329.
 
 FieldRoutes lists lead management among its capabilities and gives no figure, stating that pricing is based on active customer count. Briostack publishes add on charges but no base subscription price. Both are built for operators with a distinct sales function, which a company under twenty staff generally does not have.
 
@@ -91,7 +91,7 @@ Only when those are in place does a pipeline earn anything, and by then you are 
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, Housecall Pro Basic is $948 a year for one user, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $4,800 for ten, with Grow at $4,128.
+Annualised at the tier that includes online booking, Housecall Pro Basic is $948 a year for one user, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten.
 
 Set that against what a recovered enquiry is worth. A residential pest agreement worth a few hundred dollars a year, retained for three years, is a customer value well into four figures.
 
@@ -103,9 +103,9 @@ The comparison that does not work is buying a lead management product on top. Fi
 
 **GorillaDesk is wrong** on the Basic plan if the point is self service booking, since that requires Pro, and wrong on cost at ten separate schedules where it reaches $549 a month.
 
-**Jobber is wrong** for pest control compliance, holding no chemical application log, and expensive at ten users on Connect at $400 where Grow covers ten for $344.
+**Jobber is wrong** for pest control compliance, holding no chemical application log, and still $299 a month at ten users on the Connect band.
 
-**Housecall Pro is wrong** for an operator who needs to model cost across hires, because the pricing page will not support it.
+**Housecall Pro is wrong** for an operator at ten technicians, where $479 a month makes it the dearest option on this page.
 
 **FieldRoutes is wrong** for a small operator on its pricing model. Charging by active customer count means converting more leads raises the software bill.
 

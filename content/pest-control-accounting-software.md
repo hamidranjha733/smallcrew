@@ -31,8 +31,8 @@ tools:
     bestFor: Tying the invoice to the visit that earned it
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Books an accountant will accept without argument
@@ -87,7 +87,7 @@ For an operator with more than about two hundred customers this is worth setting
 
 Annualised, the accounting side of a pest control business is inexpensive relative to the field side.
 
-Wave Pro is $228 a year. FreshBooks Plus is $516 for one user, $780 for three and $1,704 for ten. GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, rising to $6,588 if ten technicians each drive alone. Jobber Connect is $1,668, $2,364 and $4,800.
+Wave Pro is $228 a year. FreshBooks Plus is $516 for one user, $780 for three and $1,704 for ten. GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, rising to $6,588 if ten technicians each drive alone. Jobber Connect is $1,668, $2,364 and $3,588.
 
 A three technician operator riding as one crew on GorillaDesk plus Wave pays $1,416 a year for the complete stack, covering routing, chemical records, invoicing, a customer portal and a real ledger. Three technicians in separate vehicles pay $2,616. Either way that is the reference figure worth carrying into any sales conversation with a vendor that will not publish its pricing.
 

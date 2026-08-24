@@ -24,8 +24,8 @@ tools:
     bestFor: Routes that change because work is quoted
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Yardbook
     bestFor: Basic route planning at low cost
@@ -53,7 +53,7 @@ Lawn care runs in crews. Three people in one truck follow one route. Software pr
 
 GorillaDesk is the only tool in this comparison whose pricing follows the route. Its own documentation describes a schedule as one technician's route, and states that where technicians work in crews, only crew leaders need schedules. So a nine person operation running three trucks needs three schedules, which is $99 for the first plus $50 each for two more, or $199 a month.
 
-The same nine people on Jobber Connect is $139 plus eight seats at $29, or $371 a month. On LawnPro nine employees requires the Plus plan at $249.
+The same nine people on Jobber Connect is $299 a month, because the ten user band undercuts the $371 that eight extra seats would cost. On LawnPro nine employees requires the Plus plan at $249.
 
 The direction reverses when everyone drives separately. Ten solo drivers on GorillaDesk is ten schedules, $99 plus nine at $50, or $549 a month, which is the most expensive cell in this table. The pricing model is not better or worse in the abstract. It is better or worse depending on whether your people ride together.
 
@@ -93,9 +93,9 @@ Routing software makes the problem visible, which is genuinely valuable. It does
 
 Annualised at the tier that includes online booking, a solo operator pays nothing on LawnPro Solo up to twenty five customers, $1,188 a year on GorillaDesk Pro and $1,668 on Jobber Connect.
 
-A nine person operation running three trucks pays $2,388 a year on GorillaDesk with three schedules, against $4,452 on Jobber Connect with nine seats. That is a difference of more than $2,000 a year for the same crew, entirely because one vendor bills routes and the other bills people.
+A nine person operation running three trucks pays $2,388 a year on GorillaDesk with three schedules, against $3,588 on Jobber Connect. That is a difference of more than $2,000 a year for the same crew, entirely because one vendor bills routes and the other bills people.
 
-Ten people in ten separate trucks reverses it. GorillaDesk becomes $6,588 a year and Jobber Connect $4,800, with Jobber Grow at $4,128.
+Ten people in ten separate trucks reverses it. GorillaDesk becomes $6,588 a year and Jobber Connect $3,588.
 
 So the question to settle before choosing is not which tool routes better. It is how many vehicles leave your yard each morning. If the answer is materially fewer than your headcount, per schedule pricing saves you thousands. If the answer is roughly equal to your headcount, it costs you thousands.
 
@@ -105,7 +105,7 @@ So the question to settle before choosing is not which tool routes better. It is
 
 **GorillaDesk is wrong** if your technicians drive separately, because per schedule pricing then behaves like per user pricing and reaches $549 at ten routes. It is also a pest control product first, and its chemical and device tracking is irrelevant to mowing.
 
-**Jobber is wrong** for a fixed price route that never changes. You are paying for quoting depth a repeating round does not use, and at ten users on Connect that is $400 a month. Its Grow plan includes five users at $199, making ten users $344, so the higher tier is the cheaper purchase.
+**Jobber is wrong** for a fixed price route that never changes. You are paying for quoting depth a repeating round does not use, and at ten users on Connect that is $299 a month. Connect bands at ten users for $299, so the band is the cheaper purchase than either Grow at $344 or nine added seats at $400.
 
 **Yardbook is wrong** as a researched decision, because its pricing page blocked automated access in August 2026 and no figure for it is verified on this site.
 
@@ -120,7 +120,7 @@ GorillaDesk at $99 a month if your people ride together, because it charges per 
 It sequences the stops you already have and makes the gaps visible. It cannot fix a round that is geographically scattered, which is the more common cause of high drive time in small lawn care companies.
 
 **Should I pay per user or per route?**
-Per route if crews ride together, per user if they do not. For a nine person, three truck operation GorillaDesk is $199 a month against $371 on Jobber Connect. For ten separate drivers GorillaDesk is $549 and Jobber Connect is $400.
+Per route if crews ride together, per user if they do not. For a nine person, three truck operation GorillaDesk is $199 a month against $299 on Jobber Connect. For ten separate drivers GorillaDesk is $549 and Jobber Connect is $299.
 
 **Can I push a whole day forward when it rains?**
 This is the operation you will perform most often and it is worth testing before you buy. None of the vendor pricing pages compared here document the behaviour, so test it on a trial rather than taking a feature list at face value.

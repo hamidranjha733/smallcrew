@@ -31,8 +31,8 @@ tools:
     bestFor: Tying the invoice to the visit that earned it
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Books an accountant will accept without argument
@@ -95,11 +95,11 @@ The same applies to the more common structure, which is an annual agreement bill
 
 Annualised, a three employee lawn care company pays $228 a year for Wave Pro, $468 for LawnPro Startup, $780 for FreshBooks Plus with three users and $2,364 for Jobber Connect.
 
-At ten employees the same list reads $228, $2,988 on LawnPro Plus, $1,704 on FreshBooks Plus with ten users and $4,800 on Jobber Connect.
+At ten employees the same list reads $228, $2,988 on LawnPro Plus, $1,704 on FreshBooks Plus with ten users and $3,588 on Jobber Connect.
 
 The cheapest complete pairing for a three employee company is LawnPro Startup at $468 plus Wave Pro at $228, which is $696 a year for scheduling, a client portal, invoicing and a real ledger.
 
-At ten employees that pairing becomes $3,216, and Jobber Grow at $4,128 plus Wave at $228 is $4,356. The gap has closed to about a thousand dollars a year, and Jobber's ability to remove seats over the winter narrows it further for a seasonal operation.
+At ten employees that pairing becomes $3,216, and Jobber Connect at $3,588 plus Wave at $228 is $3,816. The gap has closed to about a thousand dollars a year, and Jobber's ability to remove seats over the winter narrows it further for a seasonal operation.
 
 ## Where each tool is the wrong choice
 
@@ -109,7 +109,7 @@ At ten employees that pairing becomes $3,216, and Jobber Grow at $4,128 plus Wav
 
 **FreshBooks is wrong** at the Lite tier for any real lawn care round, because five billable clients is a cap you pass in the first week. Buy Plus at $43 or do not buy it.
 
-**Jobber is wrong** as accounting software. It is a field service system with strong invoicing attached, and at $400 a month for ten users on Connect it is the most expensive invoice generator on this page.
+**Jobber is wrong** as accounting software. It is a field service system with strong invoicing attached, and at $299 a month for ten users on Connect it is the most expensive invoice generator on this page.
 
 **QuickBooks Online is wrong** for anyone who cannot confirm the current price first. Intuit's pricing page did not respond to repeated automated requests in August 2026, so no QuickBooks figure appears in the table above. Check it directly before budgeting.
 

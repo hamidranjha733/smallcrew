@@ -17,15 +17,15 @@ tools:
     bestFor: Quoting seasonal contracts and one off pushes
     solo: $139
     crew3: $197
-    crew10: $400
-    watch: Calculated as $139 Connect base plus $29 per extra user. Online booking and reminders sit on Connect, not the $49 Core plan
+    crew10: $299
+    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
     url: https://www.getjobber.com/pricing/
   - tool: Arborgold
     bestFor: Crews carrying salt and material costs
-    solo: $129
+    solo: $149
     crew3: Not published
     crew10: Not published
-    watch: Office and mobile licences are quoted separately and never published
+    watch: The $129 headline is the annual rate. Paying monthly is $149, and office and mobile licences are still quoted separately
     url: https://arborgold.com/pricing/
   - tool: Yardbook
     bestFor: Low cost basics across both seasons
@@ -63,7 +63,7 @@ Jobber charges $29 per user per month on top of a $139 Connect base. A company w
 
 LawnPro bands by employee count. Startup at $39 covers three employees, Grow at $129 covers seven, Plus at $249 covers fifteen. A company that runs three in summer and eight in winter is a $39 business for seven months and a $249 business for five, and moving between bands twice a year is a decision rather than an adjustment.
 
-Arborgold publishes plan prices of $129, $299 and $499 and does not publish licence costs, so a seasonal headcount cannot be modelled from its pricing page at all.
+Arborgold publishes $129, $299 and $499 a month on annual billing, or $149, $343 and $573 paying monthly, and does not publish licence costs, so a seasonal headcount cannot be modelled from its pricing page at all.
 
 ## What to test before you buy
 
@@ -91,9 +91,9 @@ None of the vendor pricing pages compared here documents any of the three. Test 
 
 ## The twelve month number
 
-Annualised, a three employee two season operation pays $468 a year on LawnPro Startup and $2,364 on Jobber Connect. At ten employees it pays $2,988 on LawnPro Plus and $4,800 on Jobber Connect, with Grow at $4,128. Arborgold Starter is $1,548 a year for one user with licence costs unpublished.
+Annualised, a three employee two season operation pays $468 a year on LawnPro Startup and $2,364 on Jobber Connect. At ten employees it pays $2,988 on LawnPro Plus and $3,588 on Jobber Connect. Arborgold Starter is $1,788 a year for one user paying monthly, or $1,548 committing annually, with licence costs unpublished.
 
-The seasonal swing changes how to read those numbers. A company running four staff in summer and nine in winter pays Jobber for four seats in July and nine in January, which annualises to roughly $3,600 rather than the $4,452 that nine seats all year would cost.
+The seasonal swing changes how to read those numbers. A company running four staff in summer and nine in winter pays Jobber for four seats in July and moves onto the ten user band in January, which annualises well below the $3,588 that the band costs all year.
 
 The same company on LawnPro sits in the Grow band at $129 for up to seven employees in summer and the Plus band at $249 for up to fifteen in winter, which is roughly $2,200 a year if you actually change bands twice, and $2,988 if you do not.
 
@@ -103,7 +103,7 @@ For a two season business, the software that lets you shed capacity in the off s
 
 **LawnPro is wrong** if snow is more than an occasional add on. Nothing on its pricing page indicates per push or capped seasonal billing, and its employee bands suit a stable headcount rather than a seasonal swing.
 
-**Jobber is wrong** for pure route work at ten staff, at $400 a month on Connect. It is the best structured of these for seasonal headcount because seats can be added and removed, and its Grow plan at $199 for five users makes ten users $344 rather than $400.
+**Jobber is wrong** for pure route work at ten staff, at $299 a month on Connect. It is the best structured of these for seasonal headcount because seats can be added and removed, and its ten user band at $299 beats both Grow at $344 and nine added seats at $400.
 
 **Arborgold is wrong** for straightforward plowing. It is built for tree care and landscape construction with material tracking, which is relevant to salt, but its licence pricing is unpublished so you cannot budget a winter crew.
 
