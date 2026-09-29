@@ -4,12 +4,12 @@
     {
       "source": "/best-pest-control-software",
       "destination": "/pest-control/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/best-pest-control-software/",
       "destination": "/pest-control/",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
