@@ -84,7 +84,7 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                     <Badge kind={getBadge(entry.row)} />
                   </th>
                   <td className="cell-trade" data-label="Trade">
-                    <Link href={`/${entry.slug}/`}>{entry.trade}</Link>
+                    <Link href={entry.href}>{entry.trade}</Link>
                   </td>
                   <td className={priceClass(entry.row.solo)} data-label="Solo">
                     {entry.row.solo}

@@ -7,6 +7,11 @@ import { isSystem } from './vendors';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
+// Category bodies live one level down so that readSlugs, which lists the guide
+// routes, never sees them. A category page is not a guide and must not get a
+// /[slug]/ route of its own.
+const CATEGORY_DIR = path.join(CONTENT_DIR, 'category');
+
 export type Tool = {
   tool: string;
   bestFor: string;
@@ -198,6 +203,64 @@ export async function getPage(slug: string): Promise<Page> {
   const { html, headings, faqs } = await renderMarkdown(content);
 
   return { ...meta, slug, html, headings, faqs };
+}
+
+// A category page can carry its own comparison as well as its list of guides.
+// Where it does, the prose and the priced table live in a markdown file under
+// content/category and are loaded here. The frontmatter is the same shape a
+// guide uses, minus the fields the trade already supplies, so the rule that no
+// price ships without a verification month applies identically.
+export type CategoryBody = {
+  trade: Trade;
+  keyword: string;
+  pricesChecked: string;
+  toolsCompared: number;
+  tools: Tool[];
+  html: string;
+  headings: Heading[];
+  faqs: Faq[];
+};
+
+export function hasCategoryBody(trade: Trade): boolean {
+  return fs.existsSync(path.join(CATEGORY_DIR, `${trade}.md`));
+}
+
+export async function getCategoryBody(trade: Trade): Promise<CategoryBody | null> {
+  const filePath = path.join(CATEGORY_DIR, `${trade}.md`);
+  if (!fs.existsSync(filePath)) return null;
+
+  const raw = fs.readFileSync(filePath, 'utf8');
+  const { data, content } = matter(raw);
+
+  for (const key of ['keyword', 'pricesChecked', 'toolsCompared', 'tools']) {
+    if (data[key] === undefined || data[key] === null || data[key] === '') {
+      throw new Error(`content/category/${trade}.md is missing the "${key}" field.`);
+    }
+  }
+
+  const tools = data.tools as Tool[];
+  if (!Array.isArray(tools) || tools.length === 0) {
+    throw new Error(`content/category/${trade}.md must list at least one tool.`);
+  }
+
+  if (!/^[A-Z][a-z]+ \d{4}$/.test(String(data.pricesChecked))) {
+    throw new Error(
+      `content/category/${trade}.md has an invalid pricesChecked value. Use a month and year, for example "August 2026".`,
+    );
+  }
+
+  const { html, headings, faqs } = await renderMarkdown(content);
+
+  return {
+    trade,
+    keyword: String(data.keyword),
+    pricesChecked: String(data.pricesChecked),
+    toolsCompared: Number(data.toolsCompared),
+    tools,
+    html,
+    headings,
+    faqs,
+  };
 }
 
 export async function getAllPages(): Promise<Page[]> {

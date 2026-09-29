@@ -53,9 +53,9 @@ export const CATEGORY_SEO: Record<string, Seo> = {
   },
   'pest-control': {
     keyword: 'pest control software',
-    title: 'Pest Control Software Compared for Under 20 Staff',
+    title: 'Pest Control Software Priced at 1, 3 and 10 Technicians',
     description:
-      'Eight pest control software comparisons priced at 1, 3 and 10 technicians. Four of the best known products route every price through a sales conversation.',
+      'Seven pest control software comparisons priced at 1, 3 and 10 technicians. Four of the best known products route every price through a sales conversation.',
   },
 };
 
@@ -125,12 +125,6 @@ export const GUIDE_SEO: Record<string, Seo> = {
     title: 'Lawn Care and Snow Removal Software Compared',
     description:
       'Software for a two season business, and the finding that almost nothing under $200 a month handles per push snow billing properly. Dated vendor pricing.',
-  },
-  'best-pest-control-software': {
-    keyword: 'best pest control software',
-    title: 'Best Pest Control Software for Small Operators',
-    description:
-      'Six pest control tools compared, of which four route pricing through a sales call. The two that publish a figure, priced at 1, 3 and 10 technicians.',
   },
   'pest-control-accounting-software': {
     keyword: 'pest control accounting software',

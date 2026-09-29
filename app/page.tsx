@@ -78,7 +78,7 @@ const CREW_CELLS: {
 export default async function HomePage() {
   const pages = await getAllPages();
   const extremes = getExtremes(pages);
-  const summary = getSummaryRows(pages);
+  const summary = await getSummaryRows(pages);
   const toolEntries = pages.reduce((sum, page) => sum + page.tools.length, 0);
   const checked = pages[0]?.pricesChecked ?? 'Not published';
 

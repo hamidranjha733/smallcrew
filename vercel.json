@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/best-pest-control-software",
+      "destination": "/pest-control/",
+      "permanent": true
+    },
+    {
+      "source": "/best-pest-control-software/",
+      "destination": "/pest-control/",
+      "permanent": true
+    }
+  ]
+}

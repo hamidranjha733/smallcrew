@@ -49,8 +49,8 @@ export const TRADES: TradeInfo[] = [
     standfirst:
       'Recurring service agreements, state licence records and the chemical application logs that general purpose software does not hold.',
     intro: [
-      'Pest control is the trade with a genuine compliance requirement, and it is the one where general field service software quietly falls short. A chemical application record has to hold the product, the registration number, the dilution, the quantity, the technician and their licence, captured at the property and retrievable years later. Several otherwise capable tools hold none of it.',
-      'It is also the category most resistant to being priced. Four of the six products most often recommended route pricing through a sales conversation, so a small operator cannot compare cost without entering a sales process first.',
+      'Pest control software costs $99 a month at one technician on GorillaDesk Pro and $139 on Jobber Connect, the only two of the six products compared below that publish a price at all. At ten technicians the published figures run from $249 to $549, and which end you land on is decided by how many vehicles leave your yard rather than how many people you employ. The other four route every price through a sales conversation.',
+      'This is also the trade with a genuine compliance requirement, and the one where general field service software quietly falls short. A chemical application record has to hold the product, the registration number, the dilution, the quantity, the technician and their licence, captured at the property and retrievable years later. One of the two products you can price holds none of it, which is the trade off this page exists to set out.',
     ],
     pullquote: 'The two products that publish a figure are the only two you can budget from.',
   },

@@ -1,12 +1,17 @@
 import Link from 'next/link';
+import CostTable from './CostTable';
+import Disclosure from './Disclosure';
 import GuideCard from './GuideCard';
 import HeroPanel from './HeroPanel';
 import JsonLd from './JsonLd';
 import PriceStrip from './PriceStrip';
+import PricedStamp from './PricedStamp';
 import StatsBand from './StatsBand';
-import { getAllPages, getExtremes, getTrade, type Tool } from '@/lib/content';
+import TearLine from './TearLine';
+import Toc from './Toc';
+import { getAllPages, getCategoryBody, getExtremes, getTrade, type Tool } from '@/lib/content';
 import { badgeSummary } from '@/lib/pricing';
-import { getCategorySeo } from '@/lib/seo';
+import { checkedToIso, getCategorySeo } from '@/lib/seo';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo, TRADES } from '@/lib/trades';
 import type { Trade } from '@/lib/content';
@@ -22,6 +27,18 @@ export default async function CategoryView({ trade }: Props) {
   const pages = await getAllPages();
   const tradePages = pages.filter((page) => getTrade(page.slug) === trade);
   const others = TRADES.filter((item) => item.trade !== trade);
+
+  // Where a category carries its own comparison, it is the primary page for the
+  // head term and holds a priced table and a full article of its own. Where it
+  // does not, the page stays a hub for its guides and nothing below renders.
+  const body = await getCategoryBody(trade);
+
+  // No two adjacent sections may share a background. Inserting the article
+  // shifts everything below it by one, so the bands after it flip together
+  // rather than being hardcoded.
+  const guidesBand = body ? 'band band-white' : 'band band-surface';
+  const transparencyBand = body ? 'band band-surface' : 'band band-white';
+  const otherTradesBand = body ? 'band band-white' : 'band band-surface';
 
   const toolEntries = tradePages.reduce((sum, page) => sum + page.tools.length, 0);
   const checked = tradePages[0]?.pricesChecked ?? 'Not published';
@@ -54,6 +71,9 @@ export default async function CategoryView({ trade }: Props) {
             about: seo.keyword,
             inLanguage: 'en-US',
             url,
+            // A category holding its own priced table has a meaningful modified
+            // date, which is the month those prices were read.
+            ...(body ? { dateModified: checkedToIso(body.pricesChecked) } : {}),
             isPartOf: { '@id': `${SITE_URL}/#website` },
             publisher: { '@id': `${SITE_URL}/#organization` },
             hasPart: tradePages.map((page) => ({
@@ -72,6 +92,22 @@ export default async function CategoryView({ trade }: Props) {
               { '@type': 'ListItem', position: 2, name: `${info.label} software`, item: url },
             ],
           },
+          // A category carrying its own comparison answers questions on the
+          // page, so it gets the same FAQ block a guide would.
+          ...(body && body.faqs.length > 0
+            ? [
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'FAQPage',
+                  '@id': `${url}#faq`,
+                  mainEntity: body.faqs.map((faq) => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+                  })),
+                },
+              ]
+            : []),
         ]}
       />
 
@@ -128,7 +164,34 @@ export default async function CategoryView({ trade }: Props) {
         </section>
       </div>
 
-      <div className="band band-surface">
+      {body && (
+        <>
+          <div className="band band-surface">
+            <div className="wrapper">
+              <PricedStamp checked={body.pricesChecked} />
+              <Disclosure />
+              <CostTable tools={body.tools} pricesChecked={body.pricesChecked} />
+            </div>
+
+            <TearLine />
+
+            <div className="wrapper">
+              <div className="guide-layout">
+                <Toc headings={body.headings} />
+                <div className="article-body" dangerouslySetInnerHTML={{ __html: body.html }} />
+              </div>
+
+              <p className="updated-note">
+                Prices on this page were read from vendor pricing pages in {body.pricesChecked}.
+                Vendor pricing changes several times a year. Confirm the current figure with the
+                vendor before you buy.
+              </p>
+            </div>
+          </div>
+        </>
+      )}
+
+      <div className={guidesBand}>
         <section className="wrapper section" aria-labelledby="guides-heading">
           <div className="section-head">
             <span className="eyebrow">{info.label}</span>
@@ -142,7 +205,7 @@ export default async function CategoryView({ trade }: Props) {
         </section>
       </div>
 
-      <div className="band band-white">
+      <div className={transparencyBand}>
         <section className="wrapper section" aria-labelledby="transparency-heading">
           <div className="section-head">
             <span className="eyebrow">Pricing transparency</span>
@@ -200,7 +263,7 @@ export default async function CategoryView({ trade }: Props) {
         </section>
       </div>
 
-      <div className="band band-surface">
+      <div className={otherTradesBand}>
         <section className="wrapper section" aria-labelledby="other-trades">
           <div className="section-head">
             <span className="eyebrow">Other trades</span>

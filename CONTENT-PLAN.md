@@ -31,7 +31,7 @@ All nineteen pages are built and live in `/content`.
 
 | Slug | Target keyword | Vol | KD | CPC | Also covers | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| best-pest-control-software | best pest control software | 400 | 25 | $19.00 | pest control software reviews (150), mobile pest control software (150) | Built |
+| /pest-control/ (category) | pest control software | 1,000 | 0 | $12.00 | best pest control software (400), pest control software reviews (150), mobile pest control software (150) | Built. Merged from best-pest-control-software in September 2026, which now 301s here |
 | pest-control-accounting-software | pest control accounting software | 300 | 11 | $15.00 | | Built |
 | pest-control-invoice-software | pest control invoice software | 250 | 0 | $20.00 | pest control invoicing software (150, CPC $25) | Built |
 | pest-control-marketing-software | pest control marketing software | 150 | 10 | $75.00 | | Built |
@@ -78,7 +78,7 @@ The online booking page is worth more than its value signal suggests. It is the 
 
 | Order | Slug | Value signal | KD |
 | --- | --- | --- | --- |
-| 13 | best-pest-control-software | 400 x $19.00, plus 300 merged | 25 |
+| 13 | /pest-control/ (category) | 1,000 x $12.00, plus 700 merged | 0 |
 | 14 | free-pest-control-software | 150 x $8.00, plus 150 merged | 1 |
 | 15 | lawn-care-scheduling-software | 350 x $1.00 | 11 |
 | 16 | cloud-based-pest-control-software | 150, plus 150 merged | 0 |
