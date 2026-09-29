@@ -31,7 +31,7 @@ export const TRADES: TradeInfo[] = [
     trade: 'lawn-care',
     label: 'Lawn care',
     href: '/lawn-care/',
-    h1: 'Lawn care management software compared at three crew sizes',
+    h1: 'The best lawn care software, priced at three crew sizes',
     standfirst:
       'Lawn care and landscape maintenance. Seasonal contracts, route density and the awkward second season of snow removal.',
     intro: [

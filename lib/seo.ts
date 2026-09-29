@@ -26,7 +26,7 @@ export const HOME_SEO: Seo = {
 export const PAGE_SEO: Record<string, Seo> = {
   about: {
     keyword: 'about Small Crew',
-    title: 'About Small Crew and how we price software',
+    title: 'About Small Crew and How We Price Software by Crew Size',
     description:
       'Who runs Small Crew, why every price here is the tier that includes online booking rather than the cheapest plan, how figures are dated, and how we earn.',
   },
@@ -49,7 +49,7 @@ export const CATEGORY_SEO: Record<string, Seo> = {
     keyword: 'best lawn care software',
     title: 'Best Lawn Care Software Priced at Three Crew Sizes',
     description:
-      'Four lawn care management software comparisons priced at 1, 3 and 10 employees. Several of the best known tools will not quote a small crew without a call.',
+      'Best lawn care software priced at 1, 3 and 10 employees, on the tier that includes online booking. Three of the six could not be priced at three staff.',
   },
   'pest-control': {
     keyword: 'pest control software',
@@ -80,25 +80,25 @@ export const GUIDE_SEO: Record<string, Seo> = {
   },
   'carpet-cleaning-business-software': {
     keyword: 'carpet cleaning business software',
-    title: 'Carpet Cleaning Business Software: 5 Tools Priced',
+    title: 'Carpet Cleaning Business Software Priced for 1 to 10 Vans',
     description:
       'Five carpet cleaning tools priced per van as well as per seat, so you can see which billing model suits your fleet. Dated August 2026 vendor pricing.',
   },
   'commercial-cleaning-software': {
     keyword: 'commercial cleaning business software',
-    title: 'Commercial Cleaning Software for Contract Work',
+    title: 'Commercial Cleaning Software for Contract Work, Priced',
     description:
       'Janitorial software compared for contract billing, site check in and inspections. Swept starts at $30 a month. Real costs at 1, 3 and 10 cleaners.',
   },
   'cleaning-business-software-online-booking': {
     keyword: 'cleaning business software with online booking',
-    title: 'Cleaning Business Software With Online Booking',
+    title: 'Cleaning Business Software With Online Booking, Priced',
     description:
-      'Online booking is the feature vendors put one tier above the advertised price. Five cleaning tools priced on the plan that includes it, at 1, 3 and 10 users.',
+      'Online booking is the feature vendors put one tier above the advertised price. Five cleaning tools priced on the plan that has it, at 1, 3 and 10 users.',
   },
   'lawn-care-scheduling-software': {
     keyword: 'lawn care scheduling software',
-    title: 'Lawn Care Scheduling Software: 5 Tools Priced',
+    title: 'Lawn Care Scheduling Software Priced at Three Crew Sizes',
     description:
       'Five lawn care scheduling tools priced on the tier that takes customer bookings. LawnPro from $39, Jobber from $139, Connecteam free to ten users.',
   },
@@ -110,25 +110,25 @@ export const GUIDE_SEO: Record<string, Seo> = {
   },
   'lawn-care-routing-software': {
     keyword: 'lawn care routing software',
-    title: 'Lawn Care Routing Software Priced Per Truck',
+    title: 'Lawn Care Routing Software Priced at Three Crew Sizes',
     description:
       'Routing software priced per truck as well as per person, because that one difference moves the bill by thousands a year. Costs at 1, 3 and 10 employees.',
   },
   'lawn-care-snow-removal-software': {
     keyword: 'lawn care snow removal software',
-    title: 'Lawn Care and Snow Removal Software Compared',
+    title: 'Lawn Care and Snow Removal Software Priced by Crew Size',
     description:
       'Software for a two season business, and the finding that almost nothing under $200 a month handles per push snow billing properly. Dated vendor pricing.',
   },
   'pest-control-accounting-software': {
     keyword: 'pest control accounting software',
-    title: 'Pest Control Accounting Software Compared 2026',
+    title: 'Pest Control Accounting Software, Priced at 3 Crew Sizes',
     description:
       'Pest control accounting compared, including the chemical inventory and deferred revenue your field app cannot see. Costs at 1, 3 and 10 technicians.',
   },
   'pest-control-invoice-software': {
     keyword: 'pest control invoice software',
-    title: 'Pest Control Invoice Software for Service Plans',
+    title: 'Pest Control Invoice Software for Recurring Service Plans',
     description:
       'Five invoicing tools judged on one question: how many invoices leave the building without anyone opening anything. Costs at 1, 3 and 10 technicians.',
   },
@@ -140,13 +140,13 @@ export const GUIDE_SEO: Record<string, Seo> = {
   },
   'pest-control-lead-management-software': {
     keyword: 'pest control lead management software',
-    title: 'Pest Control Lead Management Software Compared',
+    title: 'Pest Control Lead Management Software, Priced by Size',
     description:
       'A small operator does not have a pipeline problem, they have a response time problem. Five tools priced at 1, 3 and 10 technicians, dated August 2026.',
   },
   'cloud-based-pest-control-software': {
     keyword: 'cloud based pest control software',
-    title: 'Cloud Based Pest Control Software Compared',
+    title: 'Cloud Based Pest Control Software Priced at 1, 3 and 10',
     description:
       'Every product here is cloud based, so the term decides nothing. The questions that do: offline capture in a crawl space, and who holds your records.',
   },
@@ -158,7 +158,7 @@ export const GUIDE_SEO: Record<string, Seo> = {
   },
   'pest-control-takeoff-software': {
     keyword: 'pest control takeoff software',
-    title: 'Pest Control Takeoff Software: Does It Exist?',
+    title: 'Pest Control Takeoff Software: Does It Actually Exist?',
     description:
       'No field service product here performs a measured takeoff. What operators actually mean by the term, and the cheaper way to price a termite pretreat.',
   },
@@ -166,9 +166,11 @@ export const GUIDE_SEO: Record<string, Seo> = {
 
 // Enforced at build time. A title that creeps over 60 characters or a
 // description outside 140 to 160 fails the build rather than shipping.
+// Titles run 50 to 60. Under 50 wastes SERP width, over 60 is truncated.
+const TITLE_MIN = 50;
 const TITLE_MAX = 60;
 const DESC_MIN = 140;
-const DESC_MAX = 160;
+const DESC_MAX = 155;
 
 function validate(): void {
   const entries: [string, Seo][] = [
@@ -183,8 +185,10 @@ function validate(): void {
   const problems: string[] = [];
 
   for (const [route, seo] of entries) {
-    if (seo.title.length > TITLE_MAX) {
-      problems.push(`${route} title is ${seo.title.length} chars, max ${TITLE_MAX}`);
+    if (seo.title.length < TITLE_MIN || seo.title.length > TITLE_MAX) {
+      problems.push(
+        `${route} title is ${seo.title.length} chars, want ${TITLE_MIN} to ${TITLE_MAX}`,
+      );
     }
     if (seo.description.length < DESC_MIN || seo.description.length > DESC_MAX) {
       problems.push(
