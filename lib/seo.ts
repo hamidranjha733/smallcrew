@@ -24,6 +24,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  privacy: {
+    keyword: 'Small Crew privacy',
+    title: 'Small Crew Privacy Policy: No Cookies and No Analytics',
+    description:
+      'Small Crew sets no cookies and runs no analytics or tracking scripts. The one third party is Google Fonts, which receives your IP when a page loads.',
+  },
   contact: {
     keyword: 'contact Small Crew',
     title: 'Contact Small Crew, and How to Report a Wrong Price',

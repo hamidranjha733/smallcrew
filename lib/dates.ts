@@ -23,3 +23,24 @@ export function getModified(route: string, fallbackIso: string): string {
 export function knownRoutes(): string[] {
   return Object.keys(MODIFIED);
 }
+
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+/** "2026-09-30" as "30 September 2026", for anywhere a date is shown to a reader. */
+export function formatDate(iso: string): string {
+  const [year, month, day] = iso.split('-');
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`;
+}

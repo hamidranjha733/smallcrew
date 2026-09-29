@@ -77,6 +77,9 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
               <li>
                 <Link href="/contact/">Contact</Link>
               </li>
+              <li>
+                <Link href="/privacy/">Privacy</Link>
+              </li>
             </ul>
           </div>
         </div>

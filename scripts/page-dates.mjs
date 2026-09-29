@@ -137,15 +137,24 @@ const homePage = lastChangeOf('app/page.tsx', (s) => s);
 const homeMeta = lastChangeOf('lib/seo.ts', homeSeo);
 dates['/'] = day(latest(homePage, homeMeta));
 
-const aboutPage = lastChangeOf('app/about/page.tsx', (s) => s);
-const aboutMeta = lastChangeOf('lib/seo.ts', seoEntry('about'));
-dates['/about/'] = day(latest(aboutPage, aboutMeta));
-
-const contactPage = lastChangeOf('app/contact/page.tsx', (s) => s);
-const contactMeta = lastChangeOf('lib/seo.ts', seoEntry('contact'));
-const contactDate = latest(contactPage, contactMeta);
-// A page added in the working tree has no commit yet, so it is dated today.
-dates['/contact/'] = contactDate ? day(contactDate) : new Date().toISOString().slice(0, 10);
+// Standalone pages: their own route file plus their own SEO entry.
+//
+// Local date rather than UTC. git dates carry their own offset, so slicing one
+// already gives the day it was committed where it was committed, and a UTC
+// today would disagree with them by a day for anyone east of Greenwich.
+const now = new Date();
+const TODAY = [
+  now.getFullYear(),
+  String(now.getMonth() + 1).padStart(2, '0'),
+  String(now.getDate()).padStart(2, '0'),
+].join('-');
+for (const key of ['about', 'contact', 'privacy']) {
+  const page = lastChangeOf(`app/${key}/page.tsx`, (s) => s);
+  const meta = lastChangeOf('lib/seo.ts', seoEntry(key));
+  const when = latest(page, meta);
+  // A page added in the working tree has no commit yet, so it is dated today.
+  dates[`/${key}/`] = when ? day(when) : TODAY;
+}
 
 const ordered = Object.fromEntries(Object.entries(dates).sort(([a], [b]) => a.localeCompare(b)));
 
