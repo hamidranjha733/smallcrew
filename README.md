@@ -77,9 +77,9 @@ Adding a guide to a category needs no wiring. The trade is derived from the slug
 
 ## Changing the domain
 
-The live domain is `https://smallcrew.vercel.app`. It appears in exactly one place, `SITE_URL` in `lib/site.ts`. Metadata, canonical URLs, the sitemap and robots.txt all read from it.
+The live domain is `https://www.smallcrewsoftware.com`. The `www` host is the primary one, so it is the canonical host. It appears in exactly one place, `SITE_URL` in `lib/site.ts`. Metadata, canonical URLs, Open Graph URLs, the JSON-LD identifiers, the sitemap and robots.txt all read from it.
 
-If you move to a custom domain, change that one constant, rebuild and redeploy. Nothing else references the domain.
+If you move the domain again, change that one constant, rebuild and redeploy. Nothing else references the domain. `scripts/audit.mjs` reads the same constant and fails the audit if any URL the site prints about itself is on a different host, so a half finished move cannot ship.
 
 ## Adding a page
 

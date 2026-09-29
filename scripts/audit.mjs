@@ -10,6 +10,17 @@ const OUT = 'out';
 const problems = [];
 const notes = [];
 
+// The canonical base url has one definition, in lib/site.ts. This script is
+// plain node and cannot import a TypeScript module, so it reads the constant
+// out of the source rather than holding a second copy of the hostname that
+// could fall out of step with the one the site actually builds with.
+const SITE_URL = (() => {
+  const source = fs.readFileSync('lib/site.ts', 'utf8');
+  const match = source.match(/export const SITE_URL = '([^']+)'/);
+  if (!match) throw new Error('could not read SITE_URL out of lib/site.ts');
+  return match[1];
+})();
+
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, entry.name);
@@ -193,25 +204,58 @@ if (lastmods.length !== locs.length) {
   problems.push(`sitemap has ${lastmods.length} lastmod values for ${locs.length} urls`);
 }
 
-// PRE LAUNCH: the site is deliberately blocked from search engines, so the
-// audit asserts the block is intact rather than asserting it is crawlable.
-// REVERSE THIS BEFORE LAUNCH, alongside app/robots.ts and app/layout.tsx.
+// The site is live, so the audit asserts it is crawlable and that every
+// hostname it advertises is the canonical one. A canonical tag on one host and
+// a sitemap on another is worse than either alone, so these are checked in one
+// place and both are failures.
 const robots = fs.readFileSync(path.join(OUT, 'robots.txt'), 'utf8');
-if (!/Disallow:\s*\/\s*$/m.test(robots)) {
-  problems.push('robots.txt no longer disallows crawling (expected while pre launch)');
+if (/^\s*Disallow:\s*\/\s*$/m.test(robots)) {
+  problems.push('robots.txt still disallows all crawling');
 }
-if (/Sitemap:/i.test(robots)) {
-  problems.push('robots.txt still references the sitemap while the site is blocked');
+if (!/^\s*Allow:\s*\/\s*$/m.test(robots)) {
+  problems.push('robots.txt does not allow crawling');
 }
-notes.push('PRE LAUNCH: robots.txt disallows all crawling');
-
-const unblocked = pages.filter(
-  (p) => !/<meta name="robots" content="noindex[^"]*"/.test(p.html),
-);
-if (unblocked.length > 0) {
-  problems.push(`pages missing the noindex tag: ${unblocked.map((p) => p.route).join(', ')}`);
+if (!robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`)) {
+  problems.push(`robots.txt does not point at ${SITE_URL}/sitemap.xml`);
 } else {
-  notes.push(`PRE LAUNCH: noindex, nofollow on all ${pages.length} pages`);
+  notes.push(`robots.txt allows all crawling and points at ${SITE_URL}/sitemap.xml`);
+}
+
+// The 404 is excluded because Next marks its own not found page noindex, which
+// is right. A 404 in the index is a bug, not a page.
+const indexable = pages.filter((p) => !isNotFound(p.route));
+const blocked = indexable.filter((p) => /<meta name="robots" content="[^"]*noindex/.test(p.html));
+if (blocked.length > 0) {
+  problems.push(`pages still carrying noindex: ${blocked.map((p) => p.route).join(', ')}`);
+} else {
+  notes.push(`no noindex tag on any of the ${indexable.length} indexable pages, 404 excluded`);
+}
+
+// Hostname drift. Every absolute url this site prints about itself, in a
+// canonical tag, an Open Graph url, a JSON-LD @id or the sitemap, must be on
+// the canonical host. Anything else is a stale domain left behind by a move.
+const CANONICAL_HOST = new URL(SITE_URL).host;
+const offHost = new Set();
+for (const loc of locs) {
+  if (new URL(loc).host !== CANONICAL_HOST) offHost.add(new URL(loc).host);
+}
+for (const page of pages) {
+  const own = page.html.matchAll(
+    /(?:<link rel="canonical" href=|<meta property="og:url" content=|"@id":\s*|"url":\s*)"(https?:\/\/[^"]+)"/g,
+  );
+  for (const [, url] of own) {
+    const host = new URL(url).host;
+    // Vendor and affiliate urls are foreign by design. Only urls that claim to
+    // be this site are checked, which is why the patterns above are specific.
+    if (host !== CANONICAL_HOST) offHost.add(host);
+  }
+}
+if (offHost.size > 0) {
+  problems.push(
+    `self referencing urls on a host other than ${CANONICAL_HOST}: ${[...offHost].join(', ')}`,
+  );
+} else {
+  notes.push(`every self referencing url is on ${CANONICAL_HOST}`);
 }
 
 // 404 must link back into the site

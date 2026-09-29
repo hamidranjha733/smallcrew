@@ -1,7 +1,10 @@
 // Single source of truth for anything that changes when the domain changes.
 // Update SITE_URL here and metadata, the sitemap and robots.txt all follow.
 
-export const SITE_URL = 'https://smallcrew.vercel.app';
+// The www host is the primary one, so it is the canonical host. Everything the
+// crawler reads comes from here: metadataBase, every canonical tag, the Open
+// Graph urls, the sitemap and robots.txt. Change the host in this one string.
+export const SITE_URL = 'https://www.smallcrewsoftware.com';
 
 export const SITE_NAME = 'Small Crew';
 

@@ -31,19 +31,13 @@ export const metadata: Metadata = {
     title: `${SITE_NAME}. ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
   },
-  // PRE LAUNCH: THE WHOLE SITE IS BLOCKED FROM SEARCH ENGINES.
-  //
-  // This emits <meta name="robots" content="noindex, nofollow"> on every page,
-  // because metadata here is inherited by every route that does not override
-  // it. Nothing on this site overrides it, so the block is genuinely site wide.
-  //
-  // REVERSE THIS BEFORE LAUNCH. Restore index: true and follow: true, and
-  // restore the allow rule and sitemap reference in app/robots.ts at the same
-  // time. Both changes must ship together, because either one alone still
-  // keeps the site out of the index.
+  // The site is live and indexable. This is stated rather than left to the
+  // default so that the setting is visible in the built HTML and can be
+  // asserted by the audit. It pairs with the allow rule in app/robots.ts, and
+  // the two must always agree.
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
