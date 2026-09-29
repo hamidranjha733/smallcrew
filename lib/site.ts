@@ -12,3 +12,10 @@ export const SITE_TAGLINE = 'Software reviews for service businesses under 20 pe
 
 export const SITE_DESCRIPTION =
   'Small Crew prices small business software on the tier that actually includes online booking, at one, three and ten users, and dates every price.';
+
+export const AUTHOR_NAME = 'Hamid Ranjha';
+
+/** Stable id for the person node, so every page points at the same author. */
+export const AUTHOR_ID = `${SITE_URL}/about/#hamid-ranjha`;
+
+export const CONTACT_EMAIL = 'hamidranjha733@gmail.com';

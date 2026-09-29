@@ -24,6 +24,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  contact: {
+    keyword: 'contact Small Crew',
+    title: 'Contact Small Crew, and How to Report a Wrong Price',
+    description:
+      'How to reach Small Crew. One address, read by one person. Corrections to a vendor price are the most useful thing you can send and get priority.',
+  },
   about: {
     keyword: 'about Small Crew',
     title: 'About Small Crew and How We Price Software by Crew Size',

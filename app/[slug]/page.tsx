@@ -11,9 +11,11 @@ import PricedStamp from '@/components/PricedStamp';
 import PullQuote from '@/components/PullQuote';
 import TearLine from '@/components/TearLine';
 import Toc from '@/components/Toc';
+import Byline from '@/components/Byline';
 import { getAllPages, getPage, getSlugs, getTrade } from '@/lib/content';
 import { checkedToIso, getGuideSeo } from '@/lib/seo';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { getModified } from '@/lib/dates';
+import { AUTHOR_ID, AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo } from '@/lib/trades';
 
 type Params = { slug: string };
@@ -78,7 +80,10 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
   const anchors = related.slice(0, 3);
 
   const topPick = page.tools[0];
+  // datePublished stays the verification month. dateModified is the real last
+  // edit, which is a different fact and usually later.
   const iso = checkedToIso(page.pricesChecked);
+  const modified = getModified(`/${slug}/`, iso);
   const url = `${SITE_URL}/${slug}/`;
 
   return (
@@ -94,9 +99,16 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
             about: page.keyword,
             inLanguage: 'en-US',
             datePublished: iso,
-            dateModified: iso,
+            dateModified: modified,
             mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-            author: { '@id': `${SITE_URL}/#organization` },
+            // A named person takes responsibility for the judgements here. The
+            // organisation remains the publisher.
+            author: {
+              '@type': 'Person',
+              '@id': AUTHOR_ID,
+              name: AUTHOR_NAME,
+              url: `${SITE_URL}/about/`,
+            },
             publisher: { '@id': `${SITE_URL}/#organization` },
           },
           {
@@ -149,6 +161,7 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
             />
             <h1>{page.title}</h1>
             <p className="page-standfirst">{page.standfirst}</p>
+            <Byline modified={modified} />
           </div>
 
           <HeroPanel

@@ -9,10 +9,12 @@ import PricedStamp from './PricedStamp';
 import StatsBand from './StatsBand';
 import TearLine from './TearLine';
 import Toc from './Toc';
+import Byline from './Byline';
 import { getAllPages, getCategoryBody, getExtremes, getTrade, type Tool } from '@/lib/content';
 import { badgeSummary } from '@/lib/pricing';
 import { checkedToIso, getCategorySeo } from '@/lib/seo';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { getModified } from '@/lib/dates';
+import { AUTHOR_ID, AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo, TRADES } from '@/lib/trades';
 import type { Trade } from '@/lib/content';
 
@@ -46,6 +48,7 @@ export default async function CategoryView({ trade }: Props) {
 
   const seo = getCategorySeo(trade);
   const url = `${SITE_URL}${info.href}`;
+  const modified = body ? getModified(info.href, checkedToIso(body.pricesChecked)) : null;
 
   // One row per distinct vendor in this trade, taken from the first guide that
   // covers it so the figures stay identical to that page.
@@ -71,9 +74,19 @@ export default async function CategoryView({ trade }: Props) {
             about: seo.keyword,
             inLanguage: 'en-US',
             url,
-            // A category holding its own priced table has a meaningful modified
-            // date, which is the month those prices were read.
-            ...(body ? { dateModified: checkedToIso(body.pricesChecked) } : {}),
+            // A category holding its own comparison is an authored page, so it
+            // carries a real modified date and a named author.
+            ...(modified
+              ? {
+                  dateModified: modified,
+                  author: {
+                    '@type': 'Person',
+                    '@id': AUTHOR_ID,
+                    name: AUTHOR_NAME,
+                    url: `${SITE_URL}/about/`,
+                  },
+                }
+              : {}),
             isPartOf: { '@id': `${SITE_URL}/#website` },
             publisher: { '@id': `${SITE_URL}/#organization` },
             hasPart: tradePages.map((page) => ({
@@ -121,6 +134,7 @@ export default async function CategoryView({ trade }: Props) {
             </nav>
             <h1>{info.h1}</h1>
             <p className="page-standfirst">{info.standfirst}</p>
+            {modified && <Byline modified={modified} />}
           </div>
 
           <HeroPanel

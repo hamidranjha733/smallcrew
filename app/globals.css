@@ -1646,6 +1646,107 @@ table.cost-table tbody tr:hover td.cell-watch {
   margin-bottom: 0;
 }
 
+/* Named byline under the headline on every page carrying an article. The hero
+   band is dark, so the colours below are overridden inside it. */
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-family: var(--data);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin: 0.85rem 0 0;
+}
+
+.byline-by {
+  color: var(--mute);
+}
+
+.byline a {
+  color: var(--signal);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.byline a:hover {
+  color: var(--signal-2);
+}
+
+.byline-sep {
+  color: var(--rule-2);
+}
+
+/* On --signal-deep, --signal-pale measures only 3.85 to 1 at this size, which
+   fails AA for text. The name is set in white, which measures 6.96 to 1, and
+   keeps the teal as an underline, where the 3 to 1 non text threshold applies
+   and 3.85 passes. */
+.hero-band .byline,
+.hero-band .byline-by,
+.hero-band .byline-date {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-band .byline a {
+  color: var(--paper);
+  border-bottom-color: var(--signal-pale);
+  border-bottom-width: 2px;
+}
+
+.hero-band .byline a:hover {
+  color: var(--signal-pale);
+  border-bottom-color: var(--paper);
+}
+
+.hero-band .byline-sep {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Contact address block, sitting where the hero panel sits on other pages. */
+.contact-card {
+  border: 1px solid var(--rule-2);
+  background: var(--paper);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  box-shadow: 6px 6px 0 var(--signal-deep);
+}
+
+.contact-card-label {
+  font-family: var(--data);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.contact-card-email {
+  font-family: var(--data);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--signal);
+  text-decoration: none;
+  word-break: break-all;
+  border-bottom: 2px solid var(--signal);
+  align-self: flex-start;
+}
+
+.contact-card-email:hover {
+  color: var(--signal-2);
+  border-color: var(--signal-2);
+}
+
+.contact-card-note {
+  font-family: var(--body);
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+
 .updated-note {
   font-family: var(--data);
   font-size: 0.72rem;

@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import StatsBand from '@/components/StatsBand';
 import { getAllPages, getExtremes } from '@/lib/content';
 import { getPageSeo } from '@/lib/seo';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { CONTACT_EMAIL, SITE_NAME, SITE_URL } from '@/lib/site';
 import { TRADES } from '@/lib/trades';
 
 const seo = getPageSeo('about');
@@ -168,14 +168,16 @@ export default async function AboutPage() {
 
             <h2 id="money">How we make money</h2>
             <p>
-              Some links on this site earn a commission if you sign up. It costs you nothing and the
-              price you pay is the same either way.
+              Small Crew intends to earn affiliate commission on some of the links on this site. No
+              affiliate programme has been joined yet and no link here earns anything today. When
+              that changes, this page will say so, and the wording above every cost table will
+              change with it. Either way it costs you nothing and the price you pay is the same.
             </p>
             <p>
-              Commission does not decide which tools appear, what is said about them, or the order
+              Commission will not decide which tools appear, what is said about them, or the order
               of any table. Tables are ordered by how well a tool fits a crew under twenty people.
-              Several tools recommended ahead of the commission paying ones, including ZenMaid,
-              Launch27 and Connecteam, pay nothing at all, and the tools that do pay are frequently
+              Several tools recommended here, including ZenMaid, Launch27 and Connecteam, run no
+              affiliate programme at all, and the tools most likely to pay are frequently
               recommended against at larger crew sizes on cost grounds. If that ever stops being
               true, the site has stopped being worth reading.
             </p>
@@ -185,6 +187,11 @@ export default async function AboutPage() {
               If a price is wrong, out of date, or a vendor has changed a plan, that is worth fixing
               quickly and the correction will be dated like everything else. The same applies to any
               claim about what a product does or does not do.
+            </p>
+            <p>
+              Send it to <Link href="/contact/">{CONTACT_EMAIL}</Link>, which reaches one person.
+              A correction to a price is the most useful message this site receives, and it will be
+              re verified against the vendor pricing page rather than taken on trust.
             </p>
           </div>
         </section>

@@ -27,9 +27,10 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
             <p>
               {SITE_NAME} has not used this software. Nothing here is a hands on test, a benchmark
               or a trial report. Vendor pricing changes several times a year, so check the date on
-              the page and confirm the current figure with the vendor before you buy. Some links
-              earn a commission at no cost to you, and commission does not affect which tools appear
-              or the order they appear in.
+              the page and confirm the current figure with the vendor before you buy. Small Crew
+              intends to earn affiliate commission and has joined no programme yet, so no link here
+              earns anything today. Commission will never affect which tools appear or the order
+              they appear in.
             </p>
 
             <dl className="invoice-total">
@@ -72,6 +73,9 @@ export default function Footer({ checked, guides, toolEntries }: Props) {
               </li>
               <li>
                 <Link href="/about/">About and disclosure</Link>
+              </li>
+              <li>
+                <Link href="/contact/">Contact</Link>
               </li>
             </ul>
           </div>
