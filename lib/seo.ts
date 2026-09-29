@@ -46,10 +46,10 @@ export const CATEGORY_SEO: Record<string, Seo> = {
       'Six cleaning service software comparisons, every tool priced on the tier that includes online booking, at 1, 3 and 10 cleaners. Figures dated August 2026.',
   },
   'lawn-care': {
-    keyword: 'lawn care management software',
-    title: 'Lawn Care Management Software Compared, 2026',
+    keyword: 'best lawn care software',
+    title: 'Best Lawn Care Software Priced at Three Crew Sizes',
     description:
-      'Five lawn care management software comparisons priced at 1, 3 and 10 employees. Several of the best known tools will not quote a small crew without a call.',
+      'Four lawn care management software comparisons priced at 1, 3 and 10 employees. Several of the best known tools will not quote a small crew without a call.',
   },
   'pest-control': {
     keyword: 'pest control software',
@@ -95,12 +95,6 @@ export const GUIDE_SEO: Record<string, Seo> = {
     title: 'Cleaning Business Software With Online Booking',
     description:
       'Online booking is the feature vendors put one tier above the advertised price. Five cleaning tools priced on the plan that includes it, at 1, 3 and 10 users.',
-  },
-  'best-lawn-care-software': {
-    keyword: 'lawn care software',
-    title: 'Lawn Care Software Compared at Three Crew Sizes',
-    description:
-      'Six lawn care tools priced at 1, 3 and 10 employees. Three of the most recommended will not quote a crew of three without a sales call. Dated August 2026.',
   },
   'lawn-care-scheduling-software': {
     keyword: 'lawn care scheduling software',

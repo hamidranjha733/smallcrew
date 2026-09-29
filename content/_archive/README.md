@@ -19,3 +19,16 @@ rewiring the navigation, and the merged page is the primary page for the head
 term "pest control software".
 
 The unique sections of this file live on in `content/category/pest-control.md`.
+
+## best-lawn-care-software.md
+
+Merged into the `/lawn-care/` category page in September 2026 and redirected
+there with a 301 in `vercel.json`.
+
+Ahrefs gave both pages the same parent topic, "lawn care software", so they
+competed with each other. `/lawn-care/` sits in the masthead and carried far
+more internal links, so it was the cheaper URL to keep.
+
+The merged page targets "best lawn care software" at KD 14 rather than "lawn
+care software" at KD 53. The unique sections of this file live on in
+`content/category/lawn-care.md`.

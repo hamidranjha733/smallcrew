@@ -10,6 +10,16 @@
       "source": "/best-pest-control-software/",
       "destination": "/pest-control/",
       "statusCode": 301
+    },
+    {
+      "source": "/best-lawn-care-software",
+      "destination": "/lawn-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-lawn-care-software/",
+      "destination": "/lawn-care/",
+      "statusCode": 301
     }
   ]
 }

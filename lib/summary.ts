@@ -26,9 +26,9 @@ const PICKS: Pick[] = [
   { tool: 'ZenMaid', trade: 'Cleaning', slug: 'best-software-for-cleaning-business' },
   { tool: 'Launch27', trade: 'Cleaning', slug: 'best-software-for-cleaning-business' },
   { tool: 'Housecall Pro', trade: 'Cleaning', slug: 'best-software-for-cleaning-business' },
-  { tool: 'LawnPro', trade: 'Lawn care', slug: 'best-lawn-care-software' },
+  { tool: 'LawnPro', trade: 'Lawn care', category: 'lawn-care' },
   { tool: 'GorillaDesk', trade: 'Pest control', category: 'pest-control' },
-  { tool: 'Arborgold', trade: 'Lawn care', slug: 'best-lawn-care-software' },
+  { tool: 'Arborgold', trade: 'Lawn care', category: 'lawn-care' },
   { tool: 'Jobber', trade: 'All trades', slug: 'best-software-for-cleaning-business' },
 ];
 

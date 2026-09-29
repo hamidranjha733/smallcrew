@@ -21,7 +21,7 @@ All nineteen pages are built and live in `/content`.
 
 | Slug | Target keyword | Vol | KD | CPC | Also covers | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| best-lawn-care-software | lawn care software | 900 | 12 | $12.00 | lawn care management software (450), best software for lawn care business (200), lawn care software for small business (200), best lawn care software (200), lawn care business management software (150), lawn care software app (150) | Built |
+| /lawn-care/ (category) | best lawn care software | 600 | 14 | $12.00 | lawn care management software (450), best software for lawn care business (200), lawn care software for small business (200), lawn care business management software (150), lawn care software app (150) | Built. Merged from best-lawn-care-software in September 2026, which now 301s here. Targets best lawn care software rather than lawn care software, which is KD 53 |
 | lawn-care-scheduling-software | lawn care scheduling software | 350 | 11 | $1.00 | | Built |
 | lawn-care-billing-software | lawn care billing software | 200 | 11 | $17.00 | lawn care accounting software (200) | Built |
 | lawn-care-routing-software | lawn care routing software | 150 | 3 | $17.00 | | Built |
@@ -51,7 +51,7 @@ These are the pages that should rank fastest and are worth the most per visitor.
 | Order | Slug | Value signal | KD |
 | --- | --- | --- | --- |
 | 1 | pest-control-marketing-software | 150 x $75.00 | 10 |
-| 2 | best-lawn-care-software | 900 x $12.00, plus 1,350 merged | 12 |
+| 2 | /lawn-care/ (category) | 600 x $12.00, 4,500 traffic potential, plus 1,150 merged | 14 |
 | 3 | best-software-for-cleaning-business | 800 x $11.00, plus 950 merged | 9 |
 | 4 | carpet-cleaning-business-software | 200 x $35.00 | 2 |
 | 5 | accounting-software-for-cleaning-business | 200 x $25.00 | 4 |
@@ -105,7 +105,7 @@ These need attention at the next re verification pass regardless of the four mon
 Cells read `Could not confirm` where no pricing page could be reached, and `Quote only` where a fetched vendor page routes pricing through a sales conversation. The site never asserts that a vendor does not publish pricing unless a fetched page says so.
 
 - **QuickBooks Online**, on `accounting-software-for-cleaning-business`, `lawn-care-billing-software` and `pest-control-accounting-software`. Six separate attempts at Intuit pages all timed out in August 2026. Intuit does publish pricing, so this is a retrieval failure rather than a vendor omission, and it should clear on a manual check.
-- **Yardbook**, on `best-lawn-care-software`, `lawn-care-scheduling-software`, `lawn-care-routing-software` and `lawn-care-snow-removal-software`. Every Yardbook URL tried returned HTTP 403, including the homepage and the support site. This is the one vendor whose `url` field is not a page we fetched, because no Yardbook page was reachable at all.
+- **Yardbook**, on `/lawn-care/`, `lawn-care-scheduling-software`, `lawn-care-routing-software` and `lawn-care-snow-removal-software`. Every Yardbook URL tried returned HTTP 403, including the homepage and the support site. This is the one vendor whose `url` field is not a page we fetched, because no Yardbook page was reachable at all.
 - **Briostack**, on six pest control pages. The reachable page, `briostack.com/additionalpricing`, lists add on and migration charges but no base subscription price.
 - **Housecall Pro** seat counts, on seven cleaning and pest control pages. The vendor pricing page publishes three prices and no seat limits, which is a genuine vendor omission rather than a retrieval failure.
 
@@ -121,5 +121,5 @@ Cells read `Could not confirm` where no pricing page could be reached, and `Quot
 Not built, and worth researching before adding.
 
 - Window cleaning and pressure washing, which share the residential booking problem with cleaning and have their own keyword sets.
-- Estimating and quoting software for landscape construction, which is adjacent to `best-lawn-care-software` and serves a larger buyer.
+- Estimating and quoting software for landscape construction, which is adjacent to `/lawn-care/` and serves a larger buyer.
 - Payroll for service businesses. It is the largest cost line in every trade covered here and it is deliberately absent from all nineteen pages, which currently treat it as out of scope.

@@ -35,8 +35,8 @@ export const TRADES: TradeInfo[] = [
     standfirst:
       'Lawn care and landscape maintenance. Seasonal contracts, route density and the awkward second season of snow removal.',
     intro: [
-      'Lawn care is the category where the most recommended products refuse to tell you what they cost, which makes an honest comparison harder here than in either of the other two trades.',
-      'The two numbers that decide this trade are the customer cap on the entry plan and the cost of an additional employee. Lawn care rounds run to hundreds of properties and crews grow and shrink with the season, so a plan capped at twenty five customers is decorative and a tier that bands by headcount will step sharply the month you hire.',
+      'The best lawn care software for a crew under twenty is LawnPro at $39 a month for three employees, the cheapest published price in the category that includes a client portal and unlimited customers, or Jobber at $139 rising to $299 at ten if you quote a lot of new work. Three of the six products most often recommended here, Service Autopilot, Aspire and Yardbook, could not be priced for a crew of three from their own published material in August 2026.',
+      'The two numbers that decide this trade are the customer cap on the entry plan and the cost of an additional employee. Lawn care rounds run to hundreds of properties and crews grow and shrink with the season, so a plan capped at twenty five customers is decorative and a tier that bands by headcount will step sharply the month you hire. Half the category declines to publish either number.',
     ],
     pullquote:
       'Three of the six tools most often put in front of a small operator could not be priced for a crew of three.',
