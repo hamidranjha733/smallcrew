@@ -8,6 +8,7 @@ import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
 import CrewControl from './CrewControl';
 import VendorLogo from './VendorLogo';
+import ZenMaidNote, { hasZenMaid } from './ZenMaidNote';
 
 type Props = {
   rows: SummaryRow[];
@@ -118,6 +119,7 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
           </tbody>
         </table>
       </div>
+      {hasZenMaid(rows.map((entry) => entry.row)) && <ZenMaidNote />}
       <p className="cost-table-caption">
         <strong>
           Prices are the monthly cost of the lowest tier that includes online booking, not the

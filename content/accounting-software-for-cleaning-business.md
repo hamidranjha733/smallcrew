@@ -15,10 +15,10 @@ tools:
     url: https://www.waveapps.com/pricing
   - tool: ZenMaid
     bestFor: Billing recurring cleans without a second system
-    solo: $39
-    crew3: $39
-    crew10: $39
-    watch: Starter at $19 has no booking form and caps you at forty appointments a month, so Pro at $39 is the real entry price
+    solo: $53
+    crew3: $81
+    crew10: $179
+    watch: Pro is $39 plus $14 a month for every person on the team, so $53 at one and $179 at ten. Starter at $19 has no booking form and caps you at forty appointments a month
     url: https://get.zenmaid.com/pricing
   - tool: FreshBooks
     bestFor: Invoicing a book of recurring clients
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-For a cleaning business under twenty staff, Wave at $19 a month is the cheapest option that will both invoice clients and keep a ledger, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures were read from the vendor pricing pages in August 2026 and are the lowest tier that includes recurring invoicing and card payments.
+For a cleaning business under twenty staff, Wave at $19 a month is the cheapest option that will both invoice clients and keep a ledger, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures are the lowest tier that includes recurring invoicing and card payments. ZenMaid was rechecked in October 2026, the others read in August 2026.
 
 The important distinction on this page is not price. It is that most tools sold as accounting software for a cleaning business are invoicing tools, and most tools sold as cleaning software contain an invoice generator that is not accounting. Buying either one believing it is the other is how cleaning companies arrive at tax season with a shoebox.
 
@@ -59,11 +59,11 @@ A cleaning company with staff will end up running one from each column. The real
 
 ## What the pairs actually cost
 
-At three cleaners, ZenMaid at $39 plus Wave at $19 comes to $58 a month, and covers booking, scheduling, reminders, invoicing and a real ledger.
+At three cleaners, ZenMaid at $81 plus Wave at $19 comes to $100 a month, and covers booking, scheduling, reminders, invoicing and a real ledger.
 
 The same three cleaners on Jobber Connect at $197 a month still need an accounting package underneath it, because Jobber syncs rather than reconciles. The comparison is $58 against $197 plus a ledger.
 
-At ten cleaners the gap widens, because ZenMaid and Wave are flat and Jobber is $29 for every seat. Ten users on Jobber Connect is $299 a month.
+At ten cleaners the gap narrows rather than widens. Wave is flat, but ZenMaid adds $14 a month for every person on the team and reaches $179, while Jobber Connect is $299 on its ten user band. The pairing is still cheaper, but by $101 a month rather than by the margin the solo figures suggest.
 
 FreshBooks sits between the two. At $43 a month on the Plus plan you get fifty billable clients and automated late payment reminders, which matters for recurring residential work where the same forty households are billed every month. Each additional team member is $11, so ten users reach $142.
 
@@ -91,9 +91,9 @@ The practical structure for a company of five to fifteen cleaners is therefore t
 
 Annualised, the accounting side is the cheapest part of a cleaning company's software.
 
-Wave Pro is $228 a year at any crew size shown. FreshBooks Plus is $516 a year for one user, $780 for three and $1,704 for ten. ZenMaid is $468 a year flat and generates invoices without keeping books. Jobber Connect is $1,668 a year for one user and $3,588 for ten, and still needs an accounting package underneath it.
+Wave Pro is $228 a year at any crew size shown. FreshBooks Plus is $516 a year for one user, $780 for three and $1,704 for ten. ZenMaid is $636 a year for one, $972 for three and $2,148 for ten, and generates invoices without keeping books. Jobber Connect is $1,668 a year for one user and $3,588 for ten, and still needs an accounting package underneath it.
 
-The cheapest complete pairing for a three cleaner company is ZenMaid at $468 plus Wave at $228, which is $696 a year for booking, scheduling, reminders, invoicing and a real ledger.
+The cheapest complete pairing for a three cleaner company is ZenMaid at $972 plus Wave at $228, which is $1,200 a year for booking, scheduling, reminders, invoicing and a real ledger.
 
 The same three cleaners on Jobber Connect at $2,364 a year plus Wave at $228 is $2,592. The difference is $1,896 a year, and Jobber's quoting and reporting have to be worth that much to justify the choice.
 

@@ -8,10 +8,10 @@ toolsCompared: 5
 tools:
   - tool: ZenMaid
     bestFor: Carpet work attached to a cleaning round
-    solo: $39
-    crew3: $39
-    crew10: $39
-    watch: Starter at $19 has no booking form and caps you at forty appointments a month, so Pro at $39 is the real entry price
+    solo: $53
+    crew3: $81
+    crew10: $179
+    watch: Pro is $39 plus $14 a month for every person on the team, so $53 at one and $179 at ten. Starter at $19 has no booking form and caps you at forty appointments a month
     url: https://get.zenmaid.com/pricing
   - tool: Launch27
     bestFor: Selling fixed price room packages online
@@ -55,7 +55,7 @@ Most software charges per user. A carpet cleaning company with four technicians 
 
 For a two van operation with four technicians, that is $149 a month at GorillaDesk against $226 a month at Jobber Connect for four seats. For a one van operation with two technicians it is $99 against $168. The direction reverses only if every technician drives separately.
 
-Launch27 and ZenMaid sidestep the question entirely with flat pricing and unlimited users, which is why they appear high in the table despite being built for residential cleaning rather than carpet specifically.
+Launch27 sidesteps the question entirely with flat pricing and unlimited users. ZenMaid does not, because it charges for every person on the team, but it starts low enough to stay competitive for a small round. Both appear high in the table despite being built for residential cleaning rather than carpet specifically.
 
 ## Where the tier trap sits for carpet cleaners
 
@@ -89,7 +89,7 @@ Jobber places automated reminders on Connect at $139, which is $90 above its adv
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, a one van operation pays $468 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
+Annualised at the tier that includes online booking, a one van operation with a single cleaner pays $636 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
 
 A three technician, one van operation pays $468, $900, $1,188 on GorillaDesk, and $2,364 on Jobber Connect. That GorillaDesk figure is the reason the table shows the same price at one and three people, because per schedule pricing means three technicians in one van cost exactly what one technician in one van costs.
 
@@ -99,7 +99,7 @@ That reversal is the single most useful thing to understand before choosing carp
 
 ## Where each tool is the wrong choice
 
-**ZenMaid is wrong** for a dedicated carpet cleaning company. It is built for recurring maid rounds. It appears here only because carpet work bolted onto an existing cleaning round is common, and in that case the $39 flat price is hard to beat.
+**ZenMaid is wrong** for a dedicated carpet cleaning company. It is built for recurring maid rounds. It appears here only because carpet work bolted onto an existing cleaning round is common, and in that case $53 a month for a single cleaner is hard to beat. It stops being hard to beat as you hire, because the price rises with every person.
 
 **Launch27 is wrong** if your jobs are quoted rather than packaged. Its strength is a booking form that sells a defined product at a defined price. A carpet job priced by room count and fibre type does not fit that form neatly.
 
@@ -112,7 +112,7 @@ That reversal is the single most useful thing to understand before choosing carp
 ## Common questions
 
 **What is the cheapest carpet cleaning software with online booking?**
-ZenMaid Pro at $39 a month if carpet work sits inside a cleaning round, and Launch27 at $75 a month for a dedicated carpet operation. Both were checked in August 2026.
+ZenMaid Pro at $53 a month for a single cleaner if carpet work sits inside a cleaning round, and Launch27 at $75 a month for a dedicated carpet operation. Launch27 overtakes ZenMaid on price at about two people. ZenMaid was rechecked in October 2026, Launch27 in August 2026.
 
 **Should I pay per user or per van?**
 Per van, if your technicians ride together. GorillaDesk bills per schedule, which is per route rather than per person, and its documentation states that crews only need a schedule for the crew leader. For a four technician, two van operation that is the difference between $149 and $226 a month.
@@ -127,4 +127,4 @@ It is the single most useful thing a booking form does for carpet cleaning, beca
 Not as a separate purchase at this size. What people mean by cleaning quote software is a saved rate card and a quote that converts into a scheduled job, and Jobber and GorillaDesk both do that inside the price above. A standalone quoting product adds a second system to keep in step with your customer list.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Pricing in this category changes several times a year, so confirm before committing.
+ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Pricing in this category changes several times a year, so confirm before committing.

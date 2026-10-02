@@ -16,21 +16,36 @@
         {
           "name": "Starter",
           "baseMonthly": 19,
-          "atTeam": { "0": 19, "1": 23, "3": 31, "10": 59 },
+          "atTeam": {
+            "0": 19,
+            "1": 23,
+            "3": 31,
+            "10": 59
+          },
           "limit": "Up to 40 appointments per month",
           "booking": false
         },
         {
           "name": "Pro",
           "baseMonthly": 39,
-          "atTeam": { "0": 39, "1": 53, "3": 81, "10": 179 },
+          "atTeam": {
+            "0": 39,
+            "1": 53,
+            "3": 81,
+            "10": 179
+          },
           "limit": "Unlimited appointments",
           "booking": "Booking form carries ZenMaid branding"
         },
         {
           "name": "Pro Max",
           "baseMonthly": 49,
-          "atTeam": { "0": 49, "1": 73, "3": 121, "10": 289 },
+          "atTeam": {
+            "0": 49,
+            "1": 73,
+            "3": 121,
+            "10": 289
+          },
           "limit": "Unlimited appointments",
           "booking": "Booking form carries your own branding"
         }
@@ -42,6 +57,17 @@
         "SMS charges are excluded from every tier price"
       ],
       "readBy": "Read directly off the live pricing page, including driving the team size control through every value from 0 to 12 rather than taking the headline figures at face value."
+    }
+  ],
+  "corrections": [
+    {
+      "vendor": "ZenMaid",
+      "recordedOn": "2026-10-02",
+      "whatWasPublished": "$39 a month at one, three and ten cleaners, on five guides and in the homepage docket, described as flat priced.",
+      "whatIsTrue": "$39 is the Pro price with the team size calculator at its default of zero. The real Pro figures are $53 at one, $81 at three and $179 at ten, because the tier adds $14 a month for every person on the team.",
+      "cause": "The calculator computes the prices in JavaScript and they are not in the page HTML, so a reading that did not drive the control saw only the zero position.",
+      "note": "ZenMaid did not change its pricing. This is a correction to how the page was read, not a price movement.",
+      "noAugustEntry": "This file was created on 2 October 2026 and has never held a 24 August observation, so there is no earlier entry to annotate. The August figures live only in the git history of the guides. The correction is recorded here rather than over anything."
     }
   ]
 }

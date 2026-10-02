@@ -15,10 +15,10 @@ tools:
     url: https://connecteam.com/pricing/
   - tool: ZenMaid
     bestFor: Recurring residential rounds
-    solo: $39
-    crew3: $39
-    crew10: $39
-    watch: Starter at $19 has no booking form and caps you at forty appointments a month, so Pro at $39 is the real entry price
+    solo: $53
+    crew3: $81
+    crew10: $179
+    watch: Pro is $39 plus $14 a month for every person on the team, so $53 at one and $179 at ten. Starter at $19 has no booking form and caps you at forty appointments a month
     url: https://get.zenmaid.com/pricing
   - tool: Launch27
     bestFor: Filling gaps from a public booking form
@@ -43,7 +43,7 @@ tools:
     url: https://www.housecallpro.com/pricing/
 ---
 
-The best scheduling software for a cleaning business under twenty staff is ZenMaid at $39 a month for recurring residential rounds, Launch27 at $75 a month if the schedule needs to fill itself from a public booking form, and Connecteam free for up to ten users if you only need to roster staff and track hours. All figures were read from the vendor pricing pages in August 2026 and are for the lowest tier that includes customer facing online booking.
+The best scheduling software for a cleaning business under twenty staff is ZenMaid at $53 a month for one cleaner on recurring residential rounds, Launch27 at $75 a month if the schedule needs to fill itself from a public booking form, and Connecteam free for up to ten users if you only need to roster staff and track hours. All figures are for the lowest tier that includes customer facing online booking. ZenMaid was rechecked in October 2026, the others in August 2026.
 
 Cleaning business scheduling software divides into two categories that are usually reviewed as if they were one. Staff rostering tells your cleaners where to be. Customer scheduling lets a client pick a slot without calling you. They are different products at very different prices, and buying the wrong one is the most common expensive mistake in this category.
 
@@ -61,15 +61,15 @@ Jobber advertises at $49 a month. That Core plan will schedule jobs and take onl
 
 For a cleaning company this is not a nice to have. Residential cleaning runs on access. If the client is not reminded, a proportion of your visits arrive at a locked door, and each one is a paid hour with no invoice against it. The reminder is the feature that pays for the software, and it is one tier above the advertised price.
 
-ZenMaid shows the same pattern more cheaply. Starter at $19 a month is capped at forty appointments a month. A solo cleaner doing three houses a day passes forty appointments in the third week. Pro at $39 removes the cap and adds the booking form.
+ZenMaid shows the same pattern more cheaply. Starter at $19 a month is capped at forty appointments a month. A solo cleaner doing three houses a day passes forty appointments in the third week. Pro removes the cap and adds the booking form, and costs $53 for that one cleaner.
 
 ## Scheduling software for a cleaning business at each size
 
-**One cleaner, no staff.** ZenMaid Pro at $39. The schedule is small, the problem is inbound enquiries, and the booking form is the whole value.
+**One cleaner, no staff.** ZenMaid Pro at $53. The schedule is small, the problem is inbound enquiries, and the booking form is the whole value.
 
-**Two to four cleaners.** ZenMaid at $39 plus Connecteam free if you want time tracking. Two systems sounds worse than one, and at $39 a month against $197 for Jobber at three users it is worth the small friction.
+**Two to four cleaners.** ZenMaid plus Connecteam free if you want time tracking. Two systems sounds worse than one, and at $81 a month for three cleaners against $197 for Jobber at three users it is worth the small friction.
 
-**Five to ten cleaners.** Launch27 at $75 a month for unlimited users, or ZenMaid at $39 if the round is purely recurring. This is the crew size where per seat pricing turns hostile. Jobber at ten users on the Connect plan is $299 a month.
+**Five to ten cleaners.** Launch27 at $75 a month for unlimited users, which is the cheapest option at this size by a clear margin. ZenMaid is $179 at ten because it charges per person, so the round being purely recurring no longer makes it the cheap answer. This is the crew size where per head pricing turns hostile, and ZenMaid is not exempt. Jobber at ten users on the Connect plan is $299 a month.
 
 ## Cleaning business scheduling software compared honestly
 
@@ -91,7 +91,7 @@ A cancelled clean at eight in the morning is a cleaner already in the van with n
 
 Scheduling software addresses this in three ways, and it is worth knowing which of them each tool supports before you buy.
 
-The first is the reminder, which reduces the number of cancellations that arrive with no notice. On ZenMaid this is on Pro at $39. On Launch27 email reminders are on Base at $75 and text reminders on Pro at $150. On Jobber automated reminders are on Connect at $139.
+The first is the reminder, which reduces the number of cancellations that arrive with no notice. On ZenMaid this is on Pro, from $53 for a single cleaner. On Launch27 email reminders are on Base at $75 and text reminders on Pro at $150. On Jobber automated reminders are on Connect at $139.
 
 The second is the cancellation policy attached to a booking, which requires the customer to have agreed to terms at the point of booking rather than in a phone call nobody recorded. This is a property of the booking form.
 
@@ -99,11 +99,11 @@ The third is backfilling, which means having a waiting list you can offer the sl
 
 ## The twelve month number
 
-Annualised at the tier that includes customer booking, a three cleaner company pays nothing on Connecteam for staff rostering, $468 a year on ZenMaid, $900 on Launch27 and $2,364 on Jobber Connect.
+Annualised at the tier that includes customer booking, a three cleaner company pays nothing on Connecteam for staff rostering, $972 a year on ZenMaid, $900 on Launch27 and $2,364 on Jobber Connect. Launch27 is already the cheaper of the two at three people.
 
-At ten cleaners the same list reads nothing, $468, $900 and $3,588. Jobber's own ten user band is the cheapest path at that size, and it is still nearly eight times the ZenMaid figure.
+At ten cleaners the same list reads nothing, $2,148, $900 and $3,588. Launch27 is now the cheapest that schedules customers, at less than half the ZenMaid figure, and Jobber's ten user band is still the most expensive.
 
-The comparison worth making is not between the monthly prices. It is between the annual difference and what you would otherwise spend it on. At ten cleaners, choosing Jobber Connect over ZenMaid costs $3,120 a year, which is close to a part time office wage. If the software saves more administrative time than that, it is correct. If it does not, the flat priced tool is correct and the decision is arithmetic rather than preference.
+The comparison worth making is not between the monthly prices. It is between the annual difference and what you would otherwise spend it on. At ten cleaners, choosing Jobber Connect over Launch27 costs $2,688 a year, which is close to a part time office wage. If the software saves more administrative time than that, it is correct. If it does not, the flat priced tool is correct and the decision is arithmetic rather than preference.
 
 ## Maid service scheduling software is a narrower product
 
@@ -119,7 +119,7 @@ If your work is one off deep cleans and move outs rather than a repeating round,
 
 **Connecteam is wrong** if the thing you actually need is for customers to book themselves. It does not do that at any price.
 
-**ZenMaid is wrong** for commercial cleaning contracts and for anyone below the appointment cap who thinks $19 is the real price. It is $39.
+**ZenMaid is wrong** for commercial cleaning contracts, and for anyone who reads $19 or $39 as the price they will pay. Pro starts at $39 before a single person is added and is $53 for one cleaner, $81 for three and $179 for ten.
 
 **Launch27 is wrong** if you need automated card charging, unless you are prepared to pay $299.
 
@@ -130,7 +130,7 @@ If your work is one off deep cleans and move outs rather than a repeating round,
 ## Common questions
 
 **What is the cheapest scheduling software for a cleaning business?**
-Connecteam is free for up to ten users, but only rosters staff. The cheapest that schedules customers is ZenMaid Pro at $39 a month as of August 2026.
+Connecteam is free for up to ten users, but only rosters staff. The cheapest that schedules customers is ZenMaid Pro at $53 a month for a single cleaner, rechecked in October 2026. Past about three people Launch27 at $75 flat is cheaper.
 
 **Can I use a shared calendar instead?**
 Up to roughly two cleaners, yes. The point at which a shared calendar fails is the first cancellation you have to rebook while holding a mop, because the calendar does not tell the client, does not tell the cleaner and does not move the invoice.
@@ -139,7 +139,7 @@ Up to roughly two cleaners, yes. The point at which a shared calendar fails is t
 Automated reminders are the feature that addresses it, and they sit on ZenMaid Pro, Launch27 Base for email, Launch27 Pro for text, and Jobber Connect. On Jobber they are two tiers above the advertised price.
 
 **Do I need per cleaner licences?**
-It depends entirely on the vendor and it is the single largest cost driver. ZenMaid and Launch27 publish flat prices that do not change with headcount. Jobber charges $29 for each additional user. At ten cleaners that difference is more than $3,000 a year.
+It depends entirely on the vendor and it is the single largest cost driver. Launch27 publishes a flat price that does not change with headcount. ZenMaid looks flat and is not, adding $14 a month a person. Jobber charges $29 for each additional user. At ten cleaners the spread between the cheapest and dearest here is more than $2,600 a year.
 
 **How current are these prices?**
-They were read from the vendor pricing pages in August 2026. Vendor pricing in this category changes several times a year, so confirm before you commit.
+ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Vendor pricing in this category changes several times a year, so confirm before you commit.

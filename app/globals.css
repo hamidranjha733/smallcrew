@@ -1705,6 +1705,34 @@ table.cost-table tbody tr:hover td.cell-watch {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* A standing note about one vendor's pricing model, printed under any table
+   carrying its figures. */
+.vendor-note {
+  font-family: var(--body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  background: var(--flag-tint);
+  border-left: 3px solid var(--flag);
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.vendor-note-label {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--flag);
+  margin-bottom: 0.35rem;
+}
+
+.vendor-note a {
+  color: var(--signal-2);
+}
+
 /* A single pointer out of a category page to something that is not one of its
    guides. One per trade at most, so it stays a signpost rather than a list. */
 .spotlight {

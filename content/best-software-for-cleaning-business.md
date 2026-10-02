@@ -7,11 +7,11 @@ pricesChecked: August 2026
 toolsCompared: 6
 tools:
   - tool: ZenMaid
-    bestFor: Maid services that want one flat bill
-    solo: $39
-    crew3: $39
-    crew10: $39
-    watch: Starter at $19 has no booking form and caps you at forty appointments a month, so Pro at $39 is the real entry price
+    bestFor: Maid services running recurring residential rounds
+    solo: $53
+    crew3: $81
+    crew10: $179
+    watch: Pro is $39 plus $14 a month for every person on the team, so $53 at one and $179 at ten. Starter at $19 has no booking form and caps you at forty appointments a month
     url: https://get.zenmaid.com/pricing
   - tool: Launch27
     bestFor: Fixed price residential packages sold online
@@ -50,7 +50,7 @@ tools:
     url: https://sweptworks.com/pricing
 ---
 
-For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $39 a month, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team, which is set out in full in our [ZenMaid pricing breakdown](/zenmaid-pricing/). Jobber charges per seat but also bands, and reaches $299 a month at ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form, checked on the vendor pricing pages in August 2026.
+For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $53 a month for one cleaner, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team, which is set out in full in our [ZenMaid pricing breakdown](/zenmaid-pricing/). Jobber charges per seat but also bands, and reaches $299 a month at ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form. ZenMaid was rechecked in October 2026, the others in August 2026.
 
 That last sentence is the reason this page exists. Almost every comparison of cleaning business software quotes Jobber at $49 a month. That is the Core plan, and the Core plan does not send automated client reminders. A cleaning company without automated reminders is a cleaning company that pays someone to make confirmation calls.
 
@@ -76,9 +76,9 @@ Launch27 charges $75 a month on its Base plan, which includes a booking form, au
 
 ## Best software for a small cleaning business, by crew size
 
-**Solo.** ZenMaid at $39 a month. You need a booking form, reminders and a schedule, and you do not need job costing or a dispatch board. The one caution is that the booking form carries ZenMaid branding until Pro Max at $49.
+**Solo.** ZenMaid at $53 a month. You need a booking form, reminders and a schedule, and you do not need job costing or a dispatch board. The one caution is that the booking form carries ZenMaid branding until Pro Max, which is $10 more a head.
 
-**Two to four cleaners.** ZenMaid still, or Launch27 at $75 if you sell fixed price packages online and want the booking form to take the payment method at the point of booking. Jobber becomes defensible here at $197 a month if you quote a lot of one off deep cleans, because its quoting is stronger than either.
+**Two to four cleaners.** ZenMaid still at the lower end, $81 for three, though Launch27 at $75 flat overtakes it at about three people and is the better buy if you sell fixed price packages online and want the booking form to take the payment method at the point of booking. Jobber becomes defensible here at $197 a month if you quote a lot of one off deep cleans, because its quoting is stronger than either.
 
 **Five to ten cleaners.** This is where flat pricing wins on arithmetic alone. Launch27 is still $75 a month at ten users. Jobber is $299 a month on Connect at ten users. That is $3,900 a year in difference, and Jobber's advantage in quoting and reporting has to be worth that much to you.
 
@@ -98,13 +98,13 @@ Housecall Pro now publishes its seat counts and extra seat prices, which is what
 
 Monthly prices disguise the size of these decisions. Annualised, at the tier that includes online booking, the same six tools look like this.
 
-A solo cleaner pays $468 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro and $1,668 on Jobber Connect. The spread between the cheapest and the most expensive is $1,200 a year, which for a one person cleaning business is a meaningful proportion of a month's revenue.
+A solo cleaner pays $636 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro and $1,668 on Jobber Connect. The spread between the cheapest and the most expensive is $1,032 a year, which for a one person cleaning business is a meaningful proportion of a month's revenue.
 
-A three cleaner company pays $468 on ZenMaid, $900 on Launch27, $2,268 on Housecall Pro Essentials and $2,364 on Jobber Connect.
+A three cleaner company pays $972 on ZenMaid, $900 on Launch27, $2,268 on Housecall Pro Essentials and $2,364 on Jobber Connect. Launch27 has already become the cheaper of the two.
 
-A ten cleaner company pays $468 on ZenMaid, $900 on Launch27, $5,748 on Housecall Pro MAX and $3,588 on Jobber Connect. The difference between the cheapest and the most expensive is $5,280 a year, which is a used pressure washer, a month of one cleaner's wages, or the entire marketing budget of a small cleaning company.
+A ten cleaner company pays $2,148 on ZenMaid, $900 on Launch27, $5,748 on Housecall Pro MAX and $3,588 on Jobber Connect. The difference between the cheapest and the most expensive is $4,848 a year, which is a used pressure washer, a month of one cleaner's wages, or the entire marketing budget of a small cleaning company. Launch27 is the cheapest at this size, and it is the only one of the four whose bill did not move at all between one cleaner and ten.
 
-None of this makes Jobber a bad product. It makes the question specific. Jobber has to produce more than $4,000 a year of additional value over ZenMaid at ten cleaners, through won quotes or saved admin, to be the correct purchase. For a company doing quoted deep cleans and move outs, it plausibly does. For a company doing forty recurring houses at a standard rate, it plausibly does not.
+None of this makes Jobber a bad product. It makes the question specific. Jobber has to produce more than $1,400 a year of additional value over ZenMaid at ten cleaners, or more than $2,600 over Launch27, through won quotes or saved admin, to be the correct purchase. For a company doing quoted deep cleans and move outs, it plausibly does. For a company doing forty recurring houses at a standard rate, it plausibly does not.
 
 ## What all the different names actually mean
 
@@ -135,7 +135,7 @@ The one label describing something genuinely different is janitorial software, w
 ## Common questions
 
 **What is the cheapest cleaning business software that actually takes online bookings?**
-ZenMaid Pro at $39 a month, checked in August 2026. Connecteam is free for up to ten users but does not offer customer booking, so it does not qualify.
+ZenMaid Pro at $53 a month for a single cleaner, rechecked in October 2026. Connecteam is free for up to ten users but does not offer customer booking, so it does not qualify. Past about three people the cheapest is Launch27 at $75 flat.
 
 **Is Jobber worth $139 a month for a cleaning company?**
 It is worth it if you quote frequently and win work on the quality of the quote. If your work is recurring residential cleaning at a standard rate, you are paying for a quoting engine you barely open.
@@ -150,4 +150,4 @@ Because the vendor homepage shows the entry tier. Every figure on this page is t
 Yes, in one way that matters. Maid service software models a recurring residential round with substitutions, which is how house cleaning actually runs. Generic software for cleaning companies models independent appointments, and you will feel the difference the first time you reschedule a whole week.
 
 **How often should I recheck these numbers?**
-At least twice a year. These figures were read from the vendor pricing pages in August 2026, and pricing in this category changes several times a year.
+At least twice a year. ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Pricing in this category changes several times a year.
