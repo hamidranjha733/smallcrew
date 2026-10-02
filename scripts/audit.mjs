@@ -204,6 +204,64 @@ if (lastmods.length !== locs.length) {
   problems.push(`sitemap has ${lastmods.length} lastmod values for ${locs.length} urls`);
 }
 
+// lastmod and the dateModified in page schema are the same claim made twice.
+// They drifted once already, when dateModified was corrected and lastmod was
+// left dating every url to the price verification month, so both are now
+// checked against the committed per page edit dates.
+const pageDates = JSON.parse(fs.readFileSync('data/page-dates.json', 'utf8'));
+const staleLastmod = [];
+const missingFromMap = [];
+
+for (let i = 0; i < locs.length; i++) {
+  const route = locs[i].replace(SITE_URL, '');
+  const real = pageDates[route];
+  if (!real) {
+    missingFromMap.push(route);
+    continue;
+  }
+  if (lastmods[i].slice(0, 10) < real) {
+    staleLastmod.push(`${route} lastmod ${lastmods[i].slice(0, 10)}, real edit ${real}`);
+  }
+}
+
+if (missingFromMap.length > 0) {
+  problems.push(
+    `sitemap urls absent from data/page-dates.json, so undatable: ${missingFromMap.join(', ')}`,
+  );
+}
+if (staleLastmod.length > 0) {
+  problems.push(`sitemap lastmod older than the real edit: ${staleLastmod.join('; ')}`);
+} else {
+  notes.push(`every sitemap lastmod is at or after the page's real last edit`);
+}
+
+// The same date must reach the page itself, not just the sitemap.
+const schemaDrift = [];
+for (const page of pages) {
+  if (isNotFound(page.route)) continue;
+  const real = pageDates[page.route];
+  if (!real) continue;
+  for (const block of page.html.matchAll(
+    /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+  )) {
+    let parsed;
+    try {
+      parsed = JSON.parse(block[1]);
+    } catch {
+      continue;
+    }
+    for (const node of Array.isArray(parsed) ? parsed : [parsed]) {
+      if (!node || !node.dateModified) continue;
+      if (String(node.dateModified).slice(0, 10) < real) {
+        schemaDrift.push(`${page.route} dateModified ${node.dateModified}, real edit ${real}`);
+      }
+    }
+  }
+}
+if (schemaDrift.length > 0) {
+  problems.push(`schema dateModified older than the real edit: ${schemaDrift.join('; ')}`);
+}
+
 // The site is live, so the audit asserts it is crawlable and that every
 // hostname it advertises is the canonical one. A canonical tag on one host and
 // a sitemap on another is worse than either alone, so these are checked in one
