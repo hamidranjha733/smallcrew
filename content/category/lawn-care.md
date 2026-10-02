@@ -95,7 +95,7 @@ The practical reading is that LawnPro is excellent for a small crew and Jobber b
 
 Lawn care software is quoted monthly and paid for twelve months, while the revenue arrives in seven or eight. That is worth converting before choosing, and it is the calculation almost no comparison page performs.
 
-Annualised at the tier that includes online booking, a solo operator pays nothing on LawnPro Solo up to twenty five customers, $1,548 a year on Arborgold paying monthly and $1,668 on Jobber Connect.
+Annualised at the tier that includes online booking, a solo operator pays nothing on LawnPro Solo up to twenty five customers, $1,548 a year on Arborgold committing annually and $1,668 on Jobber Connect.
 
 A three employee company pays $468 a year on LawnPro Startup and $2,388 on Jobber Connect, a difference of $1,920.
 
