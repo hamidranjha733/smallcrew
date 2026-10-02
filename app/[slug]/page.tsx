@@ -13,8 +13,9 @@ import TearLine from '@/components/TearLine';
 import Toc from '@/components/Toc';
 import Byline from '@/components/Byline';
 import { getAllPages, getPage, getSlugs, getTrade } from '@/lib/content';
-import { checkedToIso, getGuideSeo } from '@/lib/seo';
+import { buildMetadata, checkedToIso, getGuideSeo } from '@/lib/seo';
 import { getModified } from '@/lib/dates';
+import { ogImageUrl } from '@/lib/og';
 import { AUTHOR_ID, AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo } from '@/lib/trades';
 
@@ -46,22 +47,8 @@ export async function generateMetadata({
 
   const seo = getGuideSeo(slug);
 
-  return {
-    title: { absolute: seo.title },
-    description: seo.description,
-    alternates: { canonical: `/${slug}/` },
-    openGraph: {
-      type: 'article',
-      title: seo.title,
-      description: seo.description,
-      url: `/${slug}/`,
-    },
-    twitter: {
-      card: 'summary',
-      title: seo.title,
-      description: seo.description,
-    },
-  };
+  return buildMetadata(seo, `/${slug}/`, 'article');
+
 }
 
 export default async function GuidePage({ params }: { params: Promise<Params> }) {
@@ -101,6 +88,8 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
             datePublished: iso,
             dateModified: modified,
             mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+            // The same card the page advertises in openGraph, from one source.
+            image: ogImageUrl(`/${slug}/`),
             // A named person takes responsibility for the judgements here. The
             // organisation remains the publisher.
             author: {

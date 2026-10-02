@@ -2,27 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import { formatDate, getModified } from '@/lib/dates';
-import { getPageSeo } from '@/lib/seo';
+import { buildMetadata, getPageSeo } from '@/lib/seo';
 import { AUTHOR_NAME, CONTACT_EMAIL, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const seo = getPageSeo('privacy');
 
-export const metadata: Metadata = {
-  title: { absolute: seo.title },
-  description: seo.description,
-  alternates: { canonical: '/privacy/' },
-  openGraph: {
-    type: 'website',
-    title: seo.title,
-    description: seo.description,
-    url: '/privacy/',
-  },
-  twitter: {
-    card: 'summary',
-    title: seo.title,
-    description: seo.description,
-  },
-};
+export const metadata: Metadata = buildMetadata(seo, '/privacy/');
 
 // Deliberately short. This page describes what the site actually does, which is
 // very little, and says nothing about services it does not run. A policy full

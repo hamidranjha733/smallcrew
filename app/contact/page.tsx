@@ -1,27 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import { getPageSeo } from '@/lib/seo';
+import { buildMetadata, getPageSeo } from '@/lib/seo';
 import { AUTHOR_NAME, CONTACT_EMAIL, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const seo = getPageSeo('contact');
 
-export const metadata: Metadata = {
-  title: { absolute: seo.title },
-  description: seo.description,
-  alternates: { canonical: '/contact/' },
-  openGraph: {
-    type: 'website',
-    title: seo.title,
-    description: seo.description,
-    url: '/contact/',
-  },
-  twitter: {
-    card: 'summary',
-    title: seo.title,
-    description: seo.description,
-  },
-};
+export const metadata: Metadata = buildMetadata(seo, '/contact/');
 
 export default function ContactPage() {
   const url = `${SITE_URL}/contact/`;

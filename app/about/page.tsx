@@ -3,28 +3,13 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import StatsBand from '@/components/StatsBand';
 import { getAllPages, getExtremes } from '@/lib/content';
-import { getPageSeo } from '@/lib/seo';
+import { buildMetadata, getPageSeo } from '@/lib/seo';
 import { CONTACT_EMAIL, SITE_NAME, SITE_URL } from '@/lib/site';
 import { TRADES } from '@/lib/trades';
 
 const seo = getPageSeo('about');
 
-export const metadata: Metadata = {
-  title: { absolute: seo.title },
-  description: seo.description,
-  alternates: { canonical: '/about/' },
-  openGraph: {
-    type: 'website',
-    title: seo.title,
-    description: seo.description,
-    url: '/about/',
-  },
-  twitter: {
-    card: 'summary',
-    title: seo.title,
-    description: seo.description,
-  },
-};
+export const metadata: Metadata = buildMetadata(seo, '/about/');
 
 export default async function AboutPage() {
   const pages = await getAllPages();

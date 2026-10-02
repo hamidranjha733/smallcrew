@@ -10,24 +10,9 @@ import VendorLogo from '@/components/VendorLogo';
 import { getAllPages, getExtremes, getTrade } from '@/lib/content';
 import { getSummaryRows } from '@/lib/summary';
 import { TRADES } from '@/lib/trades';
-import { HOME_SEO } from '@/lib/seo';
+import { buildMetadata, HOME_SEO } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: { absolute: HOME_SEO.title },
-  description: HOME_SEO.description,
-  alternates: { canonical: '/' },
-  openGraph: {
-    type: 'website',
-    title: HOME_SEO.title,
-    description: HOME_SEO.description,
-    url: '/',
-  },
-  twitter: {
-    card: 'summary',
-    title: HOME_SEO.title,
-    description: HOME_SEO.description,
-  },
-};
+export const metadata: Metadata = buildMetadata(HOME_SEO, '/');
 
 const CREW_CELLS: {
   size: string;

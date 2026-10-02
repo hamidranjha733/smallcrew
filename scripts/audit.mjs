@@ -316,6 +316,74 @@ if (offHost.size > 0) {
   notes.push(`every self referencing url is on ${CANONICAL_HOST}`);
 }
 
+// ---------- share cards ----------
+//
+// Every page must advertise a card, the card must be absolute and on the
+// canonical host, and the file must actually be in the export. A page that
+// ships without one renders as a grey box everywhere it is shared, which is
+// invisible from the html alone unless it is checked.
+const noOgImage = [];
+const badOgImage = [];
+const noTwitter = [];
+const missingCard = [];
+const articleImageDrift = [];
+
+for (const page of pages) {
+  if (isNotFound(page.route)) continue;
+
+  const image = pick(page.html, /<meta property="og:image" content="([^"]*)"/);
+  const card = pick(page.html, /<meta name="twitter:card" content="([^"]*)"/);
+
+  if (!image) {
+    noOgImage.push(page.route);
+  } else if (!image.startsWith(`${SITE_URL}/`)) {
+    badOgImage.push(`${page.route} -> ${image}`);
+  } else {
+    const rel = image.slice(SITE_URL.length + 1);
+    if (!fs.existsSync(path.join(OUT, rel))) missingCard.push(`${page.route} -> ${rel}`);
+  }
+
+  if (card !== 'summary_large_image') noTwitter.push(`${page.route} -> ${card ?? 'none'}`);
+
+  for (const block of page.html.matchAll(
+    /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+  )) {
+    let parsed;
+    try {
+      parsed = JSON.parse(block[1]);
+    } catch {
+      continue;
+    }
+    for (const node of Array.isArray(parsed) ? parsed : [parsed]) {
+      if (!node || node['@type'] !== 'Article') continue;
+      if (node.image !== image) {
+        articleImageDrift.push(`${page.route} Article image ${node.image ?? 'missing'}`);
+      }
+    }
+  }
+}
+
+if (noOgImage.length > 0) problems.push(`pages with no og:image: ${noOgImage.join(', ')}`);
+if (badOgImage.length > 0) {
+  problems.push(`og:image not absolute on the canonical host: ${badOgImage.join(', ')}`);
+}
+if (missingCard.length > 0) {
+  problems.push(`og:image points at a file not in the export: ${missingCard.join(', ')}`);
+}
+if (noTwitter.length > 0) {
+  problems.push(`twitter:card is not summary_large_image: ${noTwitter.join(', ')}`);
+}
+if (articleImageDrift.length > 0) {
+  problems.push(`Article image does not match og:image: ${articleImageDrift.join(', ')}`);
+}
+if (
+  noOgImage.length + badOgImage.length + missingCard.length + noTwitter.length +
+    articleImageDrift.length ===
+  0
+) {
+  notes.push(`every page advertises a share card that exists in the export`);
+}
+
 // 404 must link back into the site
 const notFound = pages.find((p) => isNotFound(p.route));
 if (!notFound) problems.push('no 404 page exported');

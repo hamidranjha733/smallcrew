@@ -9,6 +9,9 @@
 //   description 140 to 160 characters, written to earn the click
 //   no two pages share a title or a description
 
+import type { Metadata } from 'next';
+import { ogImageUrl, ogTitle, OG_HEIGHT, OG_WIDTH } from './og';
+
 export type Seo = {
   title: string;
   description: string;
@@ -256,4 +259,42 @@ export function checkedToIso(pricesChecked: string): string {
   const index = MONTHS.indexOf(month);
   if (index < 0) throw new Error(`Unrecognised month in "${pricesChecked}".`);
   return `${year}-${String(index + 1).padStart(2, '0')}-01`;
+}
+
+// One place that turns an SEO entry into a page's metadata, so the share card,
+// the canonical and the twitter fields are set identically on every route and
+// a new page cannot quietly ship without them. Before this, each of the nine
+// route files assembled its own object and none of them set an image.
+export function buildMetadata(
+  seo: Seo,
+  route: string,
+  type: 'website' | 'article' = 'website',
+): Metadata {
+  const image = ogImageUrl(route);
+
+  return {
+    title: { absolute: seo.title },
+    description: seo.description,
+    alternates: { canonical: route },
+    openGraph: {
+      type,
+      title: seo.title,
+      description: seo.description,
+      url: route,
+      images: [
+        {
+          url: image,
+          width: OG_WIDTH,
+          height: OG_HEIGHT,
+          alt: ogTitle(seo.title),
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: seo.title,
+      description: seo.description,
+      images: [image],
+    },
+  };
 }

@@ -13,6 +13,7 @@ import Byline from './Byline';
 import { getAllPages, getCategoryBody, getExtremes, getTrade, type Tool } from '@/lib/content';
 import { badgeSummary } from '@/lib/pricing';
 import { checkedToIso, getCategorySeo } from '@/lib/seo';
+import { ogImageUrl } from '@/lib/og';
 import { getModified } from '@/lib/dates';
 import { AUTHOR_ID, AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/lib/site';
 import { getTradeInfo, TRADES } from '@/lib/trades';
@@ -74,6 +75,8 @@ export default async function CategoryView({ trade }: Props) {
             about: seo.keyword,
             inLanguage: 'en-US',
             url,
+            // The same card the page advertises in openGraph, from one source.
+            image: ogImageUrl(info.href),
             // A category holding its own comparison is an authored page, so it
             // carries a real modified date and a named author.
             ...(modified
