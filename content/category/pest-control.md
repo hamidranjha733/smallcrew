@@ -6,9 +6,9 @@ tools:
   - tool: GorillaDesk
     bestFor: Operators who want a price without a sales call
     solo: $99
-    crew3: $99
-    crew10: $249
-    watch: Calculated as $99 Pro base plus $50 per extra schedule, assuming crews ride together so only the crew leader needs one. Solo drivers need a schedule each, which reaches $549 at ten
+    crew3: Per route
+    crew10: Per route
+    watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
     url: https://www.gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Pest work mixed with other trades
@@ -65,7 +65,7 @@ GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149 a month. The c
 
 GorillaDesk then charges per schedule rather than per user, which is the single most important thing to understand about its pricing. Its documentation describes a schedule as one technician's route, and states that where technicians work in crews only the crew leader needs a schedule. Each additional schedule is $50 a month.
 
-The table above prices GorillaDesk on the crew leader basis its help centre describes, which means one schedule per crew rather than one per person. A crew of three riding in one vehicle is one schedule at $99. Ten people working as four crews is four schedules, which is $99 plus three at $50, or $249 a month.
+The table above carries no figure in the GorillaDesk crew columns, because headcount is not what it bills for. On the crew leader basis its help centre describes, a crew of three riding in one vehicle is one schedule at $99. Ten people working as four crews is four schedules, which is $99 plus three at $50, or $249 a month.
 
 Pest control is the trade where that assumption is least safe. Pest technicians commonly drive alone, and ten solo technicians means ten schedules, which is $99 plus nine at $50, or $549 a month. Work out how many vehicles leave your yard each morning before you use either figure, because the answer moves the bill by three hundred dollars a month.
 

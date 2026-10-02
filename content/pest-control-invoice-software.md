@@ -11,7 +11,7 @@ tools:
     solo: $19
     crew3: $19
     crew10: $19
-    watch: The pricing page states no user limit, so one price covers one, three and ten people. No scheduling and no job record at any tier
+    watch: This is the Pro tier billed monthly, $190 if billed annually. The free Starter tier is $0 but is single user with no bank import or automated reminders
     url: https://www.waveapps.com/pricing
   - tool: FreshBooks
     bestFor: Automatically chasing what is overdue
@@ -23,9 +23,9 @@ tools:
   - tool: GorillaDesk
     bestFor: Invoicing straight off the completed stop
     solo: $99
-    crew3: $99
-    crew10: $249
-    watch: Calculated as $99 Pro base plus $50 per extra schedule, assuming crews ride together so only the crew leader needs one. Solo drivers need a schedule each, which reaches $549 at ten
+    crew3: Per route
+    crew10: Per route
+    watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
     url: https://www.gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Invoicing that carries the visit record with it
@@ -43,7 +43,7 @@ tools:
     url: https://www.workwave.com/industries/pest-control-software
 ---
 
-The cheapest pest control invoicing software is Wave at $19 a month, and it is the wrong answer for most operators because it has no connection to the route, so every invoice is raised by hand. GorillaDesk at $99 a month and Jobber at $139 a month invoice from the completed stop, which is what removes the labour. Figures were read from vendor pricing pages in August 2026 and are the lowest tier that includes recurring invoicing and card payments.
+The cheapest pest control invoicing software is Wave Pro at $19 a month, and it is the wrong answer for most operators because it has no connection to the route, so every invoice is raised by hand. GorillaDesk at $99 a month and Jobber at $139 a month invoice from the completed stop, which is what removes the labour. Figures were read from vendor pricing pages in August 2026 and are the lowest tier that includes recurring invoicing and card payments.
 
 Pest control invoicing is not a document problem. Every tool here produces a tidy invoice. It is a labour problem, and the measure of good pest control invoice software is how many invoices leave the building each month without a person opening anything.
 
@@ -67,7 +67,7 @@ This is why the sensible structure for a pest control operator is to invoice fro
 
 ## The tier positions worth knowing
 
-GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149. The customer portal, where a customer views and pays an invoice themselves, begins on Pro. The Basic plan will invoice, and the customer cannot self serve. GorillaDesk then charges $50 a month for each additional schedule, where a schedule is one technician's route. The table prices ten people as four crews riding together, which is $249. Ten technicians each driving alone is ten schedules and reaches $549.
+GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149. The customer portal, where a customer views and pays an invoice themselves, begins on Pro. The Basic plan will invoice, and the customer cannot self serve. GorillaDesk then charges $50 a month for each additional schedule, where a schedule is one technician's route. The table does not put a figure in the crew columns, because headcount is not what GorillaDesk bills for: ten technicians cost $249 across four crews and $549 driving alone, and the table cannot know which you are.
 
 Jobber publishes Core at $49 and Connect at $139. Automated client reminders begin on Connect. For invoicing specifically that is the difference between an invoice that follows itself up and one that does not.
 
@@ -89,7 +89,7 @@ On GorillaDesk the customer portal begins on the Pro plan at $99. On the Basic p
 
 ## The twelve month number
 
-Annualised, Wave Pro is $228 a year, FreshBooks Plus is $516 for one user and $1,704 for ten, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten.
+Annualised, Wave Pro is $228 a year, FreshBooks Plus is $516 for one user and $1,704 for ten, GorillaDesk Pro is $1,188 for one route and $2,988 across four, and Jobber Connect is $1,668 for one user and $3,588 for ten.
 
 Now price the labour those figures replace. A route of two hundred customers billed monthly is two thousand four hundred invoices a year. If invoicing from the accounting package rather than the field system adds fifteen seconds per invoice in transcription and checking, that is ten hours a year. If it adds two minutes, which is closer to reality once queries and corrections are counted, it is eighty hours.
 

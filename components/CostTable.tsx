@@ -7,7 +7,7 @@ import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
 import CrewControl from './CrewControl';
 import VendorLogo from './VendorLogo';
-import ZenMaidNote, { hasZenMaid } from './ZenMaidNote';
+import VendorNotes from './VendorNotes';
 
 type Props = {
   tools: Tool[];
@@ -125,7 +125,7 @@ export default function CostTable({ tools, pricesChecked, basis }: Props) {
           </tbody>
         </table>
       </div>
-      {hasZenMaid(tools) && <ZenMaidNote />}
+      <VendorNotes tools={tools} />
       <p className="cost-table-caption">
         <strong>{basis ?? DEFAULT_BASIS}</strong>{' '}
         Figures are the monthly cost at one, three and ten users, billed monthly rather than

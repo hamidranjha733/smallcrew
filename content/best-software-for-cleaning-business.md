@@ -46,7 +46,7 @@ tools:
     solo: $30
     crew3: $30
     crew10: $30
-    watch: Banded by number of locations rather than crew size, so the entry band covers up to fifteen. No customer online booking at any tier
+    watch: Priced by number of locations with unlimited users, minimum fifteen locations. This is Launch billed monthly at that minimum, $24 a month billed annually, and the higher location bands are not published
     url: https://sweptworks.com/pricing
 ---
 

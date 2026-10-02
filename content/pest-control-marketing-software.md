@@ -16,9 +16,9 @@ tools:
   - tool: GorillaDesk
     bestFor: Review requests attached to a completed stop
     solo: $99
-    crew3: $99
-    crew10: $249
-    watch: Calculated as $99 Pro base plus $50 per extra schedule, assuming crews ride together so only the crew leader needs one. Solo drivers need a schedule each, which reaches $549 at ten
+    crew3: Per route
+    crew10: Per route
+    watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
     url: https://www.gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Following up quotes that were never answered

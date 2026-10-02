@@ -11,7 +11,7 @@ tools:
     solo: $19
     crew3: $19
     crew10: $19
-    watch: The pricing page states no user limit, so one price covers one, three and ten people. No scheduling and no job record at any tier
+    watch: This is the Pro tier billed monthly, $190 if billed annually. The free Starter tier is $0 but is single user with no bank import or automated reminders
     url: https://www.waveapps.com/pricing
   - tool: FreshBooks
     bestFor: Chasing late payment across a service book
@@ -23,9 +23,9 @@ tools:
   - tool: GorillaDesk
     bestFor: Billing service agreements from the route
     solo: $99
-    crew3: $99
-    crew10: $249
-    watch: Calculated as $99 Pro base plus $50 per extra schedule, assuming crews ride together so only the crew leader needs one. Solo drivers need a schedule each, which reaches $549 at ten
+    crew3: Per route
+    crew10: Per route
+    watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
     url: https://www.gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Tying the invoice to the visit that earned it
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-Pest control operators need two systems, not one. Wave at $19 a month is the cheapest genuine ledger and FreshBooks at $43 a month is the cheapest that chases late payment across a real service book. Neither will schedule a treatment. GorillaDesk at $99 a month and Jobber at $139 a month will bill from the route and are not accounting software. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
+Pest control operators need two systems, not one. Wave is the cheapest genuine ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment across a real service book. Neither will schedule a treatment. GorillaDesk at $99 a month and Jobber at $139 a month will bill from the route and are not accounting software. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
 
 The specific mistake this page exists to prevent is believing that a pest control app with an invoice screen is a set of books. It is not, and pest control has an expense side that makes the gap wider than in most trades.
 

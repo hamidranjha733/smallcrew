@@ -11,7 +11,7 @@ tools:
     solo: $19
     crew3: $19
     crew10: $19
-    watch: The pricing page states no user limit, so one price covers one, three and ten people. No scheduling and no job record at any tier
+    watch: This is the Pro tier billed monthly, $190 if billed annually. The free Starter tier is $0 but is single user with no bank import or automated reminders
     url: https://www.waveapps.com/pricing
   - tool: ZenMaid
     bestFor: Billing recurring cleans without a second system
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-For a cleaning business under twenty staff, Wave at $19 a month is the cheapest option that will both invoice clients and keep a ledger, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures are the lowest tier that includes recurring invoicing and card payments. ZenMaid was rechecked in October 2026, the others read in August 2026.
+For a cleaning business under twenty staff, Wave's free Starter plan is the cheapest option that will both invoice clients and keep a ledger, and Wave Pro at $19 a month is the cheapest that also chases late payment automatically, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures are the lowest tier that includes recurring invoicing and card payments. ZenMaid was rechecked in October 2026, the others read in August 2026.
 
 The important distinction on this page is not price. It is that most tools sold as accounting software for a cleaning business are invoicing tools, and most tools sold as cleaning software contain an invoice generator that is not accounting. Buying either one believing it is the other is how cleaning companies arrive at tax season with a shoebox.
 
@@ -73,7 +73,7 @@ FreshBooks advertises Lite at $23 a month. Lite is capped at five billable clien
 
 This is the same pattern as the booking tier elsewhere on this site. The advertised number describes a business smaller than the one reading about it.
 
-Wave's Starter plan is genuinely free and carries no invoice limit. The Pro plan at $19 a month is what adds automated late payment reminders, which for a cleaning round is the feature that recovers its own cost within one chased invoice. Wave's pricing page states no user limit at all, which is why the same $19 appears at one, three and ten cleaners. It does not confirm whether recurring invoice schedules are included, so treat that one point as unverified.
+Wave's Starter plan is genuinely free and carries no invoice limit. The Pro plan at $19 a month is what adds automated late payment reminders, which for a cleaning round is the feature that recovers its own cost within one chased invoice. Wave does not charge by headcount, which is why the same $19 appears at one, three and ten cleaners. Adding other people to the account is itself a Pro feature, so the free plan is a one person ledger. It does not confirm whether recurring invoice schedules are included, so treat that one point as unverified.
 
 ## Payroll is the line nobody prices
 

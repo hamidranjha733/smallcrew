@@ -11,7 +11,7 @@ tools:
     solo: $19
     crew3: $19
     crew10: $19
-    watch: The pricing page states no user limit, so one price covers one, three and ten people. No scheduling and no job record at any tier
+    watch: This is the Pro tier billed monthly, $190 if billed annually. The free Starter tier is $0 but is single user with no bank import or automated reminders
     url: https://www.waveapps.com/pricing
   - tool: LawnPro
     bestFor: Billing a recurring round from the schedule
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-For lawn care billing under twenty staff, LawnPro at $39 a month for three employees bills directly from the schedule, Wave at $19 a month is the cheapest real ledger, and FreshBooks at $43 a month is the cheapest that chases late payment automatically across a book of fifty clients. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
+For lawn care billing under twenty staff, LawnPro at $39 a month for three employees bills directly from the schedule, Wave is the cheapest real ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment automatically across a book of fifty clients. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
 
 Lawn care accounting software and lawn care billing software are sold as the same thing and are not. Billing produces the invoice for a mow. Accounting reconciles the bank feed, holds the expense side including fuel and equipment, and produces the statement your accountant works from. Lawn care has an unusually heavy expense side, so the distinction costs more here than in most trades.
 
@@ -63,7 +63,7 @@ LawnPro bills from the schedule, which is the correct shape for a recurring roun
 
 That last point matters for a round. If you have two hundred customers on a monthly plan, the difference between charging saved cards automatically and sending two hundred payment requests is the entire administrative cost of the business.
 
-Wave is the cheapest genuine ledger here. The Starter plan is free with unlimited invoices. Pro at $19 a month adds automated late payment reminders, which can be set to deploy three, seven and fourteen days after an invoice becomes overdue. Card processing is 2.9% plus $0.60 per transaction, with the fixed fee waived on the first ten transactions a month on Pro. Wave's pricing page states no user limit at all, which is why the same $19 appears at one, three and ten employees. It does not confirm recurring invoice schedules, so treat that one point as unverified.
+Wave is the cheapest genuine ledger here. The Starter plan is free with unlimited invoices. Pro at $19 a month adds automated late payment reminders, which can be set to deploy three, seven and fourteen days after an invoice becomes overdue. Card processing is 2.9% plus $0.60 per transaction, with the fixed fee waived on the first ten transactions a month on Pro. Wave does not charge by headcount, which is why the same $19 appears at one, three and ten employees. Adding other people to the account is itself a Pro feature, so the free plan is a one person ledger. It does not confirm recurring invoice schedules, so treat that one point as unverified.
 
 FreshBooks is the strongest at chasing money and the weakest on client caps. Lite at $23 a month allows five billable clients, which is not a lawn care business. Plus at $43 allows fifty. Premium at $70 is unlimited. Each additional team member is $11 a month regardless of tier.
 

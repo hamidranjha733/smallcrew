@@ -18,14 +18,14 @@ tools:
     solo: $0
     crew3: $0
     crew10: $0
-    watch: The pricing page states no user limit, so one price covers one, three and ten people. No scheduling and no job record at any tier
+    watch: This is the free Starter tier, which is one user with no bank import and no automated late payment reminders. Pro is $19 a month and adds all three
     url: https://www.waveapps.com/pricing
   - tool: GorillaDesk
     bestFor: The cheapest complete pest control system
     solo: $99
-    crew3: $99
-    crew10: $249
-    watch: Calculated as $99 Pro base plus $50 per extra schedule, assuming crews ride together so only the crew leader needs one. Solo drivers need a schedule each, which reaches $549 at ten
+    crew3: Per route
+    crew10: Per route
+    watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
     url: https://www.gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: A free trial before committing
@@ -43,7 +43,7 @@ tools:
     url: https://www.briostack.com/additionalpricing
 ---
 
-There is no free pest control software that records chemical applications, tracks devices and schedules a route. What exists is genuinely free software for parts of the job. Connecteam is free for up to ten users and will roster your technicians. Wave is free and will invoice your customers and keep a ledger. Neither holds a pesticide application record. The cheapest complete pest control system that publishes a price is GorillaDesk at $99 a month, checked in August 2026.
+There is no free pest control software that records chemical applications, tracks devices and schedules a route. What exists is genuinely free software for parts of the job. Connecteam is free for up to ten users and will roster your technicians. Wave's Starter plan is free and will invoice your customers and keep a ledger, for one user. Neither holds a pesticide application record. The cheapest complete pest control system that publishes a price is GorillaDesk at $99 a month, checked in August 2026.
 
 Pest control management software with a free plan does not exist for a reason worth understanding, because it explains what you are actually buying when you eventually pay.
 

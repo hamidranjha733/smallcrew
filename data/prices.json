@@ -56,7 +56,130 @@
         "Month to month, cancel any time, no contract",
         "SMS charges are excluded from every tier price"
       ],
-      "readBy": "Read directly off the live pricing page, including driving the team size control through every value from 0 to 12 rather than taking the headline figures at face value."
+      "readBy": "Read directly off the live pricing page, including driving the team size control through every value from 0 to 12 rather than taking the headline figures at face value.",
+      "pricingIsDynamic": true
+    },
+    {
+      "vendor": "GorillaDesk",
+      "source": "https://gorilladesk.com/pricing",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": true,
+      "billing": "Monthly or yearly. The yearly figure shown beside each plan is the annual total.",
+      "model": "Priced per route, not per person. The slider is labelled 'How many routes do you have?' and every plan states Unlimited Admin Users and Unlimited Mobile Devices, so headcount does not change the bill.",
+      "tiers": [
+        {
+          "name": "Basic",
+          "atRoutes": {
+            "1": 49,
+            "2": 99,
+            "3": 149,
+            "4": 179,
+            "5": 209,
+            "10": 359
+          },
+          "booking": false
+        },
+        {
+          "name": "Pro",
+          "atRoutes": {
+            "1": 99,
+            "2": 149,
+            "3": 199,
+            "4": 249,
+            "5": 299,
+            "10": 549
+          },
+          "booking": "Customer Online Portal and Online Booking begin here, so this is the tier the site quotes",
+          "formula": "99 + 50 per additional route, verified exact from 1 to 12 routes"
+        },
+        {
+          "name": "Growth",
+          "atRoutes": {
+            "1": 149,
+            "2": 249,
+            "3": 299,
+            "4": 349,
+            "5": 499,
+            "10": 749
+          },
+          "booking": true
+        }
+      ],
+      "readBy": "Drove the route slider through every value from 1 to 12 and recorded all three tiers at each."
+    },
+    {
+      "vendor": "Wave",
+      "source": "https://www.waveapps.com/pricing",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": false,
+      "model": "Two tiers, no headcount pricing.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "monthly": 0,
+          "note": "Unlimited invoices, estimates, bills and bookkeeping records. Single user: adding users to the account is a Pro feature."
+        },
+        {
+          "name": "Pro",
+          "monthly": 19,
+          "annual": 190,
+          "note": "Adds auto bank import, automated late payment reminders, unlimited receipt capture and the ability to add users."
+        }
+      ],
+      "cardProcessing": "2.9% + $0.60 per credit card transaction, fixed fee waived on the first ten transactions a month on Pro."
+    },
+    {
+      "vendor": "Launch27",
+      "source": "https://launch27.com/pricing",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": false,
+      "model": "Three fixed tiers, no calculator and no slider. Base states Unlimited Users and Unlimited Bookings, so the flat quote holds at any crew size.",
+      "tiers": [
+        {
+          "name": "Base",
+          "monthly": 75,
+          "annual": 765,
+          "note": "Unlimited users, unlimited bookings, customer login portal, automated email reminders, booking form with Launch27 branding"
+        },
+        {
+          "name": "Pro",
+          "monthly": 150,
+          "annual": 1530,
+          "note": "Adds unbranded booking form, custom CSS, time tracking reports"
+        },
+        {
+          "name": "Third tier",
+          "monthly": 299
+        }
+      ],
+      "verdict": "Flat quote confirmed correct. No user or booking cap a ten person crew would pass."
+    },
+    {
+      "vendor": "Swept",
+      "source": "https://sweptworks.com/compare-plans",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": true,
+      "model": "Priced by number of locations cleaned, not headcount. Every plan includes unlimited users. All plans start at a minimum of fifteen locations, and the page bands locations at 1-15, 16-25, 26-30, 31-59 and 60+.",
+      "tiers": [
+        {
+          "name": "Launch",
+          "monthlyAtMinimum": 30,
+          "annualAtMinimum": 24,
+          "note": "Entry band only"
+        },
+        {
+          "name": "Optimize",
+          "monthlyAtMinimum": 150,
+          "annualAtMinimum": 120
+        },
+        {
+          "name": "Scale",
+          "monthlyAtMinimum": 225,
+          "annualAtMinimum": 180
+        }
+      ],
+      "notPublished": "The page does not display what the higher location bands cost. Selecting a band did not reveal a figure without entering a gated flow, so bands above 15 locations are unread.",
+      "verdict": "The $30 quote is the entry price at the fifteen location minimum billed monthly, not a flat price. Headcount does not move it."
     }
   ],
   "corrections": [

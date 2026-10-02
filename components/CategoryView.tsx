@@ -7,7 +7,7 @@ import JsonLd from './JsonLd';
 import PriceStrip from './PriceStrip';
 import PricedStamp from './PricedStamp';
 import StatsBand from './StatsBand';
-import ZenMaidNote, { hasZenMaid } from './ZenMaidNote';
+import VendorNotes from './VendorNotes';
 import TearLine from './TearLine';
 import Toc from './Toc';
 import Byline from './Byline';
@@ -287,7 +287,7 @@ export default async function CategoryView({ trade }: Props) {
               </ul>
             </div>
           </div>
-          {hasZenMaid(distinct) && <ZenMaidNote />}
+          <VendorNotes tools={distinct} />
         </section>
       </div>
 
