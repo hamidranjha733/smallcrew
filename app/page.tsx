@@ -91,8 +91,8 @@ export default async function HomePage() {
             Cleaning business software is the system that takes the booking, holds the schedule,
             reminds the customer and collects the money. Expect to pay about $53 a month as a solo
             cleaner on a plan that genuinely includes online booking, and anywhere between $75 and
-            $479 a month once you have ten cleaners, depending almost entirely on whether the vendor
-            charges per person.
+            $399 a month once you have ten cleaners, depending almost entirely on how the vendor
+            counts what you are buying.
           </p>
           <HeroTools tools={summary.map((entry) => entry.row)} />
         </div>
@@ -169,7 +169,7 @@ export default async function HomePage() {
               Launch27 is genuinely flat and costs $75 at one cleaner and at ten. ZenMaid looks flat
               and is not: its advertised $39 is the price before a single person is added, and it
               reaches $179 at ten. That is why a ten person cleaning company can pay $75 a month on
-              Launch27 or $479 a month on Housecall Pro, both of which take a booking, hold a
+              Launch27 or $399 a month on Housecall Pro, both of which take a booking, hold a
               schedule and invoice. The accounting tools in the table above are cheaper again and do
               none of those three things.
             </p>

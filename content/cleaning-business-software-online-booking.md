@@ -24,8 +24,8 @@ tools:
     bestFor: Booking direct from a Google listing
     solo: $79
     crew3: $189
-    crew10: $479
-    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
+    crew10: $399
+    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: A customer portal alongside route based scheduling
@@ -37,9 +37,9 @@ tools:
   - tool: Jobber
     bestFor: Booking that feeds a proper quoting workflow
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
 ---
 
@@ -61,7 +61,7 @@ ZenMaid places the booking form on Pro, which is $39 before anyone is added to t
 
 Launch27 includes a basic booking form on Base at $75, with automated email reminders. Text reminders require Pro at $150. Automatic charging of the card the customer saved at booking requires Plus at $299, which is the widest gap on this page between taking a booking and being paid for it without touching anything.
 
-Housecall Pro includes online booking, automated reminders and card payments on Basic at $79 billed monthly, which is the most complete entry tier here. Basic covers one user, so three cleaners means Essentials at $189, and ten means MAX plus two seats at $479 rather than Essentials plus five at $689.
+Housecall Pro includes online booking, automated reminders and card payments on Basic at $79 billed monthly, which is the most complete entry tier here. Basic covers one user, so three cleaners means Essentials at $189, which includes five. Extra seats begin on Max, which includes eight and adds $35 a month each, so ten is $399.
 
 GorillaDesk places the customer portal and online booking on Pro at $99. The Basic plan at $49 will schedule and invoice but will not let a customer book. GorillaDesk then charges $50 a month per additional schedule, where a schedule is one technician's route.
 
@@ -91,7 +91,7 @@ Test the form by completing it as a customer before you buy. If you can book a c
 
 Annualised at the tier that includes online booking, a solo cleaner pays $636 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
 
-At three cleaners the list becomes $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk where the crew rides together, and $2,364 on Jobber Connect.
+At three cleaners the list becomes $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk where the crew rides together, and $2,388 on Jobber Connect.
 
 At ten cleaners it becomes $2,148 on ZenMaid, $900 on Launch27, $2,988 on GorillaDesk across four crews and $3,588 on Jobber Connect. If every cleaner drives separately the GorillaDesk figure rises to $6,588.
 

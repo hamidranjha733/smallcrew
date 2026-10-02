@@ -30,9 +30,9 @@ tools:
   - tool: Jobber
     bestFor: Tying the invoice to the visit that earned it
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Books an accountant will accept without argument
@@ -93,7 +93,7 @@ The same applies to the more common structure, which is an annual agreement bill
 
 ## The twelve month number
 
-Annualised, a three employee lawn care company pays $228 a year for Wave Pro, $468 for LawnPro Startup, $780 for FreshBooks Plus with three users and $2,364 for Jobber Connect.
+Annualised, a three employee lawn care company pays $228 a year for Wave Pro, $468 for LawnPro Startup, $780 for FreshBooks Plus with three users and $2,388 for Jobber Connect.
 
 At ten employees the same list reads $228, $2,988 on LawnPro Plus, $1,704 on FreshBooks Plus with ten users and $3,588 on Jobber Connect.
 

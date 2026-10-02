@@ -30,9 +30,9 @@ tools:
   - tool: Jobber
     bestFor: Keeping the job and the invoice in one record
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Handing clean books to an accountant
@@ -61,7 +61,7 @@ A cleaning company with staff will end up running one from each column. The real
 
 At three cleaners, ZenMaid at $81 plus Wave at $19 comes to $100 a month, and covers booking, scheduling, reminders, invoicing and a real ledger.
 
-The same three cleaners on Jobber Connect at $197 a month still need an accounting package underneath it, because Jobber syncs rather than reconciles. The comparison is $58 against $197 plus a ledger.
+The same three cleaners on Jobber Connect at $199 a month still need an accounting package underneath it, because Jobber syncs rather than reconciles. The comparison is $100 against $199 plus a ledger.
 
 At ten cleaners the gap narrows rather than widens. Wave is flat, but ZenMaid adds $14 a month for every person on the team and reaches $179, while Jobber Connect is $299 on its ten user band. The pairing is still cheaper, but by $101 a month rather than by the margin the solo figures suggest.
 
@@ -95,7 +95,7 @@ Wave Pro is $228 a year at any crew size shown. FreshBooks Plus is $516 a year f
 
 The cheapest complete pairing for a three cleaner company is ZenMaid at $972 plus Wave at $228, which is $1,200 a year for booking, scheduling, reminders, invoicing and a real ledger.
 
-The same three cleaners on Jobber Connect at $2,364 a year plus Wave at $228 is $2,592. The difference is $1,896 a year, and Jobber's quoting and reporting have to be worth that much to justify the choice.
+The same three cleaners on Jobber Connect at $2,388 a year plus Wave at $228 is $2,616. The difference is $1,416 a year, and Jobber's quoting and reporting have to be worth that much to justify the choice.
 
 ## Where each tool is the wrong choice
 

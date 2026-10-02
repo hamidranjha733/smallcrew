@@ -23,9 +23,9 @@ tools:
   - tool: Jobber
     bestFor: Schedules that change because work is quoted
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Yardbook
     bestFor: Basic scheduling at low cost
@@ -93,7 +93,7 @@ Ask the same question about a crew being a person short, which happens more ofte
 
 ## The twelve month number
 
-Annualised at the tier that includes customer booking, a three employee lawn care company pays nothing on Connecteam for staff rostering, $468 a year on LawnPro Startup and $2,364 on Jobber Connect.
+Annualised at the tier that includes customer booking, a three employee lawn care company pays nothing on Connecteam for staff rostering, $468 a year on LawnPro Startup and $2,388 on Jobber Connect.
 
 A ten employee company pays nothing on Connecteam, $2,988 on LawnPro Plus and $3,588 on Jobber Connect.
 

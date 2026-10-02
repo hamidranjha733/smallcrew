@@ -24,8 +24,8 @@ tools:
     bestFor: Booking an inbound call before the caller hangs up
     solo: $79
     crew3: $189
-    crew10: $479
-    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
+    crew10: $399
+    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Van routing where each truck has its own day
@@ -37,9 +37,9 @@ tools:
   - tool: Jobber
     bestFor: Quoting large or commercial carpet jobs
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
 ---
 
@@ -91,7 +91,7 @@ Jobber places automated reminders on Connect at $139, which is $90 above its adv
 
 Annualised at the tier that includes online booking, a one van operation with a single cleaner pays $636 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
 
-A three technician, one van operation pays $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk, and $2,364 on Jobber Connect. Three technicians in one van cost exactly what one technician in one van costs on GorillaDesk, because the unit of billing is the van. That is why its crew columns carry no figure: the table knows your headcount and not your fleet.
+A three technician, one van operation pays $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk, and $2,388 on Jobber Connect. Three technicians in one van cost exactly what one technician in one van costs on GorillaDesk, because the unit of billing is the van. That is why its crew columns carry no figure: the table knows your headcount and not your fleet.
 
 At ten technicians working as four crews, GorillaDesk is $2,988 a year against $3,588 on Jobber Connect. At ten technicians in ten separate vans it becomes $6,588, and the model that was cheapest at three vans is suddenly the most expensive, purely because the unit of billing is the route rather than the person and your fleet grew faster than your headcount.
 
@@ -103,7 +103,7 @@ That reversal is the single most useful thing to understand before choosing carp
 
 **Launch27 is wrong** if your jobs are quoted rather than packaged. Its strength is a booking form that sells a defined product at a defined price. A carpet job priced by room count and fibre type does not fit that form neatly.
 
-**Housecall Pro is wrong** for a carpet cleaner at ten technicians, where $479 a month makes it the dearest option here, though the page now publishes the seat counts you need to model a second van.
+**Housecall Pro is wrong** for a carpet cleaner at ten technicians, where $399 a month makes it the dearest option here, though the page now publishes the seat counts you need to model a second van.
 
 **GorillaDesk is wrong** if every technician drives their own vehicle, because per schedule pricing then behaves exactly like per user pricing and reaches $549 a month at ten schedules. It is also a pest control product first, and its chemical tracking and device barcoding are irrelevant to carpet work.
 

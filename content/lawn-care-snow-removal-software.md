@@ -16,16 +16,16 @@ tools:
   - tool: Jobber
     bestFor: Quoting seasonal contracts and one off pushes
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Arborgold
     bestFor: Crews carrying salt and material costs
-    solo: $149
+    solo: $129
     crew3: Not published
     crew10: Not published
-    watch: The $129 headline is the annual rate. Paying monthly is $149, and office and mobile licences are still quoted separately
+    watch: Starter is $129 a month on the annual contract the page defaults to, with Professional at $299 and Enterprise at $499. Monthly payment is offered but its rate is not displayed. Office and mobile user licences cost extra and are not published
     url: https://arborgold.com/pricing/
   - tool: Yardbook
     bestFor: Low cost basics across both seasons
@@ -63,7 +63,7 @@ Jobber charges $29 per user per month on top of a $139 Connect base. A company w
 
 LawnPro bands by employee count. Startup at $39 covers three employees, Grow at $129 covers seven, Plus at $249 covers fifteen. A company that runs three in summer and eight in winter is a $39 business for seven months and a $249 business for five, and moving between bands twice a year is a decision rather than an adjustment.
 
-Arborgold publishes $129, $299 and $499 a month on annual billing, or $149, $343 and $573 paying monthly, and does not publish licence costs, so a seasonal headcount cannot be modelled from its pricing page at all.
+Arborgold publishes $129, $299 and $499 a month on the annual contract its page defaults to. Monthly payment is offered and its rate is not displayed. Licence costs are not published either, so a seasonal headcount cannot be modelled from its pricing page at all.
 
 ## What to test before you buy
 
@@ -91,7 +91,7 @@ None of the vendor pricing pages compared here documents any of the three. Test 
 
 ## The twelve month number
 
-Annualised, a three employee two season operation pays $468 a year on LawnPro Startup and $2,364 on Jobber Connect. At ten employees it pays $2,988 on LawnPro Plus and $3,588 on Jobber Connect. Arborgold Starter is $1,788 a year for one user paying monthly, or $1,548 committing annually, with licence costs unpublished.
+Annualised, a three employee two season operation pays $468 a year on LawnPro Startup and $2,388 on Jobber Connect. At ten employees it pays $2,988 on LawnPro Plus and $3,588 on Jobber Connect. Arborgold Starter is $1,548 a year committing annually, with the monthly rate and the licence costs both unpublished.
 
 The seasonal swing changes how to read those numbers. A company running four staff in summer and nine in winter pays Jobber for four seats in July and moves onto the ten user band in January, which annualises well below the $3,588 that the band costs all year.
 

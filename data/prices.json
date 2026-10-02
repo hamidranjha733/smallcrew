@@ -180,6 +180,184 @@
       ],
       "notPublished": "The page does not display what the higher location bands cost. Selecting a band did not reveal a figure without entering a gated flow, so bands above 15 locations are unread.",
       "verdict": "The $30 quote is the entry price at the fifteen location minimum billed monthly, not a flat price. Headcount does not move it."
+    },
+    {
+      "vendor": "Housecall Pro",
+      "source": "https://www.housecallpro.com/pricing/",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": true,
+      "model": "A guided wizard sits on top of the plan cards. The cards are present on the page but their prices do not appear in the visible text until the wizard resolves, so a fetch of this url sees only $0.",
+      "tiers": [
+        {
+          "name": "Basic",
+          "monthly": 79,
+          "annual": 59,
+          "users": "1 user included"
+        },
+        {
+          "name": "Essentials",
+          "monthly": 189,
+          "annual": 149,
+          "users": "5 users included"
+        },
+        {
+          "name": "Max",
+          "monthly": 329,
+          "annual": 299,
+          "users": "8 users included",
+          "extraUser": "$35/mo per additional user"
+        }
+      ],
+      "derived": {
+        "1": 79,
+        "3": 189,
+        "10": 399
+      },
+      "note": "Ten users is Max plus two extra at $35, which is $399. The site quotes monthly billing.",
+      "correction": "Replaces a stored $479 at ten users, which matched nothing on the page read today."
+    },
+    {
+      "vendor": "Jobber",
+      "source": "https://www.getjobber.com/pricing/",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": true,
+      "model": "A Team size control bands the plan cards, and a Monthly/Annual toggle switches the basis. Neither figure is in the HTML at the default.",
+      "tiers": [
+        {
+          "name": "Connect",
+          "band": {
+            "Just me": {
+              "users": 1,
+              "monthly": 139,
+              "annual": 99
+            },
+            "2-5 people": {
+              "users": 5,
+              "monthly": 199,
+              "annual": 149
+            },
+            "6-10 people": {
+              "users": 10,
+              "monthly": 299,
+              "annual": 229
+            },
+            "11-15 people": {
+              "users": 15,
+              "monthly": 399,
+              "annual": 299
+            }
+          }
+        },
+        {
+          "name": "Core",
+          "atJustMe": {
+            "monthly": 49,
+            "annual": 29
+          }
+        },
+        {
+          "name": "Grow",
+          "band": {
+            "Just me": {
+              "monthly": 199,
+              "annual": 149
+            },
+            "2-5 people": {
+              "monthly": 299
+            },
+            "6-10 people": {
+              "monthly": 399
+            },
+            "11-15 people": {
+              "monthly": 499
+            }
+          }
+        }
+      ],
+      "derived": {
+        "1": 139,
+        "3": 199,
+        "10": 299
+      },
+      "note": "The site quotes Connect on monthly billing. Connect is banded by team size, not charged per seat.",
+      "correction": "Replaces a stored $197 at three users, which was derived as base plus two seats rather than read. The banded price is $199."
+    },
+    {
+      "vendor": "Arborgold",
+      "source": "https://arborgold.com/pricing/",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": true,
+      "model": "Feature tiers, not team bands. A billing control offers Annual, Monthly and Pay as you go; the page defaults to Annual and the monthly rate is not displayed. Office and mobile user licences are purchased separately.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "annualContract": 129
+        },
+        {
+          "name": "Professional",
+          "annualContract": 299
+        },
+        {
+          "name": "Enterprise",
+          "annualContract": 499
+        }
+      ],
+      "notPublished": "The monthly payment rate, and the price of office and mobile user licences. The page states scalable license pricing without a figure.",
+      "footnote": "Annual contract required. Monthly and annual payment options available.",
+      "correction": "Replaces a stored $149, which was the monthly rate recorded in August and is no longer displayed. Could not switch the billing control in this browser."
+    },
+    {
+      "vendor": "Connecteam",
+      "source": "https://connecteam.com/pricing/",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": false,
+      "model": "A free Small Business plan plus per hub paid tiers priced for the first 30 users with a per additional user rate.",
+      "tiers": [
+        {
+          "name": "Small Business",
+          "monthly": 0,
+          "users": "Free for life, all hubs and features, up to 10 users"
+        },
+        {
+          "name": "Operations Basic",
+          "monthly": 35,
+          "yearly": 29,
+          "users": "first 30 users",
+          "extraUser": "from $0.50 to $5.00 per additional user depending on tier"
+        }
+      ],
+      "verdict": "The stored $0 at one, three and ten is correct: the free plan covers up to ten users."
+    },
+    {
+      "vendor": "FreshBooks",
+      "source": "https://www.freshbooks.com/pricing",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": false,
+      "model": "Three published tiers with a per team member charge on top.",
+      "tiers": [
+        {
+          "name": "Lite",
+          "monthly": 23
+        },
+        {
+          "name": "Plus",
+          "monthly": 43
+        },
+        {
+          "name": "Premium",
+          "monthly": 70
+        }
+      ],
+      "extraUser": "$11/mo per team member",
+      "verdict": "The stored $43 at one user is correct, and the annualised $516, $780 and $1,704 at one, three and ten follow from $43 plus $11 a head."
+    },
+    {
+      "vendor": "LawnPro",
+      "source": "https://www.lawnprosoftware.com/price",
+      "readOn": "2026-10-02",
+      "pricingIsDynamic": null,
+      "result": "UNREAD. The page returned HTTP 403 Forbidden to this browser, as it did in August.",
+      "note": "No figure was read today, so the stored $0, $39 and $249 remain on their August reading. They were reported as still correct by the site owner, which is recorded here as a report rather than as a reading."
     }
   ],
   "corrections": [

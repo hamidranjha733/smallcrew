@@ -30,16 +30,16 @@ tools:
   - tool: Jobber
     bestFor: Mixed recurring work and one off deep cleans
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Housecall Pro
     bestFor: Dispatching from an inbound call
     solo: $79
     crew3: $189
-    crew10: $479
-    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
+    crew10: $399
+    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
     url: https://www.housecallpro.com/pricing/
 ---
 
@@ -67,7 +67,7 @@ ZenMaid shows the same pattern more cheaply. Starter at $19 a month is capped at
 
 **One cleaner, no staff.** ZenMaid Pro at $53. The schedule is small, the problem is inbound enquiries, and the booking form is the whole value.
 
-**Two to four cleaners.** ZenMaid plus Connecteam free if you want time tracking. Two systems sounds worse than one, and at $81 a month for three cleaners against $197 for Jobber at three users it is worth the small friction.
+**Two to four cleaners.** ZenMaid plus Connecteam free if you want time tracking. Two systems sounds worse than one, and at $81 a month for three cleaners against $199 for Jobber at three users it is worth the small friction.
 
 **Five to ten cleaners.** Launch27 at $75 a month for unlimited users, which is the cheapest option at this size by a clear margin. ZenMaid is $179 at ten because it charges per person, so the round being purely recurring no longer makes it the cheap answer. This is the crew size where per head pricing turns hostile, and ZenMaid is not exempt. Jobber at ten users on the Connect plan is $299 a month.
 
@@ -99,7 +99,7 @@ The third is backfilling, which means having a waiting list you can offer the sl
 
 ## The twelve month number
 
-Annualised at the tier that includes customer booking, a three cleaner company pays nothing on Connecteam for staff rostering, $972 a year on ZenMaid, $900 on Launch27 and $2,364 on Jobber Connect. Launch27 is already the cheaper of the two at three people.
+Annualised at the tier that includes customer booking, a three cleaner company pays nothing on Connecteam for staff rostering, $972 a year on ZenMaid, $900 on Launch27 and $2,388 on Jobber Connect. Launch27 is already the cheaper of the two at three people.
 
 At ten cleaners the same list reads nothing, $2,148, $900 and $3,588. Launch27 is now the cheapest that schedules customers, at less than half the ZenMaid figure, and Jobber's ten user band is still the most expensive.
 

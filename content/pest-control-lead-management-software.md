@@ -16,16 +16,16 @@ tools:
   - tool: Jobber
     bestFor: Quote follow up that happens without you
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Housecall Pro
     bestFor: Capturing the call you could not answer
     solo: $79
     crew3: $189
-    crew10: $479
-    watch: Basic covers one user only, so a crew needs Essentials at $189. At ten, MAX plus two seats is $479 against $689 on Essentials plus five, so the dearer tier is cheaper
+    crew10: $399
+    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
     url: https://www.housecallpro.com/pricing/
   - tool: FieldRoutes
     bestFor: Operators with a dedicated sales function
@@ -105,7 +105,7 @@ The comparison that does not work is buying a lead management product on top. Fi
 
 **Jobber is wrong** for pest control compliance, holding no chemical application log, and still $299 a month at ten users on the Connect band.
 
-**Housecall Pro is wrong** for an operator at ten technicians, where $479 a month makes it the dearest option on this page.
+**Housecall Pro is wrong** for an operator at ten technicians, where $399 a month makes it the dearest option on this page.
 
 **FieldRoutes is wrong** for a small operator on its pricing model. Charging by active customer count means converting more leads raises the software bill.
 

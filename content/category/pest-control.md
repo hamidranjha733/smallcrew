@@ -13,9 +13,9 @@ tools:
   - tool: Jobber
     bestFor: Pest work mixed with other trades
     solo: $139
-    crew3: $197
+    crew3: $199
     crew10: $299
-    watch: Connect is banded as well as per seat, so ten users is $299 on the ten user band, not the $400 that adding nine seats to the one user plan costs
+    watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Briostack
     bestFor: Recurring residential pest routes
@@ -105,7 +105,7 @@ Monthly pricing understates the gap between these two products, so it is worth a
 
 A solo operator pays $1,188 a year on GorillaDesk Pro against $1,668 on Jobber Connect. GorillaDesk is $480 a year cheaper before any question of features.
 
-Three technicians riding as one crew pay $1,188 on GorillaDesk against $2,364 on Jobber Connect, a difference of $1,176 a year. Three technicians in three separate vehicles pay $2,388 on GorillaDesk, which is within a rounding error of Jobber and removes the cost argument entirely.
+Three technicians riding as one crew pay $1,188 on GorillaDesk against $2,388 on Jobber Connect, a difference of $1,200 a year. Three technicians in three separate vehicles pay $2,388 on GorillaDesk, which is within a rounding error of Jobber and removes the cost argument entirely.
 
 Ten people working as four crews pay $2,988 on GorillaDesk against $3,588 on Jobber Connect. Ten solo technicians pay $6,588 on GorillaDesk, which is the most expensive outcome anywhere in this comparison and $3,000 a year more than the alternative.
 
