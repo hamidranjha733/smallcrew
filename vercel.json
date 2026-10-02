@@ -21,5 +21,16 @@
       "destination": "/lawn-care/",
       "statusCode": 301
     }
+  ],
+  "headers": [
+    {
+      "source": "/og/(.*).png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, immutable, no-transform, max-age=31536000"
+        }
+      ]
+    }
   ]
 }
