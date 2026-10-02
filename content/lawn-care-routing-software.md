@@ -43,7 +43,7 @@ tools:
     url: https://www.serviceautopilot.com/pricing/
 ---
 
-For lawn care routing, the pricing model matters more than the routing feature. GorillaDesk charges per schedule at $99 for the first and $50 for each additional one, where a schedule is one truck's route. LawnPro charges by employee count in large steps, from free to $39 to $129 to $249. Jobber charges $29 per user on top of a $139 base. All figures were read from vendor pricing pages in August 2026 and are the lowest tier that includes online booking.
+For lawn care routing, the pricing model matters more than the routing feature. GorillaDesk charges per schedule at $99 for the first and $50 for each additional one, where a schedule is one truck's route. LawnPro charges by employee count in large steps, from free to $39 to $129 to $249. Jobber bands by team size from a $139 base for one user. ZenMaid, GorillaDesk and Jobber were rechecked in October 2026 and the rest were read in August 2026, and all are the lowest tier that includes online booking.
 
 Drive time is the largest cost in lawn care that never appears on an invoice. A crew crossing town twice a day is paid for the crossing and the customer is not billed for it. That is the problem routing software addresses, and it is worth being precise about what these tools do and do not do about it.
 
@@ -53,7 +53,7 @@ Lawn care runs in crews. Three people in one truck follow one route. Software pr
 
 GorillaDesk is the only tool in this comparison whose pricing follows the route. Its own documentation describes a schedule as one technician's route, and states that where technicians work in crews, only crew leaders need schedules. So a nine person operation running three trucks needs three schedules, which is $99 for the first plus $50 each for two more, or $199 a month.
 
-The same nine people on Jobber Connect is $299 a month, because the ten user band undercuts the $371 that eight extra seats would cost. On LawnPro nine employees requires the Plus plan at $249.
+The same nine people on Jobber Connect is $299 a month, because nine sits in the six to ten band. On LawnPro nine employees requires the Plus plan at $249.
 
 The direction reverses when everyone drives separately. Ten solo drivers on GorillaDesk is ten schedules, $99 plus nine at $50, or $549 a month, which is the most expensive cell in this table. The pricing model is not better or worse in the abstract. It is better or worse depending on whether your people ride together.
 
@@ -105,7 +105,7 @@ So the question to settle before choosing is not which tool routes better. It is
 
 **GorillaDesk is wrong** if your technicians drive separately, because per schedule pricing then behaves like per user pricing and reaches $549 at ten routes. It is also a pest control product first, and its chemical and device tracking is irrelevant to mowing.
 
-**Jobber is wrong** for a fixed price route that never changes. You are paying for quoting depth a repeating round does not use, and at ten users on Connect that is $299 a month. Connect bands at ten users for $299, so the band is the cheaper purchase than either Grow at $344 or nine added seats at $400.
+**Jobber is wrong** for a fixed price route that never changes. You are paying for quoting depth a repeating round does not use, and at ten users on Connect that is $299 a month. Connect bands rather than charging per seat, so that $299 covers anything from six people to ten and does not move until the eleventh.
 
 **Yardbook is wrong** as a researched decision, because its pricing page blocked automated access in August 2026 and no figure for it is verified on this site.
 

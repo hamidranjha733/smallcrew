@@ -51,9 +51,9 @@ Carpet cleaning sits awkwardly between two software categories. It is not recurr
 
 Carpet cleaning is the one trade on this site where the vendor's pricing model, rather than its features, should decide the purchase.
 
-Most software charges per user. A carpet cleaning company with four technicians and two vans pays for four seats even though it runs two routes. GorillaDesk charges per schedule instead, at $99 a month for the first and $50 for each additional one, and its own documentation describes a schedule as one technician's route, noting that crews riding together only need a schedule for the crew leader.
+Most software prices by headcount one way or another. A carpet cleaning company with four technicians and two vans pays on four people even though it runs two routes. GorillaDesk charges per schedule instead, at $99 a month for the first and $50 for each additional one, and its own documentation describes a schedule as one technician's route, noting that crews riding together only need a schedule for the crew leader.
 
-For a two van operation with four technicians, that is $149 a month at GorillaDesk against $226 a month at Jobber Connect for four seats. For a one van operation with two technicians it is $99 against $168. The direction reverses only if every technician drives separately.
+For a two van operation with four technicians, that is $149 a month at GorillaDesk against $199 a month at Jobber Connect, which bands two to five people together. For a one van operation with two technicians it is $99 against the same $199, because Jobber's band does not distinguish them. The direction reverses only if every technician drives separately.
 
 Launch27 sidesteps the question entirely with flat pricing and unlimited users. ZenMaid does not, because it charges for every person on the team, but it starts low enough to stay competitive for a small round. Both appear high in the table despite being built for residential cleaning rather than carpet specifically.
 
@@ -107,7 +107,7 @@ That reversal is the single most useful thing to understand before choosing carp
 
 **GorillaDesk is wrong** if every technician drives their own vehicle, because per schedule pricing then behaves exactly like per user pricing and reaches $549 a month at ten schedules. It is also a pest control product first, and its chemical tracking and device barcoding are irrelevant to carpet work.
 
-**Jobber is wrong** at ten users unless the quoting earns its keep. Ten users on Connect is $299 a month on its ten user band. Note that Connect is banded, so ten users cost $299 on the ten user band rather than the $400 that adding nine seats to the one user plan costs. The higher tier is cheaper, which the pricing page does not point out.
+**Jobber is wrong** at ten users unless the quoting earns its keep. Ten technicians on Connect is $299 a month on the six to ten band. Connect bands by team size rather than charging per seat, so the bill is flat between boundaries and steps at them. For a carpet operation that means a sixth technician is free and an eleventh is $100 a month.
 
 ## Common questions
 
@@ -115,7 +115,7 @@ That reversal is the single most useful thing to understand before choosing carp
 ZenMaid Pro at $53 a month for a single cleaner if carpet work sits inside a cleaning round, and Launch27 at $75 a month for a dedicated carpet operation. Launch27 overtakes ZenMaid on price at about two people. ZenMaid was rechecked in October 2026, Launch27 in August 2026.
 
 **Should I pay per user or per van?**
-Per van, if your technicians ride together. GorillaDesk bills per schedule, which is per route rather than per person, and its documentation states that crews only need a schedule for the crew leader. For a four technician, two van operation that is the difference between $149 and $226 a month.
+Per van, if your technicians ride together. GorillaDesk bills per schedule, which is per route rather than per person, and its documentation states that crews only need a schedule for the crew leader. For a four technician, two van operation that is the difference between $149 and $199 a month.
 
 **Does any of this software calculate a carpet cleaning quote?**
 No. None of the five tools compared here prices a job from room dimensions, fibre type or soiling level. They capture bookings and hold schedules. Jobber comes closest with saved line items at set prices.

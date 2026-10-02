@@ -59,7 +59,7 @@ A seasonal contract with a push cap is the one that causes real damage. You need
 
 The cost problem is seasonal headcount meeting per seat pricing.
 
-Jobber charges $29 per user per month on top of a $139 Connect base. A company with four summer staff and eight winter staff pays for eight seats in January and four in July, which is the correct behaviour, provided you remember to remove the seats. That is the strongest argument for per seat pricing in this trade, and it is the opposite of the argument that applies elsewhere on this site.
+Jobber bands by team size on Connect rather than charging per seat. A company with four summer staff and eight winter staff sits in the two to five band in July and the six to ten band in January, which is $199 against $299. The saving is real but it is one step rather than a sliding scale, and it only arrives if you move the band back in spring.
 
 LawnPro bands by employee count. Startup at $39 covers three employees, Grow at $129 covers seven, Plus at $249 covers fifteen. A company that runs three in summer and eight in winter is a $39 business for seven months and a $249 business for five, and moving between bands twice a year is a decision rather than an adjustment.
 
@@ -93,7 +93,7 @@ None of the vendor pricing pages compared here documents any of the three. Test 
 
 Annualised, a three employee two season operation pays $468 a year on LawnPro Startup and $2,388 on Jobber Connect. At ten employees it pays $2,988 on LawnPro Plus and $3,588 on Jobber Connect. Arborgold Starter is $1,548 a year committing annually, with the monthly rate and the licence costs both unpublished.
 
-The seasonal swing changes how to read those numbers. A company running four staff in summer and nine in winter pays Jobber for four seats in July and moves onto the ten user band in January, which annualises well below the $3,588 that the band costs all year.
+The seasonal swing changes how to read those numbers. A company running four staff in summer and nine in winter sits in Jobber's two to five band in July at $199 and its six to ten band in January at $299, which annualises below the $3,588 that staying on the upper band all year would cost.
 
 The same company on LawnPro sits in the Grow band at $129 for up to seven employees in summer and the Plus band at $249 for up to fifteen in winter, which is roughly $2,200 a year if you actually change bands twice, and $2,988 if you do not.
 
@@ -103,7 +103,7 @@ For a two season business, the software that lets you shed capacity in the off s
 
 **LawnPro is wrong** if snow is more than an occasional add on. Nothing on its pricing page indicates per push or capped seasonal billing, and its employee bands suit a stable headcount rather than a seasonal swing.
 
-**Jobber is wrong** for pure route work at ten staff, at $299 a month on Connect. It is the best structured of these for seasonal headcount because seats can be added and removed, and its ten user band at $299 beats both Grow at $344 and nine added seats at $400.
+**Jobber is wrong** for pure route work at ten staff, at $299 a month on Connect. Its band structure is the awkward part for a two season business. Connect holds at $199 from two to five people and at $299 from six to ten, so a company that runs four in summer and nine in winter sits in a different band for half the year and has to move between them deliberately.
 
 **Arborgold is wrong** for straightforward plowing. It is built for tree care and landscape construction with material tracking, which is relevant to salt, but its licence pricing is unpublished so you cannot budget a winter crew.
 
@@ -120,7 +120,7 @@ All five products here will schedule and invoice both. None of their pricing pag
 The common models are per push, per inch, seasonal flat rate with a push cap, and time plus materials. The one that needs software support is the seasonal cap, because you must count consumed pushes against the cap to bill the overage.
 
 **Does per seat pricing work for a seasonal business?**
-Better than banded pricing, provided you actually remove seats at the end of the season. Jobber charges $29 per user per month, so a winter only hire costs you five months rather than twelve.
+Banded pricing handles it adequately, provided you actually move the band back at the end of the season. On Jobber a winter crew of eight and a summer crew of four are two different bands, $100 a month apart, and nothing moves you between them automatically.
 
 **What is the cheapest way to run both seasons?**
 LawnPro at $39 a month for up to three employees, checked in August 2026. Above seven employees the next band is $249 and Jobber becomes competitive.

@@ -65,7 +65,7 @@ What it does not do is bill the contract. There is no customer invoice, no contr
 
 ## Where the per person pricing model breaks
 
-Jobber charges $29 for each user beyond the first on the Connect plan. Commercial cleaning is labour heavy by definition, and a contractor with ten cleaners servicing six buildings pays $299 a month on Connect for software whose customer count is six.
+Jobber bands by team size on Connect, at $139 for one, $199 from two to five and $299 from six to ten. Commercial cleaning is labour heavy by definition, so a contractor with ten cleaners servicing six buildings pays $299 a month for software whose customer count is six.
 
 That is the wrong axis. Your cost should track buildings, because buildings are what you bill. Swept is the only tool here that does this, banding by number of locations with an entry band covering up to fifteen. Launch at $30 a month, Optimize at $150 and Scale at $225 are the published starting prices for that first band.
 
@@ -119,7 +119,7 @@ The pairing worth considering for a small janitorial contractor is therefore a s
 
 **Housecall Pro is wrong** for a janitorial contractor, because it will not show a price to budget from and it buys residential features a building based business will not use.
 
-**Jobber is wrong** for buildings. It is priced per person and structured around the appointment, and at ten cleaners it costs $299 a month on Connect. Connect is banded, so ten users cost $299 on the ten user band rather than the $400 you pay by adding nine seats, which is worth knowing before you buy the cheaper sounding tier.
+**Jobber is wrong** for buildings. It is banded by headcount and structured around the appointment, and at ten cleaners it costs $299 a month on Connect. For a janitorial contractor the unit is wrong in both directions: the bill follows how many cleaners you employ rather than how many buildings you service, and it steps at six and at eleven regardless of how many sites those people cover.
 
 **Swept is wrong** for residential cleaning entirely, and wrong as your only system, because it has no customer booking and does not bill a contract. It is also wrong for a contractor whose location count sits just above a band boundary, since the price steps rather than scales.
 

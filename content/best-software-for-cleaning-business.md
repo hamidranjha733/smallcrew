@@ -50,7 +50,7 @@ tools:
     url: https://sweptworks.com/pricing
 ---
 
-For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $53 a month for one cleaner, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team, which is set out in full in our [ZenMaid pricing breakdown](/zenmaid-pricing/). Jobber charges per seat but also bands, and reaches $299 a month at ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form. ZenMaid was rechecked in October 2026, the others in August 2026.
+For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $53 a month for one cleaner, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team, which is set out in full in our [ZenMaid pricing breakdown](/zenmaid-pricing/). Jobber bands by team size and reaches $299 a month across six to ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form. ZenMaid and Jobber were rechecked in October 2026, the others in August 2026.
 
 That last sentence is the reason this page exists. Almost every comparison of cleaning business software quotes Jobber at $49 a month. That is the Core plan, and the Core plan does not send automated client reminders. A cleaning company without automated reminders is a cleaning company that pays someone to make confirmation calls.
 
@@ -82,7 +82,7 @@ Launch27 charges $75 a month on its Base plan, which includes a booking form, au
 
 **Five to ten cleaners.** This is where flat pricing wins on arithmetic alone. Launch27 is still $75 a month at ten users. Jobber is $299 a month on Connect at ten users. That is $3,900 a year in difference, and Jobber's advantage in quoting and reporting has to be worth that much to you.
 
-There is a wrinkle worth knowing. Connect is sold in bands as well as per seat. Ten users on the ten user band is $299, while adding nine seats to the one user plan is $400 and the Grow plan is $344. The cheapest of the three is the one the pricing page does not walk you to.
+There is a wrinkle worth knowing. Connect is sold in bands of team size rather than by the seat, and the bands are what move the bill. Connect is $139 at one user, $199 across two to five and $299 across six to ten, so the price does not drift upward as you hire. It jumps the month you cross a boundary, and it does not move at all in between.
 
 ## Cleaning business management software compared on what it refuses to do
 

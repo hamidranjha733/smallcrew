@@ -105,7 +105,7 @@ Below thirty customers the arithmetic reverses and Wave alone is the right answe
 
 **GorillaDesk is wrong** at ten separate technician schedules on cost, reaching $549 a month, and wrong on the Basic plan if you expected customers to pay through a portal.
 
-**Jobber is wrong** for a pest control operator who needs the chemical application record attached to the invoice, because it does not hold one. At ten users on Connect it is $299 a month on the ten user band, which undercuts both Grow at $344 and nine added seats at $400.
+**Jobber is wrong** for a pest control operator who needs the chemical application record attached to the invoice, because it does not hold one. At ten users on Connect it is $299 a month on the six to ten band.
 
 **PestPac is wrong** for a simple recurring residential route. WorkWave publishes no price for it and routes buyers to a demo, so you cannot weigh it against GorillaDesk without entering a sales process.
 

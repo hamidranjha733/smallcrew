@@ -55,7 +55,7 @@ That makes two numbers decisive, and neither of them is the headline price. The 
 
 LawnPro publishes both clearly. Its Solo plan is free for one user and twenty five customers. Startup at $39 a month covers three employees and unlimited customers. Grow at $129 covers seven. Plus at $249 covers fifteen.
 
-Jobber publishes both clearly as well. Core is $49, Connect is $139, and every user past the first is $29 a month.
+Jobber publishes both clearly as well. Core is $49 and Connect is $139 for a single user, and Connect then bands by team size at $199 from two to five employees and $299 from six to ten.
 
 Arborgold publishes $129, $299 and $499 a month on the annual contract its page defaults to. It offers monthly payment and does not display that rate, and it does not publish the cost of the office and mobile user licences either, which means the plan price is not the price at any crew size.
 
@@ -113,7 +113,7 @@ The six products here use four different models, and the model decides your bill
 
 Banded by employee count, which is LawnPro, is the cheapest model in this category at three staff and the harshest at the boundaries. The step from Grow to Plus is $120 a month triggered by a single hire, and nothing about the $39 entry price warns you that the eighth employee costs more than the seventh did.
 
-Banded per seat, which is Jobber, steps more gently and can be adjusted downward. Ten users cost $299 on the ten user band rather than the $400 that adding nine individual seats implies, and seats can be removed when the season ends. It is the most expensive model at three staff and the most forgiving across a full year.
+Banded by team size, which is Jobber, holds flat between boundaries and steps at them. Connect is $139 at one, $199 from two to five and $299 from six to ten. It is the most expensive model at three staff, and for a seasonal trade the question is whether your summer and winter headcounts fall in the same band, because within one the bill does not move at all.
 
 Plan price plus unpublished licences, which is Arborgold, cannot be forecast at all. The plan figure is real, but office and mobile user licences are purchased separately and their price is not on the page, so the published number is a floor rather than a cost.
 
@@ -135,7 +135,7 @@ Ask how annual agreements renew. Lawn care sells a season, and a system that tre
 
 **LawnPro is wrong** if you need automated reminders on a budget, because they require the $129 Grow plan, and wrong if you plan to cross seven employees soon, because the next tier is $249.
 
-**Jobber is wrong** for pure mow and go route work at ten staff. At $299 a month on Connect you are paying for quoting depth that a fixed price recurring round does not use. Note that Connect is banded, so ten users cost $299 on the ten user band against $400 if you add nine seats to the one user plan.
+**Jobber is wrong** for pure mow and go route work at ten staff. At $299 a month on Connect you are paying for quoting depth that a fixed price recurring round does not use. Connect bands by team size rather than charging per seat, so that $299 is the same bill at six employees as at ten.
 
 **Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, its entry price of $129 requires an annual contract, the monthly rate is not displayed, and its licence pricing is still not published.
 

@@ -30,7 +30,9 @@ for (const o of observations) {
 }
 
 const today = new Date();
-const ageDays = (iso) => Math.floor((today - new Date(iso)) / 86400000);
+// Clamped at zero: readings are dated in local time and 'today' is UTC here,
+// so a reading made this evening can otherwise report as minus one day old.
+const ageDays = (iso) => Math.max(0, Math.floor((today - new Date(iso)) / 86400000));
 
 const dynamic = [];
 const fetchable = [];
@@ -51,6 +53,7 @@ if (dynamic.length === 0) {
     console.log(`    ${o.source}`);
     console.log(`    last read by hand ${o.readOn}, ${age} days ago`);
     console.log(`    why: ${o.model.split('.')[0]}.`);
+    if (o.attachedTo) console.log(`    the figure is: ${o.attachedTo}`);
     console.log(
       '    The figures are computed in the page and are absent from the HTML,',
     );
@@ -63,6 +66,17 @@ console.log('PRICES A FETCH CAN AT LEAST SEE');
 console.log(bar);
 for (const o of fetchable.sort((a, b) => a.vendor.localeCompare(b.vendor))) {
   console.log(`  ${o.vendor.padEnd(12)} ${o.readOn}  ${o.source}`);
+  if (o.attachedTo) console.log(`${' '.repeat(16)}${o.attachedTo}`);
+}
+
+// A value with nothing saying what it is a price for cannot be checked by
+// anyone later. Three vendors were published wrong exactly this way.
+const unattached = [...latest.values()].filter((o) => !o.attachedTo);
+if (unattached.length > 0) {
+  console.log(`\n${bar}`);
+  console.log('RECORDED WITHOUT SAYING WHAT THE FIGURE IS ATTACHED TO');
+  console.log(bar);
+  console.log('  ' + unattached.map((o) => o.vendor).join('\n  '));
 }
 
 // Vendors the site prices but the log has never recorded at all.

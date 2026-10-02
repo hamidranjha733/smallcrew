@@ -79,7 +79,7 @@ ZenMaid is narrow on purpose. It is built for maid services running recurring ro
 
 Launch27 wins on arithmetic at scale and loses on payment automation. Charging a saved card automatically requires the Plus plan at $299 a month, which is four times the Base price.
 
-Jobber is the most capable scheduler here and the most expensive by a distance once you have staff. Its per seat pricing at $29 a user is the mechanism.
+Jobber is the most capable scheduler here and the most expensive by a distance once you have staff. Its team size bands are the mechanism: the step from a solo operator to two people is $60 a month before anyone has cleaned anything.
 
 Housecall Pro schedules well from an inbound call, which is the operation this page is about. What it will not tell you is what that costs at any crew size, because its pricing page is a wizard that ends without a figure.
 
@@ -123,7 +123,7 @@ If your work is one off deep cleans and move outs rather than a repeating round,
 
 **Launch27 is wrong** if you need automated card charging, unless you are prepared to pay $299.
 
-**Jobber is wrong** for a ten person cleaning crew doing standard recurring work. At $299 a month on Connect you are paying for quoting and reporting depth that recurring residential work does not use. Note that Connect is banded, so ten users cost $299 on the ten user band rather than the $400 that adding nine seats to the one user plan costs. The higher tier is the cheaper one.
+**Jobber is wrong** for a ten person cleaning crew doing standard recurring work. At $299 a month on Connect you are paying for quoting and reporting depth that recurring residential work does not use. Connect bands by team size rather than charging per seat, so that $299 covers six cleaners as readily as ten and does not move until the eleventh.
 
 **Housecall Pro is wrong** for anyone who has to forecast software cost across a hiring plan.
 
@@ -139,7 +139,7 @@ Up to roughly two cleaners, yes. The point at which a shared calendar fails is t
 Automated reminders are the feature that addresses it, and they sit on ZenMaid Pro, Launch27 Base for email, Launch27 Pro for text, and Jobber Connect. On Jobber they are two tiers above the advertised price.
 
 **Do I need per cleaner licences?**
-It depends entirely on the vendor and it is the single largest cost driver. Launch27 publishes a flat price that does not change with headcount. ZenMaid looks flat and is not, adding $14 a month a person. Jobber charges $29 for each additional user. At ten cleaners the spread between the cheapest and dearest here is more than $2,600 a year.
+It depends entirely on the vendor and it is the single largest cost driver. Launch27 publishes a flat price that does not change with headcount. ZenMaid looks flat and is not, adding $14 a month a person. Jobber bands by team size and steps at the boundaries. At ten cleaners the spread between the cheapest and dearest here is more than $2,600 a year.
 
 **How current are these prices?**
 ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Vendor pricing in this category changes several times a year, so confirm before you commit.

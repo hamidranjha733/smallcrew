@@ -63,9 +63,9 @@ The Solo plan is free, for one user and twenty five customers. Startup at $39 a 
 
 Read those boundaries against a lawn care hiring pattern. A company that takes on a fourth employee in April moves from $39 to $129. A company that takes on an eighth moves from $129 to $249. The price does not rise smoothly, it steps, and each step is roughly triple.
 
-Jobber steps differently. Every user past the first costs $29 a month on Connect, but Connect also bands, so ten users is $299 rather than the $400 that ten single seats would cost. It is more expensive at three and more predictable at ten.
+Jobber steps differently. Connect bands by team size, at $139 for one, $199 from two to five and $299 from six to ten, so the bill is flat within a band and jumps at the edge of it. It is more expensive at three and entirely predictable in between.
 
-There is a detail in Jobber's structure worth knowing. Connect bands as well as charging per seat, so ten users is $299 on the band, against $344 on Grow and $400 by adding nine seats. The more expensive tier is the cheaper purchase, which the pricing page does not mention.
+There is a detail in Jobber's structure worth knowing. The bands are wide, so the hire that costs you nothing and the hire that costs you $100 a month look identical from the inside. Going from two to five employees changes no bill at all. Going from five to six changes it by $100.
 
 ## What is behind the door in each product
 
@@ -122,7 +122,7 @@ Connecteam is free for up to ten users but schedules staff only. The cheapest th
 Badly, in general. The useful capability is moving a whole day's route forward rather than rescheduling visits individually, and it is worth testing on a trial before you buy, because it is the operation you will perform most often.
 
 **Do I need per employee licences for lawn care software?**
-It depends on the vendor and it is the main cost driver. LawnPro bands by employee count with large steps between tiers. Jobber charges $29 for each user past the first. Connecteam is free up to ten users.
+It depends on the vendor and it is the main cost driver. LawnPro bands by employee count with large steps between tiers. Jobber bands by team size, holding flat between boundaries and stepping at them. Connecteam is free up to ten users.
 
 **Can I schedule crews without giving everyone a licence?**
 On Connecteam yes, up to ten users at no cost. On Jobber each person needing access is a paid seat. LawnPro bands by employee count rather than selling individual seats.

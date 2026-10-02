@@ -107,7 +107,7 @@ Only one tool here genuinely does not move. That is the finding. A cleaning comp
 
 **GorillaDesk is wrong** for a cleaning company whose staff ride together, because it charges per route rather than per person and reaches $549 at ten routes. It is a pest control product adapted to other trades.
 
-**Jobber is wrong** if you buy the $49 plan expecting a complete booking experience. Booking without reminders is the configuration that produces locked doors. The usable tier is $139, and at ten users the Connect ten user band at $299 undercuts both the Grow plan at $344 and the $400 you pay by adding seats one at a time.
+**Jobber is wrong** if you buy the $49 plan expecting a complete booking experience. Booking without reminders is the configuration that produces locked doors. The usable tier is $139, and at ten users Connect is $299 on the six to ten band. The thing to plan for is the boundary rather than the headcount: the sixth hire costs nothing and the eleventh moves you to $399.
 
 ## Common questions
 

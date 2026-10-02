@@ -109,7 +109,7 @@ That is the argument of this page in one calculation, and it is why no separate 
 
 **GorillaDesk is wrong** at ten separate technician schedules, where per schedule pricing reaches $549 a month.
 
-**Jobber is wrong** for pest control compliance regardless of its marketing features, because it holds no chemical application log. At ten users on Connect it costs $299 a month on the ten user band, which undercuts Grow at $344.
+**Jobber is wrong** for pest control compliance regardless of its marketing features, because it holds no chemical application log. At ten users on Connect it costs $299 a month on the six to ten band.
 
 **FieldRoutes is wrong** for a small operator on its pricing model alone. Charging by active customer count means every marketing success raises your software bill.
 

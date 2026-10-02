@@ -75,7 +75,7 @@ Per employee pricing and seasonal work interact badly.
 
 LawnPro Plus at $249 a month covers fifteen employees. If you run fifteen from April to October and four through the winter, you are paying the fifteen employee price in January unless you downgrade twice a year and accept whatever that does to your data.
 
-Jobber charges $29 per user per month, so removing seasonal staff removes their cost, which is the better structure for a seasonal trade even though the headline price is higher.
+Jobber bands by team size rather than charging per seat, so seasonal staff only change the bill when they take you across a band boundary. A crew that runs four in summer and nine in winter sits in two different bands and has to be moved between them deliberately.
 
 Wave and FreshBooks are largely unaffected, because the accounting side does not scale with crew size in the same way. FreshBooks does charge $11 per team member, but a lawn care company rarely needs more than one or two people in the accounting tool.
 
@@ -99,7 +99,7 @@ At ten employees the same list reads $228, $2,988 on LawnPro Plus, $1,704 on Fre
 
 The cheapest complete pairing for a three employee company is LawnPro Startup at $468 plus Wave Pro at $228, which is $696 a year for scheduling, a client portal, invoicing and a real ledger.
 
-At ten employees that pairing becomes $3,216, and Jobber Connect at $3,588 plus Wave at $228 is $3,816. The gap has closed to about a thousand dollars a year, and Jobber's ability to remove seats over the winter narrows it further for a seasonal operation.
+At ten employees that pairing becomes $3,216, and Jobber Connect at $3,588 plus Wave at $228 is $3,816. The gap has closed to about six hundred dollars a year, and for a seasonal operation Jobber can narrow it further by dropping a band over the winter, though that is a deliberate change rather than something that happens by itself.
 
 ## Where each tool is the wrong choice
 

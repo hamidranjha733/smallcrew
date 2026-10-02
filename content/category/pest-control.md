@@ -69,9 +69,9 @@ The table above carries no figure in the GorillaDesk crew columns, because headc
 
 Pest control is the trade where that assumption is least safe. Pest technicians commonly drive alone, and ten solo technicians means ten schedules, which is $99 plus nine at $50, or $549 a month. Work out how many vehicles leave your yard each morning before you use either figure, because the answer moves the bill by three hundred dollars a month.
 
-Jobber publishes Core at $49, Connect at $139, Grow at $199 for five users and Plus at $499 for fifteen, with additional users at $29. Automated client reminders begin on Connect, so $139 is the honest entry price for anyone who does not intend to make confirmation calls by hand.
+Jobber publishes Core at $49, Connect at $139 and Grow at $199 for a single user, and bands each of them by team size. Automated client reminders begin on Connect, so $139 is the honest entry price for anyone who does not intend to make confirmation calls by hand.
 
-At ten users Jobber Connect is $299 on its ten user band, which is cheaper than the $344 that Grow costs at the same headcount and cheaper than the $400 that adding nine individual seats to the one user plan costs. The higher tier is the cheaper purchase, and the pricing page does not point that out.
+At ten users Jobber Connect is $299 on the six to ten band. The band is what moves the bill, not the headcount inside it: six technicians and ten technicians cost the same, and the eleventh takes you to $399.
 
 ## Why the other four decline to publish
 
@@ -119,7 +119,7 @@ The six products in this table use four different pricing models, and the model 
 
 Per schedule, which is GorillaDesk, tracks vehicles rather than people. It is the cheapest model in this comparison for a crew based operation and the most expensive for a solo driver operation, and the same published price list produces both outcomes. Nothing in the vendor's headline figure tells you which one you are.
 
-Banded per seat, which is Jobber, steps at thresholds. It is why ten users costs $299 on the ten user band rather than the $400 that nine additional seats would imply. The practical consequence is that the month you hire your sixth or eleventh technician the bill moves in a step rather than a slope, and the step can be downward if you switch band deliberately.
+Banded by team size, which is Jobber, steps at thresholds. The practical consequence is that the month you hire your sixth or eleventh technician the bill moves in a step rather than a slope, and every hire in between costs nothing.
 
 Per active customer, which is FieldRoutes, indexes the software bill to the size of your route rather than the size of your team. For a growing residential operation this is the model that compounds fastest, because a route that doubles doubles the software cost whether or not you hired anyone.
 

@@ -57,7 +57,8 @@
         "SMS charges are excluded from every tier price"
       ],
       "readBy": "Read directly off the live pricing page, including driving the team size control through every value from 0 to 12 rather than taking the headline figures at face value.",
-      "pricingIsDynamic": true
+      "pricingIsDynamic": true,
+      "attachedTo": "Pro tier base, at a team size of zero. The team calculator adds $14 a month per person on top, so the base is not a price any crew pays."
     },
     {
       "vendor": "GorillaDesk",
@@ -105,7 +106,8 @@
           "booking": true
         }
       ],
-      "readBy": "Drove the route slider through every value from 1 to 12 and recorded all three tiers at each."
+      "readBy": "Drove the route slider through every value from 1 to 12 and recorded all three tiers at each.",
+      "attachedTo": "Pro tier, at one route. The route slider sets the figure; users are unlimited and do not affect it."
     },
     {
       "vendor": "Wave",
@@ -126,7 +128,8 @@
           "note": "Adds auto bank import, automated late payment reminders, unlimited receipt capture and the ability to add users."
         }
       ],
-      "cardProcessing": "2.9% + $0.60 per credit card transaction, fixed fee waived on the first ten transactions a month on Pro."
+      "cardProcessing": "2.9% + $0.60 per credit card transaction, fixed fee waived on the first ten transactions a month on Pro.",
+      "attachedTo": "Whole account, per tier. Starter $0 and Pro $19 a month, neither charged by headcount."
     },
     {
       "vendor": "Launch27",
@@ -152,7 +155,8 @@
           "monthly": 299
         }
       ],
-      "verdict": "Flat quote confirmed correct. No user or booking cap a ten person crew would pass."
+      "verdict": "Flat quote confirmed correct. No user or booking cap a ten person crew would pass.",
+      "attachedTo": "Base tier, whole account. Unlimited users, so headcount does not change it."
     },
     {
       "vendor": "Swept",
@@ -179,63 +183,39 @@
         }
       ],
       "notPublished": "The page does not display what the higher location bands cost. Selecting a band did not reveal a figure without entering a gated flow, so bands above 15 locations are unread.",
-      "verdict": "The $30 quote is the entry price at the fifteen location minimum billed monthly, not a flat price. Headcount does not move it."
+      "verdict": "The $30 quote is the entry price at the fifteen location minimum billed monthly, not a flat price. Headcount does not move it.",
+      "attachedTo": "Launch tier, at the fifteen location minimum, billed monthly. Priced by location band, not headcount."
     },
     {
       "vendor": "Jobber",
       "source": "https://www.getjobber.com/pricing/",
-      "readOn": "2026-10-02",
+      "readOn": "2026-10-03",
       "pricingIsDynamic": true,
       "model": "A Team size control bands the plan cards, and a Monthly/Annual toggle switches the basis. Neither figure is in the HTML at the default.",
       "tiers": [
         {
           "name": "Connect",
           "band": {
-            "Just me": {
-              "users": 1,
-              "monthly": 139,
-              "annual": 99
-            },
-            "2-5 people": {
-              "users": 5,
-              "monthly": 199,
-              "annual": 149
-            },
-            "6-10 people": {
-              "users": 10,
-              "monthly": 299,
-              "annual": 229
-            },
-            "11-15 people": {
-              "users": 15,
-              "monthly": 399,
-              "annual": 299
-            }
+            "Just me": 139,
+            "2-5 people": 199,
+            "6-10 people": 299,
+            "11-15 people": 399,
+            "16 or more": "no figure shown"
           }
         },
         {
           "name": "Core",
-          "atJustMe": {
-            "monthly": 49,
-            "annual": 29
+          "band": {
+            "Just me": 49
           }
         },
         {
           "name": "Grow",
           "band": {
-            "Just me": {
-              "monthly": 199,
-              "annual": 149
-            },
-            "2-5 people": {
-              "monthly": 299
-            },
-            "6-10 people": {
-              "monthly": 399
-            },
-            "11-15 people": {
-              "monthly": 499
-            }
+            "Just me": 199,
+            "2-5 people": 299,
+            "6-10 people": 399,
+            "11-15 people": 499
           }
         }
       ],
@@ -245,7 +225,9 @@
         "10": 299
       },
       "note": "The site quotes Connect on monthly billing. Connect is banded by team size, not charged per seat.",
-      "correction": "Replaces a stored $197 at three users, which was derived as base plus two seats rather than read. The banded price is $199."
+      "correction": "Replaces a per seat model of $29 a user that this site carried in about thirty passages, along with every figure derived from it. The mechanism did not exist.",
+      "attachedTo": "Connect tier, by team size band. $139 is band 1 (Just me), $199 is band 2 to 5, $299 is band 6 to 10, $399 is band 11 to 15, all billed monthly.",
+      "notAPrice": "The $29 on this page is the Jobber AI Receptionist add-on, listed under 'Supercharge your business with add-ons' beside Marketing Suite at $99. It is not a seat price, not a per user rate and not tied to headcount. No per user charge is published on that page at all."
     },
     {
       "vendor": "Arborgold",
@@ -269,7 +251,8 @@
       ],
       "notPublished": "The monthly payment rate, and the price of office and mobile user licences. The page states scalable license pricing without a figure.",
       "footnote": "Annual contract required. Monthly and annual payment options available.",
-      "correction": "Replaces a stored $149, which was the monthly rate recorded in August and is no longer displayed. Could not switch the billing control in this browser."
+      "correction": "Replaces a stored $149, which was the monthly rate recorded in August and is no longer displayed. Could not switch the billing control in this browser.",
+      "attachedTo": "Starter tier on the annual contract the page defaults to. Office and mobile user licences are extra and unpublished, so this is a plan price rather than a total."
     },
     {
       "vendor": "Connecteam",
@@ -291,7 +274,8 @@
           "extraUser": "from $0.50 to $5.00 per additional user depending on tier"
         }
       ],
-      "verdict": "The stored $0 at one, three and ten is correct: the free plan covers up to ten users."
+      "verdict": "The stored $0 at one, three and ten is correct: the free plan covers up to ten users.",
+      "attachedTo": "Small Business plan, whole account, free up to ten users."
     },
     {
       "vendor": "FreshBooks",
@@ -314,7 +298,8 @@
         }
       ],
       "extraUser": "$11/mo per team member",
-      "verdict": "The stored $43 at one user is correct, and the annualised $516, $780 and $1,704 at one, three and ten follow from $43 plus $11 a head."
+      "verdict": "The stored $43 at one user is correct, and the annualised $516, $780 and $1,704 at one, three and ten follow from $43 plus $11 a head.",
+      "attachedTo": "Plus tier, one user, plus $11 a month for each additional team member."
     },
     {
       "vendor": "Housecall Pro",
@@ -324,7 +309,8 @@
       "result": "NO PRICE REACHABLE. The pricing page is a qualification wizard asking for industry, team size and goals. Worked through on a browser with no stored state it ends without displaying a figure. The only amount visible on a clean load is $0.",
       "whereTheOldFiguresCameFrom": "Not from a completed wizard. $79, $189 and $329 were read out of plan-card markup and a hcpWebMcpComparePlans JavaScript variable present in the page source, in a browser session that could not reliably distinguish displayed content from hidden DOM. One later reading was served from a cookie named hcp_pricing_plan_cached, written by an earlier interaction in that same session, so it replayed a result rather than reading the page. $399 was never on the page in any form: it was arithmetic, $329 plus two users at $35.",
       "conclusion": "None of the three can be dated as a reading, so all three are withdrawn and the row reads Could not confirm.",
-      "ifItComesBack": "If a plan table returns, the figures to look for are Basic 1 user, Essentials 5 users and Max 8 users with $35 per additional user. Treat them as unverified until seen on a clean session."
+      "ifItComesBack": "If a plan table returns, the figures to look for are Basic 1 user, Essentials 5 users and Max 8 users with $35 per additional user. Treat them as unverified until seen on a clean session.",
+      "attachedTo": "Nothing. No figure is reachable on a clean session, which is why the row reads Could not confirm."
     },
     {
       "vendor": "LawnPro",
@@ -353,7 +339,8 @@
           "note": "Figure carried from the August reading; today's reading listed the tier without quoting its price"
         }
       ],
-      "verdict": "The stored $0, $39 and $249 at one, three and ten are confirmed for SOLO, STARTUP and PLUS. SOLO Free, STARTUP $39 and GROW $129 were seen today."
+      "verdict": "The stored $0, $39 and $249 at one, three and ten are confirmed for SOLO, STARTUP and PLUS. SOLO Free, STARTUP $39 and GROW $129 were seen today.",
+      "attachedTo": "Tier price by employee band: SOLO free, STARTUP $39, GROW $129, PLUS $249."
     }
   ],
   "corrections": [
@@ -366,5 +353,6 @@
       "note": "ZenMaid did not change its pricing. This is a correction to how the page was read, not a price movement.",
       "noAugustEntry": "This file was created on 2 October 2026 and has never held a 24 August observation, so there is no earlier entry to annotate. The August figures live only in the git history of the guides. The correction is recorded here rather than over anything."
     }
-  ]
+  ],
+  "attachment": "Every figure recorded here carries an 'attachedTo' line saying what the number is a price FOR, not just its value. Three vendors have now been published wrong because a number was lifted off a pricing page and attached to the wrong thing: ZenMaid's $39 was the team calculator sitting at zero, GorillaDesk's $99 was the route slider sitting at one, and Jobber's $29 was a separate AI Receptionist add-on read as a per seat rate. A value alone cannot be checked. A value plus what it is attached to can."
 }

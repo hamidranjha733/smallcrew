@@ -71,7 +71,7 @@ There is one pricing model in this comparison that deserves specific attention.
 
 FieldRoutes states that its pricing is based on the number of active customers. That is a cloud native model and it means your software cost rises automatically as your route grows, without you choosing to upgrade anything. For an operator under twenty staff trying to grow, that is the wrong direction of travel, and it is impossible to model because no figures are published.
 
-GorillaDesk charges per schedule, at $99 for the first and $50 for each additional, where a schedule is one technician's route. Jobber charges $29 per user above a $139 base on Connect. Both rise with headcount rather than with customer count, which at least connects the cost to the capacity you added deliberately.
+GorillaDesk charges per schedule, at $99 for the first and $50 for each additional, where a schedule is one technician's route. Jobber bands by team size on Connect, at $139 for one, $199 from two to five and $299 from six to ten. Both rise with headcount rather than with customer count, which at least connects the cost to the capacity you added deliberately.
 
 ## The offline test, in detail
 

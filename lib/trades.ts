@@ -25,7 +25,7 @@ export const TRADES: TradeInfo[] = [
       'Residential, commercial and carpet cleaning. Every tool priced on the tier that actually includes online booking, at one, three and ten cleaners.',
     intro: [
       'Cleaning is the trade where the gap between the advertised price and the usable price is widest. Vendors put a booking form on one tier, then put the automated reminder that makes the booking form safe on the tier above it.',
-      'The other thing that decides cost here is the pricing model rather than the feature list. Launch27 is genuinely flat and costs the same at one cleaner and at ten. ZenMaid looks flat and is not, because it adds a fixed amount for every person on the team. Per seat tools such as Jobber multiply. At ten cleaners those differences run to thousands of dollars a year for software doing broadly the same job.',
+      'The other thing that decides cost here is the pricing model rather than the feature list. Launch27 is genuinely flat and costs the same at one cleaner and at ten. ZenMaid looks flat and is not, because it adds a fixed amount for every person on the team. Jobber bands by team size, holding flat inside a band and stepping at its edge. At ten cleaners those differences run to thousands of dollars a year for software doing broadly the same job.',
     ],
     pullquote:
       'A cleaning company without reminders is a cleaning company paying someone to make confirmation calls.',
