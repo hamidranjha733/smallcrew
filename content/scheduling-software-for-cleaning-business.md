@@ -81,7 +81,7 @@ Launch27 wins on arithmetic at scale and loses on payment automation. Charging a
 
 Jobber is the most capable scheduler here and the most expensive by a distance once you have staff. Its per seat pricing at $29 a user is the mechanism.
 
-Housecall Pro schedules well from an inbound call. Basic covers one user, so a growing crew moves to Essentials at $189 and then finds MAX cheaper than Essentials once past eight people.
+Housecall Pro schedules well from an inbound call, which is the operation this page is about. What it will not tell you is what that costs at any crew size, because its pricing page is a wizard that ends without a figure.
 
 ## The cancellation problem nobody prices
 

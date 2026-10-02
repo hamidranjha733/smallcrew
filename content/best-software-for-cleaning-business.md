@@ -92,7 +92,7 @@ Connecteam gives ten users the whole platform free, permanently. It is genuinely
 
 Swept is built for janitorial work, where you bill a building rather than a person and you need cleaners to check in at a site. That is a real and underserved problem, and it starts at $30 a month, which makes it the cheapest tool on this page. The catch is that it is banded by number of locations rather than crew size, and it has no customer online booking at all, so it is not competing for the same job as the other five.
 
-Housecall Pro now publishes its seat counts and extra seat prices, which is what makes the MAX inversion visible at all. It is the dearest tool here at ten cleaners.
+Housecall Pro is the one tool here that cannot be placed on any of these comparisons, because its pricing page no longer produces a figure. That is a judgement about the page rather than the product, and it is the reason it carries no price in the table above.
 
 ## The twelve month number
 
