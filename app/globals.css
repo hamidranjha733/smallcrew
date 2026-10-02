@@ -1705,6 +1705,77 @@ table.cost-table tbody tr:hover td.cell-watch {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* A single pointer out of a category page to something that is not one of its
+   guides. One per trade at most, so it stays a signpost rather than a list. */
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.8rem;
+  margin-top: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--rule-2);
+  border-left: 4px solid var(--signal);
+  background: var(--signal-light);
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+
+.spotlight:hover {
+  transform: translateX(3px);
+}
+
+.spotlight-label {
+  font-family: var(--data);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--signal-2);
+}
+
+.spotlight-note {
+  font-family: var(--body);
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  flex: 1 1 18rem;
+}
+
+.spotlight-go {
+  color: var(--signal);
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight:hover {
+    transform: none;
+  }
+}
+
+/* The affiliate disclosure when it leads a page, above the headline, rather
+   than sitting above a cost table. It is on the dark hero band there. */
+.disclosure-lead {
+  margin: 0 0 1.1rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-left: 3px solid var(--signal-pale);
+}
+
+.disclosure-lead p {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.disclosure-lead .label {
+  color: var(--signal-pale);
+}
+
+.disclosure-meta {
+  font-family: var(--data);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
 /* Hostnames and addresses set inline in prose, so a reader can tell a literal
    string from the sentence around it. */
 .mono-inline {

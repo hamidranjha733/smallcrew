@@ -50,7 +50,7 @@ tools:
     url: https://sweptworks.com/pricing
 ---
 
-For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $39 a month, Launch27 at $75 a month and Jobber at $139 a month. ZenMaid and Launch27 charge the same whatever the crew size. Jobber charges per seat but also bands, and reaches $299 a month at ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form, checked on the vendor pricing pages in August 2026.
+For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $39 a month, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team, which is set out in full in our [ZenMaid pricing breakdown](/zenmaid-pricing/). Jobber charges per seat but also bands, and reaches $299 a month at ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form, checked on the vendor pricing pages in August 2026.
 
 That last sentence is the reason this page exists. Almost every comparison of cleaning business software quotes Jobber at $49 a month. That is the Core plan, and the Core plan does not send automated client reminders. A cleaning company without automated reminders is a cleaning company that pays someone to make confirmation calls.
 
@@ -70,7 +70,7 @@ Jobber publishes Core at $49 a month. Core includes online booking and online pa
 
 Housecall Pro publishes Basic at $79 a month billed monthly, and Basic does include online booking, automated reminders and card payments. The catch is that Basic covers one user, so a crew of three is on Essentials at $189. At ten users the page rewards reading twice: Essentials plus five extra seats at $100 each is $689, while MAX plus two seats at $75 each is $479. The dearer looking tier is $210 a month cheaper.
 
-ZenMaid is the clearest of the six, and the one most likely to make you think this site has got it wrong. Its page leads with Starter at $19 a month. That tier has no customer booking form at all and caps you at forty appointments a month, which a working solo cleaner passes in the second week, so it fails the basis every price here is quoted on. Pro at $39 a month adds the booking form, and the price does not change with headcount.
+ZenMaid is the clearest of the six, and the one most likely to make you think this site has got it wrong. Its page leads with Starter at $19 a month. That tier has no customer booking form at all and caps you at forty appointments a month, which a working solo cleaner passes in the second week, so it fails the basis every price here is quoted on. Pro at $39 a month adds the booking form. That $39 is the price for a team of nobody, and the live pricing page adds $14 a month for each cleaner or office manager on it, so a crew of three is $81. The [full ZenMaid pricing breakdown](/zenmaid-pricing/) shows the figure at every crew size.
 
 Launch27 charges $75 a month on its Base plan, which includes a booking form, automated email reminders and unlimited users. Text reminders require Pro at $150 a month, and automatic charging of a saved card requires Plus at $299 a month.
 

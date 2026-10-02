@@ -148,7 +148,7 @@ const TODAY = [
   String(now.getMonth() + 1).padStart(2, '0'),
   String(now.getDate()).padStart(2, '0'),
 ].join('-');
-for (const key of ['about', 'contact', 'privacy']) {
+for (const key of ['about', 'contact', 'privacy', 'zenmaid-pricing']) {
   const page = lastChangeOf(`app/${key}/page.tsx`, (s) => s);
   const meta = lastChangeOf('lib/seo.ts', seoEntry(key));
   const when = latest(page, meta);
@@ -156,13 +156,65 @@ for (const key of ['about', 'contact', 'privacy']) {
   dates[`/${key}/`] = when ? day(when) : TODAY;
 }
 
-const ordered = Object.fromEntries(Object.entries(dates).sort(([a], [b]) => a.localeCompare(b)));
+// Existing dates are authoritative. git cannot tell a rewritten page from a
+// route file touched by a refactor, and it reads only committed state, so
+// recomputing freely moves dates that nothing published changed. A metadata
+// pass that touches all nine route files must not restamp nine pages as
+// rewritten today.
+//
+// So: new routes are added, existing ones are left alone, and moving one is a
+// deliberate act.
+//
+//   node scripts/page-dates.mjs                       add new routes only
+//   node scripts/page-dates.mjs --refresh /a/ /b/     also move these
+//   node scripts/page-dates.mjs --refresh-all         move everything git says
+
+const argv = process.argv.slice(2);
+const refreshAll = argv.includes('--refresh-all');
+const refresh = new Set(argv.filter((a) => a.startsWith('/')));
+
+const DATES_FILE = path.join('data', 'page-dates.json');
+const existing = fs.existsSync(DATES_FILE)
+  ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8'))
+  : {};
+
+const final = {};
+const added = [];
+const moved = [];
+const held = [];
+
+for (const [route, computed] of Object.entries(dates)) {
+  const current = existing[route];
+  if (!current) {
+    final[route] = computed;
+    added.push(`${route} -> ${computed}`);
+  } else if (refreshAll || refresh.has(route)) {
+    // A deliberate refresh dates the page today, because the edit being
+    // recorded is the uncommitted one in the working tree.
+    final[route] = TODAY;
+    if (TODAY !== current) moved.push(`${route} ${current} -> ${TODAY}`);
+    else final[route] = current;
+  } else {
+    final[route] = current;
+    if (computed !== current) held.push(`${route} held at ${current}, git says ${computed}`);
+  }
+}
+
+// A route that disappeared from the site keeps no date.
+for (const route of Object.keys(existing)) {
+  if (!(route in dates)) console.log(`dropped  ${route}`);
+}
+
+const ordered = Object.fromEntries(Object.entries(final).sort(([a], [b]) => a.localeCompare(b)));
 
 fs.mkdirSync('data', { recursive: true });
-fs.writeFileSync(
-  path.join('data', 'page-dates.json'),
-  JSON.stringify(ordered, null, 2) + '\n',
-);
+fs.writeFileSync(DATES_FILE, JSON.stringify(ordered, null, 2) + '\n');
+
+if (added.length) console.log('\nadded:\n  ' + added.join('\n  '));
+if (moved.length) console.log('\nmoved:\n  ' + moved.join('\n  '));
+if (held.length) {
+  console.log('\nheld (pass --refresh <route> if the content really changed):\n  ' + held.join('\n  '));
+}
 
 for (const [route, date] of Object.entries(ordered)) {
   const why = sources[route];

@@ -10,6 +10,9 @@ export type TradeInfo = {
   // One short sentence, lifted out of the intro and set large in the accent
   // colour. It is not repeated in `intro`, so it never prints twice.
   pullquote: string;
+  // Optional single pointer to a page that is not one of this trade's guides,
+  // such as a deep dive on one vendor's pricing. Rendered under the intro.
+  spotlight?: { href: string; label: string; note: string };
 };
 
 export const TRADES: TradeInfo[] = [
@@ -22,10 +25,15 @@ export const TRADES: TradeInfo[] = [
       'Residential, commercial and carpet cleaning. Every tool priced on the tier that actually includes online booking, at one, three and ten cleaners.',
     intro: [
       'Cleaning is the trade where the gap between the advertised price and the usable price is widest. Vendors put a booking form on one tier, then put the automated reminder that makes the booking form safe on the tier above it.',
-      'The other thing that decides cost here is the pricing model rather than the feature list. Flat priced tools such as ZenMaid and Launch27 cost the same at one cleaner and at ten. Per seat tools such as Jobber multiply. At ten cleaners that difference is several thousand dollars a year for software doing broadly the same job.',
+      'The other thing that decides cost here is the pricing model rather than the feature list. Launch27 is genuinely flat and costs the same at one cleaner and at ten. ZenMaid looks flat and is not, because it adds a fixed amount for every person on the team. Per seat tools such as Jobber multiply. At ten cleaners those differences run to thousands of dollars a year for software doing broadly the same job.',
     ],
     pullquote:
       'A cleaning company without reminders is a cleaning company paying someone to make confirmation calls.',
+    spotlight: {
+      href: '/zenmaid-pricing/',
+      label: 'ZenMaid pricing, at 1, 3 and 10 cleaners',
+      note: 'The advertised $39 is the price before any staff are added. What it actually costs a crew.',
+    },
   },
   {
     trade: 'lawn-care',

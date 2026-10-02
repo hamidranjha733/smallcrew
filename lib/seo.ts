@@ -27,6 +27,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  'zenmaid-pricing': {
+    keyword: 'zenmaid pricing',
+    title: 'ZenMaid Pricing 2026: Real Cost at 1, 3 and 10 Cleaners',
+    description:
+      'ZenMaid pricing broken down for teams of 1, 3 and 10 cleaners, with every figure dated and taken from the live pricing page. Independent, no vendor input.',
+  },
   privacy: {
     keyword: 'Small Crew privacy',
     title: 'Small Crew Privacy Policy: No Cookies and No Analytics',
