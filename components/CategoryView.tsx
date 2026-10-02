@@ -161,7 +161,11 @@ export default async function CategoryView({ trade }: Props) {
           { label: 'Guides', value: String(tradePages.length), note: 'In this category' },
           {
             label: 'Price range',
-            value: extremes ? `$${extremes.cheapest.price} to $${extremes.dearest.price}` : 'Varies',
+            value: extremes
+              ? extremes.cheapest.price === extremes.dearest.price
+                ? `$${extremes.cheapest.price}`
+                : `$${extremes.cheapest.price} to $${extremes.dearest.price}`
+              : 'Varies',
             note: 'Booking systems at ten users',
             teal: true,
           },

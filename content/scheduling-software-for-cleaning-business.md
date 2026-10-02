@@ -35,11 +35,11 @@ tools:
     watch: Connect is banded by team size, not per seat. Monthly it is $139 for 1 user, $199 for the 2 to 5 band and $299 for the 6 to 10 band. Annual billing is $99, $149 and $229
     url: https://www.getjobber.com/pricing/
   - tool: Housecall Pro
-    bestFor: Dispatching from an inbound call
-    solo: $79
-    crew3: $189
-    crew10: $399
-    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
+    bestFor: A complete entry tier, if you can get a price
+    solo: Could not confirm
+    crew3: Could not confirm
+    crew10: Could not confirm
+    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
     url: https://www.housecallpro.com/pricing/
 ---
 

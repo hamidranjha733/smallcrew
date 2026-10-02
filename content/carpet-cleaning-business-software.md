@@ -21,11 +21,11 @@ tools:
     watch: Automatic card charging requires the Plus tier at $299 a month
     url: https://launch27.com/pricing/
   - tool: Housecall Pro
-    bestFor: Booking an inbound call before the caller hangs up
-    solo: $79
-    crew3: $189
-    crew10: $399
-    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
+    bestFor: A complete entry tier, if you can get a price
+    solo: Could not confirm
+    crew3: Could not confirm
+    crew10: Could not confirm
+    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Van routing where each truck has its own day
@@ -89,7 +89,7 @@ Jobber places automated reminders on Connect at $139, which is $90 above its adv
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, a one van operation with a single cleaner pays $636 a year on ZenMaid, $900 on Launch27, $948 on Housecall Pro, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
+Annualised at the tier that includes online booking, a one van operation with a single cleaner pays $636 a year on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
 
 A three technician, one van operation pays $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk, and $2,388 on Jobber Connect. Three technicians in one van cost exactly what one technician in one van costs on GorillaDesk, because the unit of billing is the van. That is why its crew columns carry no figure: the table knows your headcount and not your fleet.
 
@@ -103,7 +103,7 @@ That reversal is the single most useful thing to understand before choosing carp
 
 **Launch27 is wrong** if your jobs are quoted rather than packaged. Its strength is a booking form that sells a defined product at a defined price. A carpet job priced by room count and fibre type does not fit that form neatly.
 
-**Housecall Pro is wrong** for a carpet cleaner at ten technicians, where $399 a month makes it the dearest option here, though the page now publishes the seat counts you need to model a second van.
+**Housecall Pro is wrong** for a carpet cleaner who needs to budget, because its pricing page is a wizard that produces no figure, so a second van cannot be modelled from it at all.
 
 **GorillaDesk is wrong** if every technician drives their own vehicle, because per schedule pricing then behaves exactly like per user pricing and reaches $549 a month at ten schedules. It is also a pest control product first, and its chemical tracking and device barcoding are irrelevant to carpet work.
 

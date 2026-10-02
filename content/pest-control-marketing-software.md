@@ -7,11 +7,11 @@ pricesChecked: August 2026
 toolsCompared: 5
 tools:
   - tool: Housecall Pro
-    bestFor: Converting an inbound call before it goes cold
-    solo: $79
-    crew3: $189
-    crew10: $399
-    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
+    bestFor: A complete entry tier, if you can get a price
+    solo: Could not confirm
+    crew3: Could not confirm
+    crew10: Could not confirm
+    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Review requests attached to a completed stop
@@ -43,7 +43,7 @@ tools:
     url: https://www.briostack.com/additionalpricing
 ---
 
-There is no useful category called pest control marketing software for an operator under twenty staff. What exists is field service software with review requests, renewal reminders and email or text campaigns attached, and the cheapest of those that publishes a price is GorillaDesk at $99 a month on its Pro plan. Housecall Pro is cheaper at $79 and will not tell you what a crew of three costs. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
+There is no useful category called pest control marketing software for an operator under twenty staff. What exists is field service software with review requests, renewal reminders and email or text campaigns attached, and the cheapest of those that publishes a price is GorillaDesk at $99 a month on its Pro plan. Housecall Pro will not tell you what anything costs, because its pricing page is now a wizard that ends without a figure. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
 
 Before spending anything here, it is worth being clear about where the money actually is, because this keyword carries one of the highest costs per click on this site and the advertising is aimed at a problem most small operators do not have.
 
@@ -65,7 +65,7 @@ GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149, and its docum
 
 Jobber publishes Core at $49 and Connect at $139, with automated client reminders beginning on Connect. Automated communication is therefore a Connect feature, and that is the tier priced above.
 
-Housecall Pro publishes Basic at $79 billed monthly, and its pricing page states that the plan lets customers book and pay online around the clock directly from Google or your website. It publishes no seat limits and no per user price.
+Housecall Pro describes online booking that lets customers book and pay around the clock, and publishes no price for it. Its pricing page is a wizard asking for industry, size and goals, and on a clean browser it ends without a figure.
 
 FieldRoutes and Briostack both route pricing through sales. FieldRoutes states that pricing is based on the number of active customers. Briostack publishes add on charges but no base subscription price.
 
@@ -95,7 +95,7 @@ Only after that is configured, and measured for a season, is paid acquisition wo
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, Housecall Pro Basic is $948 a year for one user, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten.
+Annualised at the tier that includes online booking, GorillaDesk Pro is $1,188 for a single crew and $2,988 across four crews, and Jobber Connect is $1,668 for one user and $3,588 for ten. Housecall Pro publishes nothing to annualise.
 
 Set those against acquisition. This search term carries one of the highest costs per click of any keyword on this site, at around seventy five dollars. At a ten per cent conversion from click to customer, which would be a strong result, each new customer acquired through paid search on this term costs several hundred dollars before you have treated anything.
 
@@ -105,7 +105,7 @@ That is the argument of this page in one calculation, and it is why no separate 
 
 ## Where each tool is the wrong choice
 
-**Housecall Pro is wrong** for an operator at ten technicians, at $399 a month, and wrong on Basic for anyone with staff, because Basic covers one user.
+**Housecall Pro is wrong** for any operator who needs a number before a sales process, because its pricing page produces none.
 
 **GorillaDesk is wrong** at ten separate technician schedules, where per schedule pricing reaches $549 a month.
 

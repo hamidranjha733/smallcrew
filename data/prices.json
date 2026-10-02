@@ -182,41 +182,6 @@
       "verdict": "The $30 quote is the entry price at the fifteen location minimum billed monthly, not a flat price. Headcount does not move it."
     },
     {
-      "vendor": "Housecall Pro",
-      "source": "https://www.housecallpro.com/pricing/",
-      "readOn": "2026-10-02",
-      "pricingIsDynamic": true,
-      "model": "A guided wizard sits on top of the plan cards. The cards are present on the page but their prices do not appear in the visible text until the wizard resolves, so a fetch of this url sees only $0.",
-      "tiers": [
-        {
-          "name": "Basic",
-          "monthly": 79,
-          "annual": 59,
-          "users": "1 user included"
-        },
-        {
-          "name": "Essentials",
-          "monthly": 189,
-          "annual": 149,
-          "users": "5 users included"
-        },
-        {
-          "name": "Max",
-          "monthly": 329,
-          "annual": 299,
-          "users": "8 users included",
-          "extraUser": "$35/mo per additional user"
-        }
-      ],
-      "derived": {
-        "1": 79,
-        "3": 189,
-        "10": 399
-      },
-      "note": "Ten users is Max plus two extra at $35, which is $399. The site quotes monthly billing.",
-      "correction": "Replaces a stored $479 at ten users, which matched nothing on the page read today."
-    },
-    {
       "vendor": "Jobber",
       "source": "https://www.getjobber.com/pricing/",
       "readOn": "2026-10-02",
@@ -352,12 +317,43 @@
       "verdict": "The stored $43 at one user is correct, and the annualised $516, $780 and $1,704 at one, three and ten follow from $43 plus $11 a head."
     },
     {
+      "vendor": "Housecall Pro",
+      "source": "https://www.housecallpro.com/pricing/",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": true,
+      "result": "NO PRICE REACHABLE. The pricing page is a qualification wizard asking for industry, team size and goals. Worked through on a browser with no stored state it ends without displaying a figure. The only amount visible on a clean load is $0.",
+      "whereTheOldFiguresCameFrom": "Not from a completed wizard. $79, $189 and $329 were read out of plan-card markup and a hcpWebMcpComparePlans JavaScript variable present in the page source, in a browser session that could not reliably distinguish displayed content from hidden DOM. One later reading was served from a cookie named hcp_pricing_plan_cached, written by an earlier interaction in that same session, so it replayed a result rather than reading the page. $399 was never on the page in any form: it was arithmetic, $329 plus two users at $35.",
+      "conclusion": "None of the three can be dated as a reading, so all three are withdrawn and the row reads Could not confirm.",
+      "ifItComesBack": "If a plan table returns, the figures to look for are Basic 1 user, Essentials 5 users and Max 8 users with $35 per additional user. Treat them as unverified until seen on a clean session."
+    },
+    {
       "vendor": "LawnPro",
-      "source": "https://www.lawnprosoftware.com/price",
-      "readOn": "2026-10-02",
-      "pricingIsDynamic": null,
-      "result": "UNREAD. The page returned HTTP 403 Forbidden to this browser, as it did in August.",
-      "note": "No figure was read today, so the stored $0, $39 and $249 remain on their August reading. They were reported as still correct by the site owner, which is recorded here as a report rather than as a reading."
+      "source": "https://www.lawnprosoftware.com/pricing",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": false,
+      "readBy": "Site owner, in their own browser. This client receives HTTP 403 from lawnprosoftware.com on both /price and /pricing, which is a network path rather than the site being down.",
+      "httpStatus": 200,
+      "tiers": [
+        {
+          "name": "SOLO",
+          "monthly": 0,
+          "note": "Free"
+        },
+        {
+          "name": "STARTUP",
+          "monthly": 39
+        },
+        {
+          "name": "GROW",
+          "monthly": 129
+        },
+        {
+          "name": "PLUS",
+          "monthly": 249,
+          "note": "Figure carried from the August reading; today's reading listed the tier without quoting its price"
+        }
+      ],
+      "verdict": "The stored $0, $39 and $249 at one, three and ten are confirmed for SOLO, STARTUP and PLUS. SOLO Free, STARTUP $39 and GROW $129 were seen today."
     }
   ],
   "corrections": [

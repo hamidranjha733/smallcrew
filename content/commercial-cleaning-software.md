@@ -21,11 +21,11 @@ tools:
     watch: Built around residential booking forms rather than contract billing
     url: https://launch27.com/pricing/
   - tool: Housecall Pro
-    bestFor: Companies mixing commercial and residential work
-    solo: $79
-    crew3: $189
-    crew10: $399
-    watch: Basic is $79 for 1 user, Essentials $189 for 5 and Max $329 for 8, plus $35 a month for each user above that. Ten users is Max plus two, which is $399. Billed monthly; annual is $59, $149 and $299
+    bestFor: A complete entry tier, if you can get a price
+    solo: Could not confirm
+    crew3: Could not confirm
+    crew10: Could not confirm
+    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: Jobber
     bestFor: Quoting and renewing commercial contracts
@@ -77,7 +77,7 @@ Jobber advertises $49 a month. Automated client reminders, which for commercial 
 
 Launch27 includes a booking form on the $75 Base plan but places automatic card charging on Plus at $299. For monthly contract billing that matters more than it does for one off residential work, because you are charging the same card every month.
 
-Housecall Pro publishes Basic at $79 with online booking included, and publishes no seat limits at all, which for a business whose whole cost question is headcount makes the page close to useless.
+Housecall Pro publishes no price at all. Its pricing page is a wizard asking for industry, size and goals, and on a clean browser it ends without a figure, which for a business whose whole cost question is headcount makes the page useless.
 
 ## Inspections are what renew the contract
 
@@ -117,7 +117,7 @@ The pairing worth considering for a small janitorial contractor is therefore a s
 
 **Launch27 is wrong** for contract work sold by tender or walkthrough. Its booking form sells a defined package at a defined price, which is a residential shape.
 
-**Housecall Pro is wrong** for a janitorial contractor at ten cleaners, where $399 a month is the dearest figure on this page and buys residential features a building based business will not use.
+**Housecall Pro is wrong** for a janitorial contractor, because it will not show a price to budget from and it buys residential features a building based business will not use.
 
 **Jobber is wrong** for buildings. It is priced per person and structured around the appointment, and at ten cleaners it costs $299 a month on Connect. Connect is banded, so ten users cost $299 on the ten user band rather than the $400 you pay by adding nine seats, which is worth knowing before you buy the cheaper sounding tier.
 
