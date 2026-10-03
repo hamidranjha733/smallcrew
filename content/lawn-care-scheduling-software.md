@@ -73,7 +73,7 @@ LawnPro puts the client portal on every plan, including the free one. What it pu
 
 Jobber puts online booking on Core at $49 and automated client reminders on Connect at $139. For lawn care the reminder matters most for gate access and dog containment, both of which turn a visit into a wasted trip when missed.
 
-Service Autopilot publishes Startup at $49, Pro at $199 and Pro Plus at $499, and lists the Client Portal as call for pricing. Customer facing scheduling therefore has no published price at any tier, which is why its cells read Not published.
+Service Autopilot publishes Startup at $49, Pro at $199 and Pro Plus at $499, all on annual subscription rates, and lists the Client Portal as call for pricing. The [full Service Autopilot pricing breakdown](/service-autopilot-pricing/) sets out all four tiers. Customer facing scheduling therefore has no published price at any tier, which is why its cells read Not published.
 
 ## The rain day test
 

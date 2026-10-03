@@ -73,7 +73,7 @@ GorillaDesk advertises Basic at $49 a month. The customer portal, which is the o
 
 Jobber advertises $49. Online booking is included there, and automated client reminders are not, which start on Connect at $139. In lawn care the reminder is what deals with gate access and dogs, so the useful tier is Connect.
 
-Service Autopilot publishes Startup at $49, Pro at $199 and Pro Plus at $499, and lists the Client Portal as call for pricing. Routing is one of its genuine strengths and there is no published price for the configuration that includes customer booking.
+Service Autopilot publishes Startup at $49, Pro at $199 and Pro Plus at $499, all on annual subscription rates, and lists the Client Portal as call for pricing. The [full Service Autopilot pricing breakdown](/service-autopilot-pricing/) covers all four tiers. Routing is one of its genuine strengths and there is no published price for the configuration that includes customer booking.
 
 LawnPro puts the client portal on every plan including the free one, which is the most generous structure here, and puts automation on Grow at $129.
 

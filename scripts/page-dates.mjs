@@ -148,7 +148,7 @@ const TODAY = [
   String(now.getMonth() + 1).padStart(2, '0'),
   String(now.getDate()).padStart(2, '0'),
 ].join('-');
-for (const key of ['about', 'contact', 'privacy', 'zenmaid-pricing', 'arborgold-pricing']) {
+for (const key of ['about', 'contact', 'privacy', 'zenmaid-pricing', 'arborgold-pricing', 'service-autopilot-pricing']) {
   const page = lastChangeOf(`app/${key}/page.tsx`, (s) => s);
   const meta = lastChangeOf('lib/seo.ts', seoEntry(key));
   const when = latest(page, meta);

@@ -27,6 +27,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  'service-autopilot-pricing': {
+    keyword: 'service autopilot pricing',
+    title: 'Service Autopilot Pricing 2026: What $49 to $499 Covers',
+    description:
+      'Startup $49, Pro $199 and Pro Plus $499 a month, all quoted on annual subscription rates. What each tier includes, its licence count, and what stays gated.',
+  },
   'arborgold-pricing': {
     keyword: 'arborgold pricing',
     title: 'Arborgold Pricing 2026: What the Three Plans Really Cost',

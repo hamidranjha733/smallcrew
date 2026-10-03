@@ -79,7 +79,7 @@ On LawnPro the client portal appears on every plan including the free one, which
 
 On Jobber the pattern is the familiar one. Online booking is on Core at $49. Automated client reminders are on Connect at $139, which is why $139 rather than $49 is the figure in the table.
 
-On Service Autopilot the trap is more severe. Its published plans are Startup at $49, Pro at $199 and Pro Plus at $499. The Client Portal, which is the component that provides online account access and booking, is listed on the pricing page as call for pricing. So the advertised $49 plan does not include customer facing booking, and the price of adding it is not published at any tier. That is why every Service Autopilot cell in the table reads Not published rather than carrying its advertised figure.
+On Service Autopilot the trap is more severe, as the [full Service Autopilot pricing breakdown](/service-autopilot-pricing/) sets out. Its published plans are Startup at $49, Pro at $199 and Pro Plus at $499, all on annual subscription rates. The Client Portal, which is the component that provides online account access and booking, is listed on the pricing page as call for pricing. So the advertised $49 plan does not include customer facing booking, and the price of adding it is not published at any tier. That is why every Service Autopilot cell in the table reads Not published rather than carrying its advertised figure.
 
 ## What happens between three and ten employees
 

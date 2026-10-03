@@ -353,6 +353,52 @@
       "marketingClaimChecked": "The toggle is labelled 'Save up to $100/mo'. The actual differences are $20 on Starter, $44 on Professional and $74 on Enterprise, so the largest real saving is $74.",
       "readBy": "Operated the billing switch and read both states, rather than taking the default view.",
       "correction": "Supersedes a 2 October entry that recorded $129 as the figure and said the monthly rate was not displayed. That was wrong: the switch does work, and the monthly rates are $149, $343 and $573."
+    },
+    {
+      "vendor": "Service Autopilot",
+      "source": "https://www.serviceautopilot.com/pricing/",
+      "alsoRead": "https://www.serviceautopilot.com/pricing/comparison-chart/",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": false,
+      "attachedTo": "Plan tier price per month, quoted on annual subscription rates, excluding a sign up fee that is not quantified and excluding every feature marked Call for Pricing. It is not a month to month rate and not a total.",
+      "model": "Four feature tiers. The page states 'All pricing is based on annual subscription rates' above the plans, and repeats it on the comparison chart. Each published price is followed by '+ sign up fee'. No month to month rate is published anywhere.",
+      "tiers": [
+        {
+          "name": "Startup",
+          "monthlyOnAnnualRate": 49,
+          "businessUsers": 1,
+          "mobileLicences": 1
+        },
+        {
+          "name": "Pro",
+          "monthlyOnAnnualRate": 199,
+          "businessUsers": 1,
+          "mobileLicences": 2
+        },
+        {
+          "name": "Pro Plus",
+          "monthlyOnAnnualRate": 499,
+          "businessUsers": 1,
+          "mobileLicences": 5
+        },
+        {
+          "name": "Elite",
+          "monthlyOnAnnualRate": null,
+          "price": "Request Pricing",
+          "businessUsers": 2,
+          "mobileLicences": 8
+        }
+      ],
+      "notPublished": [
+        "The Elite tier price",
+        "The sign up fee charged on every tier",
+        "The cost of licences beyond the bundled count",
+        "Twenty two features marked Call for Pricing on the comparison chart",
+        "Any month to month rate"
+      ],
+      "gated": "The client portal, which provides customer facing online booking, is Call for Pricing on Startup, Pro and Pro Plus and included only on Elite. Smart Maps, email integration and Academy sit in the same position. Two way texting, QuickBooks integration and Accelerate are Call for Pricing on Pro and Pro Plus. FleetSharp GPS is Call for Pricing on all four tiers including Elite.",
+      "whySiteSaysNotPublished": "The plan price is published but the price of a configuration that includes customer booking is not, so the cost tables keep reading Not published rather than carrying the $49.",
+      "readBy": "Read both the pricing page and the comparison chart, which is the only place the licence counts appear per tier."
     }
   ],
   "corrections": [
