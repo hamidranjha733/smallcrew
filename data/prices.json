@@ -230,31 +230,6 @@
       "notAPrice": "The $29 on this page is the Jobber AI Receptionist add-on, listed under 'Supercharge your business with add-ons' beside Marketing Suite at $99. It is not a seat price, not a per user rate and not tied to headcount. No per user charge is published on that page at all."
     },
     {
-      "vendor": "Arborgold",
-      "source": "https://arborgold.com/pricing/",
-      "readOn": "2026-10-02",
-      "pricingIsDynamic": true,
-      "model": "Feature tiers, not team bands. A billing control offers Annual, Monthly and Pay as you go; the page defaults to Annual and the monthly rate is not displayed. Office and mobile user licences are purchased separately.",
-      "tiers": [
-        {
-          "name": "Starter",
-          "annualContract": 129
-        },
-        {
-          "name": "Professional",
-          "annualContract": 299
-        },
-        {
-          "name": "Enterprise",
-          "annualContract": 499
-        }
-      ],
-      "notPublished": "The monthly payment rate, and the price of office and mobile user licences. The page states scalable license pricing without a figure.",
-      "footnote": "Annual contract required. Monthly and annual payment options available.",
-      "correction": "Replaces a stored $149, which was the monthly rate recorded in August and is no longer displayed. Could not switch the billing control in this browser.",
-      "attachedTo": "Starter tier on the annual contract the page defaults to. Office and mobile user licences are extra and unpublished, so this is a plan price rather than a total."
-    },
-    {
       "vendor": "Connecteam",
       "source": "https://connecteam.com/pricing/",
       "readOn": "2026-10-02",
@@ -341,6 +316,43 @@
       ],
       "verdict": "The stored $0, $39 and $249 at one, three and ten are confirmed for SOLO, STARTUP and PLUS. SOLO Free, STARTUP $39 and GROW $129 were seen today.",
       "attachedTo": "Tier price by employee band: SOLO free, STARTUP $39, GROW $129, PLUS $249."
+    },
+    {
+      "vendor": "Arborgold",
+      "source": "https://arborgold.com/pricing/",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": true,
+      "attachedTo": "Plan tier price only, per month, on one of two payment bases. It does not include any user licence, and the page does not say whether a plan includes one.",
+      "model": "Three feature tiers, not team bands. A switch toggles the displayed prices between annual billing and paying monthly; both sections exist in the DOM and only one is displayed at a time. An annual contract is required on either basis.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "monthly": 149,
+          "annualBilling": 129
+        },
+        {
+          "name": "Professional",
+          "monthly": 343,
+          "annualBilling": 299
+        },
+        {
+          "name": "Enterprise",
+          "monthly": 573,
+          "annualBilling": 499
+        }
+      ],
+      "siteQuotes": "Monthly, so $149 is the figure in the comparison tables.",
+      "footnote": "Annual contract required. Monthly and annual payment options available.",
+      "notPublished": [
+        "Office user licence cost",
+        "Mobile user licence cost",
+        "How many users a plan includes",
+        "Onboarding and data migration cost",
+        "Contract term length and renewal terms"
+      ],
+      "marketingClaimChecked": "The toggle is labelled 'Save up to $100/mo'. The actual differences are $20 on Starter, $44 on Professional and $74 on Enterprise, so the largest real saving is $74.",
+      "readBy": "Operated the billing switch and read both states, rather than taking the default view.",
+      "correction": "Supersedes a 2 October entry that recorded $129 as the figure and said the monthly rate was not displayed. That was wrong: the switch does work, and the monthly rates are $149, $343 and $573."
     }
   ],
   "corrections": [

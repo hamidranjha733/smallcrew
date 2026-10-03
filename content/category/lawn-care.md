@@ -19,10 +19,10 @@ tools:
     url: https://www.getjobber.com/pricing/
   - tool: Arborgold
     bestFor: Tree and landscape work that consumes materials
-    solo: $129
+    solo: $149
     crew3: Not published
     crew10: Not published
-    watch: Starter is $129 a month on the annual contract the page defaults to, with Professional at $299 and Enterprise at $499. Monthly payment is offered but its rate is not displayed. Office and mobile user licences cost extra and are not published
+    watch: Starter is $149 a month paying monthly or $129 on annual billing, and an annual contract is required either way. Office and mobile user licences are extra and priced only on request, so the plan price is not the bill
     url: https://arborgold.com/pricing/
   - tool: Yardbook
     bestFor: Lawn care basics at no cost
@@ -57,7 +57,7 @@ LawnPro publishes both clearly. Its Solo plan is free for one user and twenty fi
 
 Jobber publishes both clearly as well. Core is $49 and Connect is $139 for a single user, and Connect then bands by team size at $199 from two to five employees and $299 from six to ten.
 
-Arborgold publishes $129, $299 and $499 a month on the annual contract its page defaults to. It offers monthly payment and does not display that rate, and it does not publish the cost of the office and mobile user licences either, which means the plan price is not the price at any crew size.
+Arborgold publishes $129, $299 and $499 a month on annual billing and $149, $343 and $573 paying monthly. This site quotes monthly billing, so the entry price is $149. It does not publish the cost of the office and mobile user licences, which means the plan price is not the price at any crew size.
 
 The other three publish neither number in a form you can use, which is why half this table cannot be compared on cost at all.
 
@@ -95,7 +95,7 @@ The practical reading is that LawnPro is excellent for a small crew and Jobber b
 
 Lawn care software is quoted monthly and paid for twelve months, while the revenue arrives in seven or eight. That is worth converting before choosing, and it is the calculation almost no comparison page performs.
 
-Annualised at the tier that includes online booking, a solo operator pays nothing on LawnPro Solo up to twenty five customers, $1,548 a year on Arborgold committing annually and $1,668 on Jobber Connect.
+Annualised at the tier that includes online booking, a solo operator pays nothing on LawnPro Solo up to twenty five customers, $1,788 a year on Arborgold paying monthly and $1,668 on Jobber Connect.
 
 A three employee company pays $468 a year on LawnPro Startup and $2,388 on Jobber Connect, a difference of $1,920.
 
@@ -115,7 +115,7 @@ Banded by employee count, which is LawnPro, is the cheapest model in this catego
 
 Banded by team size, which is Jobber, holds flat between boundaries and steps at them. Connect is $139 at one, $199 from two to five and $299 from six to ten. It is the most expensive model at three staff, and for a seasonal trade the question is whether your summer and winter headcounts fall in the same band, because within one the bill does not move at all.
 
-Plan price plus unpublished licences, which is Arborgold, cannot be forecast at all. The plan figure is real, but office and mobile user licences are purchased separately and their price is not on the page, so the published number is a floor rather than a cost.
+Plan price plus unpublished licences, which is Arborgold and is set out in full in our [Arborgold pricing breakdown](/arborgold-pricing/), cannot be forecast at all. The plan figure is real, but office and mobile user licences are purchased separately and their price is not on the page, so the published number is a floor rather than a cost.
 
 Quote only, which is Aspire and in practice Service Autopilot, puts the model itself behind a sales conversation. Aspire at least tells you that user licences are unlimited, which is a genuine signal that it is sold to companies large enough for seat counts to be the wrong unit.
 
@@ -137,7 +137,7 @@ Ask how annual agreements renew. Lawn care sells a season, and a system that tre
 
 **Jobber is wrong** for pure mow and go route work at ten staff. At $299 a month on Connect you are paying for quoting depth that a fixed price recurring round does not use. Connect bands by team size rather than charging per seat, so that $299 is the same bill at six employees as at ten.
 
-**Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, its entry price of $129 requires an annual contract, the monthly rate is not displayed, and its licence pricing is still not published.
+**Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, its entry price paying monthly is $149 rather than the $129 the page leads with, an annual contract is required either way, and its licence pricing is still not published.
 
 **Yardbook is wrong** as a purchase you can research properly. It is widely recommended as the free option in lawn care and its pricing page blocked automated access in August 2026, so nothing about its cost is verified here.
 

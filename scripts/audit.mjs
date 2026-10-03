@@ -173,7 +173,7 @@ else notes.push('no orphan pages');
 // Guides are every route that is not the homepage, a category, a standalone
 // page or the 404. Only guides carry the sibling linking requirement.
 const CATEGORY_ROUTES = ['/cleaning/', '/lawn-care/', '/pest-control/'];
-const STANDALONE_ROUTES = ['/about/', '/contact/', '/privacy/', '/zenmaid-pricing/'];
+const STANDALONE_ROUTES = ['/about/', '/contact/', '/privacy/', '/zenmaid-pricing/', '/arborgold-pricing/'];
 
 const guideRoutes = [...routeSet].filter(
   (r) =>

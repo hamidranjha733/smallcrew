@@ -48,6 +48,11 @@ export const TRADES: TradeInfo[] = [
     ],
     pullquote:
       'Three of the six tools most often put in front of a small operator could not be priced for a crew of three.',
+    spotlight: {
+      href: '/arborgold-pricing/',
+      label: 'Arborgold pricing, all three plans',
+      note: 'The $129 headline is the annual rate. What the monthly rate is, and what the page will not tell you.',
+    },
   },
   {
     trade: 'pest-control',

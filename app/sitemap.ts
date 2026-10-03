@@ -44,6 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry('/contact/', 'yearly', 0.4),
     entry('/privacy/', 'yearly', 0.3),
     entry('/zenmaid-pricing/', 'monthly', 0.8),
+    entry('/arborgold-pricing/', 'monthly', 0.8),
     ...TRADES.map((trade) => entry(trade.href, 'weekly', 0.9)),
     ...pages.map((page) =>
       entry(`/${page.slug}/`, 'monthly', 0.8, checkedToIso(page.pricesChecked)),

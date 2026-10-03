@@ -27,6 +27,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  'arborgold-pricing': {
+    keyword: 'arborgold pricing',
+    title: 'Arborgold Pricing 2026: What the Three Plans Really Cost',
+    description:
+      'Arborgold lists Starter, Professional and Enterprise at $129, $299 and $499 annually, or $149, $343 and $573 monthly. User licence costs are not published.',
+  },
   'zenmaid-pricing': {
     keyword: 'zenmaid pricing',
     title: 'ZenMaid Pricing 2026: Real Cost at 1, 3 and 10 Cleaners',
