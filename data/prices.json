@@ -399,6 +399,108 @@
       "gated": "The client portal, which provides customer facing online booking, is Call for Pricing on Startup, Pro and Pro Plus and included only on Elite. Smart Maps, email integration and Academy sit in the same position. Two way texting, QuickBooks integration and Accelerate are Call for Pricing on Pro and Pro Plus. FleetSharp GPS is Call for Pricing on all four tiers including Elite.",
       "whySiteSaysNotPublished": "The plan price is published but the price of a configuration that includes customer booking is not, so the cost tables keep reading Not published rather than carrying the $49.",
       "readBy": "Read both the pricing page and the comparison chart, which is the only place the licence counts appear per tier."
+    },
+    {
+      "vendor": "CleanGuru",
+      "source": "https://www.cleanguru.com/pricing",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": false,
+      "attachedTo": "Flat monthly plan price. Basic buys ONE module of the six; the two higher tiers buy all modules. Each tier bundles a user count and extra cleaners are charged on top.",
+      "tiers": [
+        {
+          "name": "Basic",
+          "monthly": 79,
+          "modules": "1 module",
+          "usersIncluded": 5
+        },
+        {
+          "name": "Guru",
+          "monthly": 129,
+          "modules": "All modules",
+          "usersIncluded": 10,
+          "note": "Marked MOST POPULAR"
+        },
+        {
+          "name": "Guru Plus",
+          "monthly": 159,
+          "modules": "All modules",
+          "usersIncluded": 15
+        }
+      ],
+      "extraUser": "$5 a month per additional cleaner",
+      "trial": "14 days free",
+      "notPublished": [
+        "Any annual rate",
+        "Which module Basic defaults to"
+      ]
+    },
+    {
+      "vendor": "CleanlyRun",
+      "source": "https://www.cleanlyrun.com/pricing",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": false,
+      "attachedTo": "Flat monthly plan price for bid creation only. No user count is published, so it is a per account price of unknown seat scope.",
+      "tiers": [
+        {
+          "name": "Janitorial Basic",
+          "monthly": 24.95,
+          "note": "Unlimited janitorial bid creation"
+        },
+        {
+          "name": "Janitorial Plus",
+          "monthly": 34.95,
+          "note": "Adds specialty work screen"
+        },
+        {
+          "name": "Janitorial Ultra",
+          "listPrice": 44.95,
+          "monthly": 24.95,
+          "note": "Listed at $44.95 struck through and displayed at $24.95 on the day read. Adds construction and residential bids, marketing materials and supply sales"
+        }
+      ],
+      "limits": "Every plan states unlimited bid creation, so there is no proposal cap",
+      "notPublished": [
+        "Any user or seat count",
+        "Any annual rate",
+        "Whether the Ultra discount has an end date"
+      ]
+    },
+    {
+      "vendor": "Janibid",
+      "source": "https://www.janibid.com/copy-of-plans",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": false,
+      "attachedTo": "Per user per month on the paid plan, and a free plan capped by active customer count rather than by features.",
+      "tiers": [
+        {
+          "name": "Free Plan",
+          "monthly": 0,
+          "limit": "1 to 20 active customers"
+        },
+        {
+          "name": "Business Plan",
+          "monthlyPerUser": 19.99
+        }
+      ],
+      "note": "The page states that all plans include complete access to all software functions, so the free tier is a customer cap rather than a feature cut.",
+      "urlNote": "janibid.com/pricing returns 404. The real page is /copy-of-plans, reached from the Plans link in the site navigation.",
+      "notPublished": [
+        "What counts as an active customer",
+        "What the paid plan adds beyond the customer cap"
+      ]
+    },
+    {
+      "vendor": "Janitorial Manager",
+      "source": "https://www.janitorialmanager.com/pricing/",
+      "readOn": "2026-10-03",
+      "pricingIsDynamic": null,
+      "attachedTo": "Nothing. No figure was read.",
+      "result": "UNREAD. The pricing page answers with a bot verification interstitial reading 'Please wait while your request is being verified' and does not resolve past it for this client.",
+      "note": "This is a statement about our access, not about the vendor. It may publish prices normally to an ordinary visitor. No attempt was made to work around the verification.",
+      "pathsTried": [
+        "/pricing/",
+        "/"
+      ]
     }
   ],
   "corrections": [

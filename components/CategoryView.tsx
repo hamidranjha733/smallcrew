@@ -183,15 +183,15 @@ export default async function CategoryView({ trade }: Props) {
           <blockquote className="lift-quote">
             <p>{info.pullquote}</p>
           </blockquote>
-          {info.spotlight && (
-            <Link href={info.spotlight.href} className="spotlight">
-              <span className="spotlight-label">{info.spotlight.label}</span>
-              <span className="spotlight-note">{info.spotlight.note}</span>
+          {info.spotlight?.map((item) => (
+            <Link href={item.href} className="spotlight" key={item.href}>
+              <span className="spotlight-label">{item.label}</span>
+              <span className="spotlight-note">{item.note}</span>
               <span className="spotlight-go" aria-hidden="true">
                 &rarr;
               </span>
             </Link>
-          )}
+          ))}
         </section>
       </div>
 

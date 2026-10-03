@@ -43,7 +43,7 @@ tools:
     url: https://sweptworks.com/pricing
 ---
 
-Commercial cleaning software has a different job from residential cleaning software, and the tool built specifically for it is also the cheapest. Swept starts at $30 a month on its Launch plan, banded by number of locations rather than headcount, which is the correct shape for janitorial work. Connecteam is free for up to ten users and handles the site check in problem. Launch27 is $75 a month flat for unlimited users and Jobber is $139 a month rising to $299 at ten users. Figures were read from vendor pricing pages in August 2026.
+Commercial cleaning software has a different job from residential cleaning software, and the tool built specifically for it is also the cheapest. Winning the contract in the first place is a separate purchase again, priced in [janitorial bidding software](/janitorial-bidding-software/). Swept starts at $30 a month on its Launch plan, banded by number of locations rather than headcount, which is the correct shape for janitorial work. Connecteam is free for up to ten users and handles the site check in problem. Launch27 is $75 a month flat for unlimited users and Jobber is $139 a month rising to $299 at ten users. Figures were read from vendor pricing pages in August 2026.
 
 The reason this category is served badly is structural. Almost all field service software assumes a customer, an appointment and an invoice for that appointment. Janitorial work has a building, a schedule that repeats nightly or weekly, and one invoice a month for the contract. Software that models the first shape will fight you constantly.
 

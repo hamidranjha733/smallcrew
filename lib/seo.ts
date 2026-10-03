@@ -27,6 +27,12 @@ export const HOME_SEO: Seo = {
 
 // Standalone pages that are neither the homepage, a category nor a guide.
 export const PAGE_SEO: Record<string, Seo> = {
+  'janitorial-bidding-software': {
+    keyword: 'janitorial bidding software',
+    title: 'Janitorial Bidding Software Priced for Crews Under Twenty',
+    description:
+      'Janibid from free, CleanlyRun from $24.95 and CleanGuru from $79 a month, each read from the vendor page today and dated. One vendor we could not reach.',
+  },
   'service-autopilot-pricing': {
     keyword: 'service autopilot pricing',
     title: 'Service Autopilot Pricing 2026: What $49 to $499 Covers',

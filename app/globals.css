@@ -1749,6 +1749,10 @@ table.cost-table tbody tr:hover td.cell-watch {
   transition: transform 0.12s ease;
 }
 
+.spotlight + .spotlight {
+  margin-top: 0.6rem;
+}
+
 .spotlight:hover {
   transform: translateX(3px);
 }
