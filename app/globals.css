@@ -26,9 +26,12 @@
   --rule-2: #c3cac7;
   --mute: #5f6663;
 
-  --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --body: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --data: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+  /* The three faces are self hosted by next/font, which exposes each one as a
+     variable on <html>. The fallbacks stay, so the page still reads correctly
+     if a face fails to load. */
+  --display: var(--font-archivo), 'Helvetica Neue', Arial, sans-serif;
+  --body: var(--font-newsreader), Georgia, 'Times New Roman', serif;
+  --data: var(--font-plex-mono), 'SFMono-Regular', Menlo, Consolas, monospace;
 
   --wrapper: 78rem;
   --column: 66rem;

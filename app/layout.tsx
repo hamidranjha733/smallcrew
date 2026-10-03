@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Archivo, IBM_Plex_Mono, Newsreader } from 'next/font/google';
 import Masthead from '@/components/Masthead';
 import StatusStrip from '@/components/StatusStrip';
 import Footer from '@/components/Footer';
@@ -7,6 +8,33 @@ import JsonLd from '@/components/JsonLd';
 import { getAllPages } from '@/lib/content';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import './globals.css';
+
+// Self hosted at build time by next/font, so no request leaves for Google. The
+// weights are exactly the ones the stylesheet used to request: loading more
+// would cost bytes for faces nothing on the site sets.
+//
+// The share cards do not use these. scripts/make-og.mjs reads its own static
+// ttf files from assets/fonts, because satori needs real font bytes.
+const archivo = Archivo({
+  subsets: ['latin'],
+  weight: ['500', '700', '800'],
+  display: 'swap',
+  variable: '--font-archivo',
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-plex-mono',
+});
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  display: 'swap',
+  variable: '--font-newsreader',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -47,14 +75,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const toolEntries = pages.reduce((sum, page) => sum + page.tools.length, 0);
 
   return (
-    <html lang="en-US">
+    <html
+      lang="en-US"
+      className={`${archivo.variable} ${plexMono.variable} ${newsreader.variable}`}
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:wght@400;500&display=swap"
-        />
         <meta name="color-scheme" content="light" />
         <meta name="theme-color" content="#00857a" />
       </head>

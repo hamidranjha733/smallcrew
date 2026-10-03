@@ -55,7 +55,7 @@ export const PAGE_SEO: Record<string, Seo> = {
     keyword: 'Small Crew privacy',
     title: 'Small Crew Privacy Policy: No Cookies and No Analytics',
     description:
-      'Small Crew sets no cookies and runs no analytics or tracking scripts. The one third party is Google Fonts, which receives your IP when a page loads.',
+      'Small Crew sets no cookies, runs no analytics and loads nothing from a third party. The fonts are self hosted, so no request about you leaves this site.',
   },
   contact: {
     keyword: 'contact Small Crew',

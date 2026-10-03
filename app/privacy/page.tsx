@@ -61,8 +61,8 @@ export default function PrivacyPage() {
             <h1>Privacy</h1>
             <p className="page-standfirst">
               This site collects nothing about you. It sets no cookies, runs no analytics and has
-              no forms. One third party, Google Fonts, sees your IP address because your browser
-              fetches the typefaces from Google directly. That is the whole of it.
+              no forms. It loads nothing from anyone else either, so no request about you leaves
+              this site at all. That is the whole of it.
             </p>
           </div>
 
@@ -101,23 +101,24 @@ export default function PrivacyPage() {
               to consent to.
             </p>
 
-            <h2 id="fonts">Google Fonts, the one third party</h2>
+            <h2 id="fonts">Fonts, and the third party there used to be</h2>
             <p>
-              The pages use three typefaces, Archivo, Newsreader and IBM Plex Mono, loaded from{' '}
+              The pages use three typefaces, Archivo, Newsreader and IBM Plex Mono. Until 4 October
+              2026 they were loaded from{' '}
               <span className="mono-inline">fonts.googleapis.com</span> and{' '}
-              <span className="mono-inline">fonts.gstatic.com</span>. Your browser requests those
-              files from Google directly rather than from us.
+              <span className="mono-inline">fonts.gstatic.com</span>, which meant your browser
+              fetched them from Google directly and Google received your IP address along the way.
+              This page said so.
             </p>
             <p>
-              That request carries your IP address, the page you are on and your browser and
-              operating system, in the same way as any request to any server. Google receives that
-              information. We do not see it, and we receive nothing back from Google about you.
-              What Google does with it is covered by Google&apos;s own privacy policy, not by this
-              page.
+              They are now served from this site instead, built into it rather than fetched at the
+              time you read a page. Google is no longer involved, receives nothing, and is not a
+              third party to this site any more.
             </p>
             <p>
-              This is the only third party on the site. There is no analytics, no tag manager, no
-              advertising pixel, no embedded video, no comment system and no chat widget.
+              <strong>So there is now no third party at all.</strong> No analytics, no tag manager,
+              no advertising pixel, no embedded video, no comment system, no chat widget and no
+              font host. Every file a page needs comes from the same place as the page.
             </p>
 
             <h2 id="email">If you email us</h2>

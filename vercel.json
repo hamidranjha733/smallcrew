@@ -24,7 +24,42 @@
   ],
   "headers": [
     {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    },
+    {
       "source": "/og/(.*).png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, immutable, no-transform, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/logos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, immutable, no-transform, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/(favicon.ico|icon.svg|apple-icon.png|icon-512.png)",
       "headers": [
         {
           "key": "Cache-Control",
