@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { DISCLOSURE_SENTENCE } from '@/components/Disclosure';
 import JsonLd from '@/components/JsonLd';
 import StatsBand from '@/components/StatsBand';
 import { getAllPages, getExtremes } from '@/lib/content';
@@ -153,10 +154,8 @@ export default async function AboutPage() {
 
             <h2 id="money">How we make money</h2>
             <p>
-              Small Crew intends to earn affiliate commission on some of the links on this site. No
-              affiliate programme has been joined yet and no link here earns anything today. When
-              that changes, this page will say so, and the wording above every cost table will
-              change with it. Either way it costs you nothing and the price you pay is the same.
+              {DISCLOSURE_SENTENCE} When that changes, this page will say so, and the wording
+              above every cost table will change with it, because both come from the same place.
             </p>
             <p>
               Commission will not decide which tools appear, what is said about them, or the order

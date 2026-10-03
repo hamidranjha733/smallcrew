@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Disclosure from '@/components/Disclosure';
 import JsonLd from '@/components/JsonLd';
 import { formatDate, getModified } from '@/lib/dates';
 import { ogImageUrl } from '@/lib/og';
@@ -136,16 +137,7 @@ export default function ServiceAutopilotPricingPage() {
               <span aria-current="page">Service Autopilot pricing</span>
             </nav>
 
-            <aside className="disclosure disclosure-lead">
-              <span className="label">Affiliate disclosure</span>
-              <p>
-                Small Crew may earn a commission from links on this page, at no cost to you. It
-                never changes which tools we cover or what we say about them.
-              </p>
-              <p className="disclosure-meta">
-                Independent coverage for crews under 20 &#183; Every figure dated
-              </p>
-            </aside>
+            <Disclosure lead />
 
             <h1>Service Autopilot Pricing: What Startup, Pro and Pro Plus Cost</h1>
             <p className="page-standfirst">

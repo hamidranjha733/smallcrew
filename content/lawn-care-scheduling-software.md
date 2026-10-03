@@ -61,7 +61,7 @@ LawnPro is the clearest example on this site of a tier structure that matters mo
 
 The Solo plan is free, for one user and twenty five customers. Startup at $39 a month covers three employees with unlimited customers. Grow at $129 covers seven employees. Plus at $249 covers fifteen.
 
-Read those boundaries against a lawn care hiring pattern. A company that takes on a fourth employee in April moves from $39 to $129. A company that takes on an eighth moves from $129 to $249. The price does not rise smoothly, it steps, and each step is roughly triple.
+Read those boundaries against a lawn care hiring pattern. A company that takes on a fourth employee in April moves from $39 to $129. A company that takes on an eighth moves from $129 to $249. The price does not rise smoothly, it steps, and the steps are uneven: the fourth employee more than triples the bill, and the eighth roughly doubles it. In cash the two steps are close, $90 and $120, which is the number to plan against rather than the multiple.
 
 Jobber steps differently. Connect bands by team size, at $139 for one, $199 from two to five and $299 from six to ten, so the bill is flat within a band and jumps at the edge of it. It is more expensive at three and entirely predictable in between.
 

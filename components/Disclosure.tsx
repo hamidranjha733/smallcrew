@@ -1,21 +1,44 @@
-// Sits above the cost table on every page.
+// The one affiliate disclosure on this site.
 //
-// The opening sentence describes the intent rather than claiming a commission
-// exists. No affiliate programme has been joined yet and every vendor link is a
-// plain url with no tracking on it, so the earlier wording, that some links
-// earn a commission if you sign up, was not true at the time of writing. Put it
-// back once programmes are approved.
-export default function Disclosure() {
+// Every page that discloses anything renders it from here, and the footer, the
+// about page and the privacy page import DISCLOSURE_SENTENCE so the claim is
+// one string in one file. It drifted once: four pages said Small Crew "may earn
+// a commission from links on this page" while the rest said no programme had
+// been joined, and only the second was true.
+//
+// What is true today, checked against the markup: every outbound vendor link
+// carries rel="nofollow sponsored noopener" and none carries an affiliate
+// tracking parameter, so nothing on this site earns anything.
+//
+// WHEN A PROGRAMME IS APPROVED, change the sentence below and the whole site
+// changes with it. Nothing else needs touching.
+export const DISCLOSURE_SENTENCE =
+  'Small Crew intends to earn affiliate commission and has not joined any programme yet, so no link here earns anything today. It costs you nothing either way, and commission will never change which tools we cover or what we say about them.';
+
+type Props = {
+  /** Above the headline on a single vendor page, rather than above a cost table. */
+  lead?: boolean;
+};
+
+export default function Disclosure({ lead = false }: Props) {
   return (
-    <aside className="disclosure">
+    <aside className={lead ? 'disclosure disclosure-lead' : 'disclosure'}>
       <span className="label">Affiliate disclosure</span>
       <p>
-        Small Crew intends to earn affiliate commission on some of the links on this page, and has
-        not joined any affiliate programme yet, so no link here earns anything today. Whether a
-        link pays or not, it costs you nothing and it does not change the order of the table below.
-        Tools are ordered by how well they fit a crew under twenty people, and several tools listed
-        here run no affiliate programme at all.
+        {DISCLOSURE_SENTENCE}
+        {!lead && (
+          <>
+            {' '}
+            Tools are ordered by how well they fit a crew under twenty people, and several tools
+            listed here run no affiliate programme at all.
+          </>
+        )}
       </p>
+      {lead && (
+        <p className="disclosure-meta">
+          Independent coverage for crews under 20 &#183; Every figure dated
+        </p>
+      )}
     </aside>
   );
 }

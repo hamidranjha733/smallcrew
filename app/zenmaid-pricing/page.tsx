@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Disclosure from '@/components/Disclosure';
 import JsonLd from '@/components/JsonLd';
 import { formatDate, getModified } from '@/lib/dates';
 import { ogImageUrl } from '@/lib/og';
@@ -138,16 +139,7 @@ export default function ZenMaidPricingPage() {
               <span aria-current="page">ZenMaid pricing</span>
             </nav>
 
-            <aside className="disclosure disclosure-lead">
-              <span className="label">Affiliate disclosure</span>
-              <p>
-                Small Crew may earn a commission from links on this page, at no cost to you. It
-                never changes which tools we cover or what we say about them.
-              </p>
-              <p className="disclosure-meta">
-                Independent coverage for crews under 20 &#183; Every figure dated
-              </p>
-            </aside>
+            <Disclosure lead />
 
             <h1>ZenMaid Pricing: What It Costs at 1, 3 and 10 Cleaners</h1>
             <p className="page-standfirst">

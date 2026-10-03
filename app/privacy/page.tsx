@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { DISCLOSURE_SENTENCE } from '@/components/Disclosure';
 import JsonLd from '@/components/JsonLd';
 import { formatDate, getModified } from '@/lib/dates';
 import { buildMetadata, getPageSeo } from '@/lib/seo';
@@ -141,8 +142,7 @@ export default function PrivacyPage() {
               straight to the vendor, and nothing on our side records that you did.
             </p>
             <p>
-              Small Crew intends to earn affiliate commission and has joined no programme yet, so no
-              link here earns anything at the moment. If that changes, affiliate links will usually
+              {DISCLOSURE_SENTENCE} If that changes, affiliate links will usually
               carry a tracking parameter that tells the vendor the visit came from this site, and
               this page will be updated to say so before any such link goes live. See{' '}
               <Link href="/about/">how we compare and how we earn</Link> for what commission does
