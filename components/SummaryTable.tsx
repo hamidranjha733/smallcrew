@@ -7,6 +7,7 @@ import { costAt, getBadge, parseMoney } from '@/lib/pricing';
 import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
 import CrewControl from './CrewControl';
+import VendorBreakdownLink from './VendorBreakdownLink';
 import VendorLogo from './VendorLogo';
 import VendorNotes from './VendorNotes';
 
@@ -80,6 +81,7 @@ export default function SummaryTable({ rows, pricesChecked }: Props) {
                           {entry.tool}
                         </a>
                         {vendor && <span className="tool-domain">{vendor.domain}</span>}
+                        <VendorBreakdownLink tool={entry.tool} />
                       </span>
                     </span>
                     <Badge kind={getBadge(entry.row)} />

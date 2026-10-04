@@ -7,6 +7,7 @@ import { getVendor } from '@/lib/vendors';
 import Badge from './Badge';
 import CrewControl from './CrewControl';
 import VendorLogo from './VendorLogo';
+import VendorBreakdownLink from './VendorBreakdownLink';
 import VendorNotes from './VendorNotes';
 
 type Props = {
@@ -16,6 +17,9 @@ type Props = {
   // and invoicing pages compare tools that have no booking feature at all, so
   // they state the threshold they were priced on instead.
   basis?: string;
+  // The route this table is on, so a vendor row never links to the page it is
+  // already on.
+  currentRoute?: string;
 };
 
 const DEFAULT_BASIS =
@@ -38,7 +42,7 @@ function priceClass(value: string): string {
 // The signature element of the site. The six published columns are unchanged.
 // The crew size control adds one calculated column beside them, worked out
 // from the base and per seat rates implied by those same three figures.
-export default function CostTable({ tools, pricesChecked, basis }: Props) {
+export default function CostTable({ tools, pricesChecked, basis, currentRoute }: Props) {
   const [crew, setCrew] = useState(DEFAULT_CREW);
   const id = useId();
   const showCalc = !PUBLISHED_SIZES.includes(crew);
@@ -86,6 +90,7 @@ export default function CostTable({ tools, pricesChecked, basis }: Props) {
                           {row.tool}
                         </a>
                         {vendor && <span className="tool-domain">{vendor.domain}</span>}
+                        <VendorBreakdownLink tool={row.tool} currentRoute={currentRoute} />
                       </span>
                     </span>
                     <Badge kind={getBadge(row)} />

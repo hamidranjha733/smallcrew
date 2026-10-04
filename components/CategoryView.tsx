@@ -201,7 +201,11 @@ export default async function CategoryView({ trade }: Props) {
             <div className="wrapper">
               <PricedStamp checked={body.pricesChecked} />
               <Disclosure />
-              <CostTable tools={body.tools} pricesChecked={body.pricesChecked} />
+              <CostTable
+                tools={body.tools}
+                pricesChecked={body.pricesChecked}
+                currentRoute={info.href}
+              />
             </div>
 
             <TearLine />

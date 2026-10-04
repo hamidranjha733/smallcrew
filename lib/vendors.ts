@@ -66,6 +66,39 @@ export const VENDORS: Record<string, Vendor> = {
   Swept: { logo: '/logos/swept.png', domain: 'sweptworks.com', kind: 'workforce' },
 };
 
+// Vendors this site has published its own pricing breakdown for.
+//
+// The site exists to price vendors, so a reader looking at a vendor row should
+// be able to reach our working of that vendor from the row itself rather than
+// finding it through a category page. This is a navigation aid, not a price,
+// and it is deliberately separate from the outbound vendor link beside it.
+//
+// Adding a fourth vendor is one line. The key must match the `tool:` value in
+// the markdown frontmatter exactly, as with VENDORS above.
+export const VENDOR_PRICING_PAGES: Record<string, string> = {
+  ZenMaid: '/zenmaid-pricing/',
+  Arborgold: '/arborgold-pricing/',
+  'Service Autopilot': '/service-autopilot-pricing/',
+};
+
+// One wording for this link everywhere, rather than a variant per vendor.
+export const PRICING_PAGE_LINK_TEXT = 'our pricing breakdown';
+
+/**
+ * The internal pricing page for a vendor, if there is one.
+ *
+ * `currentRoute` suppresses a link to the page the table is already on, so a
+ * breakdown page that lists its own vendor can never link to itself. No page
+ * does that today, because the three breakdowns are standalone routes rather
+ * than markdown guides, but the guard means adding a fourth vendor stays a
+ * one line change even if that one is a guide.
+ */
+export function getPricingPage(tool: string, currentRoute?: string): string | undefined {
+  const href = VENDOR_PRICING_PAGES[tool];
+  if (!href || href === currentRoute) return undefined;
+  return href;
+}
+
 export function isSystem(tool: string): boolean {
   return VENDORS[tool]?.kind === 'system';
 }

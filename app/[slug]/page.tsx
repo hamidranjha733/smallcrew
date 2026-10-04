@@ -177,6 +177,7 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
           tools={page.tools}
           pricesChecked={page.pricesChecked}
           basis={LEDGER_PAGES.has(slug) ? LEDGER_BASIS : undefined}
+          currentRoute={`/${slug}/`}
         />
       </div>
 

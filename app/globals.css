@@ -1344,6 +1344,27 @@ th.cell-tool {
   margin-top: 0.1rem;
 }
 
+/* The link to this site's own breakdown of a vendor, under the vendor name.
+   It has to restate the mono idiom used by .tool-domain beside it, because
+   .tool-id a above would otherwise give it the display face and the ink
+   underline that belong to the vendor name itself. */
+.tool-id .tool-breakdown {
+  display: block;
+  font-family: var(--data);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--signal);
+  text-decoration: none;
+  border-bottom: 0;
+  margin-top: 0.22rem;
+}
+
+.tool-id .tool-breakdown:hover {
+  color: var(--signal-2);
+  border-bottom: 1px solid var(--signal-2);
+}
+
 td.cell-best {
   width: 12.5rem;
 }
