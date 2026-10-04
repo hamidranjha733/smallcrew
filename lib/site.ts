@@ -18,4 +18,8 @@ export const AUTHOR_NAME = 'Hamid Ranjha';
 /** Stable id for the person node, so every page points at the same author. */
 export const AUTHOR_ID = `${SITE_URL}/about/#hamid-ranjha`;
 
-export const CONTACT_EMAIL = 'hamidranjha733@gmail.com';
+// The public contact address. It is an address on this domain rather than a
+// personal mailbox, forwarded by Cloudflare Email Routing. Changing it here
+// changes the visible link, the mailto href and the Organization email in the
+// page schema together, because all three read this constant.
+export const CONTACT_EMAIL = 'hamid@smallcrewsoftware.com';
