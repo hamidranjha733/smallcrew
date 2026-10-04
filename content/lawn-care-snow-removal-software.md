@@ -109,7 +109,7 @@ For a two season business, the software that lets you shed capacity in the off s
 
 **Yardbook is wrong** as a researched purchase, because its pricing page blocked automated access in August 2026.
 
-**Service Autopilot is wrong** for a company without an office. Overnight dispatch is a genuine strength, and the customer portal is a call for pricing item on top of a $199 plan, so the configuration you need has no published cost.
+**[Service Autopilot](/service-autopilot-pricing/) is wrong** for a company without an office. Overnight dispatch is a genuine strength, and the customer portal is a call for pricing item on top of a $199 plan, so the configuration you need has no published cost.
 
 ## Common questions
 
