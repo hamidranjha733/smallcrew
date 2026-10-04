@@ -178,25 +178,47 @@ const existing = fs.existsSync(DATES_FILE)
   ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8'))
   : {};
 
+// A pin is a date deliberately held back, because the page did change but the
+// change was not a price recheck. Linking a vendor name is the example: the
+// words on the page moved, the prices did not.
+//
+// The reason is stored against the route rather than worked out from the
+// dates, because a pin and an ordinary hand refresh look identical from the
+// dates alone. Both have a stored date that disagrees with git. Only the
+// reason says which is which, so without it the script would go on advising
+// --refresh for a page that must not be refreshed.
+const PINS_FILE = path.join('data', 'page-date-pins.json');
+const pins = fs.existsSync(PINS_FILE) ? JSON.parse(fs.readFileSync(PINS_FILE, 'utf8')) : {};
+
 const final = {};
 const added = [];
 const moved = [];
 const held = [];
+const pinned = [];
 
 for (const [route, computed] of Object.entries(dates)) {
   const current = existing[route];
   if (!current) {
     final[route] = computed;
     added.push(`${route} -> ${computed}`);
-  } else if (refreshAll || refresh.has(route)) {
+  } else if (refresh.has(route) || (refreshAll && !pins[route])) {
     // A deliberate refresh dates the page today, because the edit being
     // recorded is the uncommitted one in the working tree.
+    //
+    // --refresh-all skips a pinned route, since the whole point of the pin is
+    // that git's date is the wrong answer for that page. Naming the route with
+    // --refresh still overrides it, because that is a deliberate act.
     final[route] = TODAY;
     if (TODAY !== current) moved.push(`${route} ${current} -> ${TODAY}`);
     else final[route] = current;
   } else {
     final[route] = current;
-    if (computed !== current) held.push(`${route} held at ${current}, git says ${computed}`);
+    if (computed === current) continue;
+    if (pins[route]) {
+      pinned.push(`${route} pinned at ${current}, git says ${computed}\n    ${pins[route]}`);
+    } else {
+      held.push(`${route} held at ${current}, git says ${computed}`);
+    }
   }
 }
 
@@ -212,6 +234,12 @@ fs.writeFileSync(DATES_FILE, JSON.stringify(ordered, null, 2) + '\n');
 
 if (added.length) console.log('\nadded:\n  ' + added.join('\n  '));
 if (moved.length) console.log('\nmoved:\n  ' + moved.join('\n  '));
+if (pinned.length) {
+  console.log(
+    '\npinned, held back on purpose. Do not refresh these. --refresh-all skips\nthem, and naming one with --refresh overrides the pin:\n  ' +
+      pinned.join('\n  '),
+  );
+}
 if (held.length) {
   console.log('\nheld (pass --refresh <route> if the content really changed):\n  ' + held.join('\n  '));
 }
