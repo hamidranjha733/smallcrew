@@ -130,7 +130,7 @@ export default function CostTable({ tools, pricesChecked, basis, currentRoute }:
           </tbody>
         </table>
       </div>
-      <VendorNotes tools={tools} />
+      <VendorNotes tools={tools} currentRoute={currentRoute} />
       <p className="cost-table-caption">
         <strong>{basis ?? DEFAULT_BASIS}</strong>{' '}
         Figures are the monthly cost at one, three and ten users, billed monthly rather than

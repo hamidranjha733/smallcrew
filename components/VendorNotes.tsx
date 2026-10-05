@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { ReactNode } from 'react';
 import type { Tool } from '@/lib/content';
 
@@ -12,6 +13,22 @@ type Note = {
   vendor: string;
   label: string;
   body: ReactNode;
+  // A closing sentence pointing at this site's own breakdown of the vendor.
+  // Separate from the body because it is the one part of a note that a page can
+  // hold back, and because stripping the anchor alone would leave the sentence
+  // promising a page it no longer points at.
+  breakdown?: { href: string; label: string; tail: string };
+};
+
+// Articles that already promise a vendor's breakdown in their own prose. The
+// note holds its link back on these, so the page makes the promise once in the
+// article and once in the table rather than three times in one read.
+//
+// Only a page whose own words carry a better pointer belongs here. The table
+// cell link does not count: its text is the same generic phrase in every vendor
+// row, so it names the destination far less well than a written sentence does.
+const ARTICLE_ALREADY_LINKS: Record<string, readonly string[]> = {
+  '/best-software-for-cleaning-business/': ['/zenmaid-pricing/'],
 };
 
 const NOTES: Note[] = [
@@ -27,6 +44,11 @@ const NOTES: Note[] = [
         quoting it in a ten cleaner column would flatter it. Read on 2 October 2026.
       </>
     ),
+    breakdown: {
+      href: '/zenmaid-pricing/',
+      label: 'full ZenMaid pricing breakdown',
+      tail: 'shows every tier at every size.',
+    },
   },
   {
     vendor: 'GorillaDesk',
@@ -77,18 +99,37 @@ export function notesFor(tools: Tool[]): Note[] {
   return NOTES.filter((note) => names.has(note.vendor));
 }
 
-export default function VendorNotes({ tools }: { tools: Tool[] }) {
+type Props = {
+  tools: Tool[];
+  /** The route the table is on, which decides whether a note keeps its link. */
+  currentRoute?: string;
+};
+
+export default function VendorNotes({ tools, currentRoute }: Props) {
   const notes = notesFor(tools);
   if (notes.length === 0) return null;
 
+  const alreadyLinked = (currentRoute && ARTICLE_ALREADY_LINKS[currentRoute]) ?? [];
+
   return (
     <>
-      {notes.map((note) => (
-        <p className="vendor-note" key={note.vendor}>
-          <span className="vendor-note-label">{note.label}</span>
-          {note.body}
-        </p>
-      ))}
+      {notes.map((note) => {
+        const breakdown =
+          note.breakdown && !alreadyLinked.includes(note.breakdown.href) ? note.breakdown : null;
+
+        return (
+          <p className="vendor-note" key={note.vendor}>
+            <span className="vendor-note-label">{note.label}</span>
+            {note.body}
+            {breakdown && (
+              <>
+                {' '}
+                The <Link href={breakdown.href}>{breakdown.label}</Link> {breakdown.tail}
+              </>
+            )}
+          </p>
+        );
+      })}
     </>
   );
 }
