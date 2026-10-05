@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 import type { Tool } from '@/lib/content';
 
@@ -25,9 +24,7 @@ const NOTES: Note[] = [
         company with an office manager is four people and pays $95 on Pro. The columns above count
         only people who need a login. Prices are the Pro tier at every crew size: Starter is
         cheaper but capped at forty appointments a month, which a crew of ten passes easily, so
-        quoting it in a ten cleaner column would flatter it. Read on 2 October 2026. The{' '}
-        <Link href="/zenmaid-pricing/">full ZenMaid pricing breakdown</Link> shows every tier at
-        every size.
+        quoting it in a ten cleaner column would flatter it. Read on 2 October 2026.
       </>
     ),
   },
