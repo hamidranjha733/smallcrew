@@ -31,7 +31,7 @@ export const PAGE_SEO: Record<string, Seo> = {
     keyword: 'janitorial bidding software',
     title: 'Janitorial Bidding Software Priced for Crews Under Twenty',
     description:
-      'Janibid from free, CleanlyRun from $24.95 and CleanGuru from $79 a month, each read from the vendor page today and dated. One vendor we could not reach.',
+      'Janibid from free, CleanlyRun from $24.95, CleanGuru from $79 and Janitorial Manager from $1,000 a month, each read from the vendor page and dated.',
   },
   'service-autopilot-pricing': {
     keyword: 'service autopilot pricing',

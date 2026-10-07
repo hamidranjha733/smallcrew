@@ -11,7 +11,15 @@ const seo = getPageSeo('janitorial-bidding-software');
 
 export const metadata: Metadata = buildMetadata(seo, '/janitorial-bidding-software/', 'article');
 
+// The date the four bidding tools were read. It is not the page's date for
+// every vendor: Janitorial Manager was read later, after the earlier reading
+// turned out to have been aimed at a URL that does not exist.
+//
+// Rather than restamp four vendors that were not looked at again, the later
+// reading carries its own date and every sentence on this page that claims a
+// reading date names the exception.
 const READ_ON = '2026-10-03';
+const JM_READ_ON = '2026-10-08';
 
 const TOOLS = [
   {
@@ -40,11 +48,12 @@ const TOOLS = [
   },
   {
     name: 'Janitorial Manager',
-    from: 'Could not confirm',
-    basis: 'Pricing page not reachable from here',
-    best: 'Not assessable on price',
-    watch: 'Its pricing page returns a bot verification screen rather than content, so nothing is verified',
-    url: 'https://www.janitorialmanager.com/pricing/',
+    from: '$1,000',
+    basis: 'Monthly floor for the entry plan, quoted above it on scope',
+    best: 'Multi-building contractors running the work, not only bidding it',
+    watch: 'Only the entry plan carries a figure. The two larger plans read Custom, so nothing above the floor is published',
+    url: 'https://www.janitorialmanager.com/plans-pricing/',
+    readOn: JM_READ_ON,
   },
 ];
 
@@ -52,6 +61,7 @@ export default function JanitorialBiddingSoftwarePage() {
   const url = `${SITE_URL}/janitorial-bidding-software/`;
   const modified = getModified('/janitorial-bidding-software/', READ_ON);
   const checked = formatDate(READ_ON);
+  const jmChecked = formatDate(JM_READ_ON);
 
   return (
     <article>
@@ -217,7 +227,7 @@ export default function JanitorialBiddingSoftwarePage() {
           <p className="cost-table-caption">
             <strong>
               Every figure is the monthly price published on the vendor&#8217;s own pricing page,
-              read on {checked}.
+              read on {checked}, except Janitorial Manager, read on {jmChecked}.
             </strong>{' '}
             None of these vendors publishes an annual rate, and none of their pages carries a
             calculator or a billing toggle. The From column is the cheapest tier that will produce a
@@ -320,18 +330,30 @@ export default function JanitorialBiddingSoftwarePage() {
               Not published: an annual rate, and which module Basic defaults to.
             </p>
 
-            <h3>Janitorial Manager, could not confirm</h3>
+            <h3>Janitorial Manager, from $1,000 a month</h3>
             <p>
-              Its pricing page did not return content on {checked}. It answers with a bot
-              verification screen reading &#8220;Please wait while your request is being
-              verified&#8221; and does not resolve past it, so no figure was read and none is
-              published here.
+              Janitorial Manager publishes a floor rather than a price list. Its plans and pricing
+              page states that plans start at $1,000 a month, repeats the figure on the entry card
+              as $1,000/mo starting, and quotes everything above it. Read on {jmChecked}.
             </p>
             <p>
-              This is worth distinguishing from the vendors elsewhere on this site that route
-              pricing through a sales call. Janitorial Manager may well publish its prices to an
-              ordinary visitor. What this page can say is only that we could not reach them, which
-              is a statement about our access rather than about the vendor.
+              Three plans are named and only the first carries a number. Small Operations, described
+              as a single facility or a lean crew running the core tools, is the $1,000 tier.
+              Growing, Multi-Building and Multi-Site &amp; Multi-State both read Custom scales with
+              scope. Four things shape the quote: buildings and locations, cleanable square footage,
+              employees and users, and features and service level. The page states directly that
+              this is not a flat per seat rate.
+            </p>
+            <p>
+              The floor is the fact worth sitting with. At $1,000 a month it is forty times
+              CleanlyRun&#8217;s $24.95, and it is not buying the same thing: bidding is one module
+              inside an operations platform that also runs inspections, work orders and inventory.
+              The other four tools on this page sell bidding and, in CleanGuru&#8217;s case, a
+              little more. This one sells the system the bid lives in.
+            </p>
+            <p>
+              Not published: what either plan above the floor costs, and what scope moves an
+              operation off the entry tier.
             </p>
           </div>
         </section>
@@ -417,16 +439,18 @@ export default function JanitorialBiddingSoftwarePage() {
               tools implement, because it converts measured areas into labour hours.
             </p>
             <p>
-              <strong>How current are these figures?</strong> All were read from each vendor&#8217;s
-              own pricing page on {checked}. Pricing in this category changes several times a year.
-              Confirm before you buy.
+              <strong>How current are these figures?</strong> The four bidding tools were read
+              from each vendor&#8217;s own pricing page on {checked}. Janitorial Manager was read on{' '}
+              {jmChecked}, because the earlier reading had been aimed at a URL that does not exist
+              on its site. Pricing in this category changes several times a year. Confirm before you
+              buy.
             </p>
           </div>
 
           <p className="updated-note">
             Small Crew has not used any of this software. Every figure here was read from the
-            vendor&#8217;s own pricing page on {checked} and describes documented pricing and
-            published features. For the wider category see{' '}
+            vendor&#8217;s own pricing page, four of them on {checked} and Janitorial Manager on{' '}
+            {jmChecked}, and describes documented pricing and published features. For the wider category see{' '}
             <Link href="/cleaning/">cleaning service software compared</Link>.
           </p>
         </section>
