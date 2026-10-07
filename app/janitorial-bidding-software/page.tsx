@@ -396,6 +396,13 @@ export default function JanitorialBiddingSoftwarePage() {
               put into it.
             </p>
             <p>
+              <strong>Anyone under twenty staff pricing Janitorial Manager.</strong> Its smallest
+              tier is named Small Operations and starts at $1,000 a month, and everything else on
+              this page publishes between free and $159. The floor alone puts it above what a crew
+              that size is likely budgeting for software, whatever a larger contractor gets for the
+              money.
+            </p>
+            <p>
               For a crew under twenty doing commercial contract work with regular bidding, the case
               is real and CleanlyRun at $24.95 is the cheapest honest entry. Below that threshold,
               not buying one is a defensible decision and this page would rather say so.
