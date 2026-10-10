@@ -45,7 +45,7 @@ tools:
 
 No product compared here publishes evidence that it handles snow removal billing properly, and that is the finding a two season business needs before it spends anything. LawnPro at $39 a month for three employees and Jobber at $139 a month are the cheapest credible ways to run both seasons, but neither vendor's pricing page documents per push billing or seasonal contract caps. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
 
-A lawn care company that plows in winter is running two businesses with different economics inside one company. Software sold for lawn care handles the summer half well and the winter half by accident.
+If snow is the whole business rather than the winter half of it, the buying question is different and [snow removal software](/snow-removal-software/) covers it. A lawn care company that plows in winter is running two businesses with different economics inside one company. Software sold for lawn care handles the summer half well and the winter half by accident.
 
 ## Why snow breaks lawn care software
 

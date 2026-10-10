@@ -114,36 +114,6 @@ const slugs = fs
 
 const TRADES = ['cleaning', 'lawn-care', 'pest-control'];
 
-const dates = {};
-const sources = {};
-
-for (const slug of slugs) {
-  const file = `content/${slug}.md`;
-  const content = lastChangeOf(file, (s) => s);
-  const seo = lastChangeOf('lib/seo.ts', seoEntry(slug));
-  dates[`/${slug}/`] = day(latest(content, seo));
-  sources[`/${slug}/`] = { content: content && day(content), seo: seo && day(seo) };
-}
-
-for (const trade of TRADES) {
-  const bodyFile = `content/category/${trade}.md`;
-  const body = fs.existsSync(bodyFile) ? lastChangeOf(bodyFile, (s) => s) : null;
-  const prose = lastChangeOf('lib/trades.ts', tradeBlock(trade));
-  const seo = lastChangeOf('lib/seo.ts', seoEntry(trade));
-  dates[`/${trade}/`] = day(latest(body, prose, seo));
-  sources[`/${trade}/`] = {
-    body: body && day(body),
-    prose: prose && day(prose),
-    seo: seo && day(seo),
-  };
-}
-
-const homePage = lastChangeOf('app/page.tsx', (s) => s);
-const homeMeta = lastChangeOf('lib/seo.ts', homeSeo);
-dates['/'] = day(latest(homePage, homeMeta));
-
-// Standalone pages: their own route file plus their own SEO entry.
-//
 // Local date rather than UTC. git dates carry their own offset, so slicing one
 // already gives the day it was committed where it was committed, and a UTC
 // today would disagree with them by a day for anyone east of Greenwich.
@@ -153,6 +123,47 @@ const TODAY = [
   String(now.getMonth() + 1).padStart(2, '0'),
   String(now.getDate()).padStart(2, '0'),
 ].join('-');
+
+const dates = {};
+const sources = {};
+
+// A page written but not yet committed has no git history to read, so every
+// extractor returns null for it. That is a new page, not a broken one, and it
+// is dated today. The standalone routes below always handled this; guides and
+// category pages did not, and the first brand new guide since made the script
+// throw on day(null) rather than add the route.
+const dayOrToday = (iso) => (iso ? day(iso) : TODAY);
+
+for (const slug of slugs) {
+  const file = `content/${slug}.md`;
+  const content = lastChangeOf(file, (s) => s);
+  const seo = lastChangeOf('lib/seo.ts', seoEntry(slug));
+  dates[`/${slug}/`] = dayOrToday(latest(content, seo));
+  sources[`/${slug}/`] = { content: content && day(content), seo: seo && day(seo) };
+}
+
+for (const trade of TRADES) {
+  const bodyFile = `content/category/${trade}.md`;
+  const body = fs.existsSync(bodyFile) ? lastChangeOf(bodyFile, (s) => s) : null;
+  const prose = lastChangeOf('lib/trades.ts', tradeBlock(trade));
+  const seo = lastChangeOf('lib/seo.ts', seoEntry(trade));
+  dates[`/${trade}/`] = dayOrToday(latest(body, prose, seo));
+  sources[`/${trade}/`] = {
+    body: body && day(body),
+    prose: prose && day(prose),
+    seo: seo && day(seo),
+  };
+}
+
+const homePage = lastChangeOf('app/page.tsx', (s) => s);
+const homeMeta = lastChangeOf('lib/seo.ts', homeSeo);
+dates['/'] = dayOrToday(latest(homePage, homeMeta));
+
+// Standalone pages: their own route file plus their own SEO entry.
+//
+// Local date rather than UTC. git dates carry their own offset, so slicing one
+// already gives the day it was committed where it was committed, and a UTC
+// today would disagree with them by a day for anyone east of Greenwich.
 for (const key of ['about', 'contact', 'privacy', 'zenmaid-pricing', 'arborgold-pricing', 'service-autopilot-pricing', 'janitorial-bidding-software']) {
   const page = lastChangeOf(`app/${key}/page.tsx`, (s) => s);
   const meta = lastChangeOf('lib/seo.ts', seoEntry(key));

@@ -577,6 +577,109 @@
       "columnMapping": "1 user is Simple Start at $38. 3 users is Essentials at $85, which includes exactly 3. 10 users is Advanced at $340, because Plus includes 5 and the next count published is 25. No plan includes 10 and no additional user rate exists to build one.",
       "notPublished": "Any additional or per user rate, and any plan between 5 and 25 users. A QuickBooks Free tier is referenced on the page but has no card and no price in this table.",
       "whereTheOldFiguresCameFrom": "There were none. The three guides carried 'Could not confirm' at 1, 3 and 10 because the site's own requests to the pricing page failed. The vendor publishes openly."
+    },
+    {
+      "vendor": "Yeti Software",
+      "source": "https://yetisoftware.com/pricing",
+      "readOn": "2026-10-11",
+      "readBy": "Browser. The site count slider and the Monthly/Annual toggle were both driven. Every band below was read, not interpolated.",
+      "pricingIsDynamic": true,
+      "attachedTo": "$95 a month is the MONTHLY billing rate for the 1 to 25 SITES band on the single High Performance plan. It is not a per user rate and not a per site rate. Users are unlimited at every band, so headcount never changes the bill.",
+      "model": "One plan, priced by number of sites under management, in seven bands. Annual billing is a flat 30 per cent discount at every band.",
+      "promotion": "The page opens at $66.50/mo, which is the annual rate with the slider resting on one site. Both defaults flatter the figure.",
+      "tiers": [
+        {
+          "sites": "1-25",
+          "monthly": 95,
+          "annual": 66.5,
+          "annualTotal": 798
+        },
+        {
+          "sites": "26-50",
+          "monthly": 245,
+          "annual": 171.5,
+          "annualTotal": 2058
+        },
+        {
+          "sites": "51-100",
+          "monthly": 395,
+          "annual": 276.5,
+          "annualTotal": 3318
+        },
+        {
+          "sites": "101-200",
+          "monthly": 495,
+          "annual": 346.5,
+          "annualTotal": 4158
+        },
+        {
+          "sites": "201-300",
+          "monthly": 645,
+          "annual": 451.5,
+          "annualTotal": 5418
+        },
+        {
+          "sites": "301-400",
+          "monthly": 795,
+          "annual": 556.5,
+          "annualTotal": 6678
+        },
+        {
+          "sites": "401-500",
+          "monthly": 945,
+          "annual": 661.5,
+          "annualTotal": 7938
+        }
+      ],
+      "limits": "Up to 200 photos per site visit. Unlimited users, clients and quotes. Subcontractor management and QuickBooks Online integration included. Weather reporting is an add-on with no published price.",
+      "note": "Canadian vendor, Langley BC, selling into the US. 60 day money back guarantee stated on the page."
+    },
+    {
+      "vendor": "SnowPilot Pro",
+      "source": "https://snowpilotpro.com/",
+      "readOn": "2026-10-11",
+      "pricingIsDynamic": false,
+      "attachedTo": "$10 a month is the whole price of the snow only product, with unlimited clients, properties and crew accounts. It is not per user and not per site. $20 a month is LawnPilot Pro, which carries the lawn side as well as the snow side on one account.",
+      "model": "Single flat monthly price, no tiers, no per seat component.",
+      "limits": "7 day free trial, no card. Month to month. Off site backups kept 30 days.",
+      "notPublished": "Any cost for the customer texting feature, which runs through the buyer's own Twilio account and is billed by Twilio rather than by SnowPilot Pro.",
+      "note": "Smallest vendor on the page. The pricing page carries no company address or phone number, unlike Yeti and Service Fusion."
+    },
+    {
+      "vendor": "Service Fusion",
+      "source": "https://www.servicefusion.com/pricing",
+      "readOn": "2026-10-11",
+      "pricingIsDynamic": true,
+      "attachedTo": "$245 a month is the MONTHLY billing rate for the Starter tier with unlimited users. It is not a per user rate.",
+      "model": "Three flat tiers, unlimited users on all three. Annual billing is 15 per cent off.",
+      "promotion": "The page defaults to Annual, showing $208, $325 and $533 labelled 'Per Month (billed annually)'. Driving the toggle to Monthly gives $245, $382 and $627.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "monthly": 245,
+          "annual": 208
+        },
+        {
+          "name": "Plus",
+          "monthly": 382,
+          "annual": 325
+        },
+        {
+          "name": "Pro",
+          "monthly": 627,
+          "annual": 533
+        }
+      ],
+      "notPublished": "The Customer Web Portal and Progressive Billing & Recurring Invoicing appear under Add-Ons on Starter, Plus and Pro alike, and no add-on price is published at any tier. For a seasonal snow contract that is the capability that matters, so the configuration this trade needs has no published cost."
+    },
+    {
+      "vendor": "Aurora Suite",
+      "source": "https://try.aurorasuite.ca/",
+      "readOn": "2026-10-11",
+      "pricingIsDynamic": false,
+      "attachedTo": "Nothing. No figure is published.",
+      "result": "QUOTE ONLY. aurorasuite.ca resolves to try.aurorasuite.ca, whose navigation is Home, Benefits, Features and FREE DEMO. There is no pricing page.",
+      "note": "This is a statement about the vendor, confirmed from its own navigation, not about our access. A guessed /pricing/ path returns 404 and that was not treated as evidence."
     }
   ],
   "corrections": [

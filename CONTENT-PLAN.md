@@ -116,6 +116,13 @@ Cells read `Could not confirm` where no pricing page could be reached, and `Quot
 - **PestPac** now cites `workwave.com/industries/pest-control-software`, which shows no price and routes buyers to a demo.
 - **ServSuite by FieldRoutes** was confirmed as quote and demo only from its FieldRoutes page.
 
+### Added 11 October 2026
+
+- **`/snow-removal-software/`** targets `snow removal software`, 150 a month at KD 0, and serves a dedicated snow contractor rather than the two season operator already served by `/lawn-care-snow-removal-software/`. The two are cross linked once each in prose and share no table.
+- The finding that justifies the page: on this trade the bill follows sites rather than staff. SnowPilot Pro at $10, Yeti Software at $95 and Service Fusion at $245 all include unlimited users, so the crew size columns are flat and a second table carries Yeti's seven site bands instead.
+- Two of the four vendors default to annual billing on screen. Yeti shows $66.50 with the site slider on one, against $95 paying monthly, and Service Fusion shows $208 against $245. Both toggles were driven.
+- **Nektyd** and **Plow360** were not priced. Nektyd returns 403 to this browser at the site root and Plow360 sits behind a Cloudflare challenge. Both are statements about our access, so neither appears in the table.
+
 ### Gaps worth considering later
 
 Not built, and worth researching before adding.

@@ -1262,6 +1262,14 @@ table.cost-table {
   font-size: 0.92rem;
 }
 
+/* A four column table carrying one vendor's price bands, set inside the
+   reading column rather than the full wrapper. It keeps the cost table's
+   furniture and drops the 62rem minimum, which exists for the six column
+   table and would force a horizontal scroll here. */
+table.cost-table.cost-table-narrow {
+  min-width: 0;
+}
+
 table.cost-table thead th {
   font-family: var(--data);
   font-size: 0.64rem;
@@ -1342,6 +1350,18 @@ th.cell-tool {
   font-size: 0.62rem;
   color: var(--mute);
   margin-top: 0.1rem;
+}
+
+/* Available to a screen reader, off the page for everyone else. Used by the
+   caption on a table whose purpose the surrounding prose already states, so
+   the caption would repeat a sentence the reader has just read. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* The link to this site's own breakdown of a vendor, under the vendor name.

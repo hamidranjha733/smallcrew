@@ -187,7 +187,10 @@ export const TRADE_LABELS: Record<Trade, string> = {
 // the frontmatter schema to the seven documented keys.
 export function getTrade(slug: string): Trade {
   if (slug.includes('pest')) return 'pest-control';
-  if (slug.includes('lawn')) return 'lawn-care';
+  // Snow removal sits in lawn care, because the operators overlap and the
+  // category already carries the two season guide. A snow only slug has no
+  // 'lawn' in it, so it needs naming here or it would fall through to cleaning.
+  if (slug.includes('lawn') || slug.includes('snow')) return 'lawn-care';
   return 'cleaning';
 }
 

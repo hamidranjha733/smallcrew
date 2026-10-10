@@ -50,6 +50,13 @@ export const VENDORS: Record<string, Vendor> = {
   },
   Briostack: { logo: '/logos/briostack.png', domain: 'briostack.com', kind: 'system' },
 
+  // Snow removal. All three snow specific tools include unlimited users, so
+  // they are compared on sites and flat rate rather than on headcount.
+  'SnowPilot Pro': { logo: '/logos/snowpilotpro.png', domain: 'snowpilotpro.com', kind: 'system' },
+  'Yeti Software': { logo: '/logos/yetisoftware.png', domain: 'yetisoftware.com', kind: 'system' },
+  'Aurora Suite': { logo: '/logos/aurorasuite.png', domain: 'aurorasuite.ca', kind: 'system' },
+  'Service Fusion': { logo: '/logos/servicefusion.png', domain: 'servicefusion.com', kind: 'system' },
+
   // Ledgers and invoicing tools. No booking form, no schedule, no job record,
   // so they are never compared on price against a full system.
   FreshBooks: { logo: '/logos/freshbooks.png', domain: 'freshbooks.com', kind: 'accounting' },

@@ -159,6 +159,12 @@ export const GUIDE_SEO: Record<string, Seo> = {
     description:
       'Software for a two season business, and the finding that almost nothing under $200 a month handles per push snow billing properly. Dated vendor pricing.',
   },
+  'snow-removal-software': {
+    keyword: 'snow removal software',
+    title: 'Snow Removal Software, Priced for Snow Contractors',
+    description:
+      'SnowPilot Pro at $10, Yeti Software at $95 and Service Fusion at $245 a month, each read from the vendor page and dated. Sites drive the bill, not staff.',
+  },
   'pest-control-accounting-software': {
     keyword: 'pest control accounting software',
     title: 'Pest Control Accounting Software, Priced at 3 Crew Sizes',
