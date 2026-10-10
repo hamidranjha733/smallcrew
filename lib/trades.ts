@@ -38,7 +38,7 @@ export const TRADES: TradeInfo[] = [
       {
         href: "/janitorial-bidding-software/",
         label: "Janitorial bidding software, priced",
-        note: "Winning the contract is a separate purchase. Free to $79 a month, and one vendor we could not reach.",
+        note: "Winning the contract is a separate purchase. Free to $159 a month, and one vendor whose floor is $1,000.",
       },
     ],
   },
