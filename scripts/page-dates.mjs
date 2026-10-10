@@ -86,8 +86,13 @@ const homeSeo = (source) => {
 
 // The authored prose for one trade in lib/trades.ts: headline, standfirst,
 // intro and pull quote.
+// Accepts either quote style. lib/trades.ts was reformatted from single to
+// double quotes on 3 October 2026, and this matched nothing from then until it
+// was noticed on 11 October, which silently froze every category page's prose
+// date. An extractor that returns null is indistinguishable from a file that
+// never changed, so the mismatch reported itself as "nothing happened".
 function tradeBlock(trade) {
-  const re = new RegExp(`trade: '${trade}',([\\s\\S]*?)\\n  \\},`);
+  const re = new RegExp(`trade: ['"]${trade}['"],([\\s\\S]*?)\\n  \\},`);
   return (source) => {
     const m = source.match(re);
     return m ? m[1].replace(/\s+/g, ' ') : null;
