@@ -36,10 +36,10 @@ tools:
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Books an accountant will accept without argument
-    solo: Could not confirm
-    crew3: Could not confirm
-    crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
+    solo: $38
+    crew3: $85
+    crew10: $340
+    watch: The $19 shown first is 50% off for three months and the standard rate is $38. Ten users needs Advanced at $340, because Plus caps at five users and no additional user rate is published
     url: https://quickbooks.intuit.com/pricing/
 ---
 
@@ -111,7 +111,7 @@ At ten employees that pairing becomes $3,216, and Jobber Connect at $3,588 plus 
 
 **Jobber is wrong** as accounting software. It is a field service system with strong invoicing attached, and at $299 a month for ten users on Connect it is the most expensive invoice generator on this page.
 
-**QuickBooks Online is wrong** for anyone who cannot confirm the current price first. Intuit's pricing page did not respond to repeated automated requests in August 2026, so no QuickBooks figure appears in the table above. Check it directly before budgeting.
+**QuickBooks Online is wrong** for a crew that needs more than five logins. Plus covers five users at $140 a month and Advanced, the next plan up, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. There is nothing between the two, so a six person operation pays the twenty five person price. Figures read on 11 October 2026.
 
 ## Common questions
 

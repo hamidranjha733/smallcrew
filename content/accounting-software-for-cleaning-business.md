@@ -36,10 +36,10 @@ tools:
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Handing clean books to an accountant
-    solo: Could not confirm
-    crew3: Could not confirm
-    crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
+    solo: $38
+    crew3: $85
+    crew10: $340
+    watch: The $19 shown first is 50% off for three months and the standard rate is $38. Ten users needs Advanced at $340, because Plus caps at five users and no additional user rate is published
     url: https://quickbooks.intuit.com/pricing/
 ---
 
@@ -107,7 +107,7 @@ The same three cleaners on Jobber Connect at $2,388 a year plus Wave at $228 is 
 
 **Jobber is wrong** as accounting software, full stop. It is a field service system with invoicing attached. At $299 a month for ten users it is also the most expensive way on this page to produce an invoice.
 
-**QuickBooks Online is wrong** for anyone who cannot confirm the current price before committing. Intuit's pricing page did not respond to repeated automated requests in August 2026, so no QuickBooks figure appears in the table above. Its plans are widely used and well supported. Check the current price directly.
+**QuickBooks Online is wrong** for a cleaning company that needs more than five logins. Plus covers five users at $140 a month and the next plan up, Advanced, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six person office pays the twenty five person price. Figures read on 11 October 2026.
 
 ## Common questions
 

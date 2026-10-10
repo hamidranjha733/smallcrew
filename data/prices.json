@@ -533,6 +533,50 @@
       "billing": "No annual rate is offered anywhere on the page, and there is no calculator or billing toggle. Pricing above the floor runs through a quote form.",
       "marketingClaimChecked": "'Plans start at $1,000 a month' appears in the page intro, and '$1,000/mo starting' on the Small Operations card. Both read the same figure.",
       "supersedes": "The 2026-10-03 entry for this vendor, which recorded no figure. That entry stays as written, per the append only rule."
+    },
+    {
+      "vendor": "QuickBooks Online",
+      "source": "https://quickbooks.intuit.com/pricing/",
+      "readOn": "2026-10-11",
+      "readBy": "Browser on the author's own machine. The site's country chooser was dismissed to the US site first. The 50% off / Free trial toggle was driven, not assumed.",
+      "pricingIsDynamic": true,
+      "attachedTo": "Each figure is the STANDARD monthly rate for a named plan at the user count that plan includes. $38 = Simple Start, 1 user. $85 = Essentials, 3 users. $140 = Plus, 5 users. $340 = Advanced, 25 users. None is a per user rate, and none is the promotional rate.",
+      "model": "Flat monthly per plan with a hard included user count. The pricing page publishes no additional user rate at any tier, so a user count is a cap rather than a starting point.",
+      "promotion": "A toggle above the table reads '50% off for 3 months*' and is ON by default, so the first figure a reader sees is half price. Switching the toggle to 'Free trial for 30 days' removes the struck through price and shows one rate per plan: $38, $85, $140, $340. Those are the figures recorded here.",
+      "tiers": [
+        {
+          "name": "Simple Start",
+          "monthlyStandard": 38,
+          "monthlyPromo": 19,
+          "usersIncluded": 1,
+          "accountantSeats": 2
+        },
+        {
+          "name": "Essentials",
+          "monthlyStandard": 85,
+          "monthlyPromo": 42.5,
+          "usersIncluded": 3,
+          "accountantSeats": 2
+        },
+        {
+          "name": "Plus",
+          "monthlyStandard": 140,
+          "monthlyPromo": 70,
+          "usersIncluded": 5,
+          "accountantSeats": 2
+        },
+        {
+          "name": "Advanced",
+          "monthlyStandard": 340,
+          "monthlyPromo": 170,
+          "usersIncluded": 25,
+          "accountantSeats": 3
+        }
+      ],
+      "basisCheck": "The page's own plan comparison table marks 'Recurring invoices', 'Invoice and payments' and 'Auto-generated invoices and reminders' as yes for Simple Start, read from the checkmark alt text. Simple Start therefore meets the recurring invoicing and card payments basis these accounting pages quote on, so the 1 user column is Simple Start rather than a higher tier.",
+      "columnMapping": "1 user is Simple Start at $38. 3 users is Essentials at $85, which includes exactly 3. 10 users is Advanced at $340, because Plus includes 5 and the next count published is 25. No plan includes 10 and no additional user rate exists to build one.",
+      "notPublished": "Any additional or per user rate, and any plan between 5 and 25 users. A QuickBooks Free tier is referenced on the page but has no card and no price in this table.",
+      "whereTheOldFiguresCameFrom": "There were none. The three guides carried 'Could not confirm' at 1, 3 and 10 because the site's own requests to the pricing page failed. The vendor publishes openly."
     }
   ],
   "corrections": [
@@ -553,6 +597,15 @@
       "cause": "The URL was wrong. The reading was aimed at /pricing/, which returns 404 and has no page behind it. The correct path was never tried, and the failure was written up as a property of the vendor's site rather than as a bad address of ours.",
       "note": "What the 3 October client saw on that 404 is not recoverable now, so this correction does not claim the interstitial was imagined. It claims the conclusion drawn from it was wrong: a 404 cannot tell you whether a vendor publishes prices. The error was reporting an inability to read as a finding about the vendor without first checking that the address existed.",
       "guard": "pathsTried on the old entry listed only /pricing/ and /. Neither was ever confirmed to be the pricing page. A path that 404s is not evidence about a vendor."
+    },
+    {
+      "vendor": "QuickBooks Online",
+      "recordedOn": "2026-10-11",
+      "whatWasPublished": "Could not confirm at 1, 3 and 10 on three guides, with the watch note 'We could not reach this vendor pricing page in August 2026' and the conclusion 'QuickBooks Online is wrong for anyone who cannot confirm the current price before committing.'",
+      "whatIsTrue": "QuickBooks publishes four plans openly at https://quickbooks.intuit.com/pricing/ with standard rates of $38, $85, $140 and $340 a month and included user counts of 1, 3, 5 and 25.",
+      "cause": "Automated requests from the site's own environment did not reach the page. A browser on an ordinary machine reaches it without difficulty.",
+      "note": "The error was not failing to read the page. It was turning our own access failure into a verdict about the vendor. 'Wrong for anyone who cannot confirm the price' described us, not QuickBooks, and it sat in the section where this site says where each tool is the wrong choice.",
+      "guard": "An inability to reach a page is a fact about the reader. It belongs in a note about method, never in a conclusion about the product."
     }
   ],
   "attachment": "Every figure recorded here carries an 'attachedTo' line saying what the number is a price FOR, not just its value. Three vendors have now been published wrong because a number was lifted off a pricing page and attached to the wrong thing: ZenMaid's $39 was the team calculator sitting at zero, GorillaDesk's $99 was the route slider sitting at one, and Jobber's $29 was a separate AI Receptionist add-on read as a per seat rate. A value alone cannot be checked. A value plus what it is attached to can."

@@ -36,10 +36,10 @@ tools:
     url: https://www.getjobber.com/pricing/
   - tool: QuickBooks Online
     bestFor: Books an accountant will accept without argument
-    solo: Could not confirm
-    crew3: Could not confirm
-    crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
+    solo: $38
+    crew3: $85
+    crew10: $340
+    watch: The $19 shown first is 50% off for three months and the standard rate is $38. Ten users needs Advanced at $340, because Plus caps at five users and no additional user rate is published
     url: https://quickbooks.intuit.com/pricing/
 ---
 
@@ -103,7 +103,7 @@ If a quote from FieldRoutes, PestPac or Briostack comes in materially above that
 
 **Jobber is wrong** as accounting software and wrong for pest control compliance generally, since it holds no chemical application log. It syncs to an accounting package rather than being one.
 
-**QuickBooks Online is wrong** for anyone who cannot confirm the current price first. Intuit's pricing page did not respond to repeated automated requests in August 2026, so no figure for it appears above. Many accountants require it, so ask yours before choosing an alternative.
+**QuickBooks Online is wrong** for an operation that needs more than five logins. Plus covers five users at $140 a month and Advanced is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six technician business pays the twenty five technician price. Many accountants require QuickBooks, so ask yours before ruling it out. Figures read on 11 October 2026.
 
 ## Common questions
 
