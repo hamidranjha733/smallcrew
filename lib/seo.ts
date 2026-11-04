@@ -163,7 +163,7 @@ export const GUIDE_SEO: Record<string, Seo> = {
     keyword: 'snow removal software',
     title: 'Snow Removal Software Cost: SnowPilot Pro $10 vs Yeti $95',
     description:
-      'SnowPilot Pro costs $10 a month flat with unlimited crew accounts. Yeti Software is $95 and Service Fusion $245, each read from the vendor page in October 2026.',
+      'SnowPilot Pro costs $10 a month flat with unlimited crew. Yeti Software is $95 and Service Fusion $245, each read from the vendor page in October 2026.',
   },
   'pest-control-accounting-software': {
     keyword: 'pest control accounting software',
