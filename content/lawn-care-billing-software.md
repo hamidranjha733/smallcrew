@@ -3,7 +3,7 @@ title: Lawn care billing software, and where accounting has to take over
 standfirst: Five tools priced on the tier that includes recurring invoicing and card payments, with the point at which a lawn care app stops being a set of books made explicit.
 keyword: lawn care billing software
 volume: 200
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Wave
@@ -19,7 +19,7 @@ tools:
     crew3: $39
     crew10: $249
     watch: Card auto charge is an add on below the Plus tier at $249
-    url: https://www.lawnprosoftware.com/price
+    url: https://www.lawnprosoftware.com/pricing
   - tool: FreshBooks
     bestFor: Chasing late payment automatically
     solo: $43
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-For lawn care billing under twenty staff, LawnPro at $39 a month for three employees bills directly from the schedule, Wave is the cheapest real ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment automatically across a book of fifty clients. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
+For lawn care billing under twenty staff, LawnPro at $39 a month for three employees bills directly from the schedule, Wave is the cheapest real ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment automatically across a book of fifty clients. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including recurring invoicing and card payments.
 
 Lawn care accounting software and lawn care billing software are sold as the same thing and are not. Billing produces the invoice for a mow. Accounting reconciles the bank feed, holds the expense side including fuel and equipment, and produces the statement your accountant works from. Lawn care has an unusually heavy expense side, so the distinction costs more here than in most trades.
 
@@ -111,7 +111,7 @@ At ten employees that pairing becomes $3,216, and Jobber Connect at $3,588 plus 
 
 **Jobber is wrong** as accounting software. It is a field service system with strong invoicing attached, and at $299 a month for ten users on Connect it is the most expensive invoice generator on this page.
 
-**QuickBooks Online is wrong** for a crew that needs more than five logins. Plus covers five users at $140 a month and Advanced, the next plan up, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. There is nothing between the two, so a six person operation pays the twenty five person price. Figures read on 11 October 2026.
+**QuickBooks Online is wrong** for a crew that needs more than five logins. Plus covers five users at $140 a month and Advanced, the next plan up, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. There is nothing between the two, so a six person operation pays the twenty five person price. Figures read on 4 November 2026.
 
 ## Common questions
 
@@ -128,4 +128,4 @@ You need automatic charging of a saved card, not just online payment. On LawnPro
 Wave publishes 2.9% plus $0.60 per credit card transaction, with the fixed fee waived on the first ten transactions a month on the Pro plan. Processing fees are separate from subscription cost at every vendor here.
 
 **How current are these figures?**
-They were read from vendor pricing pages in August 2026. Vendor pricing changes several times a year.
+They were read from vendor pricing pages in November 2026. Vendor pricing changes several times a year.

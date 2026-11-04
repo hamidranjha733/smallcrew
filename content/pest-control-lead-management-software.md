@@ -12,7 +12,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Quote follow up that happens without you
     solo: $139
@@ -25,7 +25,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
+    watch: The pricing page is a wizard rather than a plan table. It shows plan prices only after industry, team size and goals are entered, and does not say whether they are monthly or annual rates, so no figure here is dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: FieldRoutes
     bestFor: Operators with a dedicated sales function
@@ -73,7 +73,7 @@ GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149. The customer 
 
 Jobber publishes Core at $49 and Connect at $139, with automated client communication beginning on Connect. Quote follow up that happens without you is therefore a $139 feature, not a $49 one.
 
-Housecall Pro publishes no price. Its pricing page is a wizard asking for industry, size and goals, and on a clean browser it ends without a figure, so no crew size can be costed from it.
+Housecall Pro publishes no plan table. Its pricing page is a wizard asking for industry, size and goals, and it shows plan prices only at the end without saying whether they are monthly or annual, so no crew size can be costed from it with confidence.
 
 FieldRoutes lists lead management among its capabilities and gives no figure, stating that pricing is based on active customer count. Briostack publishes add on charges but no base subscription price. Both are built for operators with a distinct sales function, which a company under twenty staff generally does not have.
 
@@ -105,7 +105,7 @@ The comparison that does not work is buying a lead management product on top. Fi
 
 **Jobber is wrong** for pest control compliance, holding no chemical application log, and still $299 a month at ten users on the Connect band.
 
-**Housecall Pro is wrong** for an operator who needs to compare cost, because its pricing page will not produce a figure.
+**Housecall Pro is wrong** for an operator who needs to compare cost, because its pricing page shows a price only after a wizard and does not state the billing basis.
 
 **FieldRoutes is wrong** for a small operator on its pricing model. Charging by active customer count means converting more leads raises the software bill.
 
@@ -119,7 +119,7 @@ The comparison that does not work is buying a lead management product on top. Fi
 Almost certainly not. With one person handling enquiries there is no handoff to track. An online booking form and automated quote follow up address the actual loss, which is response time.
 
 **What is the cheapest tool here that captures leads properly?**
-GorillaDesk at $99 includes the customer portal on Pro, checked in October 2026. Housecall Pro describes online booking on its entry plan and publishes no price for it.
+GorillaDesk at $99 includes the customer portal on Pro, checked in October 2026. Housecall Pro describes online booking on its entry plan and prices it only at the end of its pricing wizard.
 
 **Why do FieldRoutes and Briostack not publish prices?**
 Both use quote based pricing. FieldRoutes states its pricing is based on the number of active customers. Neither publishes a figure, so neither can be compared on cost here.

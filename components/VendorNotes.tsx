@@ -83,12 +83,12 @@ const NOTES: Note[] = [
     label: 'On the Swept figures',
     body: (
       <>
-        Swept prices by the number of locations cleaned rather than by headcount, and includes
-        unlimited users, so the crew columns do not move. Every plan starts at a minimum of
-        fifteen locations. The figure above is Launch billed monthly at that minimum, which is the
-        entry price rather than a flat one: the page bands locations at 1 to 15, 16 to 25, 26 to
-        30, 31 to 59 and 60 or more, and does not display what the higher bands cost. Billing
-        annually brings Launch to $24 a month. Read on 2 October 2026.
+        Swept prices by the number of locations cleaned rather than by headcount, and lists
+        unlimited employees on every plan, so the crew columns do not move. The figure above is
+        Optimize billed monthly, the entry plan since the $30 Launch plan was withdrawn, and it
+        covers up to fifteen locations. Billing annually brings it to $120 a month. Scale is $225
+        monthly or $180 annually, and Accelerate, for fifty or more locations, is priced on
+        request. Read on 4 November 2026.
       </>
     ),
   },

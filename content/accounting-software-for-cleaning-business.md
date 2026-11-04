@@ -3,7 +3,7 @@ title: The best accounting software for a cleaning business
 standfirst: Five options priced on the tier that includes recurring invoicing and card payments, with the difference between a ledger and an invoice generator made explicit.
 keyword: best accounting software for cleaning business
 volume: 200
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Wave
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-For a cleaning business under twenty staff, Wave's free Starter plan is the cheapest option that will both invoice clients and keep a ledger, and Wave Pro at $19 a month is the cheapest that also chases late payment automatically, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures are the lowest tier that includes recurring invoicing and card payments. ZenMaid was rechecked in October 2026, the others read in August 2026.
+For a cleaning business under twenty staff, Wave's free Starter plan is the cheapest option that will both invoice clients and keep a ledger, and Wave Pro at $19 a month is the cheapest that also chases late payment automatically, and FreshBooks at $43 a month is the cheapest that will invoice fifty recurring clients and chase late payment automatically. Neither will schedule a clean. Figures are the lowest tier that includes recurring invoicing and card payments. Every figure was rechecked in November 2026.
 
 The important distinction on this page is not price. It is that most tools sold as accounting software for a cleaning business are invoicing tools, and most tools sold as cleaning software contain an invoice generator that is not accounting. Buying either one believing it is the other is how cleaning companies arrive at tax season with a shoebox.
 
@@ -107,12 +107,12 @@ The same three cleaners on Jobber Connect at $2,388 a year plus Wave at $228 is 
 
 **Jobber is wrong** as accounting software, full stop. It is a field service system with invoicing attached. At $299 a month for ten users it is also the most expensive way on this page to produce an invoice.
 
-**QuickBooks Online is wrong** for a cleaning company that needs more than five logins. Plus covers five users at $140 a month and the next plan up, Advanced, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six person office pays the twenty five person price. Figures read on 11 October 2026.
+**QuickBooks Online is wrong** for a cleaning company that needs more than five logins. Plus covers five users at $140 a month and the next plan up, Advanced, is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six person office pays the twenty five person price. Figures read on 4 November 2026.
 
 ## Common questions
 
 **What is the cheapest accounting software for a cleaning business?**
-Wave, which has a free Starter plan and charges $19 a month for the Pro plan that adds automated late payment reminders, as checked in August 2026.
+Wave, which has a free Starter plan and charges $19 a month for the Pro plan that adds automated late payment reminders, as checked in November 2026.
 
 **Do I need accounting software if my cleaning app already sends invoices?**
 Yes, once you have staff. An invoice record is not a ledger. It does not hold expenses, payroll or reconciliation, which are the three things an accountant needs and the three things a cleaning app does not store.

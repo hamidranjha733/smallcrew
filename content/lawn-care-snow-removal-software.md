@@ -12,7 +12,7 @@ tools:
     crew3: $39
     crew10: $249
     watch: Nothing on the pricing page describes per push or seasonal cap billing
-    url: https://www.lawnprosoftware.com/price
+    url: https://www.lawnprosoftware.com/pricing
   - tool: Jobber
     bestFor: Quoting seasonal contracts and one off pushes
     solo: $139

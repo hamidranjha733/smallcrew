@@ -3,7 +3,7 @@ title: The best cleaning business software for a crew under twenty
 standfirst: Six tools priced on the tier that actually includes online booking, at one, three and ten cleaners, with the plan most comparison pages quote and nobody buys marked clearly.
 keyword: cleaning business software
 volume: 800
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 6
 tools:
   - tool: ZenMaid
@@ -32,7 +32,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
+    watch: The pricing page is a wizard rather than a plan table. It shows plan prices only after industry, team size and goals are entered, and does not say whether they are monthly or annual rates, so no figure here is dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: Connecteam
     bestFor: Paying and rostering staff, not booking customers
@@ -43,14 +43,14 @@ tools:
     url: https://connecteam.com/pricing/
   - tool: Swept
     bestFor: Janitorial contracts billed by building
-    solo: $30
-    crew3: $30
-    crew10: $30
-    watch: Priced by number of locations with unlimited users, minimum fifteen locations. This is Launch billed monthly at that minimum, $24 a month billed annually, and the higher location bands are not published
-    url: https://sweptworks.com/pricing
+    solo: $150
+    crew3: $150
+    crew10: $150
+    watch: Priced by number of locations with unlimited employees. This is Optimize billed monthly for up to fifteen locations, $120 a month billed annually. The $30 Launch plan has been withdrawn
+    url: https://sweptworks.com/compare-plans
 ---
 
-For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $53 a month for one cleaner, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team. Jobber bands by team size and reaches $299 a month across six to ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form. ZenMaid and Jobber were rechecked in October 2026, the others in August 2026.
+For most cleaning companies with one to twenty staff, the practical shortlist is ZenMaid at $53 a month for one cleaner, Launch27 at $75 a month and Jobber at $139 a month. Launch27 charges the same whatever the crew size. ZenMaid does not: its advertised $39 is the price before any staff are added, and it rises with every person on the team. Jobber bands by team size and reaches $299 a month across six to ten users, which is the figure that decides the question for most people. All three prices are for the lowest tier that includes an online booking form. Every figure was rechecked in November 2026.
 
 That last sentence is the reason this page exists. Almost every comparison of cleaning business software quotes Jobber at $49 a month. That is the Core plan, and the Core plan does not send automated client reminders. A cleaning company without automated reminders is a cleaning company that pays someone to make confirmation calls.
 
@@ -68,7 +68,7 @@ Look at what happens when you price the same six tools honestly.
 
 Jobber publishes Core at $49 a month. Core includes online booking and online payments, but automated client reminders begin on Connect at $139 a month. The gap between the advertised number and the usable number is $90 a month, or $1,080 a year, before you add a single extra user.
 
-Housecall Pro no longer publishes a plan table. Its pricing page is a wizard that asks for your industry, your team size and your goals, and worked through on a clean browser it ends without showing a figure. Earlier editions of this page carried $79, $189 and $399 for Housecall Pro. Those could not be reproduced and have been withdrawn rather than left standing on a source we cannot point to.
+Housecall Pro no longer publishes a plan table. Its pricing page is a wizard that asks for your industry, your team size and your goals before it shows any plan. Worked through on 4 November 2026 for a one person home cleaning business, it ended on Basic at $79 for one user with online booking, Essentials at $189 for five users and Max at $329 for eight, with $35 a month for each additional user on Max. The page does not say whether those are monthly or annual rates, so the table carries Could not confirm rather than a figure with no billing basis attached.
 
 ZenMaid is the clearest of the six, and the one most likely to make you think this site has got it wrong. Its page leads with Starter at $19 a month. That tier has no customer booking form at all and caps you at forty appointments a month, which a working solo cleaner passes in the second week, so it fails the basis every price here is quoted on. Pro at $39 a month adds the booking form. That $39 is the price for a team of nobody, and the live pricing page adds $14 a month for each cleaner or office manager on it, so a crew of three is $81. The [full ZenMaid pricing breakdown](/zenmaid-pricing/) shows the figure at every crew size.
 
@@ -90,15 +90,15 @@ A comparison where every tool is excellent is a comparison written for vendors. 
 
 Connecteam gives ten users the whole platform free, permanently. It is genuinely the best value on this page and it will not run your cleaning business, because it schedules staff rather than booking customers and it does not invoice. It sits alongside your booking system, not instead of it.
 
-Swept is built for janitorial work, where you bill a building rather than a person and you need cleaners to check in at a site. That is a real and underserved problem, and it starts at $30 a month, which makes it the cheapest tool on this page. The catch is that it is banded by number of locations rather than crew size, and it has no customer online booking at all, so it is not competing for the same job as the other five.
+Swept is built for janitorial work, where you bill a building rather than a person and you need cleaners to check in at a site. That is a real and underserved problem, and it starts at $150 a month on its Optimize plan, billed monthly for up to fifteen locations. That puts it above Jobber Connect for a solo cleaner and well below it at ten, because the price does not move with headcount. The catch is that it is banded by number of locations rather than crew size, and it has no customer online booking at all, so it is not competing for the same job as the other five.
 
-Housecall Pro is the one tool here that cannot be placed on any of these comparisons, because its pricing page no longer produces a figure. That is a judgement about the page rather than the product, and it is the reason it carries no price in the table above.
+Housecall Pro is the one tool here that cannot be placed on any of these comparisons, because its pricing page shows plan prices only at the end of a wizard and does not state the billing basis. That is a judgement about the page rather than the product, and it is the reason it carries no price in the table above.
 
 ## The twelve month number
 
 Monthly prices disguise the size of these decisions. Annualised, at the tier that includes online booking, the same six tools look like this.
 
-A solo cleaner pays $636 a year on ZenMaid, $900 on Launch27 and $1,668 on Jobber Connect. The spread between the cheapest and the most expensive is $1,032 a year, which for a one person cleaning business is a meaningful proportion of a month's revenue. Housecall Pro cannot be placed on this line, because it will not show a price.
+A solo cleaner pays $636 a year on ZenMaid, $900 on Launch27 and $1,668 on Jobber Connect. The spread between the cheapest and the most expensive is $1,032 a year, which for a one person cleaning business is a meaningful proportion of a month's revenue. Housecall Pro cannot be placed on this line, because its page does not say what basis its figures are billed on.
 
 A three cleaner company pays $972 on ZenMaid, $900 on Launch27 and $2,388 on Jobber Connect. Launch27 has already become the cheaper of the first two.
 
@@ -126,7 +126,7 @@ The one label describing something genuinely different is janitorial software, w
 
 **Jobber is wrong** at ten users unless you actually use the quoting and reporting. At that size you are paying $299 a month on Connect for features a $75 flat rate tool covers, and the honest comparison is $224 a month of quoting software.
 
-**Housecall Pro is wrong** for anyone who needs to budget before committing time, because its pricing page will not produce a figure without working through a qualification wizard, and on a clean browser it does not produce one at the end either.
+**Housecall Pro is wrong** for anyone who needs to budget before committing time, because its pricing page shows a price only after a qualification wizard, and even then does not say whether it is billed monthly or annually.
 
 **Connecteam is wrong** as a primary system, always. Free is not cheap if it cannot take a booking.
 
@@ -135,7 +135,7 @@ The one label describing something genuinely different is janitorial software, w
 ## Common questions
 
 **What is the cheapest cleaning business software that actually takes online bookings?**
-ZenMaid Pro at $53 a month for a single cleaner, rechecked in October 2026. Connecteam is free for up to ten users but does not offer customer booking, so it does not qualify. Past about three people the cheapest is Launch27 at $75 flat.
+ZenMaid Pro at $53 a month for a single cleaner, rechecked in November 2026. Connecteam is free for up to ten users but does not offer customer booking, so it does not qualify. Past about three people the cheapest is Launch27 at $75 flat.
 
 **Is Jobber worth $139 a month for a cleaning company?**
 It is worth it if you quote frequently and win work on the quality of the quote. If your work is recurring residential cleaning at a standard rate, you are paying for a quoting engine you barely open.
@@ -150,4 +150,4 @@ Because the vendor homepage shows the entry tier. Every figure on this page is t
 Yes, in one way that matters. Maid service software models a recurring residential round with substitutions, which is how house cleaning actually runs. Generic software for cleaning companies models independent appointments, and you will feel the difference the first time you reschedule a whole week.
 
 **How often should I recheck these numbers?**
-At least twice a year. ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Pricing in this category changes several times a year.
+At least twice a year. Every price on this page was rechecked on the vendor pricing pages in November 2026. Pricing in this category changes several times a year.

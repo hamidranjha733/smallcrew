@@ -680,6 +680,239 @@
       "attachedTo": "Nothing. No figure is published.",
       "result": "QUOTE ONLY. aurorasuite.ca resolves to try.aurorasuite.ca, whose navigation is Home, Benefits, Features and FREE DEMO. There is no pricing page.",
       "note": "This is a statement about the vendor, confirmed from its own navigation, not about our access. A guessed /pricing/ path returns 404 and that was not treated as evidence."
+    },
+    {
+      "vendor": "Jobber",
+      "source": "https://www.getjobber.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "tiers": [
+        {
+          "name": "Connect",
+          "monthlyBand": {
+            "Just me": 139,
+            "2-5 people": 199,
+            "6-10 people": 299
+          }
+        }
+      ],
+      "derived": {
+        "1": 139,
+        "3": 199,
+        "10": 299
+      },
+      "verdict": "Unchanged. Read as the struck through monthly figure beside the annual price, with the Team size control moved to each band.",
+      "attachedTo": "Connect tier, by team size band, billed monthly."
+    },
+    {
+      "vendor": "ZenMaid",
+      "source": "https://get.zenmaid.com/pricing",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "model": "The team size slider runs 0 to 100 internally and maps nonlinearly to people. Prices were read against the visible people count, not the raw slider value.",
+      "tiers": [
+        {
+          "name": "Pro",
+          "atTeam": {
+            "0": 39,
+            "1": 53,
+            "2": 67,
+            "3": 81
+          },
+          "perPerson": 14
+        }
+      ],
+      "derived": {
+        "1": 53,
+        "3": 81,
+        "10": 179
+      },
+      "verdict": "Unchanged. Pro is $39 plus $14 for every person on the team.",
+      "attachedTo": "Pro tier, by team size, billed monthly."
+    },
+    {
+      "vendor": "GorillaDesk",
+      "source": "https://gorilladesk.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "tiers": [
+        {
+          "name": "Pro",
+          "firstRoute": 99,
+          "perAddedRoute": 50
+        }
+      ],
+      "verdict": "Unchanged. Pro is $99 for the first route and $50 for each added route, unlimited users. The www host failed to load in Chrome on this date, so guide links now point to the bare domain.",
+      "attachedTo": "Pro tier, at one route, billed monthly."
+    },
+    {
+      "vendor": "QuickBooks Online",
+      "source": "https://quickbooks.intuit.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "tiers": [
+        {
+          "name": "Simple Start",
+          "monthlyStandard": 38,
+          "usersIncluded": 1
+        },
+        {
+          "name": "Essentials",
+          "monthlyStandard": 85,
+          "usersIncluded": 3
+        },
+        {
+          "name": "Plus",
+          "monthlyStandard": 140,
+          "usersIncluded": 5
+        },
+        {
+          "name": "Advanced",
+          "monthlyStandard": 340,
+          "usersIncluded": 25
+        }
+      ],
+      "verdict": "Unchanged.",
+      "attachedTo": "Standard monthly rate per plan at the user count the plan includes, not the promotional rate."
+    },
+    {
+      "vendor": "Arborgold",
+      "source": "https://arborgold.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "monthly": 149,
+          "annualBilling": 129
+        },
+        {
+          "name": "Professional",
+          "monthly": 343,
+          "annualBilling": 299
+        },
+        {
+          "name": "Enterprise",
+          "monthly": 573,
+          "annualBilling": 499
+        }
+      ],
+      "verdict": "Unchanged.",
+      "attachedTo": "Plan tier price per month on each payment basis, annual contract required."
+    },
+    {
+      "vendor": "Swept",
+      "source": "https://sweptworks.com/compare-plans",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "tiers": [
+        {
+          "name": "Optimize",
+          "monthly": 150,
+          "annualMonthly": 120,
+          "locations": "up to 15"
+        },
+        {
+          "name": "Scale",
+          "monthly": 225,
+          "annualMonthly": 180,
+          "locations": "up to 15"
+        },
+        {
+          "name": "Accelerate",
+          "price": "Let's talk",
+          "locations": "50 or more"
+        }
+      ],
+      "verdict": "Changed. The Launch tier at $30 no longer appears on the page. Optimize is now the entry plan. Unlimited employees on every plan.",
+      "attachedTo": "Optimize tier, billed monthly, for up to fifteen locations. Headcount does not move it."
+    },
+    {
+      "vendor": "Housecall Pro",
+      "source": "https://www.housecallpro.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "model": "A four step wizard: industry, team size, goals, results. Plans appear only on the results step.",
+      "wizardAnswers": {
+        "industry": "Home Cleaning",
+        "teamSize": "Just me",
+        "goals": [
+          "Book jobs & grow business"
+        ]
+      },
+      "tiers": [
+        {
+          "name": "Basic",
+          "shown": 79,
+          "usersIncluded": 1,
+          "onlineBooking": true
+        },
+        {
+          "name": "Essentials",
+          "shown": 189,
+          "usersIncluded": 5
+        },
+        {
+          "name": "Max",
+          "shown": 329,
+          "usersIncluded": 8,
+          "perAdditionalUser": 35
+        }
+      ],
+      "verdict": "Figures are now reachable at the end of the wizard, but the page states no billing basis and the figures may depend on the answers given. The table stays at Could not confirm.",
+      "attachedTo": "Nothing published in a table. The shown figures are recorded here as observed, not quoted."
+    },
+    {
+      "vendor": "LawnPro",
+      "source": "https://www.lawnprosoftware.com/pricing",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Solo free for one user and 25 customers, Startup $39 for 3 employees, Grow $129 for 7, Plus $249 for 15. The pricing page lists no extra login rate. LawnPro's comparison pages mention extra logins at $19 a month, which is not used here.",
+      "attachedTo": "Tier price by employee band, billed monthly."
+    },
+    {
+      "vendor": "Launch27",
+      "source": "https://www.launch27.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Base $75 a month with unlimited users and bookings.",
+      "attachedTo": "Base tier, whole account."
+    },
+    {
+      "vendor": "FreshBooks",
+      "source": "https://www.freshbooks.com/pricing",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Plus $43 a month standard, team members $11 a month each. Two team members are included only on Select.",
+      "attachedTo": "Plus tier, one user, plus $11 for each additional team member."
+    },
+    {
+      "vendor": "Wave",
+      "source": "https://www.waveapps.com/pricing",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Starter free, Pro $19 a month billed monthly or $190 a year.",
+      "attachedTo": "Whole account, per tier."
+    },
+    {
+      "vendor": "Connecteam",
+      "source": "https://connecteam.com/pricing/",
+      "readOn": "2026-11-04",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Small Business plan free for up to 10 users.",
+      "attachedTo": "Small Business plan, whole account."
     }
   ],
   "corrections": [
@@ -709,6 +942,14 @@
       "cause": "Automated requests from the site's own environment did not reach the page. A browser on an ordinary machine reaches it without difficulty.",
       "note": "The error was not failing to read the page. It was turning our own access failure into a verdict about the vendor. 'Wrong for anyone who cannot confirm the price' described us, not QuickBooks, and it sat in the section where this site says where each tool is the wrong choice.",
       "guard": "An inability to reach a page is a fact about the reader. It belongs in a note about method, never in a conclusion about the product."
+    },
+    {
+      "vendor": "Swept",
+      "recordedOn": "2026-11-04",
+      "whatWasPublished": "$30 a month at one, three and ten cleaners on two guides, described as the entry price on the Launch plan and as the cheapest tool on the commercial cleaning page.",
+      "whatIsTrue": "Launch is no longer offered on the pricing page. The entry plan is Optimize at $150 a month billed monthly, $120 billed annually, for up to fifteen locations.",
+      "cause": "Vendor pricing change between the 2 October and 4 November readings.",
+      "note": "The commercial cleaning page's argument that the purpose built tool was also the cheapest no longer holds and was rewritten."
     }
   ],
   "attachment": "Every figure recorded here carries an 'attachedTo' line saying what the number is a price FOR, not just its value. Three vendors have now been published wrong because a number was lifted off a pricing page and attached to the wrong thing: ZenMaid's $39 was the team calculator sitting at zero, GorillaDesk's $99 was the route slider sitting at one, and Jobber's $29 was a separate AI Receptionist add-on read as a per seat rate. A value alone cannot be checked. A value plus what it is attached to can."

@@ -19,7 +19,7 @@ tools:
     crew3: $39
     crew10: $249
     watch: Startup covers three employees, Grow seven, then the price triples
-    url: https://www.lawnprosoftware.com/price
+    url: https://www.lawnprosoftware.com/pricing
   - tool: Jobber
     bestFor: Schedules that change because work is quoted
     solo: $139

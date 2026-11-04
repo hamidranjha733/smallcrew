@@ -127,7 +127,7 @@ export const GUIDE_SEO: Record<string, Seo> = {
     keyword: 'commercial cleaning business software',
     title: 'Commercial Cleaning Software for Contract Work, Priced',
     description:
-      'Janitorial software compared for contract billing, site check in and inspections. Swept starts at $30 a month. Real costs at 1, 3 and 10 cleaners.',
+      'Janitorial software compared for contract billing, site check in and inspections. Swept starts at $150 a month. Real costs at 1, 3 and 10 cleaners.',
   },
   'cleaning-business-software-online-booking': {
     keyword: 'cleaning business software with online booking',

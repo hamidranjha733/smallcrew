@@ -3,7 +3,7 @@ title: Carpet cleaning business software, priced for one to ten vans
 standfirst: Five tools compared on the tier that includes online booking, with attention to the part carpet cleaners actually get wrong, which is pricing a job before seeing the floor.
 keyword: carpet cleaning business software
 volume: 200
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: ZenMaid
@@ -25,7 +25,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
+    watch: The pricing page is a wizard rather than a plan table. It shows plan prices only after industry, team size and goals are entered, and does not say whether they are monthly or annual rates, so no figure here is dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Van routing where each truck has its own day
@@ -33,7 +33,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Quoting large or commercial carpet jobs
     solo: $139
@@ -43,7 +43,7 @@ tools:
     url: https://www.getjobber.com/pricing/
 ---
 
-For a carpet cleaning business running one to ten vans, Launch27 at $75 a month is the strongest fit if you sell fixed price room packages online, GorillaDesk from $99 a month for one van is the strongest if your cost follows vans rather than staff, and Jobber at $139 a month is the strongest if you quote commercial work. All three prices are the lowest tier that includes online booking, read from the vendor pricing pages in August 2026.
+For a carpet cleaning business running one to ten vans, Launch27 at $75 a month is the strongest fit if you sell fixed price room packages online, GorillaDesk from $99 a month for one van is the strongest if your cost follows vans rather than staff, and Jobber at $139 a month is the strongest if you quote commercial work. All three prices are the lowest tier that includes online booking, read from the vendor pricing pages in November 2026.
 
 Carpet cleaning sits awkwardly between two software categories. It is not recurring like maid service, so tools built around a weekly round fit badly. It is not a long project either, so construction style estimating software is heavy. What it needs is fast quoting, tight routing and a deposit taken before a van moves.
 
@@ -103,7 +103,7 @@ That reversal is the single most useful thing to understand before choosing carp
 
 **Launch27 is wrong** if your jobs are quoted rather than packaged. Its strength is a booking form that sells a defined product at a defined price. A carpet job priced by room count and fibre type does not fit that form neatly.
 
-**Housecall Pro is wrong** for a carpet cleaner who needs to budget, because its pricing page is a wizard that produces no figure, so a second van cannot be modelled from it at all.
+**Housecall Pro is wrong** for a carpet cleaner who needs to budget, because its pricing page shows plan prices only at the end of a wizard and does not say whether they are monthly or annual, so a second van cannot be modelled from it with confidence.
 
 **GorillaDesk is wrong** if every technician drives their own vehicle, because per schedule pricing then behaves exactly like per user pricing and reaches $549 a month at ten schedules. It is also a pest control product first, and its chemical tracking and device barcoding are irrelevant to carpet work.
 
@@ -112,7 +112,7 @@ That reversal is the single most useful thing to understand before choosing carp
 ## Common questions
 
 **What is the cheapest carpet cleaning software with online booking?**
-ZenMaid Pro at $53 a month for a single cleaner if carpet work sits inside a cleaning round, and Launch27 at $75 a month for a dedicated carpet operation. Launch27 overtakes ZenMaid on price at about two people. ZenMaid was rechecked in October 2026, Launch27 in August 2026.
+ZenMaid Pro at $53 a month for a single cleaner if carpet work sits inside a cleaning round, and Launch27 at $75 a month for a dedicated carpet operation. Launch27 overtakes ZenMaid on price at about two people. Both were rechecked in November 2026.
 
 **Should I pay per user or per van?**
 Per van, if your technicians ride together. GorillaDesk bills per schedule, which is per route rather than per person, and its documentation states that crews only need a schedule for the crew leader. For a four technician, two van operation that is the difference between $149 and $199 a month.
@@ -127,4 +127,4 @@ It is the single most useful thing a booking form does for carpet cleaning, beca
 Not as a separate purchase at this size. What people mean by cleaning quote software is a saved rate card and a quote that converts into a scheduled job, and Jobber and GorillaDesk both do that inside the price above. A standalone quoting product adds a second system to keep in step with your customer list.
 
 **How current are these prices?**
-ZenMaid was rechecked in October 2026 and the rest were read in August 2026. Pricing in this category changes several times a year, so confirm before committing.
+Every price here was rechecked on the vendor pricing pages in November 2026. Pricing in this category changes several times a year, so confirm before committing.

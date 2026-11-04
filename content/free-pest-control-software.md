@@ -26,7 +26,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: A free trial before committing
     solo: $139

@@ -12,14 +12,14 @@ tools:
     crew3: $39
     crew10: $249
     watch: Tier steps are large, moving from $39 to $129 to $249 by employee count
-    url: https://www.lawnprosoftware.com/price
+    url: https://www.lawnprosoftware.com/pricing
   - tool: GorillaDesk
     bestFor: Costing that follows trucks instead of staff
     solo: $99
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Routes that change because work is quoted
     solo: $139

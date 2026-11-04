@@ -11,7 +11,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
+    watch: The pricing page is a wizard rather than a plan table. It shows plan prices only after industry, team size and goals are entered, and does not say whether they are monthly or annual rates, so no figure here is dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: Review requests attached to a completed stop
@@ -19,7 +19,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Following up quotes that were never answered
     solo: $139
@@ -65,7 +65,7 @@ GorillaDesk publishes Basic at $49, Pro at $99 and Growth at $149, and its docum
 
 Jobber publishes Core at $49 and Connect at $139, with automated client reminders beginning on Connect. Automated communication is therefore a Connect feature, and that is the tier priced above.
 
-Housecall Pro describes online booking that lets customers book and pay around the clock, and publishes no price for it. Its pricing page is a wizard asking for industry, size and goals, and on a clean browser it ends without a figure.
+Housecall Pro describes online booking that lets customers book and pay around the clock, and publishes no plan table for it. Its pricing page is a wizard asking for industry, size and goals, and it shows plan prices only at the end without saying whether they are monthly or annual.
 
 FieldRoutes and Briostack both route pricing through sales. FieldRoutes states that pricing is based on the number of active customers. Briostack publishes add on charges but no base subscription price.
 
@@ -105,7 +105,7 @@ That is the argument of this page in one calculation, and it is why no separate 
 
 ## Where each tool is the wrong choice
 
-**Housecall Pro is wrong** for any operator who needs a number before a sales process, because its pricing page produces none.
+**Housecall Pro is wrong** for any operator who needs a number before a sales process, because its pricing page gives one only at the end of a wizard and does not say how it is billed.
 
 **GorillaDesk is wrong** at ten separate technician schedules, where per schedule pricing reaches $549 a month.
 

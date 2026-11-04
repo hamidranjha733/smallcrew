@@ -3,7 +3,7 @@ title: Pest control accounting software, and what your field app will not do
 standfirst: Five options priced on the tier that includes recurring invoicing and card payments, with the expense lines specific to pest control that no field service tool tracks.
 keyword: pest control accounting software
 volume: 300
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Wave
@@ -26,7 +26,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Tying the invoice to the visit that earned it
     solo: $139
@@ -43,7 +43,7 @@ tools:
     url: https://quickbooks.intuit.com/pricing/
 ---
 
-Pest control operators need two systems, not one. Wave is the cheapest genuine ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment across a real service book. Neither will schedule a treatment. GorillaDesk at $99 a month and Jobber at $139 a month will bill from the route and are not accounting software. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including recurring invoicing and card payments.
+Pest control operators need two systems, not one. Wave is the cheapest genuine ledger, free on Starter and $19 a month on Pro, and FreshBooks at $43 a month is the cheapest that chases late payment across a real service book. Neither will schedule a treatment. GorillaDesk at $99 a month and Jobber at $139 a month will bill from the route and are not accounting software. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including recurring invoicing and card payments.
 
 The specific mistake this page exists to prevent is believing that a pest control app with an invoice screen is a set of books. It is not, and pest control has an expense side that makes the gap wider than in most trades.
 
@@ -103,7 +103,7 @@ If a quote from FieldRoutes, PestPac or Briostack comes in materially above that
 
 **Jobber is wrong** as accounting software and wrong for pest control compliance generally, since it holds no chemical application log. It syncs to an accounting package rather than being one.
 
-**QuickBooks Online is wrong** for an operation that needs more than five logins. Plus covers five users at $140 a month and Advanced is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six technician business pays the twenty five technician price. Many accountants require QuickBooks, so ask yours before ruling it out. Figures read on 11 October 2026.
+**QuickBooks Online is wrong** for an operation that needs more than five logins. Plus covers five users at $140 a month and Advanced is $340 for twenty five, with no additional user rate published anywhere on the pricing page. Nothing sits between five seats and twenty five, so a six technician business pays the twenty five technician price. Many accountants require QuickBooks, so ask yours before ruling it out. Figures read on 4 November 2026.
 
 ## Common questions
 
@@ -120,4 +120,4 @@ As deferred revenue until each visit is performed. Money taken for a March treat
 Wave publishes 2.9% plus $0.60 per credit card transaction, with the fixed fee waived on the first ten transactions each month on Pro. Processing fees are separate from subscription cost at every vendor on this page.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Vendor pricing changes several times a year.
+They were read from vendor pricing pages in November 2026. Vendor pricing changes several times a year.

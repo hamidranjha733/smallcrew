@@ -3,7 +3,7 @@ title: Cleaning business software with online booking, priced at the right tier
 standfirst: Online booking is the feature vendors put one tier above the price they advertise. Five tools compared on what the booking tier actually costs at one, three and ten cleaners.
 keyword: cleaning business software with online booking
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: ZenMaid
@@ -25,7 +25,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: The pricing page is a wizard rather than a plan table. Worked through industry, size and goals on a clean browser it produced no figure at all, so nothing here can be dated as a reading
+    watch: The pricing page is a wizard rather than a plan table. It shows plan prices only after industry, team size and goals are entered, and does not say whether they are monthly or annual rates, so no figure here is dated as a reading
     url: https://www.housecallpro.com/pricing/
   - tool: GorillaDesk
     bestFor: A customer portal alongside route based scheduling
@@ -33,7 +33,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Booking that feeds a proper quoting workflow
     solo: $139
@@ -43,7 +43,7 @@ tools:
     url: https://www.getjobber.com/pricing/
 ---
 
-The cheapest cleaning business software with a working online booking form is ZenMaid at $53 a month for one cleaner, followed by Launch27 at $75 a month. Launch27 is flat regardless of crew size. ZenMaid is not: it adds $14 a month for each person, overtakes Launch27 at about three people, and reaches $179 at ten. Jobber will take a booking on its $49 Core plan but will not send an automated reminder until the $139 Connect plan, and a booking form without a reminder produces bookings your cleaners arrive to find locked. ZenMaid was rechecked in October 2026 and the other figures were read in August 2026.
+The cheapest cleaning business software with a working online booking form is ZenMaid at $53 a month for one cleaner, followed by Launch27 at $75 a month. Launch27 is flat regardless of crew size. ZenMaid is not: it adds $14 a month for each person, overtakes Launch27 at about three people, and reaches $179 at ten. Jobber will take a booking on its $49 Core plan but will not send an automated reminder until the $139 Connect plan, and a booking form without a reminder produces bookings your cleaners arrive to find locked. Every figure was rechecked in November 2026.
 
 This page exists because online booking is the single clearest example of the pattern this site was built to expose. It is the feature small cleaning companies most want, and it is the feature vendors most reliably place above the plan they advertise.
 
@@ -61,7 +61,7 @@ ZenMaid places the booking form on Pro, which is $39 before anyone is added to t
 
 Launch27 includes a basic booking form on Base at $75, with automated email reminders. Text reminders require Pro at $150. Automatic charging of the card the customer saved at booking requires Plus at $299, which is the widest gap on this page between taking a booking and being paid for it without touching anything.
 
-Housecall Pro will not show a price. Its pricing page replaced the plan table with a wizard asking for industry, team size and goals, and working it through on a clean browser produces no figure, so it cannot be compared on cost here at all.
+Housecall Pro will not show a price up front. Its pricing page replaced the plan table with a wizard asking for industry, team size and goals, and it shows plan prices only at the end without saying whether they are monthly or annual, so it cannot be compared on cost here.
 
 GorillaDesk places the customer portal and online booking on Pro at $99. The Basic plan at $49 will schedule and invoice but will not let a customer book. GorillaDesk then charges $50 a month per additional schedule, where a schedule is one technician's route.
 
@@ -112,7 +112,7 @@ Only one tool here genuinely does not move. That is the finding. A cleaning comp
 ## Common questions
 
 **What is the cheapest cleaning software with online booking?**
-ZenMaid Pro at $53 a month for one cleaner, rechecked in October 2026. It is not flat priced, so it is not the cheapest at ten: Launch27 at $75 flat is, once you pass about three people.
+ZenMaid Pro at $53 a month for one cleaner, rechecked in November 2026. It is not flat priced, so it is not the cheapest at ten: Launch27 at $75 flat is, once you pass about three people.
 
 **Does Jobber include online booking on the $49 plan?**
 Yes, Core includes online booking and online payments. It does not include automated client reminders, which begin on Connect at $139 a month. For cleaning work the two features only make sense together.
@@ -127,4 +127,4 @@ It is most effective for standard priced residential work where the customer can
 For recurring residential cleaning it substantially reduces cancellations. Launch27 captures the card at booking on the Base plan at $75, but automatic charging requires the Plus plan at $299.
 
 **How often do these prices change?**
-Several times a year across this category. ZenMaid was rechecked in October 2026 and the rest were read in August 2026, and all should be reconfirmed before you commit.
+Several times a year across this category. Every price here was rechecked in November 2026, and all should be reconfirmed before you commit.
