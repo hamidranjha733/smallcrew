@@ -3,7 +3,7 @@ title: Pest control takeoff software, and why the category barely exists
 standfirst: No field service product compared here performs a measured takeoff. Five tools priced on the tier that includes online booking, with a plain account of what to use instead.
 keyword: pest control takeoff software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: GorillaDesk
@@ -25,7 +25,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
   - tool: PestPac
     bestFor: Larger operators buying specialised modules
@@ -43,7 +43,7 @@ tools:
     url: https://www.fieldroutes.com/pricing
 ---
 
-None of the five products compared here performs a measured takeoff from a plan. Takeoff is a construction estimating function, and pest control operators who need it are usually bidding termite pretreatment on new construction, where the measurement comes from the builder's drawings rather than from pest control software. GorillaDesk at $99 a month and Jobber at $139 a month will hold the resulting quote and bill the job. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
+None of the five products compared here performs a measured takeoff from a plan. Takeoff is a construction estimating function, and pest control operators who need it are usually bidding termite pretreatment on new construction, where the measurement comes from the builder's drawings rather than from pest control software. GorillaDesk at $99 a month and Jobber at $139 a month will hold the resulting quote and bill the job. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including online booking.
 
 This is a small search term with a genuine problem behind it, and it is served almost entirely by pages that pretend the category exists. It does not, in the form the phrase implies.
 
@@ -136,4 +136,4 @@ Briostack publishes a product page for bids and diagramming, and no base subscri
 They hold and present a quote once you have calculated it. Neither performs measurement, and neither pricing page claims to.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Three of the five route pricing through a sales conversation rather than showing a figure we could read.
+They were read from vendor pricing pages in November 2026. Three of the five route pricing through a sales conversation rather than showing a figure we could read.

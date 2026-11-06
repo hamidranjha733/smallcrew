@@ -3,7 +3,7 @@ title: Cloud based pest control software, and the question that replaced it
 standfirst: Every product here is cloud based, so the word no longer decides anything. Five tools priced on the tier that includes online booking, judged on what actually varies.
 keyword: cloud based pest control software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: GorillaDesk
@@ -25,7 +25,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
   - tool: FieldRoutes
     bestFor: Route operations planning to scale
@@ -43,7 +43,7 @@ tools:
     url: https://www.workwave.com/industries/pest-control-software
 ---
 
-Every product compared here is cloud based, so the term does not narrow the field at all. The useful questions underneath it are whether the mobile app works without a signal, whether you can export your own data, and what the software costs, and only two of these five vendors will answer the third. GorillaDesk publishes $99 a month and Jobber publishes $139 a month, both the lowest tier that includes online booking, read from vendor pricing pages in August 2026.
+Every product compared here is cloud based, so the term does not narrow the field at all. The useful questions underneath it are whether the mobile app works without a signal, whether you can export your own data, and what the software costs, and only two of these five vendors will answer the third. GorillaDesk publishes $99 a month and Jobber publishes $139 a month, both the lowest tier that includes online booking, read from vendor pricing pages in November 2026.
 
 Web based pest control software was a meaningful distinction when the alternative was a program installed on one computer in the office. That period has ended. Searching for it now returns the entire category, which is why this page is about what to ask instead.
 
@@ -124,4 +124,4 @@ You do, but the vendor holds them. Confirm the export format and whether export 
 It is generally more resilient than a single office computer with no backup. The risks that matter are vendor lock in and acquisition rather than data loss, and both are addressed by confirming export before you commit.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Three of the five route pricing through a sales conversation rather than showing a figure we could read.
+They were read from vendor pricing pages in November 2026. Three of the five route pricing through a sales conversation rather than showing a figure we could read.

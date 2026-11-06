@@ -3,7 +3,7 @@ title: Lawn care scheduling software priced at one, three and ten crew
 standfirst: Five schedulers compared on the tier that includes customer booking, with the tier boundaries that turn a $39 plan into a $249 plan marked before you hit them.
 keyword: lawn care scheduling software
 volume: 350
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Connecteam
@@ -32,8 +32,8 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
-    url: https://www.yardbook.com/
+    watch: The pricing page lists Starter free, Business $34.99 and Enterprise $49.99 a month with no per user charge, but names online booking on no plan, so no tier matches the basis of this table
+    url: https://www.yardbook.com/pages/pricing
   - tool: Service Autopilot
     bestFor: Office run scheduling across dense routes
     solo: Not published
@@ -43,7 +43,7 @@ tools:
     url: https://www.serviceautopilot.com/pricing/
 ---
 
-The cheapest lawn care scheduling software that a crew can actually work from is Connecteam, which is free for up to ten users, though it schedules staff rather than taking customer bookings. For customer facing scheduling, LawnPro at $39 a month covers three employees and Jobber at $139 covers one user with automated reminders included. All published figures were read from vendor pricing pages in August 2026.
+The cheapest lawn care scheduling software that a crew can actually work from is Connecteam, which is free for up to ten users, though it schedules staff rather than taking customer bookings. For customer facing scheduling, LawnPro at $39 a month covers three employees and Jobber at $139 covers one user with automated reminders included. All published figures were read from vendor pricing pages in November 2026.
 
 Lawn care scheduling has a specific failure mode that general scheduling software handles poorly. The schedule is not a list of appointments. It is a route that repeats, gets pushed by weather, and has to be rebuilt when a crew is a person short. Software that treats each visit as an independent appointment makes you rebuild the round by hand every time it rains.
 
@@ -109,7 +109,7 @@ That crossover, somewhere around seven or eight employees, is the practical deci
 
 **Jobber is wrong** for a fixed price mow and go round at ten staff. You are paying $299 a month on Connect for quoting and reporting that a repeating route does not use.
 
-**Yardbook is wrong** as a researched decision. It is the most commonly recommended free option in lawn care, and its pricing page blocked automated access in August 2026, so no figure for it is verified on this site.
+**Yardbook is wrong** for a business that wants customers to book online. It is the most commonly recommended free option in lawn care, and its pricing page does list Starter free, Business at $34.99 and Enterprise at $49.99 a month, but names online booking on none of them.
 
 **Service Autopilot is wrong** for a small crew that needs customer booking, because the portal sits on top of a $199 plan at an unpublished price. It is built for office run operations with a dispatcher, which most companies under twenty staff do not have.
 
@@ -128,4 +128,4 @@ It depends on the vendor and it is the main cost driver. LawnPro bands by employ
 On Connecteam yes, up to ten users at no cost. On Jobber each person needing access is a paid seat. LawnPro bands by employee count rather than selling individual seats.
 
 **Are these prices current?**
-They were read from vendor pricing pages in August 2026, and pricing in this category changes several times a year. Confirm with the vendor before committing.
+They were read from vendor pricing pages in November 2026, and pricing in this category changes several times a year. Confirm with the vendor before committing.

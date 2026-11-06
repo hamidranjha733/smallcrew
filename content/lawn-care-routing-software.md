@@ -3,7 +3,7 @@ title: Lawn care routing software, priced per truck rather than per person
 standfirst: Five tools compared on the tier that includes online booking, with attention to the pricing model that decides whether routing software costs you by crew or by head.
 keyword: lawn care routing software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: LawnPro
@@ -32,8 +32,8 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
-    url: https://www.yardbook.com/
+    watch: The pricing page lists Starter free, Business $34.99 and Enterprise $49.99 a month with no per user charge, but names online booking on no plan, so no tier matches the basis of this table
+    url: https://www.yardbook.com/pages/pricing
   - tool: Service Autopilot
     bestFor: Dense routes managed by an office dispatcher
     solo: Not published
@@ -43,7 +43,7 @@ tools:
     url: https://www.serviceautopilot.com/pricing/
 ---
 
-For lawn care routing, the pricing model matters more than the routing feature. GorillaDesk charges per schedule at $99 for the first and $50 for each additional one, where a schedule is one truck's route. LawnPro charges by employee count in large steps, from free to $39 to $129 to $249. Jobber bands by team size from a $139 base for one user. ZenMaid, GorillaDesk and Jobber were rechecked in October 2026 and the rest were read in August 2026, and all are the lowest tier that includes online booking.
+For lawn care routing, the pricing model matters more than the routing feature. GorillaDesk charges per schedule at $99 for the first and $50 for each additional one, where a schedule is one truck's route. LawnPro charges by employee count in large steps, from free to $39 to $129 to $249. Jobber bands by team size from a $139 base for one user. Every figure was rechecked in November 2026, and all are the lowest tier that includes online booking.
 
 Drive time is the largest cost in lawn care that never appears on an invoice. A crew crossing town twice a day is paid for the crossing and the customer is not billed for it. That is the problem routing software addresses, and it is worth being precise about what these tools do and do not do about it.
 
@@ -107,7 +107,7 @@ So the question to settle before choosing is not which tool routes better. It is
 
 **Jobber is wrong** for a fixed price route that never changes. You are paying for quoting depth a repeating round does not use, and at ten users on Connect that is $299 a month. Connect bands rather than charging per seat, so that $299 covers anything from six people to ten and does not move until the eleventh.
 
-**Yardbook is wrong** as a researched decision, because its pricing page blocked automated access in August 2026 and no figure for it is verified on this site.
+**Yardbook is wrong** for a business that wants customers to book online. Its pricing page lists Starter free, Business at $34.99 and Enterprise at $49.99 a month, and names online booking on none of them, so no tier can be priced on the same basis as the rest of this table.
 
 **Service Autopilot is wrong** for a small crew without an office. It is built around a dispatcher managing dense routes, and the customer portal has no published price.
 
@@ -126,4 +126,4 @@ Per route if crews ride together, per user if they do not. For a nine person, th
 This is the operation you will perform most often and it is worth testing before you buy. None of the vendor pricing pages compared here document the behaviour, so test it on a trial rather than taking a feature list at face value.
 
 **Are these prices current?**
-They were read from vendor pricing pages in August 2026. Pricing in this category changes several times a year.
+They were read from vendor pricing pages in November 2026. Pricing in this category changes several times a year.

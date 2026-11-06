@@ -1,6 +1,6 @@
 ---
 keyword: best lawn care software
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 6
 tools:
   - tool: LawnPro
@@ -9,7 +9,7 @@ tools:
     crew3: $39
     crew10: $249
     watch: The free plan stops at 25 customers and reminders need the $129 Grow tier
-    url: https://www.lawnprosoftware.com/price
+    url: https://www.lawnprosoftware.com/pricing
   - tool: Jobber
     bestFor: Quoting and winning new work
     solo: $139
@@ -29,8 +29,8 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
-    url: https://www.yardbook.com/
+    watch: The pricing page lists Starter free, Business $34.99 and Enterprise $49.99 a month with no per user charge, but names online booking on no plan, so no tier matches the basis of this table
+    url: https://www.yardbook.com/pages/pricing
   - tool: Service Autopilot
     bestFor: Dense recurring routes run by an office
     solo: Not published
@@ -69,7 +69,7 @@ LawnPro Solo is free for one user and twenty five customers, and it includes the
 
 What the free plan does not include is automation. Sequence automations and review requests sit on Grow at $129 a month, four tiers and $129 away from free. So the honest reading of LawnPro's free plan is that it will hold your customer list and take a booking, and you will still be sending your own reminders.
 
-Yardbook is the other product routinely described as free in this category. Every Yardbook URL tried in August 2026 returned an error, including the homepage, so nothing about its cost or its limits is verified here. It is in the table with three Could not confirm cells for that reason. A product whose pricing cannot be read is not a product a business can plan around, whatever its price turns out to be.
+Yardbook is the other product routinely described as free in this category, and its pricing page confirms a free Starter plan, with Business at $34.99 and Enterprise at $49.99 a month and no per user charge on any of them. What the page does not do is name online booking on any plan, so Yardbook cannot be priced on the same basis as the rest of this table and its cells read Could not confirm. Starter also carries ads and Yardbook's own processing fee on online payments, which Business waives.
 
 ## Where the tier trap sits in lawn care
 
@@ -139,7 +139,7 @@ Ask how annual agreements renew. Lawn care sells a season, and a system that tre
 
 **Arborgold is wrong** for straightforward lawn maintenance. It is built for tree care and landscape construction where materials and job costing matter, its entry price paying monthly is $149 rather than the $129 the page leads with, an annual contract is required either way, and its licence pricing is still not published.
 
-**Yardbook is wrong** as a purchase you can research properly. It is widely recommended as the free option in lawn care and its pricing page blocked automated access in August 2026, so nothing about its cost is verified here.
+**Yardbook is wrong** for a crew that wants customers to book online. Its free Starter plan is real, but no plan on its pricing page names online booking.
 
 **Service Autopilot is wrong** for anyone who needs customer facing booking at a known price. The portal is a call for pricing item on top of a plan that already costs $199 at the Pro tier.
 
@@ -171,13 +171,13 @@ If you run a second winter season, [lawn care and snow removal software](/lawn-c
 LawnPro at $39 a month for up to three employees, which is the cheapest published price in this category that includes a client portal and unlimited customers. Jobber at $139 is stronger if you quote a lot of new work, and becomes the better value around seven employees.
 
 **How much does lawn care software cost?**
-The three products that publish a usable figure cost $0, $39 and $139 a month at one to three employees on the tier that includes online booking. At ten employees the published figures are $249 on LawnPro and $299 on Jobber. The other three could not be priced for a crew of three from their own published material in August 2026.
+The three products that publish a usable figure cost $0, $39 and $139 a month at one to three employees on the tier that includes online booking. At ten employees the published figures are $249 on LawnPro and $299 on Jobber. The other three could not be priced for a crew of three on that basis from their own published material in November 2026.
 
 **Is there genuinely free lawn care software?**
-LawnPro's Solo plan is free for one user and twenty five customers. Yardbook is widely described as free, and its pricing page could not be accessed in August 2026, so that is not verified here.
+LawnPro's Solo plan is free for one user and twenty five customers. Yardbook's Starter plan is also free, with no per user charge, but its pricing page names online booking on no plan.
 
 **Why can I not find a price for Service Autopilot or Aspire?**
 Because both route it through a sales conversation. Service Autopilot publishes plan prices but lists the client portal as call for pricing. Aspire states that pricing varies by company size and complexity, and gives no figure, though it does include unlimited user licences.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Pricing in this category changes several times a year, so reconfirm before committing.
+They were read from vendor pricing pages in November 2026. Pricing in this category changes several times a year, so reconfirm before committing.

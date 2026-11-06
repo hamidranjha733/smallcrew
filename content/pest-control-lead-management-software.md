@@ -3,7 +3,7 @@ title: Pest control lead management software for operators without a sales team
 standfirst: Five tools priced on the tier that includes online booking, starting from the position that a small operator does not have a pipeline problem, they have a response time problem.
 keyword: pest control lead management software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: GorillaDesk
@@ -39,11 +39,11 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
 ---
 
-An operator with fewer than twenty staff should not buy pest control lead management software. They should buy an online booking form and an automated quote follow up, both of which are already inside the field service tools they are choosing between. The cheapest that publishes a price and includes a customer portal is GorillaDesk at $99 a month, and Jobber at $139 a month has the stronger quote follow up. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
+An operator with fewer than twenty staff should not buy pest control lead management software. They should buy an online booking form and an automated quote follow up, both of which are already inside the field service tools they are choosing between. The cheapest that publishes a price and includes a customer portal is GorillaDesk at $99 a month, and Jobber at $139 a month has the stronger quote follow up. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including online booking.
 
 Lead management software solves the problem of many leads moving through several stages handled by several people. A five person pest control company has one person handling enquiries, and that person is often driving.
 
@@ -128,4 +128,4 @@ Both use quote based pricing. FieldRoutes states its pricing is based on the num
 Response time. Add a booking form so standard treatments can be scheduled without a call, then add automated follow up on unanswered quotes. Measure for a season before considering anything more elaborate.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Vendor pricing changes several times a year.
+They were read from vendor pricing pages in November 2026. Vendor pricing changes several times a year.

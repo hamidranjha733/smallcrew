@@ -3,7 +3,7 @@ title: Free pest control software, and what free actually costs you
 standfirst: There is no free pest control software that records chemical applications. Five options priced honestly, including the two genuinely free tools that solve part of the problem.
 keyword: free pest control software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Connecteam
@@ -39,11 +39,11 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
 ---
 
-There is no free pest control software that records chemical applications, tracks devices and schedules a route. What exists is genuinely free software for parts of the job. Connecteam is free for up to ten users and will roster your technicians. Wave's Starter plan is free and will invoice your customers and keep a ledger, for one user. Neither holds a pesticide application record. The cheapest complete pest control system that publishes a price is GorillaDesk at $99 a month, checked in August 2026.
+There is no free pest control software that records chemical applications, tracks devices and schedules a route. What exists is genuinely free software for parts of the job. Connecteam is free for up to ten users and will roster your technicians. Wave's Starter plan is free and will invoice your customers and keep a ledger, for one user. Neither holds a pesticide application record. The cheapest complete pest control system that publishes a price is GorillaDesk at $99 a month, checked in November 2026.
 
 Pest control management software with a free plan does not exist for a reason worth understanding, because it explains what you are actually buying when you eventually pay.
 
@@ -119,7 +119,7 @@ The honest summary is that free tools run a small pest control business well and
 Not for the pest control specific parts. Connecteam is free for up to ten users for staff scheduling, and Wave is free for invoicing and bookkeeping. Neither records chemical applications or manages a service route.
 
 **What is the cheapest paid pest control software?**
-GorillaDesk publishes Basic at $49 a month, though the customer portal that allows online booking begins on Pro at $99. Those were the published figures in August 2026.
+GorillaDesk publishes Basic at $49 a month, though the customer portal that allows online booking begins on Pro at $99. Those were the published figures in November 2026.
 
 **Can I run a pest control business on spreadsheets and free tools?**
 Up to roughly thirty recurring customers, yes, provided your application records are kept properly. Past that the duplicate data entry costs more than the software, and paper application records become a real liability.
@@ -128,4 +128,4 @@ Up to roughly thirty recurring customers, yes, provided your application records
 It is a permanent Small Business plan covering all hubs and features for up to ten users. It is genuinely free, and it is a workforce management product rather than a field service one.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Vendor pricing changes several times a year.
+They were read from vendor pricing pages in November 2026. Vendor pricing changes several times a year.

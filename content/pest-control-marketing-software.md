@@ -3,7 +3,7 @@ title: Pest control marketing software, and why retention beats lead generation
 standfirst: Five tools priced on the tier that includes online booking, with the uncomfortable observation that the most valuable marketing feature for a small operator is the renewal notice.
 keyword: pest control marketing software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Housecall Pro
@@ -39,11 +39,11 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
 ---
 
-There is no useful category called pest control marketing software for an operator under twenty staff. What exists is field service software with review requests, renewal reminders and email or text campaigns attached, and the cheapest of those that publishes a price is GorillaDesk at $99 a month on its Pro plan. Housecall Pro will not tell you what anything costs, because its pricing page is now a wizard that ends without a figure. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
+There is no useful category called pest control marketing software for an operator under twenty staff. What exists is field service software with review requests, renewal reminders and email or text campaigns attached, and the cheapest of those that publishes a price is GorillaDesk at $99 a month on its Pro plan. Housecall Pro will not tell you what anything costs, because its pricing page is now a wizard that ends without a figure. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including online booking.
 
 Before spending anything here, it is worth being clear about where the money actually is, because this keyword carries one of the highest costs per click on this site and the advertising is aimed at a problem most small operators do not have.
 
@@ -132,4 +132,4 @@ Automated client communication is a tier feature on Jobber, beginning on Connect
 When you are running paid acquisition at a volume that justifies attribution and a sales pipeline, which is generally well above twenty staff. FieldRoutes and Briostack are aimed at that scale and give no figure without a sales conversation.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Two of the five route pricing through a sales conversation rather than showing a figure we could read.
+They were read from vendor pricing pages in November 2026. Two of the five route pricing through a sales conversation rather than showing a figure we could read.

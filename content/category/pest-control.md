@@ -1,6 +1,6 @@
 ---
 keyword: pest control software
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 6
 tools:
   - tool: GorillaDesk
@@ -9,7 +9,7 @@ tools:
     crew3: Per route
     crew10: Per route
     watch: Priced per route with unlimited users, so headcount does not change the bill. Pro is $99 for one route, $149 for two, $199 for three, $299 for five and $549 for ten
-    url: https://www.gorilladesk.com/pricing/
+    url: https://gorilladesk.com/pricing/
   - tool: Jobber
     bestFor: Pest work mixed with other trades
     solo: $139
@@ -22,7 +22,7 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in August 2026
+    watch: Publishes add on and migration pricing only, with no base subscription price on the page we reached in November 2026
     url: https://www.briostack.com/additionalpricing
   - tool: FieldRoutes
     bestFor: Route based operations planning to scale
@@ -176,4 +176,4 @@ Because they route it through a sales conversation. FieldRoutes states pricing i
 You can run the scheduling and invoicing side. You cannot run the compliance side, because general tools have no chemical application log and no device tracking. Many small operators start on general software and move when a commercial contract requires station records.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Pricing in this category changes several times a year, and four of the six route pricing through a sales conversation rather than showing a figure we could read.
+They were read from vendor pricing pages in November 2026. Pricing in this category changes several times a year, and four of the six route pricing through a sales conversation rather than showing a figure we could read.

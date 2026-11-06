@@ -913,6 +913,69 @@
       "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
       "verdict": "Unchanged. Small Business plan free for up to 10 users.",
       "attachedTo": "Small Business plan, whole account."
+    },
+    {
+      "vendor": "FieldRoutes",
+      "source": "https://www.fieldroutes.com/company/pricing",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "No figure. The page offers Get Quote and states the monthly subscription is based on the number of active customers.",
+      "attachedTo": "Nothing. Quote only."
+    },
+    {
+      "vendor": "PestPac",
+      "source": "https://www.pestpac.com/",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "No figure. The FAQ states pricing is based on the size and needs of the business, including users and features, and routes buyers to a demo.",
+      "attachedTo": "Nothing. Quote only."
+    },
+    {
+      "vendor": "Briostack",
+      "source": "https://www.briostack.com/additionalpricing/",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Add on, notification, development and storage charges only, with no base subscription price. The www host failed DNS in the owner's browser on this date; the bare domain redirected to it and loaded.",
+      "attachedTo": "Add on charges only. No base price."
+    },
+    {
+      "vendor": "Service Autopilot",
+      "source": "https://www.serviceautopilot.com/pricing/",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "Unchanged. Startup $49, Pro $199, Pro Plus $499 a month on annual subscription rates. Client Portal is Call for Pricing on every tier.",
+      "attachedTo": "Plan tier price per month on annual rates. The client portal tier is not priced."
+    },
+    {
+      "vendor": "Yardbook",
+      "source": "https://www.yardbook.com/pages/pricing",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "First reading that loaded. Starter free, Business $34.99 a month, Enterprise $49.99 a month, no per user charge stated. No plan names online booking. Business waives Yardbook's processing fee; Enterprise adds QuickBooks sync, a branded company portal and no ads.",
+      "attachedTo": "Whole account per tier. Not matched to the online booking basis, so the site keeps Could not confirm."
+    },
+    {
+      "vendor": "Aspire",
+      "source": "https://www.youraspire.com/aspire-plans",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "No figure. The page offers Get Quote and states pricing varies with company size, complexity and the solution chosen.",
+      "attachedTo": "Nothing. Quote only."
+    },
+    {
+      "vendor": "ServSuite by FieldRoutes",
+      "source": "https://www.fieldroutes.com/servsuite-by-fieldroutes",
+      "readOn": "2026-11-06",
+      "pricingIsDynamic": false,
+      "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
+      "verdict": "No figure. Demo and Get Quote only.",
+      "attachedTo": "Nothing. Quote only."
     }
   ],
   "corrections": [

@@ -3,7 +3,7 @@ title: Lawn care and snow removal software for a two season business
 standfirst: Five tools compared on the tier that includes online booking, with the honest finding that per push billing is the feature almost nothing under $200 a month handles properly.
 keyword: lawn care snow removal software
 volume: 150
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: LawnPro
@@ -32,8 +32,8 @@ tools:
     solo: Could not confirm
     crew3: Could not confirm
     crew10: Could not confirm
-    watch: We could not reach this vendor pricing page in August 2026
-    url: https://www.yardbook.com/
+    watch: The pricing page lists Starter free, Business $34.99 and Enterprise $49.99 a month with no per user charge, but names online booking on no plan, so no tier matches the basis of this table
+    url: https://www.yardbook.com/pages/pricing
   - tool: Service Autopilot
     bestFor: Dispatching a route at three in the morning
     solo: Not published
@@ -43,7 +43,7 @@ tools:
     url: https://www.serviceautopilot.com/pricing/
 ---
 
-No product compared here publishes evidence that it handles snow removal billing properly, and that is the finding a two season business needs before it spends anything. LawnPro at $39 a month for three employees and Jobber at $139 a month are the cheapest credible ways to run both seasons, but neither vendor's pricing page documents per push billing or seasonal contract caps. Figures were read from vendor pricing pages in August 2026 and are the lowest tier including online booking.
+No product compared here publishes evidence that it handles snow removal billing properly, and that is the finding a two season business needs before it spends anything. LawnPro at $39 a month for three employees and Jobber at $139 a month are the cheapest credible ways to run both seasons, but neither vendor's pricing page documents per push billing or seasonal contract caps. Figures were read from vendor pricing pages in November 2026 and are the lowest tier including online booking.
 
 If snow is the whole business rather than the winter half of it, the buying question is different and [snow removal software](/snow-removal-software/) covers it. A lawn care company that plows in winter is running two businesses with different economics inside one company. Software sold for lawn care handles the summer half well and the winter half by accident.
 
@@ -107,7 +107,7 @@ For a two season business, the software that lets you shed capacity in the off s
 
 **Arborgold is wrong** for straightforward plowing. It is built for tree care and landscape construction with material tracking, which is relevant to salt, but its licence pricing is unpublished so you cannot budget a winter crew.
 
-**Yardbook is wrong** as a researched purchase, because its pricing page blocked automated access in August 2026.
+**Yardbook is wrong** for a business that wants customers to book online, because its pricing page names online booking on none of its three plans, Starter free, Business at $34.99 and Enterprise at $49.99 a month.
 
 **[Service Autopilot](/service-autopilot-pricing/) is wrong** for a company without an office. Overnight dispatch is a genuine strength, and the customer portal is a call for pricing item on top of a $199 plan, so the configuration you need has no published cost.
 
@@ -123,7 +123,7 @@ The common models are per push, per inch, seasonal flat rate with a push cap, an
 Banded pricing handles it adequately, provided you actually move the band back at the end of the season. On Jobber a winter crew of eight and a summer crew of four are two different bands, $100 a month apart, and nothing moves you between them automatically.
 
 **What is the cheapest way to run both seasons?**
-LawnPro at $39 a month for up to three employees, checked in August 2026. Above seven employees the next band is $249 and Jobber becomes competitive.
+LawnPro at $39 a month for up to three employees, checked in November 2026. Above seven employees the next band is $249 and Jobber becomes competitive.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026. Vendor pricing changes several times a year.
+They were read from vendor pricing pages in November 2026. Vendor pricing changes several times a year.

@@ -3,7 +3,7 @@ title: Pest control invoice software for recurring service agreements
 standfirst: Five tools priced on the tier that includes recurring invoicing and card payments, judged on the only question that matters, which is whether money arrives without anyone touching it.
 keyword: pest control invoice software
 volume: 250
-pricesChecked: August 2026
+pricesChecked: November 2026
 toolsCompared: 5
 tools:
   - tool: Wave
@@ -43,7 +43,7 @@ tools:
     url: https://www.workwave.com/industries/pest-control-software
 ---
 
-The cheapest pest control invoicing software is Wave Pro at $19 a month, and it is the wrong answer for most operators because it has no connection to the route, so every invoice is raised by hand. GorillaDesk at $99 a month and Jobber at $139 a month invoice from the completed stop, which is what removes the labour. Figures were read from vendor pricing pages in August 2026 and are the lowest tier that includes recurring invoicing and card payments.
+The cheapest pest control invoicing software is Wave Pro at $19 a month, and it is the wrong answer for most operators because it has no connection to the route, so every invoice is raised by hand. GorillaDesk at $99 a month and Jobber at $139 a month invoice from the completed stop, which is what removes the labour. Figures were read from vendor pricing pages in November 2026 and are the lowest tier that includes recurring invoicing and card payments.
 
 Pest control invoicing is not a document problem. Every tool here produces a tidy invoice. It is a labour problem, and the measure of good pest control invoice software is how many invoices leave the building each month without a person opening anything.
 
@@ -124,4 +124,4 @@ You need recurring invoicing with a card on file charged automatically. Check th
 Yes where possible. The invoice is most accurate at the moment the work is finished, and the further it moves from that moment the more disputes and omissions appear.
 
 **How current are these prices?**
-They were read from vendor pricing pages in August 2026, and one of the five routes pricing through a sales conversation rather than showing a figure we could read.
+They were read from vendor pricing pages in November 2026, and one of the five routes pricing through a sales conversation rather than showing a figure we could read.
