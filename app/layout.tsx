@@ -106,6 +106,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 'https://www.pinterest.com/smallcrewsoftware/',
                 'https://medium.com/@smallcrewsoftware',
                 'https://www.crunchbase.com/organization/small-crew',
+                'https://about.me/smallcrew',
               ],
               knowsAbout: [
                 'cleaning business software',
