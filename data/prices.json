@@ -976,6 +976,15 @@
       "readBy": "Read live in the site owner's Chrome through the Claude in Chrome extension.",
       "verdict": "No figure. Demo and Get Quote only.",
       "attachedTo": "Nothing. Quote only."
+    },
+    {
+      "vendor": "Maidily",
+      "source": "https://www.maidily.com/pricing/",
+      "readOn": "2026-11-07",
+      "pricingIsDynamic": true,
+      "readBy": "Read live in the site owner's Chrome and sent as screenshots of the plan cards and the full feature comparison, Monthly billing selected.",
+      "verdict": "Free $0 for 10 jobs a month. Start $29 for 50 jobs, +$3 per 50 extra. Grow $49 for 150 jobs, +$8 per 50 extra. Scale $99 for 250 jobs, +$14 per 50 extra. Unlimited users on every plan. Dedicated SMS number +$10 a month on paid plans, required for two way messaging. Annual billing advertised as saving 17 percent, not read.",
+      "attachedTo": "Monthly plan price at a job volume, not per user. Start is the first plan with the hosted booking form; automated reminders and online payments are on every plan; team scheduling, branded booking form, customer portal and QuickBooks begin on Grow."
     }
   ],
   "corrections": [

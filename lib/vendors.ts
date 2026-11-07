@@ -31,6 +31,7 @@ export const VENDORS: Record<string, Vendor> = {
   },
   ZenMaid: { logo: '/logos/zenmaid.png', domain: 'zenmaid.com', kind: 'system' },
   Launch27: { logo: '/logos/launch27.png', domain: 'launch27.com', kind: 'system' },
+  Maidily: { logo: '/logos/maidily.png', domain: 'maidily.com', kind: 'system' },
   LawnPro: { logo: '/logos/lawnpro.png', domain: 'lawnprosoftware.com', kind: 'system' },
   Yardbook: { logo: '/logos/yardbook.png', domain: 'yardbook.com', kind: 'system' },
   'Service Autopilot': {

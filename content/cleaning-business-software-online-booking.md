@@ -1,10 +1,10 @@
 ---
 title: Cleaning business software with online booking, priced at the right tier
-standfirst: Online booking is the feature vendors put one tier above the price they advertise. Five tools compared on what the booking tier actually costs at one, three and ten cleaners.
+standfirst: Online booking is the feature vendors put one tier above the price they advertise. Six tools compared on what the booking tier actually costs at one, three and ten cleaners.
 keyword: cleaning business software with online booking
 volume: 150
 pricesChecked: November 2026
-toolsCompared: 5
+toolsCompared: 6
 tools:
   - tool: ZenMaid
     bestFor: A booking form for a recurring maid round
@@ -13,6 +13,13 @@ tools:
     crew10: $179
     watch: Pro is $39 plus $14 a month for every person on the team, so $53 at one and $179 at ten. Starter at $19 has no booking form and caps you at forty appointments a month
     url: https://get.zenmaid.com/pricing
+  - tool: Maidily
+    bestFor: A hosted booking form without a per seat charge
+    solo: $29
+    crew3: By jobs
+    crew10: By jobs
+    watch: Priced on jobs completed, with unlimited users. Start at $29 for fifty jobs includes the hosted booking form and automated reminders. A branded booking form and a customer portal begin on Grow at $49 for 150 jobs
+    url: https://www.maidily.com/pricing/
   - tool: Launch27
     bestFor: Selling a fixed price clean without a phone call
     solo: $75
@@ -43,7 +50,7 @@ tools:
     url: https://www.getjobber.com/pricing/
 ---
 
-The cheapest cleaning business software with a working online booking form is ZenMaid at $53 a month for one cleaner, followed by Launch27 at $75 a month. Launch27 is flat regardless of crew size. ZenMaid is not: it adds $14 a month for each person, overtakes Launch27 at about three people, and reaches $179 at ten. Jobber will take a booking on its $49 Core plan but will not send an automated reminder until the $139 Connect plan, and a booking form without a reminder produces bookings your cleaners arrive to find locked. Every figure was rechecked in November 2026.
+The cheapest cleaning business software with a working online booking form is Maidily at $29 a month for up to fifty jobs, then ZenMaid at $53 for one cleaner and Launch27 at $75. Maidily charges by jobs completed rather than by person. Launch27 is flat regardless of crew size. ZenMaid is not: it adds $14 a month for each person, overtakes Launch27 at about three people, and reaches $179 at ten. Jobber will take a booking on its $49 Core plan but will not send an automated reminder until the $139 Connect plan, and a booking form without a reminder produces bookings your cleaners arrive to find locked. Every figure was rechecked in November 2026.
 
 This page exists because online booking is the single clearest example of the pattern this site was built to expose. It is the feature small cleaning companies most want, and it is the feature vendors most reliably place above the plan they advertise.
 
@@ -59,6 +66,8 @@ So the useful threshold is not the plan that includes a booking form. It is the 
 
 ZenMaid places the booking form on Pro, which is $39 before anyone is added to the team and $53 for a single cleaner. The Starter plan at $19 has no form at all and caps you at forty appointments a month. Pro Max removes ZenMaid's branding from the form, which matters more than it sounds when the form is on your own website, and costs $24 a person rather than $14.
 
+Maidily puts a booking page on every plan, including the free one, but the free plan stops at ten jobs a month. Start at $29 adds the hosted booking form for fifty jobs, with automated reminders and online payments. The branded booking form and the customer portal begin on Grow at $49 for 150 jobs. Read on 7 November 2026.
+
 Launch27 includes a basic booking form on Base at $75, with automated email reminders. Text reminders require Pro at $150. Automatic charging of the card the customer saved at booking requires Plus at $299, which is the widest gap on this page between taking a booking and being paid for it without touching anything.
 
 Housecall Pro will not show a price up front. Its pricing page replaced the plan table with a wizard asking for industry, team size and goals, and it shows plan prices only at the end without saying whether they are monthly or annual, so it cannot be compared on cost here.
@@ -69,9 +78,9 @@ Jobber places online booking on Core at $49 and automated client reminders on Co
 
 ## The crew size that changes the answer
 
-At one cleaner the answers cluster. ZenMaid $53, Launch27 $75, GorillaDesk $99, Jobber $139. The spread is real but small enough that features decide it.
+At one cleaner the answers cluster. Maidily $29 within fifty jobs, ZenMaid $53, Launch27 $75, GorillaDesk $99, Jobber $139. The spread is real but small enough that features decide it.
 
-At ten cleaners the answers separate violently, though not in the direction the entry prices suggest. Launch27 is still $75. ZenMaid has climbed to $179. Jobber is $299. GorillaDesk cannot be placed on this line at all, because it bills routes: ten cleaners in crews of three is $249, and ten cleaners in ten vehicles is $549.
+At ten cleaners the answers separate violently, though not in the direction the entry prices suggest. Launch27 is still $75. ZenMaid has climbed to $179. Jobber is $299. Maidily cannot be placed on this line either, because it bills jobs: Scale is $99 for 250 a month and $14 for each further fifty. GorillaDesk cannot be placed on this line at all, because it bills routes: ten cleaners in crews of three is $249, and ten cleaners in ten vehicles is $549.
 
 Nothing about the booking form changed. Only the pricing model did. For a cleaning company that expects to grow past five staff, the pricing model is the more important of the two decisions and it is the one almost never discussed.
 
@@ -89,7 +98,7 @@ Test the form by completing it as a customer before you buy. If you can book a c
 
 ## The twelve month number
 
-Annualised at the tier that includes online booking, a solo cleaner pays $636 a year on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
+Annualised at the tier that includes online booking, a solo cleaner pays $348 a year on Maidily within fifty jobs a month, $636 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk Pro and $1,668 on Jobber Connect.
 
 At three cleaners the list becomes $972 on ZenMaid, $900 on Launch27, $1,188 on GorillaDesk where the crew rides together, and $2,388 on Jobber Connect.
 
@@ -100,6 +109,8 @@ Only one tool here genuinely does not move. That is the finding. A cleaning comp
 ## Where each tool is the wrong choice
 
 **ZenMaid is wrong** if you need an unbranded booking form on the Pro plan, because that requires Pro Max at $10 more a head, and wrong for commercial contract work entirely. It is also the wrong choice on price alone past about three people, where Launch27 is flat and ZenMaid is not.
+
+**Maidily is wrong** if your booking form has to carry your own branding on the cheapest paid plan, because that begins on Grow at $49. It is also wrong for a crew whose job count you cannot predict, because the bill moves with every fifty jobs.
 
 **Launch27 is wrong** if the point of online booking is to stop chasing payment. The card is captured at $75 and charged automatically only at $299.
 
@@ -112,7 +123,7 @@ Only one tool here genuinely does not move. That is the finding. A cleaning comp
 ## Common questions
 
 **What is the cheapest cleaning software with online booking?**
-ZenMaid Pro at $53 a month for one cleaner, rechecked in November 2026. It is not flat priced, so it is not the cheapest at ten: Launch27 at $75 flat is, once you pass about three people.
+Maidily Start at $29 a month for up to fifty jobs, read on 7 November 2026, with unlimited users. Among per seat tools it is ZenMaid Pro at $53 for one cleaner, and past about three people Launch27 at $75 flat is cheaper than ZenMaid.
 
 **Does Jobber include online booking on the $49 plan?**
 Yes, Core includes online booking and online payments. It does not include automated client reminders, which begin on Connect at $139 a month. For cleaning work the two features only make sense together.

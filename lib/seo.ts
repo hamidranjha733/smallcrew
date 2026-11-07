@@ -103,7 +103,7 @@ export const GUIDE_SEO: Record<string, Seo> = {
     keyword: 'best cleaning business software',
     title: 'Best Cleaning Business Software for a Crew Under 20',
     description:
-      'Six cleaning tools priced on the tier that includes online booking, not the cheapest plan. Costs at 1, 3 and 10 cleaners, every figure dated August 2026.',
+      'Seven cleaning tools priced on the tier that includes online booking, not the cheapest plan. Costs at 1, 3 and 10 cleaners, all dated November 2026.',
   },
   'scheduling-software-for-cleaning-business': {
     keyword: 'scheduling software for cleaning business',
@@ -133,7 +133,7 @@ export const GUIDE_SEO: Record<string, Seo> = {
     keyword: 'cleaning business software with online booking',
     title: 'Cleaning Business Software With Online Booking, Priced',
     description:
-      'Online booking is the feature vendors put one tier above the advertised price. Five cleaning tools priced on the plan that has it, at 1, 3 and 10 users.',
+      'Online booking is the feature vendors put one tier above the advertised price. Six cleaning tools priced on the plan that has it, at 1, 3 and 10 users.',
   },
   'lawn-care-scheduling-software': {
     keyword: 'lawn care scheduling software',
