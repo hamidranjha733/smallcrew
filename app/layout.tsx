@@ -67,6 +67,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  // Pinterest website claim for the Small Crew business account.
+  verification: {
+    other: {
+      'p:domain_verify': '619d678729da833df7da565bd1bbc5cd',
+    },
+  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
