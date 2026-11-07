@@ -101,6 +101,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               description: SITE_DESCRIPTION,
               slogan: SITE_TAGLINE,
               areaServed: { '@type': 'Country', name: 'United States' },
+              sameAs: [
+                'https://x.com/smallcrewsoft',
+                'https://www.pinterest.com/smallcrewsoftware/',
+                'https://medium.com/@smallcrewsoftware',
+              ],
               knowsAbout: [
                 'cleaning business software',
                 'lawn care software',
